@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "1c241c8b-c358-451e-b020-65905c9f417a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 512,
+  "height": 1024,
+  "platformSettings": {},
+  "subMetas": {
+    "SICBO TAI PHU": {
+      "ver": "1.0.6",
+      "uuid": "f91ae73d-fa72-4ac5-a310-40acd4adf2da",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "1c241c8b-c358-451e-b020-65905c9f417a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -2,
+      "offsetY": 6,
+      "trimX": 1,
+      "trimY": 3,
+      "width": 506,
+      "height": 1006,
+      "rawWidth": 512,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

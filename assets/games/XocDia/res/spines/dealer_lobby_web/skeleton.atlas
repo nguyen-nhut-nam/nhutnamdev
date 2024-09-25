@@ -1,0 +1,62 @@
+
+skeleton.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm
+  rotate: false
+  xy: 915, 215
+  size: 70, 226
+  orig: 70, 226
+  offset: 0, 0
+  index: -1
+character
+  rotate: false
+  xy: 642, 19
+  size: 271, 422
+  orig: 271, 422
+  offset: 0, 0
+  index: -1
+dia_1
+  rotate: true
+  xy: 2, 4
+  size: 155, 133
+  orig: 155, 133
+  offset: 0, 0
+  index: -1
+dia_2
+  rotate: false
+  xy: 915, 2
+  size: 106, 59
+  orig: 106, 59
+  offset: 0, 0
+  index: -1
+dia_fx
+  rotate: true
+  xy: 915, 63
+  size: 150, 65
+  orig: 150, 65
+  offset: 0, 0
+  index: -1
+hat_1
+  rotate: false
+  xy: 987, 408
+  size: 18, 13
+  orig: 18, 13
+  offset: 0, 0
+  index: -1
+hat_2
+  rotate: false
+  xy: 987, 423
+  size: 24, 18
+  orig: 24, 18
+  offset: 0, 0
+  index: -1
+im_gamezone_banner
+  rotate: true
+  xy: 2, 161
+  size: 280, 638
+  orig: 280, 638
+  offset: 0, 0
+  index: -1

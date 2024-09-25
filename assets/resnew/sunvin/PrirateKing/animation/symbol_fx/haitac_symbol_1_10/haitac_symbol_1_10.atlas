@@ -1,0 +1,167 @@
+
+skeleton.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg/bg
+  rotate: false
+  xy: 2, 2
+  size: 136, 114
+  orig: 136, 114
+  offset: 0, 0
+  index: -1
+bg/bg copy
+  rotate: false
+  xy: 2, 118
+  size: 158, 135
+  orig: 158, 135
+  offset: 0, 0
+  index: -1
+bonus/bn 1
+  rotate: false
+  xy: 783, 153
+  size: 150, 49
+  orig: 150, 49
+  offset: 0, 0
+  index: -1
+bonus/bn 1 copy
+  rotate: false
+  xy: 162, 187
+  size: 163, 66
+  orig: 163, 66
+  offset: 0, 0
+  index: -1
+bonus/bn2
+  rotate: false
+  xy: 479, 196
+  size: 150, 57
+  orig: 150, 57
+  offset: 0, 0
+  index: -1
+bonus/bn3
+  rotate: false
+  xy: 327, 194
+  size: 150, 59
+  orig: 150, 59
+  offset: 0, 0
+  index: -1
+bonus/bn4
+  rotate: false
+  xy: 162, 124
+  size: 150, 61
+  orig: 150, 61
+  offset: 0, 0
+  index: -1
+bonus/bn5
+  rotate: false
+  xy: 631, 196
+  size: 150, 57
+  orig: 150, 57
+  offset: 0, 0
+  index: -1
+bonus/bn6
+  rotate: false
+  xy: 783, 204
+  size: 150, 49
+  orig: 150, 49
+  offset: 0, 0
+  index: -1
+bottle/bot2
+  rotate: false
+  xy: 140, 14
+  size: 88, 102
+  orig: 88, 102
+  offset: 0, 0
+  index: -1
+bottle/bot3
+  rotate: false
+  xy: 935, 158
+  size: 80, 95
+  orig: 80, 95
+  offset: 0, 0
+  index: -1
+bottle/bot4
+  rotate: false
+  xy: 230, 27
+  size: 80, 95
+  orig: 80, 95
+  offset: 0, 0
+  index: -1
+bottle/bot5
+  rotate: true
+  xy: 327, 112
+  size: 80, 95
+  orig: 80, 95
+  offset: 0, 0
+  index: -1
+bottle/bot6
+  rotate: true
+  xy: 312, 30
+  size: 80, 95
+  orig: 80, 95
+  offset: 0, 0
+  index: -1
+bottle/bot7
+  rotate: false
+  xy: 424, 97
+  size: 80, 95
+  orig: 80, 95
+  offset: 0, 0
+  index: -1
+bottle/bottle 1
+  rotate: false
+  xy: 506, 99
+  size: 80, 95
+  orig: 80, 95
+  offset: 0, 0
+  index: -1
+cup/cup 1
+  rotate: true
+  xy: 935, 94
+  size: 62, 73
+  orig: 62, 73
+  offset: 0, 0
+  index: -1
+cup/cup 1 copy
+  rotate: false
+  xy: 588, 116
+  size: 70, 78
+  orig: 70, 78
+  offset: 0, 0
+  index: -1
+cup/cup3
+  rotate: false
+  xy: 660, 121
+  size: 62, 73
+  orig: 62, 73
+  offset: 0, 0
+  index: -1
+cup/cup4
+  rotate: true
+  xy: 409, 33
+  size: 62, 73
+  orig: 62, 73
+  offset: 0, 0
+  index: -1
+cup/cup5
+  rotate: true
+  xy: 588, 52
+  size: 62, 73
+  orig: 62, 73
+  offset: 0, 0
+  index: -1
+cup/cup6
+  rotate: false
+  xy: 663, 46
+  size: 62, 73
+  orig: 62, 73
+  offset: 0, 0
+  index: -1
+cup/cup7
+  rotate: false
+  xy: 484, 22
+  size: 62, 73
+  orig: 62, 73
+  offset: 0, 0
+  index: -1

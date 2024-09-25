@@ -1,0 +1,55 @@
+
+skeleton.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: false
+  xy: 2, 85
+  size: 266, 420
+  orig: 266, 420
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 270, 2
+  size: 183, 137
+  orig: 183, 137
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 529, 147
+  size: 262, 358
+  orig: 262, 358
+  offset: 0, 0
+  index: -1
+hand
+  rotate: true
+  xy: 913, 383
+  size: 122, 107
+  orig: 122, 107
+  offset: 0, 0
+  index: -1
+jackpot pool
+  rotate: true
+  xy: 793, 240
+  size: 265, 118
+  orig: 265, 118
+  offset: 0, 0
+  index: -1
+named
+  rotate: false
+  xy: 2, 11
+  size: 258, 72
+  orig: 258, 72
+  offset: 0, 0
+  index: -1
+spark
+  rotate: false
+  xy: 270, 141
+  size: 257, 364
+  orig: 257, 364
+  offset: 0, 0
+  index: -1

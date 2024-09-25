@@ -1,0 +1,216 @@
+
+saloonGirl.png
+size: 427,427
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+saloongirl10
+  rotate: false
+  xy: 270, 9
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+saloongirl11
+  rotate: true
+  xy: 270, 27
+  size: 19, 16
+  orig: 19, 16
+  offset: 0, 0
+  index: -1
+saloongirl12
+  rotate: true
+  xy: 381, 133
+  size: 47, 40
+  orig: 47, 40
+  offset: 0, 0
+  index: -1
+saloongirl13
+  rotate: false
+  xy: 288, 74
+  size: 58, 104
+  orig: 58, 104
+  offset: 0, 0
+  index: -1
+saloongirl14
+  rotate: false
+  xy: 377, 40
+  size: 19, 11
+  orig: 19, 11
+  offset: 0, 0
+  index: -1
+saloongirl15
+  rotate: false
+  xy: 359, 251
+  size: 55, 54
+  orig: 55, 54
+  offset: 0, 0
+  index: -1
+saloongirl16
+  rotate: true
+  xy: 377, 53
+  size: 29, 20
+  orig: 29, 20
+  offset: 0, 0
+  index: -1
+saloongirl17
+  rotate: true
+  xy: 355, 36
+  size: 46, 20
+  orig: 46, 20
+  offset: 0, 0
+  index: -1
+saloongirl18
+  rotate: true
+  xy: 204, 2
+  size: 7, 6
+  orig: 7, 6
+  offset: 0, 0
+  index: -1
+saloongirl19
+  rotate: false
+  xy: 355, 28
+  size: 6, 6
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+saloongirl2
+  rotate: false
+  xy: 254, 245
+  size: 103, 180
+  orig: 103, 180
+  offset: 0, 0
+  index: -1
+saloongirl20
+  rotate: false
+  xy: 365, 182
+  size: 56, 67
+  orig: 56, 67
+  offset: 0, 0
+  index: -1
+saloongirl21
+  rotate: false
+  xy: 412, 105
+  size: 13, 26
+  orig: 13, 26
+  offset: 0, 0
+  index: -1
+saloongirl22
+  rotate: false
+  xy: 288, 12
+  size: 16, 11
+  orig: 16, 11
+  offset: 0, 0
+  index: -1
+saloongirl23
+  rotate: false
+  xy: 306, 13
+  size: 16, 10
+  orig: 16, 10
+  offset: 0, 0
+  index: -1
+saloongirl24
+  rotate: false
+  xy: 189, 2
+  size: 13, 7
+  orig: 13, 7
+  offset: 0, 0
+  index: -1
+saloongirl25
+  rotate: true
+  xy: 288, 25
+  size: 47, 65
+  orig: 47, 65
+  offset: 0, 0
+  index: -1
+saloongirl26
+  rotate: false
+  xy: 348, 114
+  size: 31, 64
+  orig: 31, 64
+  offset: 0, 0
+  index: -1
+saloongirl27
+  rotate: true
+  xy: 189, 11
+  size: 35, 79
+  orig: 35, 79
+  offset: 0, 0
+  index: -1
+saloongirl28
+  rotate: false
+  xy: 416, 294
+  size: 4, 11
+  orig: 4, 11
+  offset: 0, 0
+  index: -1
+saloongirl29
+  rotate: true
+  xy: 381, 118
+  size: 13, 29
+  orig: 13, 29
+  offset: 0, 0
+  index: -1
+saloongirl3
+  rotate: false
+  xy: 2, 176
+  size: 250, 249
+  orig: 250, 249
+  offset: 0, 0
+  index: -1
+saloongirl30
+  rotate: false
+  xy: 359, 307
+  size: 61, 118
+  orig: 61, 118
+  offset: 0, 0
+  index: -1
+saloongirl31
+  rotate: true
+  xy: 254, 180
+  size: 63, 109
+  orig: 63, 109
+  offset: 0, 0
+  index: -1
+saloongirl4
+  rotate: true
+  xy: 348, 84
+  size: 28, 45
+  orig: 28, 45
+  offset: 0, 0
+  index: -1
+saloongirl5
+  rotate: false
+  xy: 2, 49
+  size: 161, 125
+  orig: 161, 125
+  offset: 0, 0
+  index: -1
+saloongirl6
+  rotate: false
+  xy: 165, 48
+  size: 121, 126
+  orig: 121, 126
+  offset: 0, 0
+  index: -1
+saloongirl7
+  rotate: true
+  xy: 2, 2
+  size: 45, 50
+  orig: 45, 50
+  offset: 0, 0
+  index: -1
+saloongirl8
+  rotate: true
+  xy: 133, 2
+  size: 44, 54
+  orig: 44, 54
+  offset: 0, 0
+  index: -1
+saloongirl9
+  rotate: true
+  xy: 54, 7
+  size: 40, 77
+  orig: 40, 77
+  offset: 0, 0
+  index: -1

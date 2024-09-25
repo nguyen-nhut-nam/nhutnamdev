@@ -1,0 +1,230 @@
+
+DiceRoll.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Animation_dice_roll0
+  rotate: false
+  xy: 1, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll26
+  rotate: false
+  xy: 1, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll1
+  rotate: false
+  xy: 1, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll10
+  rotate: false
+  xy: 576, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll11
+  rotate: false
+  xy: 576, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll12
+  rotate: false
+  xy: 691, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll13
+  rotate: false
+  xy: 691, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll14
+  rotate: false
+  xy: 806, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll15
+  rotate: false
+  xy: 806, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll16
+  rotate: false
+  xy: 921, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll17
+  rotate: false
+  xy: 921, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll18
+  rotate: false
+  xy: 1036, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll19
+  rotate: false
+  xy: 1036, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll2
+  rotate: false
+  xy: 116, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll20
+  rotate: false
+  xy: 1151, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll21
+  rotate: false
+  xy: 1151, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll22
+  rotate: false
+  xy: 1266, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll23
+  rotate: false
+  xy: 1266, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll24
+  rotate: false
+  xy: 1381, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll25
+  rotate: false
+  xy: 1381, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll27
+  rotate: false
+  xy: 1496, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll28
+  rotate: false
+  xy: 1496, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll29
+  rotate: false
+  xy: 1611, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll3
+  rotate: false
+  xy: 116, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll30
+  rotate: false
+  xy: 1611, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll31
+  rotate: false
+  xy: 1726, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll4
+  rotate: false
+  xy: 231, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll5
+  rotate: false
+  xy: 231, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll6
+  rotate: false
+  xy: 346, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll7
+  rotate: false
+  xy: 346, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll8
+  rotate: false
+  xy: 461, 116
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+Animation_dice_roll9
+  rotate: false
+  xy: 461, 1
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,132 @@
+
+thanglon.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 1483, 403
+  size: 111, 141
+  orig: 111, 141
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 1657, 860
+  size: 133, 162
+  orig: 133, 162
+  offset: 0, 0
+  index: -1
+dau
+  rotate: true
+  xy: 1053, 320
+  size: 77, 108
+  orig: 77, 108
+  offset: 0, 0
+  index: -1
+fx
+  rotate: false
+  xy: 801, 399
+  size: 680, 623
+  orig: 680, 623
+  offset: 0, 0
+  index: -1
+fx1
+  rotate: false
+  xy: 2, 275
+  size: 797, 747
+  orig: 797, 747
+  offset: 0, 0
+  index: -1
+nh
+  rotate: false
+  xy: 2, 83
+  size: 625, 190
+  orig: 625, 190
+  offset: 0, 0
+  index: -1
+t1
+  rotate: false
+  xy: 1792, 931
+  size: 143, 91
+  orig: 143, 91
+  offset: 0, 0
+  index: -1
+t2
+  rotate: true
+  xy: 140, 18
+  size: 63, 141
+  orig: 63, 141
+  offset: 0, 0
+  index: -1
+t3
+  rotate: false
+  xy: 1657, 768
+  size: 131, 90
+  orig: 131, 90
+  offset: 0, 0
+  index: -1
+t4
+  rotate: true
+  xy: 1937, 936
+  size: 86, 101
+  orig: 86, 101
+  offset: 0, 0
+  index: -1
+t5
+  rotate: false
+  xy: 629, 110
+  size: 133, 163
+  orig: 133, 163
+  offset: 0, 0
+  index: -1
+t6
+  rotate: false
+  xy: 943, 301
+  size: 108, 96
+  orig: 108, 96
+  offset: 0, 0
+  index: -1
+t7
+  rotate: false
+  xy: 1483, 516
+  size: 158, 219
+  orig: 158, 219
+  offset: 0, 0
+  index: -1
+t8
+  rotate: true
+  xy: 2, 2
+  size: 79, 136
+  orig: 79, 136
+  offset: 0, 0
+  index: -1
+tay
+  rotate: false
+  xy: 1792, 883
+  size: 59, 46
+  orig: 59, 46
+  offset: 0, 0
+  index: -1
+tay1
+  rotate: true
+  xy: 1163, 313
+  size: 84, 92
+  orig: 84, 92
+  offset: 0, 0
+  index: -1
+tay3
+  rotate: false
+  xy: 801, 278
+  size: 140, 119
+  orig: 140, 119
+  offset: 0, 0
+  index: -1
+than
+  rotate: false
+  xy: 1483, 737
+  size: 172, 285
+  orig: 172, 285
+  offset: 0, 0
+  index: -1

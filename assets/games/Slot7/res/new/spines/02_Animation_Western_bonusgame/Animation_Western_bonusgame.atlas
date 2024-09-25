@@ -1,0 +1,314 @@
+
+Animation_Western_bonusgame.png
+size: 878,878
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+10
+  rotate: true
+  xy: 776, 537
+  size: 157, 62
+  orig: 157, 62
+  offset: 0, 0
+  index: -1
+11
+  rotate: true
+  xy: 822, 159
+  size: 41, 54
+  orig: 41, 54
+  offset: 0, 0
+  index: -1
+bansung0
+  rotate: false
+  xy: 2, 549
+  size: 221, 327
+  orig: 221, 327
+  offset: 0, 0
+  index: -1
+bansung1
+  rotate: true
+  xy: 2, 2
+  size: 165, 191
+  orig: 165, 191
+  offset: 0, 0
+  index: -1
+bansung10
+  rotate: false
+  xy: 729, 107
+  size: 91, 93
+  orig: 91, 93
+  offset: 0, 0
+  index: -1
+bansung11
+  rotate: true
+  xy: 643, 185
+  size: 81, 61
+  orig: 81, 61
+  offset: 0, 0
+  index: -1
+bansung12
+  rotate: false
+  xy: 507, 32
+  size: 104, 125
+  orig: 104, 125
+  offset: 0, 0
+  index: -1
+bansung5
+  rotate: false
+  xy: 722, 294
+  size: 154, 62
+  orig: 154, 62
+  offset: 0, 0
+  index: -1
+bansung6
+  rotate: false
+  xy: 719, 202
+  size: 144, 90
+  orig: 144, 90
+  offset: 0, 0
+  index: -1
+bansung7
+  rotate: true
+  xy: 567, 268
+  size: 76, 150
+  orig: 76, 150
+  offset: 0, 0
+  index: -1
+bansung8
+  rotate: true
+  xy: 195, 2
+  size: 133, 107
+  orig: 133, 107
+  offset: 0, 0
+  index: -1
+bansung9
+  rotate: true
+  xy: 304, 4
+  size: 131, 79
+  orig: 131, 79
+  offset: 0, 0
+  index: -1
+barrel_ani0
+  rotate: true
+  xy: 613, 59
+  size: 98, 34
+  orig: 98, 34
+  offset: 0, 0
+  index: -1
+barrel_ani1
+  rotate: true
+  xy: 776, 67
+  size: 38, 40
+  orig: 38, 40
+  offset: 0, 0
+  index: -1
+barrel_ani10
+  rotate: false
+  xy: 840, 641
+  size: 31, 46
+  orig: 31, 46
+  offset: 0, 0
+  index: -1
+barrel_ani11
+  rotate: false
+  xy: 199, 507
+  size: 24, 40
+  orig: 24, 40
+  offset: 0, 0
+  index: -1
+barrel_ani12
+  rotate: false
+  xy: 649, 85
+  size: 78, 98
+  orig: 78, 98
+  offset: 0, 0
+  index: -1
+barrel_ani13
+  rotate: false
+  xy: 796, 723
+  size: 75, 49
+  orig: 75, 49
+  offset: 0, 0
+  index: -1
+barrel_ani14
+  rotate: false
+  xy: 840, 568
+  size: 24, 26
+  orig: 24, 26
+  offset: 0, 0
+  index: -1
+barrel_ani2
+  rotate: true
+  xy: 840, 689
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+barrel_ani3
+  rotate: false
+  xy: 840, 596
+  size: 29, 43
+  orig: 29, 43
+  offset: 0, 0
+  index: -1
+barrel_ani4
+  rotate: false
+  xy: 822, 99
+  size: 43, 58
+  orig: 43, 58
+  offset: 0, 0
+  index: -1
+barrel_ani5
+  rotate: true
+  xy: 729, 67
+  size: 38, 45
+  orig: 38, 45
+  offset: 0, 0
+  index: -1
+barrel_ani6
+  rotate: true
+  xy: 613, 35
+  size: 22, 32
+  orig: 22, 32
+  offset: 0, 0
+  index: -1
+barrel_ani7
+  rotate: true
+  xy: 796, 696
+  size: 25, 29
+  orig: 25, 29
+  offset: 0, 0
+  index: -1
+barrel_ani8
+  rotate: true
+  xy: 503, 278
+  size: 41, 61
+  orig: 41, 61
+  offset: 0, 0
+  index: -1
+barrel_ani9
+  rotate: true
+  xy: 649, 54
+  size: 29, 53
+  orig: 29, 53
+  offset: 0, 0
+  index: -1
+bonusgame_western3
+  rotate: false
+  xy: 385, 16
+  size: 120, 139
+  orig: 120, 139
+  offset: 0, 0
+  index: -1
+explore0
+  rotate: false
+  xy: 796, 774
+  size: 80, 102
+  orig: 195, 194
+  offset: 55, 36
+  index: -1
+explore1
+  rotate: true
+  xy: 503, 159
+  size: 107, 138
+  orig: 195, 194
+  offset: 42, 18
+  index: -1
+explore10
+  rotate: false
+  xy: 2, 354
+  size: 195, 193
+  orig: 195, 194
+  offset: 0, 0
+  index: -1
+explore11
+  rotate: false
+  xy: 2, 169
+  size: 191, 183
+  orig: 195, 194
+  offset: 1, 5
+  index: -1
+explore12
+  rotate: true
+  xy: 199, 320
+  size: 182, 185
+  orig: 195, 194
+  offset: 10, 9
+  index: -1
+explore13
+  rotate: true
+  xy: 415, 696
+  size: 180, 190
+  orig: 195, 194
+  offset: 11, 1
+  index: -1
+explore14
+  rotate: false
+  xy: 225, 504
+  size: 186, 184
+  orig: 195, 194
+  offset: 4, 7
+  index: -1
+explore15
+  rotate: false
+  xy: 607, 696
+  size: 187, 180
+  orig: 195, 194
+  offset: 3, 13
+  index: -1
+explore2
+  rotate: false
+  xy: 381, 157
+  size: 120, 161
+  orig: 195, 194
+  offset: 35, 6
+  index: -1
+explore3
+  rotate: false
+  xy: 722, 358
+  size: 134, 171
+  orig: 195, 194
+  offset: 27, 1
+  index: -1
+explore4
+  rotate: false
+  xy: 567, 346
+  size: 153, 174
+  orig: 195, 194
+  offset: 22, 1
+  index: -1
+explore5
+  rotate: true
+  xy: 596, 531
+  size: 163, 178
+  orig: 195, 194
+  offset: 18, 0
+  index: -1
+explore6
+  rotate: true
+  xy: 415, 522
+  size: 172, 179
+  orig: 195, 194
+  offset: 13, 0
+  index: -1
+explore7
+  rotate: false
+  xy: 386, 321
+  size: 179, 181
+  orig: 195, 194
+  offset: 9, 0
+  index: -1
+explore8
+  rotate: false
+  xy: 195, 137
+  size: 184, 181
+  orig: 195, 194
+  offset: 6, 2
+  index: -1
+explore9
+  rotate: false
+  xy: 225, 690
+  size: 188, 186
+  orig: 195, 194
+  offset: 3, 8
+  index: -1

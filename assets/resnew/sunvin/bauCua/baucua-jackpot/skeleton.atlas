@@ -1,0 +1,54 @@
+skeleton.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+555
+  rotate: false
+  xy: 875, 98
+  size: 16, 13
+  orig: 16, 13
+  offset: 0, 0
+  index: -1
+JACKPOT copy
+  rotate: false
+  xy: 622, 19
+  size: 167, 33
+  orig: 167, 33
+  offset: 0, 0
+  index: -1
+Layer 162
+  rotate: false
+  xy: 2, 2
+  size: 308, 109
+  orig: 308, 109
+  offset: 0, 0
+  index: -1
+Rounded Rectangle 511
+  rotate: false
+  xy: 622, 54
+  size: 251, 57
+  orig: 253, 59
+  offset: 1, 1
+  index: -1
+baucua_sun_0004_111_0000_$--
+  rotate: false
+  xy: 960, 77
+  size: 32, 34
+  orig: 32, 34
+  offset: 0, 0
+  index: -1
+baucua_sun_0005_JACKPOT_2
+  rotate: false
+  xy: 791, 19
+  size: 167, 33
+  orig: 167, 33
+  offset: 0, 0
+  index: -1
+baucua_sun_0080_Shape-32-copy-4_2
+  rotate: false
+  xy: 312, 2
+  size: 308, 109
+  orig: 308, 109
+  offset: 0, 0
+  index: -1

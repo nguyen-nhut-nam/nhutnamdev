@@ -1,0 +1,76 @@
+
+Gonzosquest copy.png
+size: 2048, 2048
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 1105, 1110
+  size: 463, 895
+  orig: 463, 895
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: false
+  xy: 1570, 1410
+  size: 248, 339
+  orig: 248, 339
+  offset: 0, 0
+  index: -1
+Ray
+  rotate: false
+  xy: 2, 1046
+  size: 1101, 959
+  orig: 1101, 959
+  offset: 0, 0
+  index: -1
+dau
+  rotate: false
+  xy: 855, 138
+  size: 166, 223
+  orig: 166, 223
+  offset: 0, 0
+  index: -1
+khung
+  rotate: true
+  xy: 2, 363
+  size: 681, 1112
+  orig: 681, 1112
+  offset: 0, 0
+  index: -1
+khung tiền copy 8
+  rotate: false
+  xy: 2, 95
+  size: 457, 266
+  orig: 457, 266
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 1570, 1751
+  size: 405, 254
+  orig: 405, 254
+  offset: 0, 0
+  index: -1
+logo glow
+  rotate: false
+  xy: 461, 131
+  size: 392, 230
+  orig: 392, 230
+  offset: 0, 0
+  index: -1
+tay
+  rotate: true
+  xy: 2, 2
+  size: 91, 139
+  orig: 91, 139
+  offset: 0, 0
+  index: -1
+tay phai
+  rotate: false
+  xy: 1570, 1239
+  size: 185, 169
+  orig: 185, 169
+  offset: 0, 0
+  index: -1

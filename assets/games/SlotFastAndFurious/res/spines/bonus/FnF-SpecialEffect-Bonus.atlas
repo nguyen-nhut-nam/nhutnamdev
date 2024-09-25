@@ -1,0 +1,90 @@
+
+FnF-SpecialEffect-Bonus.png
+size: 2030,289
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B
+  rotate: true
+  xy: 563, 113
+  size: 174, 137
+  orig: 174, 137
+  offset: 0, 0
+  index: -1
+N
+  rotate: true
+  xy: 419, 102
+  size: 185, 140
+  orig: 185, 140
+  offset: 0, 0
+  index: -1
+O
+  rotate: false
+  xy: 1287, 10
+  size: 163, 134
+  orig: 163, 134
+  offset: 0, 0
+  index: -1
+S
+  rotate: true
+  xy: 704, 113
+  size: 174, 135
+  orig: 174, 135
+  offset: 0, 0
+  index: -1
+U
+  rotate: false
+  xy: 1118, 7
+  size: 165, 137
+  orig: 165, 137
+  offset: 0, 0
+  index: -1
+blur
+  rotate: true
+  xy: 981, 6
+  size: 138, 133
+  orig: 138, 133
+  offset: 0, 0
+  index: -1
+camduoi
+  rotate: false
+  xy: 1454, 20
+  size: 574, 124
+  orig: 574, 124
+  offset: 0, 0
+  index: -1
+flare
+  rotate: false
+  xy: 843, 6
+  size: 134, 138
+  orig: 134, 138
+  offset: 0, 0
+  index: -1
+sang
+  rotate: true
+  xy: 291, 83
+  size: 204, 124
+  orig: 204, 124
+  offset: 0, 0
+  index: -1
+trangtri1
+  rotate: false
+  xy: 843, 148
+  size: 1119, 139
+  orig: 1119, 139
+  offset: 0, 0
+  index: -1
+trangtri2
+  rotate: false
+  xy: 291, 3
+  size: 541, 76
+  orig: 541, 76
+  offset: 0, 0
+  index: -1
+tron
+  rotate: false
+  xy: 2, 2
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,62 @@
+
+LobbySunWebExport.png
+size: 1928,223
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5
+  rotate: false
+  xy: 1664, 25
+  size: 34, 36
+  orig: 34, 36
+  offset: 0, 0
+  index: -1
+Jackpots
+  rotate: false
+  xy: 1262, 29
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+as1
+  rotate: false
+  xy: 1713, 73
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+as2
+  rotate: false
+  xy: 1396, 29
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+as3
+  rotate: false
+  xy: 1713, 10
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+as4
+  rotate: false
+  xy: 1530, 0
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+broom
+  rotate: false
+  xy: 1713, 136
+  size: 147, 50
+  orig: 147, 50
+  offset: 0, 0
+  index: -1
+hat
+  rotate: false
+  xy: 1562, 63
+  size: 149, 123
+  orig: 149, 123
+  offset: 0, 0
+  index: -1

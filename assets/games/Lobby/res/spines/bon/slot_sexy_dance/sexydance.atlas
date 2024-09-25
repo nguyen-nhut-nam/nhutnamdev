@@ -1,0 +1,251 @@
+
+sexydance.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Butt_1
+  rotate: false
+  xy: 272, 117
+  size: 119, 124
+  orig: 119, 124
+  offset: 0, 0
+  index: -1
+Butt_2
+  rotate: false
+  xy: 705, 325
+  size: 94, 115
+  orig: 94, 115
+  offset: 0, 0
+  index: -1
+Earrings_1
+  rotate: true
+  xy: 2, 2
+  size: 15, 34
+  orig: 15, 34
+  offset: 0, 0
+  index: -1
+Earrings_2
+  rotate: true
+  xy: 38, 2
+  size: 15, 34
+  orig: 15, 34
+  offset: 0, 0
+  index: -1
+Eye_close_1
+  rotate: true
+  xy: 801, 325
+  size: 21, 19
+  orig: 21, 19
+  offset: 0, 0
+  index: -1
+Eye_close_2
+  rotate: false
+  xy: 646, 399
+  size: 14, 11
+  orig: 14, 11
+  offset: 0, 0
+  index: -1
+Eyelid_1
+  rotate: true
+  xy: 228, 2
+  size: 21, 16
+  orig: 21, 16
+  offset: 0, 0
+  index: -1
+Eyelid_2
+  rotate: false
+  xy: 608, 165
+  size: 13, 12
+  orig: 13, 12
+  offset: 0, 0
+  index: -1
+Hair_1
+  rotate: false
+  xy: 521, 104
+  size: 63, 59
+  orig: 63, 59
+  offset: 0, 0
+  index: -1
+Hair_2
+  rotate: false
+  xy: 526, 165
+  size: 80, 96
+  orig: 80, 96
+  offset: 0, 0
+  index: -1
+Hair_3
+  rotate: true
+  xy: 646, 412
+  size: 28, 50
+  orig: 28, 50
+  offset: 0, 0
+  index: -1
+Hair_5
+  rotate: true
+  xy: 438, 112
+  size: 52, 81
+  orig: 52, 81
+  offset: 0, 0
+  index: -1
+Hair_6
+  rotate: true
+  xy: 705, 266
+  size: 57, 102
+  orig: 57, 102
+  offset: 0, 0
+  index: -1
+Hair_7
+  rotate: false
+  xy: 272, 243
+  size: 162, 267
+  orig: 162, 267
+  offset: 0, 0
+  index: -1
+Sexy
+  rotate: false
+  xy: 801, 348
+  size: 118, 72
+  orig: 118, 72
+  offset: 0, 0
+  index: -1
+Tie
+  rotate: false
+  xy: 966, 391
+  size: 48, 38
+  orig: 48, 38
+  offset: 0, 0
+  index: -1
+arm_1
+  rotate: false
+  xy: 438, 166
+  size: 86, 95
+  orig: 86, 95
+  offset: 0, 0
+  index: -1
+arm_2
+  rotate: true
+  xy: 921, 344
+  size: 76, 43
+  orig: 76, 43
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 2, 111
+  size: 268, 399
+  orig: 268, 399
+  offset: 0, 0
+  index: -1
+bg1
+  rotate: false
+  xy: 436, 399
+  size: 208, 111
+  orig: 208, 111
+  offset: 0, 0
+  index: -1
+bg2
+  rotate: false
+  xy: 2, 19
+  size: 224, 90
+  orig: 224, 90
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 829, 422
+  size: 88, 135
+  orig: 88, 135
+  offset: 0, 0
+  index: -1
+clothes
+  rotate: true
+  xy: 694, 210
+  size: 54, 100
+  orig: 54, 100
+  offset: 0, 0
+  index: -1
+dance
+  rotate: false
+  xy: 646, 442
+  size: 181, 68
+  orig: 181, 68
+  offset: 0, 0
+  index: -1
+eyebrow_1
+  rotate: false
+  xy: 801, 427
+  size: 22, 13
+  orig: 22, 13
+  offset: 0, 0
+  index: -1
+eyebrow_2
+  rotate: true
+  xy: 796, 252
+  size: 12, 7
+  orig: 12, 7
+  offset: 0, 0
+  index: -1
+flower
+  rotate: false
+  xy: 228, 25
+  size: 45, 84
+  orig: 45, 84
+  offset: 0, 0
+  index: -1
+flower_shadow
+  rotate: false
+  xy: 393, 123
+  size: 43, 118
+  orig: 43, 118
+  offset: 0, 0
+  index: -1
+hand
+  rotate: true
+  xy: 966, 431
+  size: 79, 56
+  orig: 79, 56
+  offset: 0, 0
+  index: -1
+hand_shadow
+  rotate: false
+  xy: 275, 58
+  size: 82, 57
+  orig: 82, 57
+  offset: 0, 0
+  index: -1
+leg_2
+  rotate: false
+  xy: 608, 179
+  size: 84, 92
+  orig: 84, 92
+  offset: 0, 0
+  index: -1
+love
+  rotate: false
+  xy: 598, 273
+  size: 105, 124
+  orig: 105, 124
+  offset: 0, 0
+  index: -1
+mouth_1
+  rotate: false
+  xy: 694, 195
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+mouth_2
+  rotate: false
+  xy: 662, 399
+  size: 13, 11
+  orig: 13, 11
+  offset: 0, 0
+  index: -1
+shorts
+  rotate: false
+  xy: 436, 263
+  size: 160, 134
+  orig: 160, 134
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,62 @@
+
+Girl2.png
+size: 328,326
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+G20
+  rotate: true
+  xy: 130, 59
+  size: 74, 78
+  orig: 74, 78
+  offset: 0, 0
+  index: -1
+G21
+  rotate: false
+  xy: 130, 135
+  size: 104, 189
+  orig: 104, 189
+  offset: 0, 0
+  index: -1
+G22
+  rotate: false
+  xy: 82, 29
+  size: 32, 30
+  orig: 32, 30
+  offset: 0, 0
+  index: -1
+G23
+  rotate: true
+  xy: 236, 132
+  size: 85, 90
+  orig: 85, 90
+  offset: 0, 0
+  index: -1
+G24
+  rotate: false
+  xy: 236, 219
+  size: 87, 105
+  orig: 87, 105
+  offset: 0, 0
+  index: -1
+G25
+  rotate: false
+  xy: 2, 61
+  size: 62, 263
+  orig: 62, 263
+  offset: 0, 0
+  index: -1
+G26
+  rotate: false
+  xy: 66, 61
+  size: 62, 263
+  orig: 62, 263
+  offset: 0, 0
+  index: -1
+G27
+  rotate: true
+  xy: 2, 2
+  size: 57, 78
+  orig: 57, 78
+  offset: 0, 0
+  index: -1

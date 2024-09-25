@@ -1,0 +1,62 @@
+
+aliceinboderland copy 2.png
+size: 2048, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 465, 3
+  size: 463, 895
+  orig: 463, 895
+  offset: 0, 0
+  index: -1
+bom
+  rotate: false
+  xy: 1187, 98
+  size: 255, 223
+  orig: 255, 223
+  offset: 0, 0
+  index: -1
+keo trai
+  rotate: false
+  xy: 1187, 322
+  size: 217, 257
+  orig: 217, 257
+  offset: 0, 0
+  index: -1
+keo truoc
+  rotate: false
+  xy: 929, 580
+  size: 463, 318
+  orig: 463, 318
+  offset: 0, 0
+  index: -1
+khung duoi
+  rotate: false
+  xy: 1393, 632
+  size: 457, 266
+  orig: 457, 266
+  offset: 0, 0
+  index: -1
+logo sweet copy
+  rotate: true
+  xy: 929, 112
+  size: 467, 257
+  orig: 467, 257
+  offset: 0, 0
+  index: -1
+logo sweet
+  rotate: true
+  xy: 929, 112
+  size: 467, 257
+  orig: 467, 257
+  offset: 0, 0
+  index: -1
+vien
+  rotate: false
+  xy: 1, 1
+  size: 463, 897
+  orig: 463, 897
+  offset: 0, 0
+  index: -1

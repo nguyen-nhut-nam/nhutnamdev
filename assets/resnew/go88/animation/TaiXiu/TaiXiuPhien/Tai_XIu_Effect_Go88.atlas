@@ -1,0 +1,69 @@
+
+Tai_XIu_Effect_Go88.png
+size: 620,618
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 397, 479
+  size: 204, 137
+  orig: 204, 137
+  offset: 0, 0
+  index: -1
+1A
+  rotate: false
+  xy: 208, 340
+  size: 204, 137
+  orig: 204, 137
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 2, 374
+  size: 204, 137
+  orig: 204, 137
+  offset: 0, 0
+  index: -1
+2A
+  rotate: false
+  xy: 414, 340
+  size: 204, 137
+  orig: 204, 137
+  offset: 0, 0
+  index: -1
+Blur
+  rotate: false
+  xy: 2, 45
+  size: 295, 293
+  orig: 295, 293
+  offset: 0, 0
+  index: -1
+Blur copy
+  rotate: false
+  xy: 217, 482
+  size: 178, 134
+  orig: 178, 134
+  offset: 0, 0
+  index: -1
+Lighht2
+  rotate: false
+  xy: 2, 544
+  size: 73, 72
+  orig: 73, 72
+  offset: 0, 0
+  index: -1
+Light
+  rotate: true
+  xy: 77, 513
+  size: 103, 138
+  orig: 103, 138
+  offset: 0, 0
+  index: -1
+Light1
+  rotate: false
+  xy: 299, 37
+  size: 311, 301
+  orig: 311, 301
+  offset: 0, 0
+  index: -1

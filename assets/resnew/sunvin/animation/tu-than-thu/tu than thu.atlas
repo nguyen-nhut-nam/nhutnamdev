@@ -1,0 +1,97 @@
+
+tu than thu.png
+size: 1408,280
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: true
+  xy: 2, 4
+  size: 273, 435
+  orig: 273, 435
+  offset: 0, 0
+  index: -1
+THAN
+  rotate: true
+  xy: 1306, 135
+  size: 142, 83
+  orig: 145, 84
+  offset: 2, 1
+  index: -1
+THU
+  rotate: false
+  xy: 1097, 80
+  size: 110, 74
+  orig: 112, 75
+  offset: 1, 1
+  index: -1
+TU
+  rotate: false
+  xy: 1097, 156
+  size: 110, 121
+  orig: 110, 121
+  offset: 0, 0
+  index: -1
+dragon
+  rotate: true
+  xy: 697, 46
+  size: 231, 210
+  orig: 231, 210
+  offset: 0, 0
+  index: -1
+dragon_eye
+  rotate: true
+  xy: 1214, 69
+  size: 208, 90
+  orig: 208, 90
+  offset: 0, 0
+  index: -1
+dragon_fur
+  rotate: true
+  xy: 439, 11
+  size: 266, 256
+  orig: 266, 256
+  offset: 0, 0
+  index: -1
+dragon_hand
+  rotate: true
+  xy: 1306, 36
+  size: 97, 98
+  orig: 97, 98
+  offset: 0, 0
+  index: -1
+gem
+  rotate: false
+  xy: 909, 74
+  size: 186, 203
+  orig: 196, 214
+  offset: 5, 6
+  index: -1
+lb_khung_ten (1)
+  rotate: false
+  xy: 947, 19
+  size: 265, 53
+  orig: 277, 53
+  offset: 6, 0
+  index: -1
+lb_money_icon (1)
+  rotate: false
+  xy: 1249, 17
+  size: 27, 50
+  orig: 27, 50
+  offset: 0, 0
+  index: -1
+portrailt icon
+  rotate: false
+  xy: 1214, 11
+  size: 33, 56
+  orig: 33, 56
+  offset: 0, 0
+  index: -1
+sang38
+  rotate: false
+  xy: 697, 2
+  size: 248, 42
+  orig: 248, 42
+  offset: 0, 0
+  index: -1

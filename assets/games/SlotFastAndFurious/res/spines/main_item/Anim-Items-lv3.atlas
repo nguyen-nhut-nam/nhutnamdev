@@ -1,0 +1,125 @@
+
+Anim-Items-lv3.png
+size: 354,521
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ford
+  rotate: true
+  xy: 274, 391
+  size: 128, 74
+  orig: 128, 74
+  offset: 0, 0
+  index: -1
+Layer 610
+  rotate: true
+  xy: 204, 188
+  size: 106, 101
+  orig: 106, 101
+  offset: 0, 0
+  index: -1
+Shaw-BG
+  rotate: true
+  xy: 113, 58
+  size: 105, 102
+  orig: 105, 102
+  offset: 0, 0
+  index: -1
+Shaw-body
+  rotate: false
+  xy: 113, 6
+  size: 82, 48
+  orig: 82, 48
+  offset: 0, 0
+  index: -1
+Shaw-dau
+  rotate: false
+  xy: 270, 300
+  size: 64, 87
+  orig: 64, 87
+  offset: 0, 0
+  index: -1
+bl-body
+  rotate: true
+  xy: 135, 283
+  size: 104, 59
+  orig: 104, 59
+  offset: 0, 0
+  index: -1
+bl-head
+  rotate: false
+  xy: 219, 96
+  size: 62, 88
+  orig: 62, 88
+  offset: 0, 0
+  index: -1
+board
+  rotate: false
+  xy: 152, 407
+  size: 118, 112
+  orig: 118, 112
+  offset: 0, 0
+  index: -1
+denxe
+  rotate: false
+  xy: 219, 26
+  size: 74, 66
+  orig: 74, 66
+  offset: 0, 0
+  index: -1
+moto
+  rotate: false
+  xy: 2, 401
+  size: 146, 118
+  orig: 146, 118
+  offset: 0, 0
+  index: -1
+sang
+  rotate: true
+  xy: 95, 10
+  size: 127, 14
+  orig: 127, 14
+  offset: 0, 0
+  index: -1
+vi-hair
+  rotate: true
+  xy: 198, 298
+  size: 105, 68
+  orig: 105, 68
+  offset: 0, 0
+  index: -1
+vi-head
+  rotate: false
+  xy: 285, 111
+  size: 67, 73
+  orig: 67, 73
+  offset: 0, 0
+  index: -1
+vibg
+  rotate: true
+  xy: 98, 167
+  size: 112, 102
+  orig: 112, 102
+  offset: 0, 0
+  index: -1
+xeCam
+  rotate: true
+  xy: 2, 2
+  size: 135, 89
+  orig: 135, 89
+  offset: 0, 0
+  index: -1
+xeLetty
+  rotate: true
+  xy: 2, 141
+  size: 138, 92
+  orig: 138, 92
+  offset: 0, 0
+  index: -1
+xejeep
+  rotate: false
+  xy: 2, 283
+  size: 129, 114
+  orig: 129, 114
+  offset: 0, 0
+  index: -1

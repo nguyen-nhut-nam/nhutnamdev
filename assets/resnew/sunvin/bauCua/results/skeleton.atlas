@@ -1,0 +1,118 @@
+
+skeleton.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Rounded Rectangle 511
+  rotate: false
+  xy: 25, 8
+  size: 181, 36
+  orig: 181, 36
+  offset: 0, 0
+  index: -1
+bau_1
+  rotate: false
+  xy: 1075, 16
+  size: 69, 114
+  orig: 69, 114
+  offset: 0, 0
+  index: -1
+bau_2
+  rotate: false
+  xy: 929, 128
+  size: 79, 124
+  orig: 79, 124
+  offset: 0, 0
+  index: -1
+board
+  rotate: false
+  xy: 308, 60
+  size: 267, 192
+  orig: 267, 192
+  offset: 0, 0
+  index: -1
+board_2
+  rotate: false
+  xy: 25, 46
+  size: 281, 206
+  orig: 287, 214
+  offset: 3, 4
+  index: -1
+ca_1
+  rotate: true
+  xy: 756, 112
+  size: 140, 67
+  orig: 140, 67
+  offset: 0, 0
+  index: -1
+ca_2
+  rotate: true
+  xy: 678, 102
+  size: 150, 76
+  orig: 150, 76
+  offset: 0, 0
+  index: -1
+cua_1
+  rotate: true
+  xy: 853, 2
+  size: 114, 107
+  orig: 114, 107
+  offset: 0, 0
+  index: -1
+cua_2
+  rotate: true
+  xy: 1010, 132
+  size: 120, 113
+  orig: 120, 113
+  offset: 0, 0
+  index: -1
+ga_1
+  rotate: false
+  xy: 1125, 140
+  size: 101, 112
+  orig: 101, 112
+  offset: 0, 0
+  index: -1
+ga_2
+  rotate: false
+  xy: 962, 4
+  size: 111, 122
+  orig: 111, 122
+  offset: 0, 0
+  index: -1
+light
+  rotate: true
+  xy: 2, 11
+  size: 241, 21
+  orig: 241, 21
+  offset: 0, 0
+  index: -1
+nai_1
+  rotate: true
+  xy: 727, 8
+  size: 92, 124
+  orig: 92, 124
+  offset: 0, 0
+  index: -1
+nai_2
+  rotate: false
+  xy: 825, 118
+  size: 102, 134
+  orig: 102, 134
+  offset: 0, 0
+  index: -1
+tom
+  rotate: false
+  xy: 577, 3
+  size: 148, 97
+  orig: 148, 97
+  offset: 0, 0
+  index: -1
+tom_2
+  rotate: true
+  xy: 577, 102
+  size: 150, 99
+  orig: 150, 99
+  offset: 0, 0
+  index: -1

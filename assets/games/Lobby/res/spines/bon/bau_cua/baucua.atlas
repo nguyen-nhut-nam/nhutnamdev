@@ -1,0 +1,83 @@
+
+baucua.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 377, 90
+  size: 217, 164
+  orig: 217, 164
+  offset: 0, 0
+  index: -1
+bau
+  rotate: false
+  xy: 716, 174
+  size: 156, 80
+  orig: 156, 80
+  offset: 0, 0
+  index: -1
+bg
+  rotate: true
+  xy: 2, 12
+  size: 242, 373
+  orig: 242, 373
+  offset: 0, 0
+  index: -1
+bg1
+  rotate: false
+  xy: 464, 49
+  size: 188, 39
+  orig: 188, 39
+  offset: 0, 0
+  index: -1
+c1
+  rotate: false
+  xy: 464, 2
+  size: 59, 45
+  orig: 59, 45
+  offset: 0, 0
+  index: -1
+c2
+  rotate: true
+  xy: 525, 2
+  size: 45, 43
+  orig: 45, 43
+  offset: 0, 0
+  index: -1
+c3
+  rotate: false
+  xy: 570, 19
+  size: 36, 28
+  orig: 36, 28
+  offset: 0, 0
+  index: -1
+cua
+  rotate: false
+  xy: 874, 171
+  size: 135, 83
+  orig: 135, 83
+  offset: 0, 0
+  index: -1
+x3
+  rotate: false
+  xy: 377, 2
+  size: 85, 86
+  orig: 85, 86
+  offset: 0, 0
+  index: -1
+xx1
+  rotate: false
+  xy: 716, 90
+  size: 83, 82
+  orig: 83, 82
+  offset: 0, 0
+  index: -1
+xx2
+  rotate: false
+  xy: 596, 125
+  size: 118, 129
+  orig: 118, 129
+  offset: 0, 0
+  index: -1

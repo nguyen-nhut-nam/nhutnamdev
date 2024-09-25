@@ -1,0 +1,83 @@
+
+LÔ ĐỀ.png
+size: 1024, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 1, 315
+  size: 432, 416
+  orig: 432, 416
+  offset: 0, 0
+  index: -1
+duoi
+  rotate: true
+  xy: 917, 464
+  size: 431, 84
+  orig: 431, 84
+  offset: 0, 0
+  index: -1
+lo de
+  rotate: true
+  xy: 734, 27
+  size: 400, 205
+  orig: 400, 205
+  offset: 0, 0
+  index: -1
+lo de glow
+  rotate: false
+  xy: 1, 732
+  size: 472, 267
+  orig: 472, 267
+  offset: 0, 0
+  index: -1
+logo1
+  rotate: false
+  xy: 1, 1
+  size: 220, 313
+  orig: 220, 313
+  offset: 0, 0
+  index: -1
+loto2
+  rotate: true
+  xy: 434, 329
+  size: 248, 299
+  orig: 248, 299
+  offset: 0, 0
+  index: -1
+loto3
+  rotate: false
+  xy: 222, 12
+  size: 251, 302
+  orig: 251, 302
+  offset: 0, 0
+  index: -1
+qua1
+  rotate: false
+  xy: 734, 428
+  size: 160, 149
+  orig: 160, 149
+  offset: 0, 0
+  index: -1
+qua2
+  rotate: false
+  xy: 940, 387
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+qua3
+  rotate: false
+  xy: 917, 896
+  size: 103, 103
+  orig: 103, 103
+  offset: 0, 0
+  index: -1
+vien
+  rotate: false
+  xy: 474, 578
+  size: 442, 421
+  orig: 442, 421
+  offset: 0, 0
+  index: -1

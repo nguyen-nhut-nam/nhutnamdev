@@ -1,0 +1,48 @@
+
+NoHuMiniGame.png
+size: 570,570
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coin
+  rotate: false
+  xy: 466, 477
+  size: 90, 91
+  orig: 90, 91
+  offset: 0, 0
+  index: -1
+efNoHu1
+  rotate: false
+  xy: 285, 4
+  size: 132, 115
+  orig: 132, 115
+  offset: 0, 0
+  index: -1
+efNoHu2
+  rotate: true
+  xy: 2, 2
+  size: 117, 147
+  orig: 117, 147
+  offset: 0, 0
+  index: -1
+efNoHu3
+  rotate: true
+  xy: 151, 2
+  size: 117, 132
+  orig: 117, 132
+  offset: 0, 0
+  index: -1
+efNoHu4
+  rotate: false
+  xy: 419, 4
+  size: 119, 115
+  orig: 119, 115
+  offset: 0, 0
+  index: -1
+efWin@2x
+  rotate: false
+  xy: 2, 121
+  size: 462, 447
+  orig: 462, 447
+  offset: 0, 0
+  index: -1

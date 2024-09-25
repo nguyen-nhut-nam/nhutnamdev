@@ -1,0 +1,34 @@
+
+can_gat.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+AS_vi
+  rotate: false
+  xy: 2, 77
+  size: 171, 171
+  orig: 171, 171
+  offset: 0, 0
+  index: -1
+as_vi_2
+  rotate: false
+  xy: 2, 2
+  size: 74, 73
+  orig: 74, 73
+  offset: 0, 0
+  index: -1
+can_gat
+  rotate: false
+  xy: 175, 209
+  size: 18, 39
+  orig: 18, 39
+  offset: 0, 0
+  index: -1
+ngocvang
+  rotate: false
+  xy: 78, 52
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1

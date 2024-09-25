@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "3f726236-5705-4810-960d-907ccc304752",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 427,
+  "height": 427,
+  "platformSettings": {},
+  "subMetas": {
+    "saloonGirl": {
+      "ver": "1.0.6",
+      "uuid": "739b0441-95c9-418a-bc07-ed1dab8d4751",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "3f726236-5705-4810-960d-907ccc304752",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 423,
+      "height": 423,
+      "rawWidth": 427,
+      "rawHeight": 427,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

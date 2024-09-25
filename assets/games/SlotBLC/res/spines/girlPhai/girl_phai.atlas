@@ -1,0 +1,34 @@
+
+girl_phai.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cha
+  rotate: true
+  xy: 2, 29
+  size: 217, 404
+  orig: 217, 404
+  offset: 0, 0
+  index: -1
+tay1
+  rotate: true
+  xy: 408, 184
+  size: 62, 233
+  orig: 62, 233
+  offset: 0, 0
+  index: -1
+toc1
+  rotate: true
+  xy: 2, 2
+  size: 25, 92
+  orig: 25, 92
+  offset: 0, 0
+  index: -1
+toc3
+  rotate: false
+  xy: 408, 48
+  size: 52, 134
+  orig: 52, 134
+  offset: 0, 0
+  index: -1

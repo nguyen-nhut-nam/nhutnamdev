@@ -1,0 +1,272 @@
+
+NoHu.png
+size: 1799,486
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Glow_Hu2
+  rotate: true
+  xy: 1438, 98
+  size: 173, 171
+  orig: 173, 171
+  offset: 0, 0
+  index: -1
+Khung
+  rotate: true
+  xy: 620, 151
+  size: 333, 113
+  orig: 333, 113
+  offset: 0, 0
+  index: -1
+Light
+  rotate: true
+  xy: 1165, 231
+  size: 253, 108
+  orig: 253, 108
+  offset: 0, 0
+  index: -1
+Textnohu
+  rotate: true
+  xy: 2, 40
+  size: 444, 215
+  orig: 444, 215
+  offset: 0, 0
+  index: -1
+coin/coin_00
+  rotate: false
+  xy: 571, 13
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+coin/coin_01
+  rotate: false
+  xy: 571, 13
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+coin/coin_02
+  rotate: false
+  xy: 1438, 11
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+coin/coin_03
+  rotate: false
+  xy: 1525, 11
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+coin/coin_04
+  rotate: false
+  xy: 1519, 399
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+coin/coin_05
+  rotate: false
+  xy: 1519, 312
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+coin/coin_06
+  rotate: false
+  xy: 1612, 246
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+coin/coin_07
+  rotate: false
+  xy: 1699, 203
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+coin/coin_08
+  rotate: false
+  xy: 1612, 159
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+coin/coin_09
+  rotate: false
+  xy: 1699, 116
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+coin/coin_10
+  rotate: false
+  xy: 1612, 72
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+coin/coin_11
+  rotate: false
+  xy: 1699, 29
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+coin_hutai
+  rotate: true
+  xy: 219, 93
+  size: 391, 123
+  orig: 391, 123
+  offset: 0, 0
+  index: -1
+eff_particle_1
+  rotate: false
+  xy: 1726, 418
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+flare
+  rotate: true
+  xy: 541, 100
+  size: 384, 77
+  orig: 384, 77
+  offset: 0, 0
+  index: -1
+glow
+  rotate: false
+  xy: 983, 19
+  size: 221, 174
+  orig: 221, 174
+  offset: 0, 0
+  index: -1
+glow2
+  rotate: false
+  xy: 798, 9
+  size: 183, 184
+  orig: 183, 184
+  offset: 0, 0
+  index: -1
+gold
+  rotate: true
+  xy: 658, 9
+  size: 140, 66
+  orig: 140, 66
+  offset: 0, 0
+  index: -1
+gold_thoi
+  rotate: false
+  xy: 1723, 290
+  size: 74, 51
+  orig: 74, 51
+  offset: 0, 0
+  index: -1
+gold_thoi2
+  rotate: false
+  xy: 1443, 280
+  size: 74, 51
+  orig: 74, 51
+  offset: 0, 0
+  index: -1
+h
+  rotate: false
+  xy: 495, 9
+  size: 74, 86
+  orig: 74, 86
+  offset: 0, 0
+  index: -1
+hutai
+  rotate: true
+  xy: 735, 195
+  size: 289, 265
+  orig: 289, 265
+  offset: 0, 0
+  index: -1
+hutim/Textnohu
+  rotate: true
+  xy: 344, 97
+  size: 387, 195
+  orig: 387, 195
+  offset: 0, 0
+  index: -1
+hutim/glow_back
+  rotate: true
+  xy: 1275, 273
+  size: 211, 166
+  orig: 211, 166
+  offset: 0, 0
+  index: -1
+hutim/gold
+  rotate: true
+  xy: 726, 32
+  size: 117, 70
+  orig: 117, 70
+  offset: 0, 0
+  index: -1
+hutim/h
+  rotate: false
+  xy: 1726, 343
+  size: 63, 73
+  orig: 63, 73
+  offset: 0, 0
+  index: -1
+hutim/hutai
+  rotate: false
+  xy: 1206, 9
+  size: 230, 220
+  orig: 230, 220
+  offset: 0, 0
+  index: -1
+hutim/n
+  rotate: true
+  xy: 1443, 421
+  size: 63, 73
+  orig: 63, 73
+  offset: 0, 0
+  index: -1
+hutim/o
+  rotate: true
+  xy: 1612, 409
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1
+hutim/u
+  rotate: false
+  xy: 353, 3
+  size: 63, 92
+  orig: 63, 92
+  offset: 0, 0
+  index: -1
+n
+  rotate: false
+  xy: 418, 9
+  size: 75, 86
+  orig: 75, 86
+  offset: 0, 0
+  index: -1
+o
+  rotate: true
+  xy: 219, 2
+  size: 89, 132
+  orig: 89, 132
+  offset: 0, 0
+  index: -1
+star
+  rotate: true
+  xy: 1002, 196
+  size: 288, 161
+  orig: 288, 161
+  offset: 0, 0
+  index: -1
+u
+  rotate: true
+  xy: 1612, 333
+  size: 74, 109
+  orig: 74, 109
+  offset: 0, 0
+  index: -1

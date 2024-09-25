@@ -1,0 +1,41 @@
+
+bau cua.png
+size: 601, 182
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+bau
+  rotate: false
+  xy: 278, 65
+  size: 115, 116
+  orig: 115, 116
+  offset: 0, 0
+  index: -1
+bau cua
+  rotate: false
+  xy: 278, 1
+  size: 232, 63
+  orig: 232, 63
+  offset: 0, 0
+  index: -1
+ca
+  rotate: true
+  xy: 394, 69
+  size: 112, 109
+  orig: 112, 109
+  offset: 0, 0
+  index: -1
+cua
+  rotate: false
+  xy: 504, 82
+  size: 96, 99
+  orig: 96, 99
+  offset: 0, 0
+  index: -1
+dia
+  rotate: false
+  xy: 1, 14
+  size: 276, 167
+  orig: 276, 167
+  offset: 0, 0
+  index: -1

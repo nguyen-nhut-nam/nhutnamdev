@@ -1,0 +1,111 @@
+
+aliceinboderland copy.png
+size: 2048, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 465, 112
+  size: 463, 895
+  orig: 463, 895
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: true
+  xy: 1349, 166
+  size: 178, 562
+  orig: 178, 562
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 929, 196
+  size: 419, 811
+  orig: 419, 811
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: true
+  xy: 1, 10
+  size: 99, 356
+  orig: 99, 356
+  offset: 0, 0
+  index: -1
+bao2_1
+  rotate: false
+  xy: 1814, 857
+  size: 180, 150
+  orig: 180, 150
+  offset: 0, 0
+  index: -1
+bao2_2
+  rotate: false
+  xy: 1814, 706
+  size: 180, 150
+  orig: 180, 150
+  offset: 0, 0
+  index: -1
+bao2_3
+  rotate: false
+  xy: 1814, 555
+  size: 180, 150
+  orig: 180, 150
+  offset: 0, 0
+  index: -1
+bao2_4
+  rotate: false
+  xy: 1807, 404
+  size: 180, 150
+  orig: 180, 150
+  offset: 0, 0
+  index: -1
+guangdian
+  rotate: false
+  xy: 1807, 349
+  size: 54, 54
+  orig: 54, 54
+  offset: 0, 0
+  index: -1
+guangquan
+  rotate: false
+  xy: 358, 1
+  size: 108, 108
+  orig: 108, 108
+  offset: 0, 0
+  index: -1
+guangxian
+  rotate: true
+  xy: 929, 159
+  size: 36, 180
+  orig: 36, 180
+  offset: 0, 0
+  index: -1
+khung tien
+  rotate: false
+  xy: 1349, 345
+  size: 457, 266
+  orig: 457, 266
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 1349, 612
+  size: 464, 395
+  orig: 464, 395
+  offset: 0, 0
+  index: -1
+vienn
+  rotate: false
+  xy: 1, 110
+  size: 463, 897
+  orig: 463, 897
+  offset: 0, 0
+  index: -1
+xingxing
+  rotate: false
+  xy: 467, 39
+  size: 72, 72
+  orig: 72, 72
+  offset: 0, 0
+  index: -1

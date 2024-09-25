@@ -1,0 +1,25 @@
+info face=font size=55 bold=1 italic=0 charset= unicode= stretchH=100 smooth=1 aa=1 padding=2,2,2,2 spacing=0,0 outline=0
+common lineHeight=70 base=63 scaleW=84 scaleH=362 pages=1 packed=0
+page id=0 file=fontdk1.png
+chars count=21
+char id=44 x=216 y=233 width=28 height=35 xoffset=0 yoffset=44 xadvance=27 page=0 chnl=15
+char id=55 x=57 y=201 width=56 height=65 xoffset=0 yoffset=4 xadvance=55 page=0 chnl=15
+char id=77 x=0 y=0 width=65 height=65 xoffset=0 yoffset=4 xadvance=64 page=0 chnl=15
+char id=88 x=0 y=132 width=57 height=68 xoffset=0 yoffset=2 xadvance=56 page=0 chnl=15
+char id=45 x=120 y=0 width=50 height=27 xoffset=0 yoffset=21 xadvance=49 page=0 chnl=15
+char id=56 x=167 y=28 width=50 height=68 xoffset=0 yoffset=3 xadvance=49 page=0 chnl=15
+char id=46 x=120 y=28 width=30 height=26 xoffset=0 yoffset=44 xadvance=29 page=0 chnl=15
+char id=57 x=114 y=68 width=52 height=68 xoffset=0 yoffset=2 xadvance=51 page=0 chnl=15
+char id=58 x=217 y=97 width=30 height=50 xoffset=0 yoffset=19 xadvance=29 page=0 chnl=15
+char id=48 x=0 y=201 width=56 height=67 xoffset=0 yoffset=3 xadvance=55 page=0 chnl=15
+char id=49 x=216 y=166 width=36 height=66 xoffset=0 yoffset=4 xadvance=35 page=0 chnl=15
+char id=9 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=272 page=0 chnl=15
+char id=50 x=66 y=0 width=53 height=67 xoffset=0 yoffset=3 xadvance=52 page=0 chnl=15
+char id=61 x=114 y=206 width=51 height=39 xoffset=0 yoffset=16 xadvance=50 page=0 chnl=15
+char id=51 x=167 y=166 width=48 height=67 xoffset=0 yoffset=3 xadvance=47 page=0 chnl=15
+char id=52 x=58 y=132 width=55 height=68 xoffset=0 yoffset=3 xadvance=54 page=0 chnl=15
+char id=53 x=167 y=97 width=49 height=68 xoffset=0 yoffset=3 xadvance=48 page=0 chnl=15
+char id=75 x=0 y=66 width=58 height=65 xoffset=0 yoffset=4 xadvance=57 page=0 chnl=15
+char id=32 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=34 page=0 chnl=15
+char id=43 x=59 y=68 width=52 height=50 xoffset=0 yoffset=9 xadvance=51 page=0 chnl=15
+char id=54 x=114 y=137 width=52 height=68 xoffset=0 yoffset=2 xadvance=51 page=0 chnl=15

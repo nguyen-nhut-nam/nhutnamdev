@@ -1,0 +1,139 @@
+
+wild2.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+WILD1
+  rotate: false
+  xy: 2, 2
+  size: 100, 42
+  orig: 100, 42
+  offset: 0, 0
+  index: -1
+bg11
+  rotate: false
+  xy: 1153, 121
+  size: 146, 146
+  orig: 146, 146
+  offset: 0, 0
+  index: -1
+bg22
+  rotate: false
+  xy: 2, 240
+  size: 205, 213
+  orig: 205, 213
+  offset: 0, 0
+  index: -1
+cha1
+  rotate: true
+  xy: 1301, 154
+  size: 113, 154
+  orig: 113, 154
+  offset: 0, 0
+  index: -1
+fx/BG1_00000
+  rotate: false
+  xy: 1755, 267
+  size: 188, 186
+  orig: 188, 186
+  offset: 0, 0
+  index: -1
+fx/BG1_00001
+  rotate: false
+  xy: 401, 79
+  size: 188, 186
+  orig: 188, 186
+  offset: 0, 0
+  index: -1
+fx/BG1_00002
+  rotate: true
+  xy: 789, 267
+  size: 186, 190
+  orig: 186, 190
+  offset: 0, 0
+  index: -1
+fx/BG1_00003
+  rotate: true
+  xy: 781, 81
+  size: 184, 188
+  orig: 184, 188
+  offset: 0, 0
+  index: -1
+fx/BG1_00004
+  rotate: false
+  xy: 971, 77
+  size: 180, 188
+  orig: 180, 188
+  offset: 0, 0
+  index: -1
+fx/BG1_00005
+  rotate: false
+  xy: 209, 265
+  size: 190, 188
+  orig: 190, 188
+  offset: 0, 0
+  index: -1
+fx/BG1_00006
+  rotate: false
+  xy: 401, 267
+  size: 192, 186
+  orig: 192, 186
+  offset: 0, 0
+  index: -1
+fx/BG1_00007
+  rotate: false
+  xy: 981, 269
+  size: 192, 184
+  orig: 192, 184
+  offset: 0, 0
+  index: -1
+fx/BG1_00008
+  rotate: false
+  xy: 209, 81
+  size: 190, 182
+  orig: 190, 182
+  offset: 0, 0
+  index: -1
+fx/BG1_00009
+  rotate: false
+  xy: 2, 46
+  size: 190, 192
+  orig: 190, 192
+  offset: 0, 0
+  index: -1
+fx/BG1_00010
+  rotate: true
+  xy: 595, 267
+  size: 186, 192
+  orig: 186, 192
+  offset: 0, 0
+  index: -1
+fx/BG1_00011
+  rotate: true
+  xy: 1175, 269
+  size: 184, 192
+  orig: 184, 192
+  offset: 0, 0
+  index: -1
+fx/BG1_00012
+  rotate: true
+  xy: 1369, 269
+  size: 184, 192
+  orig: 184, 192
+  offset: 0, 0
+  index: -1
+fx/BG1_00013
+  rotate: true
+  xy: 1563, 265
+  size: 188, 190
+  orig: 188, 190
+  offset: 0, 0
+  index: -1
+fx/BG1_00014
+  rotate: false
+  xy: 591, 79
+  size: 188, 186
+  orig: 188, 186
+  offset: 0, 0
+  index: -1

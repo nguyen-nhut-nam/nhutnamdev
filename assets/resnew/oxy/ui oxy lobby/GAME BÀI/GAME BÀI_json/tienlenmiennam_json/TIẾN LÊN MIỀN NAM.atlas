@@ -1,0 +1,83 @@
+
+TIẾN LÊN MIỀN NAM.png
+size: 2048, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 560, 192
+  size: 480, 462
+  orig: 480, 462
+  offset: 0, 0
+  index: -1
+Dưới
+  rotate: true
+  xy: 1041, 175
+  size: 479, 93
+  orig: 479, 93
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: true
+  xy: 560, 655
+  size: 342, 691
+  orig: 342, 691
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 1, 1
+  size: 59, 58
+  orig: 59, 58
+  offset: 0, 0
+  index: -1
+Vien
+  rotate: false
+  xy: 1252, 529
+  size: 491, 468
+  orig: 491, 468
+  offset: 0, 0
+  index: -1
+anh sang
+  rotate: false
+  xy: 1, 399
+  size: 558, 598
+  orig: 558, 598
+  offset: 0, 0
+  index: -1
+bai bay
+  rotate: true
+  xy: 1744, 531
+  size: 466, 191
+  orig: 466, 191
+  offset: 0, 0
+  index: -1
+hịnh 4
+  rotate: false
+  xy: 1, 60
+  size: 286, 338
+  orig: 286, 338
+  offset: 0, 0
+  index: -1
+tay
+  rotate: false
+  xy: 288, 117
+  size: 116, 281
+  orig: 116, 281
+  offset: 0, 0
+  index: -1
+tien len mien nam
+  rotate: true
+  xy: 1135, 192
+  size: 462, 69
+  orig: 462, 69
+  offset: 0, 0
+  index: -1
+tien len mien nam copy
+  rotate: true
+  xy: 1936, 511
+  size: 486, 94
+  orig: 486, 94
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,48 @@
+
+3c.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 234, 162
+  size: 177, 92
+  orig: 177, 92
+  offset: 0, 0
+  index: -1
+3c1
+  rotate: false
+  xy: 2, 2
+  size: 177, 61
+  orig: 177, 61
+  offset: 0, 0
+  index: -1
+b1
+  rotate: true
+  xy: 413, 142
+  size: 112, 137
+  orig: 112, 137
+  offset: 0, 0
+  index: -1
+b2
+  rotate: true
+  xy: 552, 159
+  size: 95, 125
+  orig: 95, 125
+  offset: 0, 0
+  index: -1
+b3
+  rotate: true
+  xy: 234, 35
+  size: 125, 139
+  orig: 125, 139
+  offset: 0, 0
+  index: -1
+bg1
+  rotate: false
+  xy: 2, 65
+  size: 230, 189
+  orig: 230, 189
+  offset: 0, 0
+  index: -1

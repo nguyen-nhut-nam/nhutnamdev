@@ -1,0 +1,615 @@
+
+skeleton.png
+size: 240,240
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Cigatette_Emoji_06
+  rotate: true
+  xy: 225, 72
+  size: 20, 13
+  orig: 20, 13
+  offset: 0, 0
+  index: -1
+Emoji_13
+  rotate: false
+  xy: 68, 185
+  size: 59, 53
+  orig: 59, 53
+  offset: 0, 0
+  index: -1
+Emoji_BL
+  rotate: false
+  xy: 2, 67
+  size: 59, 53
+  orig: 59, 53
+  offset: 0, 0
+  index: -1
+Emoji_R_18
+  rotate: false
+  xy: 2, 177
+  size: 64, 61
+  orig: 64, 61
+  offset: 0, 0
+  index: -1
+Emoji_Y
+  rotate: false
+  xy: 2, 122
+  size: 60, 53
+  orig: 60, 53
+  offset: 0, 0
+  index: -1
+Emoji_ice
+  rotate: false
+  xy: 129, 187
+  size: 57, 51
+  orig: 57, 51
+  offset: 0, 0
+  index: -1
+Eye1_Emoji_24
+  rotate: true
+  xy: 162, 147
+  size: 18, 15
+  orig: 18, 15
+  offset: 0, 0
+  index: -1
+EyeBrow_Emoji_07
+  rotate: true
+  xy: 234, 227
+  size: 11, 4
+  orig: 11, 4
+  offset: 0, 0
+  index: -1
+Eye_
+  rotate: false
+  xy: 63, 6
+  size: 39, 26
+  orig: 39, 26
+  offset: 0, 0
+  index: -1
+Eye_Brow_13
+  rotate: true
+  xy: 122, 7
+  size: 14, 9
+  orig: 14, 9
+  offset: 0, 0
+  index: -1
+Eye_Cloud
+  rotate: false
+  xy: 119, 23
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+Eye_Emoji
+  rotate: true
+  xy: 104, 2
+  size: 19, 7
+  orig: 19, 7
+  offset: 0, 0
+  index: -1
+Eye_Emoji_03
+  rotate: false
+  xy: 148, 19
+  size: 11, 7
+  orig: 11, 7
+  offset: 0, 0
+  index: -1
+Eye_Emoji_08
+  rotate: false
+  xy: 174, 70
+  size: 12, 3
+  orig: 12, 3
+  offset: 0, 0
+  index: -1
+Eye_Emoji_12
+  rotate: true
+  xy: 64, 161
+  size: 14, 2
+  orig: 14, 2
+  offset: 0, 0
+  index: -1
+Eye_Emoji_14
+  rotate: false
+  xy: 188, 188
+  size: 50, 11
+  orig: 50, 11
+  offset: 0, 0
+  index: -1
+Eye_Emoji_15
+  rotate: false
+  xy: 113, 88
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+Eye_Emoji_17
+  rotate: false
+  xy: 179, 141
+  size: 34, 12
+  orig: 34, 12
+  offset: 0, 0
+  index: -1
+Eye_Emoji_18
+  rotate: false
+  xy: 129, 167
+  size: 48, 18
+  orig: 48, 18
+  offset: 0, 0
+  index: -1
+Eye_Emoji_19
+  rotate: false
+  xy: 223, 55
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+Eye_Emoji_22
+  rotate: true
+  xy: 141, 9
+  size: 13, 5
+  orig: 13, 5
+  offset: 0, 0
+  index: -1
+Eye_Emoji_23
+  rotate: false
+  xy: 179, 155
+  size: 41, 20
+  orig: 41, 20
+  offset: 0, 0
+  index: -1
+Eye_Emoji_24
+  rotate: true
+  xy: 157, 123
+  size: 22, 20
+  orig: 22, 20
+  offset: 0, 0
+  index: -1
+Eye_L_Emoji_11
+  rotate: true
+  xy: 223, 39
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+Eye_R_Emoji_11
+  rotate: false
+  xy: 146, 28
+  size: 14, 9
+  orig: 14, 9
+  offset: 0, 0
+  index: -1
+Eye_brow_Emoji_24
+  rotate: false
+  xy: 148, 10
+  size: 11, 7
+  orig: 11, 7
+  offset: 0, 0
+  index: -1
+Eye_emoji_21
+  rotate: true
+  xy: 225, 94
+  size: 21, 13
+  orig: 21, 13
+  offset: 0, 0
+  index: -1
+Eyebrow_Emoji_06
+  rotate: false
+  xy: 148, 2
+  size: 9, 6
+  orig: 9, 6
+  offset: 0, 0
+  index: -1
+Eyes_Emoji_04
+  rotate: false
+  xy: 68, 159
+  size: 49, 24
+  orig: 49, 24
+  offset: 0, 0
+  index: -1
+Eyes_Emoji_10
+  rotate: false
+  xy: 2, 31
+  size: 56, 34
+  orig: 56, 34
+  offset: 0, 0
+  index: -1
+Eys_emoji_05
+  rotate: true
+  xy: 204, 73
+  size: 22, 19
+  orig: 22, 19
+  offset: 0, 0
+  index: -1
+Fire_Emoji_06
+  rotate: false
+  xy: 53, 2
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1
+Glass_Emoji_06
+  rotate: false
+  xy: 2, 11
+  size: 59, 18
+  orig: 59, 18
+  offset: 0, 0
+  index: -1
+Hand_Emoji_08
+  rotate: false
+  xy: 166, 46
+  size: 20, 21
+  orig: 20, 21
+  offset: 0, 0
+  index: -1
+Hand_Emoji_16
+  rotate: true
+  xy: 105, 35
+  size: 18, 24
+  orig: 18, 24
+  offset: 0, 0
+  index: -1
+Heard_Emoji_21
+  rotate: false
+  xy: 223, 24
+  size: 15, 13
+  orig: 15, 13
+  offset: 0, 0
+  index: -1
+Hurt_Emoji_06
+  rotate: false
+  xy: 105, 23
+  size: 12, 10
+  orig: 12, 10
+  offset: 0, 0
+  index: -1
+Hurt_light_Emoji_04
+  rotate: false
+  xy: 188, 32
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+Ice_01
+  rotate: true
+  xy: 150, 80
+  size: 14, 27
+  orig: 14, 27
+  offset: 0, 0
+  index: -1
+Ice_02
+  rotate: true
+  xy: 110, 55
+  size: 15, 29
+  orig: 15, 29
+  offset: 0, 0
+  index: -1
+Ice_03
+  rotate: false
+  xy: 119, 168
+  size: 8, 15
+  orig: 8, 15
+  offset: 0, 0
+  index: -1
+Ice_04
+  rotate: false
+  xy: 210, 38
+  size: 11, 14
+  orig: 11, 14
+  offset: 0, 0
+  index: -1
+Luoi_Ga
+  rotate: false
+  xy: 161, 10
+  size: 7, 11
+  orig: 7, 11
+  offset: 0, 0
+  index: -1
+Mat_BL
+  rotate: false
+  xy: 64, 98
+  size: 47, 26
+  orig: 47, 26
+  offset: 0, 0
+  index: -1
+Mouth_BL
+  rotate: false
+  xy: 2, 2
+  size: 24, 7
+  orig: 24, 7
+  offset: 0, 0
+  index: -1
+Mouth_Cloud_Emoji_03
+  rotate: false
+  xy: 234, 220
+  size: 4, 5
+  orig: 4, 5
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_03
+  rotate: true
+  xy: 207, 97
+  size: 23, 13
+  orig: 23, 13
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_04
+  rotate: false
+  xy: 145, 69
+  size: 27, 9
+  orig: 27, 9
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_05
+  rotate: false
+  xy: 64, 126
+  size: 45, 31
+  orig: 45, 31
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_06
+  rotate: false
+  xy: 223, 14
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_07
+  rotate: false
+  xy: 63, 68
+  size: 44, 28
+  orig: 44, 28
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_16
+  rotate: false
+  xy: 63, 68
+  size: 44, 28
+  orig: 44, 28
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_10
+  rotate: false
+  xy: 170, 22
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_11
+  rotate: true
+  xy: 111, 126
+  size: 31, 5
+  orig: 31, 5
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_12
+  rotate: true
+  xy: 222, 135
+  size: 40, 16
+  orig: 40, 16
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_14
+  rotate: true
+  xy: 222, 135
+  size: 40, 16
+  orig: 40, 16
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_15
+  rotate: false
+  xy: 119, 148
+  size: 41, 17
+  orig: 41, 17
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_17
+  rotate: false
+  xy: 159, 2
+  size: 7, 6
+  orig: 7, 6
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_18
+  rotate: false
+  xy: 109, 72
+  size: 34, 14
+  orig: 34, 14
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_19
+  rotate: false
+  xy: 60, 34
+  size: 43, 24
+  orig: 43, 24
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_20
+  rotate: false
+  xy: 122, 2
+  size: 13, 3
+  orig: 13, 3
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_23
+  rotate: true
+  xy: 113, 2
+  size: 19, 7
+  orig: 19, 7
+  offset: 0, 0
+  index: -1
+Mouth_Emoji_24
+  rotate: true
+  xy: 131, 39
+  size: 14, 8
+  orig: 14, 8
+  offset: 0, 0
+  index: -1
+Mouth_Open
+  rotate: false
+  xy: 188, 201
+  size: 44, 37
+  orig: 44, 37
+  offset: 0, 0
+  index: -1
+Mouth_Ẹmọi_09
+  rotate: false
+  xy: 179, 122
+  size: 29, 17
+  orig: 29, 17
+  offset: 0, 0
+  index: -1
+Nosy_Emoji_05
+  rotate: true
+  xy: 179, 177
+  size: 8, 7
+  orig: 8, 7
+  offset: 0, 0
+  index: -1
+Pink_Emoji_17
+  rotate: false
+  xy: 204, 54
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+Pink_Emoji_23
+  rotate: false
+  xy: 204, 54
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+Poin_Emoji_21
+  rotate: false
+  xy: 168, 2
+  size: 5, 6
+  orig: 5, 6
+  offset: 0, 0
+  index: -1
+Pupil_Emoji_14
+  rotate: false
+  xy: 210, 122
+  size: 10, 5
+  orig: 10, 5
+  offset: 0, 0
+  index: -1
+Sing_Emoji_17
+  rotate: false
+  xy: 188, 54
+  size: 14, 19
+  orig: 14, 19
+  offset: 0, 0
+  index: -1
+Sing_Emoji_17_01
+  rotate: true
+  xy: 166, 32
+  size: 12, 20
+  orig: 12, 20
+  offset: 0, 0
+  index: -1
+Slips_Emoji_21
+  rotate: false
+  xy: 178, 98
+  size: 27, 22
+  orig: 27, 22
+  offset: 0, 0
+  index: -1
+Smoke_BL
+  rotate: false
+  xy: 132, 24
+  size: 12, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: -1
+Smoke_Emoji_05
+  rotate: true
+  xy: 179, 75
+  size: 21, 23
+  orig: 21, 23
+  offset: 0, 0
+  index: -1
+Smoke_Emoji_06
+  rotate: false
+  xy: 215, 129
+  size: 5, 24
+  orig: 5, 24
+  offset: 0, 0
+  index: -1
+Smoke_Emoji_20
+  rotate: true
+  xy: 141, 46
+  size: 21, 23
+  orig: 21, 23
+  offset: 0, 0
+  index: -1
+Stick_Emoji_08
+  rotate: true
+  xy: 62, 2
+  size: 2, 14
+  orig: 2, 14
+  offset: 0, 0
+  index: -1
+Tear_Emoji_12
+  rotate: true
+  xy: 188, 177
+  size: 9, 47
+  orig: 9, 47
+  offset: 0, 0
+  index: -1
+Tooth_Down
+  rotate: false
+  xy: 141, 39
+  size: 23, 5
+  orig: 23, 5
+  offset: 0, 0
+  index: -1
+Tooth_Up
+  rotate: false
+  xy: 28, 2
+  size: 23, 7
+  orig: 23, 7
+  offset: 0, 0
+  index: -1
+Water_Emoji_15
+  rotate: false
+  xy: 133, 8
+  size: 6, 14
+  orig: 6, 14
+  offset: 0, 0
+  index: -1
+Water_Emoji_22
+  rotate: true
+  xy: 118, 125
+  size: 21, 37
+  orig: 21, 37
+  offset: 0, 0
+  index: -1
+White_Emoji_15
+  rotate: true
+  xy: 210, 23
+  size: 13, 11
+  orig: 13, 11
+  offset: 0, 0
+  index: -1
+Z_Emoji_24
+  rotate: false
+  xy: 222, 117
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+hurt_Emoji_04
+  rotate: false
+  xy: 150, 96
+  size: 26, 25
+  orig: 26, 25
+  offset: 0, 0
+  index: -1
+mouth_Cloud
+  rotate: false
+  xy: 63, 60
+  size: 45, 6
+  orig: 45, 6
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,97 @@
+
+zoneFx_3.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GT
+  rotate: false
+  xy: 1115, 110
+  size: 142, 388
+  orig: 142, 388
+  offset: 0, 0
+  index: -1
+Gp
+  rotate: false
+  xy: 1015, 97
+  size: 98, 401
+  orig: 98, 401
+  offset: 0, 0
+  index: -1
+P
+  rotate: true
+  xy: 1259, 100
+  size: 61, 88
+  orig: 61, 88
+  offset: 0, 0
+  index: -1
+T
+  rotate: true
+  xy: 1015, 2
+  size: 93, 75
+  orig: 93, 75
+  offset: 0, 0
+  index: -1
+Untitled-1_0000_Layer-11
+  rotate: false
+  xy: 1092, 4
+  size: 357, 91
+  orig: 357, 91
+  offset: 0, 0
+  index: -1
+Untitled-1_0003_Layer-6430-copy
+  rotate: true
+  xy: 390, 20
+  size: 478, 623
+  orig: 478, 623
+  offset: 0, 0
+  index: -1
+bling
+  rotate: false
+  xy: 1408, 202
+  size: 32, 52
+  orig: 32, 52
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 1259, 256
+  size: 201, 242
+  orig: 201, 242
+  offset: 0, 0
+  index: -1
+chair
+  rotate: false
+  xy: 2, 18
+  size: 386, 480
+  orig: 386, 480
+  offset: 0, 0
+  index: -1
+hand
+  rotate: true
+  xy: 1337, 168
+  size: 86, 69
+  orig: 86, 69
+  offset: 0, 0
+  index: -1
+hand2
+  rotate: false
+  xy: 1259, 163
+  size: 76, 91
+  orig: 76, 91
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 1349, 100
+  size: 66, 86
+  orig: 66, 86
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 2, 9
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,300 @@
+
+tx.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+THAN
+  rotate: false
+  xy: 647, 140
+  size: 179, 77
+  orig: 179, 77
+  offset: 0, 0
+  index: -1
+chan
+  rotate: true
+  xy: 828, 170
+  size: 47, 31
+  orig: 47, 31
+  offset: 0, 0
+  index: -1
+chan1
+  rotate: false
+  xy: 647, 98
+  size: 49, 40
+  orig: 49, 40
+  offset: 0, 0
+  index: -1
+chan3
+  rotate: false
+  xy: 1507, 832
+  size: 52, 57
+  orig: 52, 57
+  offset: 0, 0
+  index: -1
+coin
+  rotate: false
+  xy: 1292, 660
+  size: 84, 37
+  orig: 84, 37
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_151
+  rotate: false
+  xy: 2, 699
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_152
+  rotate: false
+  xy: 217, 859
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_153
+  rotate: false
+  xy: 2, 539
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_154
+  rotate: false
+  xy: 217, 699
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_155
+  rotate: false
+  xy: 432, 859
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_156
+  rotate: false
+  xy: 2, 379
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_157
+  rotate: false
+  xy: 217, 539
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_158
+  rotate: false
+  xy: 432, 699
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_159
+  rotate: false
+  xy: 647, 859
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_160
+  rotate: false
+  xy: 2, 219
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_161
+  rotate: false
+  xy: 217, 379
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_162
+  rotate: false
+  xy: 432, 539
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_163
+  rotate: false
+  xy: 647, 699
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_164
+  rotate: false
+  xy: 862, 859
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_165
+  rotate: false
+  xy: 2, 59
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_166
+  rotate: false
+  xy: 217, 219
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_167
+  rotate: false
+  xy: 432, 379
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_168
+  rotate: false
+  xy: 647, 539
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_169
+  rotate: false
+  xy: 862, 699
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_170
+  rotate: false
+  xy: 1077, 859
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_171
+  rotate: false
+  xy: 217, 59
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_172
+  rotate: false
+  xy: 432, 219
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_173
+  rotate: false
+  xy: 647, 379
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_174
+  rotate: false
+  xy: 862, 539
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_175
+  rotate: false
+  xy: 1077, 699
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_176
+  rotate: false
+  xy: 1292, 859
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_177
+  rotate: false
+  xy: 432, 59
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_178
+  rotate: false
+  xy: 647, 219
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_179
+  rotate: false
+  xy: 862, 379
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_180
+  rotate: false
+  xy: 1077, 539
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_181
+  rotate: false
+  xy: 1292, 699
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+fx/fire_breath_02_182
+  rotate: false
+  xy: 2, 859
+  size: 213, 158
+  orig: 213, 158
+  offset: 0, 0
+  index: -1
+homcoin
+  rotate: false
+  xy: 862, 299
+  size: 140, 78
+  orig: 140, 78
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 1507, 891
+  size: 159, 126
+  orig: 159, 126
+  offset: 0, 0
+  index: -1
+mom1
+  rotate: true
+  xy: 2, 2
+  size: 55, 67
+  orig: 55, 67
+  offset: 0, 0
+  index: -1
+mom2
+  rotate: false
+  xy: 1077, 469
+  size: 73, 68
+  orig: 73, 68
+  offset: 0, 0
+  index: -1
+rau1
+  rotate: false
+  xy: 1668, 942
+  size: 29, 75
+  orig: 29, 75
+  offset: 0, 0
+  index: -1

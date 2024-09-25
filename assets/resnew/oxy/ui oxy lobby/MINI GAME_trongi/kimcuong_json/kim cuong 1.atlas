@@ -1,0 +1,27 @@
+
+kim cuong 1.png
+size: 196, 266
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+cuc kim cuong vang
+  rotate: false
+  xy: 47, 2
+  size: 148, 107
+  orig: 148, 107
+  offset: 0, 0
+  index: -1
+cuc kim cuong xanh
+  rotate: true
+  xy: 47, 110
+  size: 155, 132
+  orig: 155, 132
+  offset: 0, 0
+  index: -1
+kim cuong 1
+  rotate: true
+  xy: 1, 1
+  size: 264, 45
+  orig: 264, 45
+  offset: 0, 0
+  index: -1

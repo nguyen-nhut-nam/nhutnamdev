@@ -1,0 +1,160 @@
+
+wildshow2.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+XX1
+  rotate: false
+  xy: 1776, 860
+  size: 117, 152
+  orig: 117, 152
+  offset: 0, 0
+  index: -1
+XX2
+  rotate: false
+  xy: 1895, 956
+  size: 57, 56
+  orig: 57, 56
+  offset: 0, 0
+  index: -1
+XX3
+  rotate: true
+  xy: 764, 14
+  size: 42, 113
+  orig: 42, 113
+  offset: 0, 0
+  index: -1
+bg11
+  rotate: true
+  xy: 1270, 300
+  size: 146, 459
+  orig: 146, 459
+  offset: 0, 0
+  index: -1
+cha1
+  rotate: true
+  xy: 1260, 106
+  size: 192, 407
+  orig: 192, 407
+  offset: 0, 0
+  index: -1
+fx/bg2_00000
+  rotate: true
+  xy: 1274, 638
+  size: 186, 490
+  orig: 186, 490
+  offset: 0, 0
+  index: -1
+fx/bg2_00001
+  rotate: false
+  xy: 388, 510
+  size: 188, 502
+  orig: 188, 502
+  offset: 0, 0
+  index: -1
+fx/bg2_00002
+  rotate: false
+  xy: 384, 4
+  size: 186, 504
+  orig: 186, 504
+  offset: 0, 0
+  index: -1
+fx/bg2_00003
+  rotate: false
+  xy: 2, 2
+  size: 190, 502
+  orig: 190, 502
+  offset: 0, 0
+  index: -1
+fx/bg2_00004
+  rotate: false
+  xy: 578, 512
+  size: 190, 500
+  orig: 190, 500
+  offset: 0, 0
+  index: -1
+fx/bg2_00005
+  rotate: true
+  xy: 770, 632
+  size: 190, 498
+  orig: 190, 498
+  offset: 0, 0
+  index: -1
+fx/bg2_00006
+  rotate: false
+  xy: 572, 12
+  size: 190, 496
+  orig: 190, 496
+  offset: 0, 0
+  index: -1
+fx/bg2_00007
+  rotate: true
+  xy: 764, 248
+  size: 192, 490
+  orig: 192, 490
+  offset: 0, 0
+  index: -1
+fx/bg2_00008
+  rotate: false
+  xy: 194, 510
+  size: 192, 502
+  orig: 192, 502
+  offset: 0, 0
+  index: -1
+fx/bg2_00009
+  rotate: false
+  xy: 2, 506
+  size: 190, 506
+  orig: 190, 506
+  offset: 0, 0
+  index: -1
+fx/bg2_00010
+  rotate: false
+  xy: 194, 4
+  size: 188, 504
+  orig: 188, 504
+  offset: 0, 0
+  index: -1
+fx/bg2_00011
+  rotate: true
+  xy: 770, 824
+  size: 188, 502
+  orig: 188, 502
+  offset: 0, 0
+  index: -1
+fx/bg2_00012
+  rotate: true
+  xy: 1274, 826
+  size: 186, 500
+  orig: 186, 500
+  offset: 0, 0
+  index: -1
+fx/bg2_00013
+  rotate: true
+  xy: 770, 442
+  size: 188, 498
+  orig: 188, 498
+  offset: 0, 0
+  index: -1
+fx/bg2_00014
+  rotate: true
+  xy: 764, 58
+  size: 188, 494
+  orig: 188, 494
+  offset: 0, 0
+  index: -1
+fx/bg2_00015
+  rotate: true
+  xy: 1270, 448
+  size: 188, 490
+  orig: 188, 490
+  offset: 0, 0
+  index: -1
+wild
+  rotate: true
+  xy: 1669, 180
+  size: 118, 49
+  orig: 118, 49
+  offset: 0, 0
+  index: -1

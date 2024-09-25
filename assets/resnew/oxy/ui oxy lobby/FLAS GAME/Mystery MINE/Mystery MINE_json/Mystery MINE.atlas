@@ -1,0 +1,97 @@
+
+Mystery MINE.png
+size: 1024, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+MYSYERY MINE
+  rotate: false
+  xy: 848, 214
+  size: 154, 115
+  orig: 154, 115
+  offset: 0, 0
+  index: -1
+MYSYERY MINE copy
+  rotate: true
+  xy: 848, 330
+  size: 178, 139
+  orig: 178, 139
+  offset: 0, 0
+  index: -1
+Mystery MINE
+  rotate: false
+  xy: 485, 219
+  size: 251, 54
+  orig: 251, 54
+  offset: 0, 0
+  index: -1
+b228a1845ad2fbf6d1d0cc5b6979e45f5bf92c78274b5f-rUB1O6_fw1200
+  rotate: false
+  xy: 485, 274
+  size: 362, 234
+  orig: 362, 234
+  offset: 0, 0
+  index: -1
+cam sau
+  rotate: false
+  xy: 1, 1
+  size: 19, 14
+  orig: 19, 14
+  offset: 0, 0
+  index: -1
+khung
+  rotate: false
+  xy: 1, 217
+  size: 483, 291
+  orig: 483, 291
+  offset: 0, 0
+  index: -1
+nguoi
+  rotate: false
+  xy: 1, 16
+  size: 173, 143
+  orig: 173, 143
+  offset: 0, 0
+  index: -1
+ribon
+  rotate: false
+  xy: 1, 160
+  size: 365, 56
+  orig: 365, 56
+  offset: 0, 0
+  index: -1
+ruu
+  rotate: false
+  xy: 367, 98
+  size: 153, 118
+  orig: 153, 118
+  offset: 0, 0
+  index: -1
+tay
+  rotate: false
+  xy: 596, 141
+  size: 73, 77
+  orig: 73, 77
+  offset: 0, 0
+  index: -1
+tay cam
+  rotate: true
+  xy: 737, 229
+  size: 44, 89
+  orig: 44, 89
+  offset: 0, 0
+  index: -1
+tay den
+  rotate: true
+  xy: 175, 36
+  size: 123, 153
+  orig: 123, 153
+  offset: 0, 0
+  index: -1
+đau
+  rotate: false
+  xy: 521, 111
+  size: 74, 107
+  orig: 74, 107
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,202 @@
+
+dragon’s fire copy.png
+size: 1653, 1538
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: true
+  xy: 703, 1023
+  size: 514, 948
+  orig: 514, 948
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 975, 35
+  size: 432, 377
+  orig: 432, 377
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: true
+  xy: 703, 413
+  size: 609, 847
+  orig: 609, 847
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: false
+  xy: 441, 52
+  size: 28, 19
+  orig: 28, 19
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: true
+  xy: 470, 53
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: -1
+dd
+  rotate: false
+  xy: 492, 56
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+flash_blueStar_alpha
+  rotate: false
+  xy: 517, 1
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+khung duoi
+  rotate: false
+  xy: 441, 72
+  size: 503, 291
+  orig: 503, 291
+  offset: 0, 0
+  index: -1
+khung tren
+  rotate: false
+  xy: 1, 364
+  size: 701, 1173
+  orig: 701, 1173
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 1, 52
+  size: 439, 311
+  orig: 439, 311
+  offset: 0, 0
+  index: -1
+logoGlow
+  rotate: false
+  xy: 1, 52
+  size: 439, 311
+  orig: 439, 311
+  offset: 0, 0
+  index: -1
+stt_01
+  rotate: true
+  xy: 1, 1
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_02
+  rotate: true
+  xy: 130, 1
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_03
+  rotate: true
+  xy: 259, 1
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_04
+  rotate: true
+  xy: 388, 1
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_05
+  rotate: true
+  xy: 588, 21
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_06
+  rotate: true
+  xy: 717, 21
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_07
+  rotate: true
+  xy: 846, 21
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_08
+  rotate: false
+  xy: 1551, 894
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_09
+  rotate: false
+  xy: 1602, 894
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_10
+  rotate: false
+  xy: 1551, 765
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_11
+  rotate: false
+  xy: 1602, 765
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_12
+  rotate: false
+  xy: 1551, 636
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_13
+  rotate: false
+  xy: 1602, 636
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_14
+  rotate: false
+  xy: 1551, 507
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_15
+  rotate: false
+  xy: 1602, 507
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+stt_16
+  rotate: false
+  xy: 1551, 378
+  size: 50, 128
+  orig: 50, 128
+  offset: 0, 0
+  index: -1
+tt
+  rotate: false
+  xy: 703, 365
+  size: 88, 47
+  orig: 88, 47
+  offset: 0, 0
+  index: -1

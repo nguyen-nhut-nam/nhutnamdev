@@ -1,0 +1,76 @@
+
+skeleton.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: false
+  xy: 2, 87
+  size: 264, 418
+  orig: 264, 418
+  offset: 0, 0
+  index: -1
+CLAM D
+  rotate: false
+  xy: 2, 10
+  size: 151, 75
+  orig: 151, 75
+  offset: 0, 0
+  index: -1
+CLAM M
+  rotate: false
+  xy: 182, 9
+  size: 94, 14
+  orig: 94, 14
+  offset: 0, 0
+  index: -1
+CLAM U
+  rotate: false
+  xy: 268, 192
+  size: 140, 99
+  orig: 140, 99
+  offset: 0, 0
+  index: -1
+PEARL
+  rotate: false
+  xy: 286, 142
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+THUYCUNG
+  rotate: true
+  xy: 268, 293
+  size: 212, 170
+  orig: 212, 170
+  offset: 0, 0
+  index: -1
+WOMB_BODY
+  rotate: true
+  xy: 155, 25
+  size: 60, 129
+  orig: 60, 129
+  offset: 0, 0
+  index: -1
+WOMB_EYE 1
+  rotate: true
+  xy: 336, 109
+  size: 36, 42
+  orig: 36, 42
+  offset: 0, 0
+  index: -1
+WOMB_EYE 2
+  rotate: false
+  xy: 336, 147
+  size: 37, 43
+  orig: 37, 43
+  offset: 0, 0
+  index: -1
+WOMB_MOUTH
+  rotate: true
+  xy: 155, 2
+  size: 21, 25
+  orig: 21, 25
+  offset: 0, 0
+  index: -1

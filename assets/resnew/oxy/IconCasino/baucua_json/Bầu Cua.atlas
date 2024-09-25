@@ -1,0 +1,69 @@
+
+Bầu Cua.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: false
+  xy: 522, 132
+  size: 384, 370
+  orig: 384, 370
+  offset: 0, 0
+  index: -1
+Bau cua glow
+  rotate: false
+  xy: 1303, 376
+  size: 405, 126
+  orig: 405, 126
+  offset: 0, 0
+  index: -1
+bau
+  rotate: true
+  xy: 1710, 364
+  size: 138, 143
+  orig: 138, 143
+  offset: 0, 0
+  index: -1
+bau cua
+  rotate: false
+  xy: 522, 27
+  size: 381, 103
+  orig: 381, 103
+  offset: 0, 0
+  index: -1
+ca
+  rotate: false
+  xy: 1855, 364
+  size: 134, 138
+  orig: 134, 138
+  offset: 0, 0
+  index: -1
+cua
+  rotate: false
+  xy: 908, 132
+  size: 119, 123
+  orig: 119, 123
+  offset: 0, 0
+  index: -1
+dia
+  rotate: false
+  xy: 908, 333
+  size: 393, 169
+  orig: 393, 169
+  offset: 0, 0
+  index: -1
+duoi
+  rotate: false
+  xy: 908, 257
+  size: 383, 74
+  orig: 383, 74
+  offset: 0, 0
+  index: -1
+vien
+  rotate: false
+  xy: 2, 2
+  size: 518, 500
+  orig: 518, 500
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a30cdab2-56ed-42ec-84b9-d07b99aee5da",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 543,
+  "height": 545,
+  "platformSettings": {},
+  "subMetas": {
+    "Helve_Gold-export": {
+      "ver": "1.0.6",
+      "uuid": "5dfe4f7e-42f0-4739-8bba-99cf5d31c25c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a30cdab2-56ed-42ec-84b9-d07b99aee5da",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 539,
+      "height": 541,
+      "rawWidth": 543,
+      "rawHeight": 545,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

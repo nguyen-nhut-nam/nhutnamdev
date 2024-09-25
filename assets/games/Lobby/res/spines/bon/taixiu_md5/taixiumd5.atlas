@@ -1,0 +1,104 @@
+
+taixiumd5.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 585, 45
+  size: 156, 74
+  orig: 156, 74
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 377, 38
+  size: 206, 206
+  orig: 206, 206
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 1851, 191
+  size: 55, 53
+  orig: 55, 53
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 1688, 185
+  size: 59, 91
+  orig: 59, 91
+  offset: 0, 0
+  index: -1
+5
+  rotate: true
+  xy: 1353, 159
+  size: 85, 129
+  orig: 85, 129
+  offset: 0, 0
+  index: -1
+6
+  rotate: true
+  xy: 1484, 168
+  size: 76, 121
+  orig: 76, 121
+  offset: 0, 0
+  index: -1
+XX1
+  rotate: false
+  xy: 743, 50
+  size: 64, 69
+  orig: 64, 69
+  offset: 0, 0
+  index: -1
+XX2
+  rotate: false
+  xy: 1607, 171
+  size: 79, 73
+  orig: 79, 73
+  offset: 0, 0
+  index: -1
+XX3
+  rotate: false
+  xy: 1781, 183
+  size: 68, 61
+  orig: 68, 61
+  offset: 0, 0
+  index: -1
+bg
+  rotate: true
+  xy: 2, 2
+  size: 242, 373
+  orig: 242, 373
+  offset: 0, 0
+  index: -1
+bg1
+  rotate: false
+  xy: 1009, 160
+  size: 188, 84
+  orig: 188, 84
+  offset: 0, 0
+  index: -1
+cha
+  rotate: true
+  xy: 585, 121
+  size: 123, 224
+  orig: 123, 224
+  offset: 0, 0
+  index: -1
+md5
+  rotate: false
+  xy: 1199, 172
+  size: 152, 72
+  orig: 152, 72
+  offset: 0, 0
+  index: -1
+tx
+  rotate: false
+  xy: 811, 157
+  size: 196, 87
+  orig: 196, 87
+  offset: 0, 0
+  index: -1

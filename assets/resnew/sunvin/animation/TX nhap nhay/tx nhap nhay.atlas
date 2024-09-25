@@ -1,0 +1,34 @@
+
+tx nhap nhay.png
+size: 720,720
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tai
+  rotate: false
+  xy: 3, 3
+  size: 115, 77
+  orig: 115, 77
+  offset: 0, 0
+  index: -1
+tai light
+  rotate: false
+  xy: 3, 83
+  size: 153, 114
+  orig: 153, 114
+  offset: 0, 0
+  index: -1
+xiu
+  rotate: false
+  xy: 165, 223
+  size: 135, 88
+  orig: 135, 88
+  offset: 0, 0
+  index: -1
+xiu light
+  rotate: false
+  xy: 3, 200
+  size: 159, 111
+  orig: 159, 111
+  offset: 0, 0
+  index: -1

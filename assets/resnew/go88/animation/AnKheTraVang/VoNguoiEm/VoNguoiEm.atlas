@@ -1,0 +1,153 @@
+
+VoNguoiEm.png
+size: 476,144
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BGColor
+  rotate: false
+  xy: 293, 16
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+Body
+  rotate: false
+  xy: 2, 9
+  size: 151, 133
+  orig: 151, 133
+  offset: 0, 0
+  index: -1
+Buombody
+  rotate: false
+  xy: 412, 9
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+Canh1
+  rotate: false
+  xy: 390, 2
+  size: 20, 29
+  orig: 20, 29
+  offset: 0, 0
+  index: -1
+Canh2
+  rotate: true
+  xy: 453, 110
+  size: 32, 19
+  orig: 32, 19
+  offset: 0, 0
+  index: -1
+Cloth
+  rotate: false
+  xy: 155, 9
+  size: 62, 38
+  orig: 62, 38
+  offset: 0, 0
+  index: -1
+Con nguoi
+  rotate: false
+  xy: 389, 33
+  size: 44, 13
+  orig: 44, 13
+  offset: 0, 0
+  index: -1
+Eye copy 2
+  rotate: false
+  xy: 330, 12
+  size: 58, 18
+  orig: 58, 18
+  offset: 0, 0
+  index: -1
+Eye1
+  rotate: false
+  xy: 389, 68
+  size: 56, 18
+  orig: 56, 18
+  offset: 0, 0
+  index: -1
+EyeHalf
+  rotate: false
+  xy: 389, 68
+  size: 56, 18
+  orig: 56, 18
+  offset: 0, 0
+  index: -1
+Eye2
+  rotate: false
+  xy: 389, 48
+  size: 56, 18
+  orig: 56, 18
+  offset: 0, 0
+  index: -1
+Eye3
+  rotate: false
+  xy: 330, 32
+  size: 57, 18
+  orig: 57, 18
+  offset: 0, 0
+  index: -1
+EyeClose
+  rotate: false
+  xy: 389, 88
+  size: 57, 18
+  orig: 57, 18
+  offset: 0, 0
+  index: -1
+KhungTren
+  rotate: false
+  xy: 249, 53
+  size: 84, 89
+  orig: 84, 89
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: true
+  xy: 447, 61
+  size: 25, 13
+  orig: 25, 13
+  offset: 0, 0
+  index: -1
+TayKimBottom
+  rotate: false
+  xy: 219, 8
+  size: 29, 39
+  orig: 29, 39
+  offset: 0, 0
+  index: -1
+TayKimTop
+  rotate: true
+  xy: 387, 108
+  size: 34, 64
+  orig: 34, 64
+  offset: 0, 0
+  index: -1
+TayTrai
+  rotate: false
+  xy: 250, 10
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 155, 49
+  size: 92, 93
+  orig: 92, 93
+  offset: 0, 0
+  index: -1
+tocPhai
+  rotate: false
+  xy: 335, 92
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+toctrai
+  rotate: true
+  xy: 335, 52
+  size: 38, 52
+  orig: 38, 52
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,41 @@
+
+xui tai nhay.png
+size: 744, 981
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TÀI
+  rotate: true
+  xy: 504, 320
+  size: 307, 201
+  orig: 307, 201
+  offset: 0, 0
+  index: -1
+XỈU
+  rotate: true
+  xy: 504, 628
+  size: 352, 239
+  orig: 352, 239
+  offset: 0, 0
+  index: -1
+cover
+  rotate: false
+  xy: 400, 1
+  size: 318, 318
+  orig: 318, 318
+  offset: 0, 0
+  index: -1
+sang do
+  rotate: true
+  xy: 1, 81
+  size: 397, 398
+  orig: 397, 398
+  offset: 0, 0
+  index: -1
+sang vang
+  rotate: false
+  xy: 1, 479
+  size: 502, 501
+  orig: 502, 501
+  offset: 0, 0
+  index: -1

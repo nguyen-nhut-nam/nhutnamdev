@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ef90e52f-219d-430c-afe9-61e6bd48997d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 905,
+  "height": 502,
+  "platformSettings": {},
+  "subMetas": {
+    "LOGO BON CHUANN": {
+      "ver": "1.0.6",
+      "uuid": "849b3574-7c4c-47b4-840a-e27c2827e21b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ef90e52f-219d-430c-afe9-61e6bd48997d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1,
+      "trimX": 1,
+      "trimY": 3,
+      "width": 903,
+      "height": 498,
+      "rawWidth": 905,
+      "rawHeight": 502,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

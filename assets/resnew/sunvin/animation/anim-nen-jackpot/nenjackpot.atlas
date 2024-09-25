@@ -1,0 +1,27 @@
+
+nenjackpot.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light
+  rotate: false
+  xy: 212, 75
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+light 222
+  rotate: false
+  xy: 108, 6
+  size: 102, 100
+  orig: 102, 100
+  offset: 0, 0
+  index: -1
+pad
+  rotate: false
+  xy: 2, 2
+  size: 104, 104
+  orig: 104, 104
+  offset: 0, 0
+  index: -1

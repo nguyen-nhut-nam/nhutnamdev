@@ -1,0 +1,104 @@
+
+tower offortuna copy.png
+size: 1890, 906
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 465, 50
+  size: 462, 855
+  orig: 462, 855
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 928, 268
+  size: 534, 637
+  orig: 534, 637
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: true
+  xy: 1766, 112
+  size: 93, 123
+  orig: 93, 123
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: false
+  xy: 1633, 749
+  size: 228, 156
+  orig: 228, 156
+  offset: 0, 0
+  index: -1
+dau
+  rotate: true
+  xy: 1386, 3
+  size: 264, 246
+  orig: 264, 246
+  offset: 0, 0
+  index: -1
+khung duoi
+  rotate: false
+  xy: 928, 1
+  size: 457, 266
+  orig: 457, 266
+  offset: 0, 0
+  index: -1
+khung vien
+  rotate: false
+  xy: 1, 8
+  size: 463, 897
+  orig: 463, 897
+  offset: 0, 0
+  index: -1
+logo glow
+  rotate: true
+  xy: 1671, 317
+  size: 431, 210
+  orig: 431, 210
+  offset: 0, 0
+  index: -1
+logo
+  rotate: true
+  xy: 1671, 317
+  size: 431, 210
+  orig: 431, 210
+  offset: 0, 0
+  index: -1
+mieng
+  rotate: false
+  xy: 465, 9
+  size: 76, 40
+  orig: 76, 40
+  offset: 0, 0
+  index: -1
+sung
+  rotate: true
+  xy: 1463, 293
+  size: 455, 207
+  orig: 455, 207
+  offset: 0, 0
+  index: -1
+tay phai
+  rotate: true
+  xy: 1671, 206
+  size: 110, 141
+  orig: 110, 141
+  offset: 0, 0
+  index: -1
+tay trai
+  rotate: false
+  xy: 1463, 759
+  size: 157, 146
+  orig: 157, 146
+  offset: 0, 0
+  index: -1
+thung sau
+  rotate: false
+  xy: 1633, 71
+  size: 132, 134
+  orig: 132, 134
+  offset: 0, 0
+  index: -1

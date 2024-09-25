@@ -1,0 +1,125 @@
+
+WinEffect_LOL.png
+size: 1871,1869
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Untitled-171
+  rotate: true
+  xy: 2, 181
+  size: 1040, 407
+  orig: 1040, 408
+  offset: 0, 1
+  index: -1
+Untitled-172
+  rotate: false
+  xy: 2, 29
+  size: 353, 150
+  orig: 354, 150
+  offset: 0, 0
+  index: -1
+Untitled-173
+  rotate: false
+  xy: 411, 594
+  size: 627, 627
+  orig: 627, 627
+  offset: 0, 0
+  index: -1
+Untitled-174
+  rotate: false
+  xy: 714, 159
+  size: 192, 175
+  orig: 193, 176
+  offset: 0, 1
+  index: -1
+Untitled-175
+  rotate: false
+  xy: 908, 169
+  size: 104, 165
+  orig: 104, 166
+  offset: 0, 1
+  index: -1
+Untitled-176
+  rotate: false
+  xy: 2, 1223
+  size: 954, 644
+  orig: 955, 644
+  offset: 0, 0
+  index: -1
+bigwin1
+  rotate: true
+  xy: 1040, 281
+  size: 407, 458
+  orig: 408, 458
+  offset: 0, 0
+  index: -1
+bigwin2
+  rotate: false
+  xy: 411, 48
+  size: 301, 286
+  orig: 302, 286
+  offset: 0, 0
+  index: -1
+bigwin3
+  rotate: false
+  xy: 714, 37
+  size: 186, 120
+  orig: 186, 121
+  offset: 0, 1
+  index: -1
+bigwin6
+  rotate: false
+  xy: 1040, 1078
+  size: 827, 254
+  orig: 827, 255
+  offset: 0, 1
+  index: -1
+blackpoint
+  rotate: false
+  xy: 958, 1330
+  size: 2, 2
+  orig: 2, 2
+  offset: 0, 0
+  index: -1
+bonus0
+  rotate: false
+  xy: 411, 336
+  size: 612, 256
+  orig: 612, 257
+  offset: 0, 1
+  index: -1
+bonus1
+  rotate: false
+  xy: 1040, 896
+  size: 826, 180
+  orig: 826, 180
+  offset: 0, 0
+  index: -1
+freespin1
+  rotate: false
+  xy: 958, 1334
+  size: 891, 533
+  orig: 891, 534
+  offset: 0, 1
+  index: -1
+freespin2
+  rotate: true
+  xy: 1500, 341
+  size: 347, 346
+  orig: 347, 347
+  offset: 0, 1
+  index: -1
+freespin3
+  rotate: false
+  xy: 1040, 690
+  size: 781, 204
+  orig: 781, 204
+  offset: 0, 0
+  index: -1
+jackpot6
+  rotate: false
+  xy: 1851, 1851
+  size: 18, 16
+  orig: 19, 16
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,48 @@
+
+quay.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FX
+  rotate: false
+  xy: 200, 16
+  size: 48, 52
+  orig: 48, 52
+  offset: 0, 0
+  index: -1
+TXT1
+  rotate: false
+  xy: 2, 2
+  size: 196, 66
+  orig: 196, 66
+  offset: 0, 0
+  index: -1
+TXT2
+  rotate: false
+  xy: 261, 160
+  size: 190, 60
+  orig: 190, 60
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 2, 70
+  size: 257, 150
+  orig: 257, 150
+  offset: 0, 0
+  index: -1
+play
+  rotate: false
+  xy: 342, 108
+  size: 84, 50
+  orig: 84, 50
+  offset: 0, 0
+  index: -1
+stop
+  rotate: false
+  xy: 261, 98
+  size: 79, 60
+  orig: 79, 60
+  offset: 0, 0
+  index: -1

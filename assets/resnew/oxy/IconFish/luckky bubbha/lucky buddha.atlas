@@ -1,0 +1,41 @@
+
+lucky buddha.png
+size: 1268, 999
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 753, 1
+  size: 514, 997
+  orig: 514, 997
+  offset: 0, 0
+  index: -1
+caishen
+  rotate: true
+  xy: 1, 429
+  size: 569, 751
+  orig: 569, 751
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 1, 50
+  size: 477, 378
+  orig: 477, 378
+  offset: 0, 0
+  index: -1
+tien1
+  rotate: false
+  xy: 479, 326
+  size: 100, 102
+  orig: 100, 102
+  offset: 0, 0
+  index: -1
+tien2
+  rotate: false
+  xy: 479, 220
+  size: 98, 105
+  orig: 98, 105
+  offset: 0, 0
+  index: -1

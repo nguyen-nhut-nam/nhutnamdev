@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "caafdde0-0aed-4c15-a7a0-53e476d5ecd3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": true,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 111,
+  "height": 99,
+  "platformSettings": {},
+  "subMetas": {
+    "doctin_bg2.png": {
+      "ver": "1.0.6",
+      "uuid": "992e71a0-4943-477c-b1af-a79f87c55a5e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "caafdde0-0aed-4c15-a7a0-53e476d5ecd3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 111,
+      "height": 99,
+      "rawWidth": 111,
+      "rawHeight": 99,
+      "borderTop": 21,
+      "borderBottom": 17,
+      "borderLeft": 19,
+      "borderRight": 19,
+      "subMetas": {}
+    }
+  }
+}

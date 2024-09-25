@@ -1,0 +1,104 @@
+
+Anim-UI.png
+size: 407,277
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Flare
+  rotate: true
+  xy: 4, 9
+  size: 40, 154
+  orig: 40, 154
+  offset: 0, 0
+  index: -1
+Flare-xanh
+  rotate: false
+  xy: 288, 119
+  size: 40, 154
+  orig: 40, 154
+  offset: 0, 0
+  index: -1
+khung
+  rotate: false
+  xy: 4, 53
+  size: 98, 220
+  orig: 98, 220
+  offset: 0, 0
+  index: -1
+khung-xanh
+  rotate: false
+  xy: 106, 53
+  size: 98, 220
+  orig: 98, 220
+  offset: 0, 0
+  index: -1
+lineSang
+  rotate: false
+  xy: 332, 89
+  size: 10, 184
+  orig: 10, 184
+  offset: 0, 0
+  index: -1
+lineSang-xanh
+  rotate: false
+  xy: 346, 89
+  size: 10, 184
+  orig: 10, 184
+  offset: 0, 0
+  index: -1
+sangcao
+  rotate: false
+  xy: 360, 63
+  size: 43, 88
+  orig: 43, 88
+  offset: 0, 0
+  index: -1
+sangcao-xanh
+  rotate: true
+  xy: 288, 4
+  size: 43, 88
+  orig: 43, 88
+  offset: 0, 0
+  index: -1
+sangdai
+  rotate: false
+  xy: 208, 36
+  size: 36, 237
+  orig: 36, 237
+  offset: 0, 0
+  index: -1
+sangdai-xanh
+  rotate: false
+  xy: 248, 36
+  size: 36, 237
+  orig: 36, 237
+  offset: 0, 0
+  index: -1
+sangduoi
+  rotate: true
+  xy: 360, 155
+  size: 118, 27
+  orig: 118, 27
+  offset: 0, 0
+  index: -1
+sangduoi-xanh
+  rotate: false
+  xy: 162, 5
+  size: 118, 27
+  orig: 118, 27
+  offset: 0, 0
+  index: -1
+sao
+  rotate: false
+  xy: 288, 85
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+sao-xanh
+  rotate: false
+  xy: 288, 51
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1

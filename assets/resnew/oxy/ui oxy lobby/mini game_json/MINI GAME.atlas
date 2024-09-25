@@ -1,0 +1,76 @@
+
+MINI GAME.png
+size: 829, 1027
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+39b1ecdc3079c3f2fe47cb8d486aa8df
+  rotate: false
+  xy: 436, 895
+  size: 300, 131
+  orig: 300, 131
+  offset: 0, 0
+  index: -1
+GAME
+  rotate: true
+  xy: 737, 755
+  size: 271, 91
+  orig: 271, 91
+  offset: 0, 0
+  index: -1
+MiNi
+  rotate: true
+  xy: 745, 30
+  size: 199, 78
+  orig: 199, 78
+  offset: 0, 0
+  index: -1
+anh sang
+  rotate: true
+  xy: 1, 160
+  size: 429, 430
+  orig: 429, 430
+  offset: 0, 0
+  index: -1
+buc
+  rotate: false
+  xy: 1, 1
+  size: 450, 158
+  orig: 450, 158
+  offset: 0, 0
+  index: -1
+la phai
+  rotate: false
+  xy: 436, 603
+  size: 212, 291
+  orig: 212, 291
+  offset: 0, 0
+  index: -1
+la trai
+  rotate: true
+  xy: 452, 17
+  size: 212, 292
+  orig: 212, 292
+  offset: 0, 0
+  index: -1
+tron
+  rotate: false
+  xy: 432, 230
+  size: 359, 359
+  orig: 359, 359
+  offset: 0, 0
+  index: -1
+tron sau
+  rotate: true
+  xy: 1, 590
+  size: 436, 434
+  orig: 436, 434
+  offset: 0, 0
+  index: -1
+xe may
+  rotate: false
+  xy: 649, 593
+  size: 174, 161
+  orig: 174, 161
+  offset: 0, 0
+  index: -1

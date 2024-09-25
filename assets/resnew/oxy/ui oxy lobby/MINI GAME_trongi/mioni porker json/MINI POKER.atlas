@@ -1,0 +1,27 @@
+
+MINI POKER.png
+size: 307, 303
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+MINI
+  rotate: false
+  xy: 1, 248
+  size: 116, 54
+  orig: 120, 58
+  offset: 2, 2
+  index: -1
+POKER
+  rotate: false
+  xy: 118, 248
+  size: 162, 54
+  orig: 166, 58
+  offset: 2, 2
+  index: -1
+mini gane
+  rotate: false
+  xy: 1, 1
+  size: 305, 246
+  orig: 307, 248
+  offset: 1, 1
+  index: -1

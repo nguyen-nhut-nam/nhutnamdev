@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6aad481e-31af-4f4a-995c-8b190e320a56",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 2048,
+  "height": 1024,
+  "platformSettings": {},
+  "subMetas": {
+    "Kim Cương": {
+      "ver": "1.0.6",
+      "uuid": "fba88079-7ed9-48e8-8512-a389c950b9b2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6aad481e-31af-4f4a-995c-8b190e320a56",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -78,
+      "offsetY": 16,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 1888,
+      "height": 988,
+      "rawWidth": 2048,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

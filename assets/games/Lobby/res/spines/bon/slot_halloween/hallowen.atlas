@@ -1,0 +1,90 @@
+
+hallowen.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ao
+  rotate: false
+  xy: 832, 286
+  size: 321, 224
+  orig: 321, 224
+  offset: 0, 0
+  index: -1
+bg11
+  rotate: false
+  xy: 562, 111
+  size: 268, 399
+  orig: 268, 399
+  offset: 0, 0
+  index: -1
+bg22
+  rotate: false
+  xy: 832, 173
+  size: 208, 111
+  orig: 208, 111
+  offset: 0, 0
+  index: -1
+bi
+  rotate: false
+  xy: 1042, 176
+  size: 99, 108
+  orig: 99, 108
+  offset: 0, 0
+  index: -1
+chan
+  rotate: true
+  xy: 1155, 315
+  size: 195, 305
+  orig: 195, 305
+  offset: 0, 0
+  index: -1
+lg1
+  rotate: false
+  xy: 708, 32
+  size: 112, 77
+  orig: 112, 77
+  offset: 0, 0
+  index: -1
+lg2
+  rotate: false
+  xy: 264, 2
+  size: 87, 76
+  orig: 87, 76
+  offset: 0, 0
+  index: -1
+logo11
+  rotate: false
+  xy: 2, 5
+  size: 260, 73
+  orig: 260, 73
+  offset: 0, 0
+  index: -1
+nguoi
+  rotate: true
+  xy: 2, 80
+  size: 430, 558
+  orig: 430, 558
+  offset: 0, 0
+  index: -1
+tay1
+  rotate: false
+  xy: 1462, 394
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+tay2
+  rotate: false
+  xy: 832, 128
+  size: 90, 43
+  orig: 90, 43
+  offset: 0, 0
+  index: -1
+toc
+  rotate: false
+  xy: 562, 2
+  size: 144, 107
+  orig: 144, 107
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "21ca4f8b-17dc-4a67-8ffd-8508c08a8c34",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 475,
+  "height": 480,
+  "platformSettings": {},
+  "subMetas": {
+    "XengFont02_silver_export": {
+      "ver": "1.0.6",
+      "uuid": "c1df3e81-8af4-475e-8663-dfb5327ece9e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "21ca4f8b-17dc-4a67-8ffd-8508c08a8c34",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 475,
+      "height": 480,
+      "rawWidth": 475,
+      "rawHeight": 480,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

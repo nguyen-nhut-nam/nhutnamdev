@@ -1,0 +1,139 @@
+
+Win_Effect_thantai.png
+size: 1355,1353
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NOHU
+  rotate: true
+  xy: 507, 37
+  size: 501, 218
+  orig: 501, 218
+  offset: 0, 0
+  index: -1
+WinEffect1
+  rotate: true
+  xy: 1075, 721
+  size: 630, 155
+  orig: 630, 155
+  offset: 0, 0
+  index: -1
+WinEffect2
+  rotate: false
+  xy: 2, 540
+  size: 690, 221
+  orig: 690, 221
+  offset: 0, 0
+  index: -1
+WinEffect6
+  rotate: false
+  xy: 2, 763
+  size: 1071, 588
+  orig: 1071, 588
+  offset: 0, 0
+  index: -1
+ech0
+  rotate: false
+  xy: 694, 576
+  size: 293, 185
+  orig: 293, 185
+  offset: 0, 0
+  index: -1
+ech2
+  rotate: true
+  xy: 1216, 172
+  size: 199, 104
+  orig: 199, 104
+  offset: 0, 0
+  index: -1
+freespin
+  rotate: true
+  xy: 1232, 621
+  size: 730, 121
+  orig: 730, 121
+  offset: 0, 0
+  index: -1
+thantaicharacter_cut0
+  rotate: false
+  xy: 1136, 373
+  size: 200, 246
+  orig: 200, 246
+  offset: 0, 0
+  index: -1
+thantaicharacter_cut1
+  rotate: false
+  xy: 2, 12
+  size: 35, 20
+  orig: 35, 20
+  offset: 0, 0
+  index: -1
+thantaicharacter_cut10
+  rotate: true
+  xy: 989, 641
+  size: 120, 82
+  orig: 120, 82
+  offset: 0, 0
+  index: -1
+thantaicharacter_cut2
+  rotate: true
+  xy: 694, 540
+  size: 34, 18
+  orig: 34, 18
+  offset: 0, 0
+  index: -1
+thantaicharacter_cut3
+  rotate: true
+  xy: 2, 34
+  size: 107, 363
+  orig: 107, 363
+  offset: 0, 0
+  index: -1
+thantaicharacter_cut4
+  rotate: false
+  xy: 367, 45
+  size: 133, 96
+  orig: 133, 96
+  offset: 0, 0
+  index: -1
+thantaicharacter_cut5
+  rotate: false
+  xy: 1073, 662
+  size: 114, 57
+  orig: 114, 57
+  offset: 0, 0
+  index: -1
+thantaicharacter_cut6
+  rotate: false
+  xy: 1216, 113
+  size: 114, 57
+  orig: 114, 57
+  offset: 0, 0
+  index: -1
+thantaicharacter_cut7
+  rotate: true
+  xy: 727, 38
+  size: 90, 319
+  orig: 90, 319
+  offset: 0, 0
+  index: -1
+thantaicharacter_cut8
+  rotate: false
+  xy: 1136, 82
+  size: 78, 289
+  orig: 78, 289
+  offset: 0, 0
+  index: -1
+thantaicharacter_cut9
+  rotate: false
+  xy: 2, 143
+  size: 503, 395
+  orig: 503, 395
+  offset: 0, 0
+  index: -1
+win_effect
+  rotate: true
+  xy: 727, 130
+  size: 444, 407
+  orig: 444, 407
+  offset: 0, 0
+  index: -1

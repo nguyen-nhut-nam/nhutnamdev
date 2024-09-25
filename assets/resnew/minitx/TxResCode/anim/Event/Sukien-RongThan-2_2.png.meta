@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "00e0f17e-1a39-458f-a07c-00624e05f815",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 512,
+  "platformSettings": {},
+  "subMetas": {
+    "Sukien-RongThan-2_2": {
+      "ver": "1.0.6",
+      "uuid": "179ce28b-de75-49fd-a702-c07d7d152b86",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "00e0f17e-1a39-458f-a07c-00624e05f815",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 110,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 254,
+      "height": 290,
+      "rawWidth": 256,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

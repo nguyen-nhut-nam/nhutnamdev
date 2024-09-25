@@ -1,0 +1,48 @@
+
+baicao.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 234, 60
+  size: 208, 194
+  orig: 208, 194
+  offset: 0, 0
+  index: -1
+b1
+  rotate: true
+  xy: 722, 133
+  size: 121, 141
+  orig: 121, 141
+  offset: 0, 0
+  index: -1
+b2
+  rotate: false
+  xy: 444, 109
+  size: 134, 145
+  orig: 134, 145
+  offset: 0, 0
+  index: -1
+b3
+  rotate: false
+  xy: 580, 124
+  size: 140, 130
+  orig: 140, 130
+  offset: 0, 0
+  index: -1
+baicao
+  rotate: false
+  xy: 2, 2
+  size: 197, 61
+  orig: 197, 61
+  offset: 0, 0
+  index: -1
+bg1
+  rotate: false
+  xy: 2, 65
+  size: 230, 189
+  orig: 230, 189
+  offset: 0, 0
+  index: -1

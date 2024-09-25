@@ -1,0 +1,83 @@
+
+SICBO.png
+size: 2048, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: true
+  xy: 838, 534
+  size: 461, 896
+  orig: 461, 896
+  offset: 0, 0
+  index: -1
+Dưới
+  rotate: true
+  xy: 1407, 76
+  size: 457, 102
+  orig: 457, 102
+  offset: 0, 0
+  index: -1
+cuc tien1
+  rotate: false
+  xy: 1510, 283
+  size: 246, 250
+  orig: 246, 250
+  offset: 0, 0
+  index: -1
+cuctien2
+  rotate: false
+  xy: 1510, 283
+  size: 246, 250
+  orig: 246, 250
+  offset: 0, 0
+  index: -1
+laplannh
+  rotate: false
+  xy: 1, 162
+  size: 836, 833
+  orig: 836, 833
+  offset: 0, 0
+  index: -1
+nguoi
+  rotate: true
+  xy: 838, 1
+  size: 532, 568
+  orig: 532, 568
+  offset: 0, 0
+  index: -1
+sac 1
+  rotate: false
+  xy: 418, 81
+  size: 85, 80
+  orig: 85, 80
+  offset: 0, 0
+  index: -1
+sac 2
+  rotate: false
+  xy: 1510, 202
+  size: 85, 80
+  orig: 85, 80
+  offset: 0, 0
+  index: -1
+sao4
+  rotate: true
+  xy: 1895, 821
+  size: 174, 150
+  orig: 174, 150
+  offset: 0, 0
+  index: -1
+sicbo
+  rotate: true
+  xy: 1735, 544
+  size: 451, 159
+  orig: 451, 159
+  offset: 0, 0
+  index: -1
+tài phú
+  rotate: false
+  xy: 1, 15
+  size: 416, 146
+  orig: 416, 146
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,230 @@
+
+NoHu_baucua.png
+size: 1598,1598
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Hu_baucua0
+  rotate: true
+  xy: 317, 700
+  size: 351, 279
+  orig: 351, 279
+  offset: 0, 0
+  index: -1
+Hu_baucua1
+  rotate: true
+  xy: 526, 1245
+  size: 351, 279
+  orig: 351, 279
+  offset: 0, 0
+  index: -1
+Hu_baucua2
+  rotate: true
+  xy: 317, 347
+  size: 351, 279
+  orig: 351, 279
+  offset: 0, 0
+  index: -1
+boxtien_nohu_baucua0
+  rotate: false
+  xy: 2, 111
+  size: 459, 116
+  orig: 459, 116
+  offset: 0, 0
+  index: -1
+effect
+  rotate: false
+  xy: 1281, 16
+  size: 271, 248
+  orig: 271, 248
+  offset: 0, 0
+  index: -1
+explosion
+  rotate: false
+  xy: 2, 1053
+  size: 522, 543
+  orig: 522, 543
+  offset: 0, 0
+  index: -1
+firework0
+  rotate: true
+  xy: 493, 75
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework1
+  rotate: true
+  xy: 598, 829
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework10
+  rotate: false
+  xy: 1323, 1082
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework11
+  rotate: false
+  xy: 1009, 538
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework12
+  rotate: true
+  xy: 1114, 796
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework13
+  rotate: false
+  xy: 1281, 538
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework14
+  rotate: true
+  xy: 1009, 266
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework15
+  rotate: false
+  xy: 1009, 8
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework16
+  rotate: true
+  xy: 1267, 266
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework2
+  rotate: true
+  xy: 807, 1326
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework3
+  rotate: true
+  xy: 598, 557
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework4
+  rotate: true
+  xy: 751, 285
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework5
+  rotate: true
+  xy: 751, 13
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework6
+  rotate: false
+  xy: 856, 1068
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework7
+  rotate: true
+  xy: 1065, 1326
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework8
+  rotate: true
+  xy: 856, 796
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+firework9
+  rotate: false
+  xy: 1323, 1340
+  size: 270, 256
+  orig: 270, 256
+  offset: 0, 0
+  index: -1
+goldcoin0
+  rotate: false
+  xy: 101, 6
+  size: 87, 103
+  orig: 87, 103
+  offset: 0, 0
+  index: -1
+goldcoin1
+  rotate: true
+  xy: 2, 2
+  size: 107, 97
+  orig: 107, 97
+  offset: 0, 0
+  index: -1
+goldcoin2
+  rotate: false
+  xy: 432, 3
+  size: 59, 106
+  orig: 59, 106
+  offset: 0, 0
+  index: -1
+goldcoin3
+  rotate: false
+  xy: 526, 1142
+  size: 56, 101
+  orig: 56, 101
+  offset: 0, 0
+  index: -1
+goldcoin4
+  rotate: true
+  xy: 279, 6
+  size: 103, 79
+  orig: 103, 79
+  offset: 0, 0
+  index: -1
+goldcoin5
+  rotate: true
+  xy: 360, 3
+  size: 106, 70
+  orig: 106, 70
+  offset: 0, 0
+  index: -1
+goldcoin6
+  rotate: true
+  xy: 190, 15
+  size: 94, 87
+  orig: 94, 87
+  offset: 0, 0
+  index: -1
+goldcoin7
+  rotate: true
+  xy: 526, 1101
+  size: 39, 102
+  orig: 39, 102
+  offset: 0, 0
+  index: -1
+nohutext
+  rotate: true
+  xy: 2, 229
+  size: 822, 313
+  orig: 822, 313
+  offset: 0, 0
+  index: -1

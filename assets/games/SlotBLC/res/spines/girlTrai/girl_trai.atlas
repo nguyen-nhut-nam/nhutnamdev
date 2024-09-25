@@ -1,0 +1,41 @@
+
+girl_trai.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+char
+  rotate: true
+  xy: 2, 27
+  size: 219, 437
+  orig: 219, 437
+  offset: 0, 0
+  index: -1
+toc1
+  rotate: true
+  xy: 2, 2
+  size: 23, 87
+  orig: 23, 87
+  offset: 0, 0
+  index: -1
+toc2
+  rotate: false
+  xy: 481, 165
+  size: 14, 81
+  orig: 14, 81
+  offset: 0, 0
+  index: -1
+toc3
+  rotate: false
+  xy: 441, 119
+  size: 38, 127
+  orig: 38, 127
+  offset: 0, 0
+  index: -1
+toc4
+  rotate: false
+  xy: 441, 35
+  size: 32, 82
+  orig: 32, 82
+  offset: 0, 0
+  index: -1

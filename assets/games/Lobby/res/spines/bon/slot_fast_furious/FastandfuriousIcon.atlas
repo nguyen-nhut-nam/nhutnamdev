@@ -1,0 +1,76 @@
+
+FastandfuriousIcon.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2
+  rotate: false
+  xy: 474, 271
+  size: 143, 231
+  orig: 143, 231
+  offset: 0, 0
+  index: -1
+Rock1
+  rotate: false
+  xy: 272, 263
+  size: 200, 239
+  orig: 200, 239
+  offset: 0, 0
+  index: -1
+bg11
+  rotate: false
+  xy: 2, 103
+  size: 268, 399
+  orig: 268, 399
+  offset: 0, 0
+  index: -1
+bg22
+  rotate: false
+  xy: 619, 391
+  size: 208, 111
+  orig: 208, 111
+  offset: 0, 0
+  index: -1
+iconfast22
+  rotate: false
+  xy: 2, 32
+  size: 248, 69
+  orig: 248, 69
+  offset: 0, 0
+  index: -1
+iconfast5
+  rotate: false
+  xy: 619, 302
+  size: 150, 87
+  orig: 150, 87
+  offset: 0, 0
+  index: -1
+red1
+  rotate: false
+  xy: 2, 2
+  size: 86, 28
+  orig: 86, 28
+  offset: 0, 0
+  index: -1
+red2
+  rotate: false
+  xy: 829, 448
+  size: 137, 54
+  orig: 137, 54
+  offset: 0, 0
+  index: -1
+red3
+  rotate: true
+  xy: 419, 194
+  size: 67, 33
+  orig: 67, 33
+  offset: 0, 0
+  index: -1
+rock2
+  rotate: false
+  xy: 272, 126
+  size: 145, 135
+  orig: 145, 135
+  offset: 0, 0
+  index: -1

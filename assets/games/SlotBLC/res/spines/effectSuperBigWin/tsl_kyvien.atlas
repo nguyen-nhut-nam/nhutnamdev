@@ -1,0 +1,62 @@
+
+tsl_kyvien.png
+size: 1439, 909
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+bg
+  rotate: true
+  xy: 907, 14
+  size: 588, 299
+  orig: 658, 343
+  offset: 35, 22
+  index: -1
+coin
+  rotate: false
+  xy: 1342, 523
+  size: 79, 79
+  orig: 79, 79
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 905, 604
+  size: 532, 303
+  orig: 534, 306
+  offset: 1, 2
+  index: -1
+light2
+  rotate: true
+  xy: 499, 22
+  size: 548, 406
+  orig: 551, 412
+  offset: 1, 3
+  index: -1
+light3
+  rotate: false
+  xy: 2, 572
+  size: 901, 335
+  orig: 903, 338
+  offset: 1, 2
+  index: -1
+tien
+  rotate: false
+  xy: 2, 2
+  size: 391, 58
+  orig: 393, 61
+  offset: 1, 1
+  index: -1
+tsl
+  rotate: true
+  xy: 1208, 57
+  size: 545, 132
+  orig: 546, 133
+  offset: 0, 0
+  index: -1
+xoaytron
+  rotate: false
+  xy: 2, 62
+  size: 495, 508
+  orig: 498, 510
+  offset: 2, 1
+  index: -1

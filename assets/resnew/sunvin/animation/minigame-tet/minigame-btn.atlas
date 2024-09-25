@@ -1,0 +1,20 @@
+
+minigame-btn.png
+size: 720,720
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light
+  rotate: false
+  xy: 3, 3
+  size: 101, 100
+  orig: 101, 100
+  offset: 0, 0
+  index: -1
+pad
+  rotate: false
+  xy: 3, 106
+  size: 138, 139
+  orig: 138, 139
+  offset: 0, 0
+  index: -1

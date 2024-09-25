@@ -1,0 +1,307 @@
+
+anim-FreeSpin-Bonus.png
+size: 1937,618
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B-25
+  rotate: false
+  xy: 287, 155
+  size: 49, 459
+  orig: 49, 459
+  offset: 0, 0
+  index: -1
+B-BinhBright
+  rotate: true
+  xy: 340, 261
+  size: 353, 227
+  orig: 353, 227
+  offset: 0, 0
+  index: -1
+B-BinhTT
+  rotate: false
+  xy: 1470, 387
+  size: 240, 110
+  orig: 240, 110
+  offset: 0, 0
+  index: -1
+B-BrightPink
+  rotate: false
+  xy: 1160, 181
+  size: 77, 187
+  orig: 77, 187
+  offset: 0, 0
+  index: -1
+B-BrightWhite
+  rotate: false
+  xy: 1345, 376
+  size: 121, 121
+  orig: 121, 121
+  offset: 0, 0
+  index: -1
+B-TextE-New
+  rotate: true
+  xy: 373, 31
+  size: 108, 139
+  orig: 108, 139
+  offset: 0, 0
+  index: -1
+B-bg
+  rotate: true
+  xy: 1726, 287
+  size: 100, 61
+  orig: 100, 61
+  offset: 0, 0
+  index: -1
+B-binh-190
+  rotate: true
+  xy: 917, 360
+  size: 254, 214
+  orig: 254, 214
+  offset: 0, 0
+  index: -1
+B-nuocSau
+  rotate: true
+  xy: 1135, 372
+  size: 242, 65
+  orig: 242, 65
+  offset: 0, 0
+  index: -1
+B-nuocTruoc
+  rotate: true
+  xy: 1790, 41
+  size: 242, 80
+  orig: 242, 80
+  offset: 0, 0
+  index: -1
+B-sangbinh
+  rotate: true
+  xy: 1241, 191
+  size: 179, 56
+  orig: 179, 56
+  offset: 0, 0
+  index: -1
+B-textA
+  rotate: true
+  xy: 340, 143
+  size: 114, 139
+  orig: 114, 139
+  offset: 0, 0
+  index: -1
+B-textB
+  rotate: false
+  xy: 1535, 245
+  size: 104, 138
+  orig: 104, 138
+  offset: 0, 0
+  index: -1
+B-textG
+  rotate: false
+  xy: 659, 7
+  size: 96, 140
+  orig: 96, 140
+  offset: 0, 0
+  index: -1
+B-textM-New
+  rotate: true
+  xy: 516, 9
+  size: 130, 139
+  orig: 130, 139
+  offset: 0, 0
+  index: -1
+B-textN
+  rotate: true
+  xy: 483, 143
+  size: 114, 138
+  orig: 114, 138
+  offset: 0, 0
+  index: -1
+B-textO
+  rotate: false
+  xy: 625, 151
+  size: 109, 140
+  orig: 109, 140
+  offset: 0, 0
+  index: -1
+B-textS
+  rotate: false
+  xy: 837, 161
+  size: 94, 140
+  orig: 94, 140
+  offset: 0, 0
+  index: -1
+B-textU
+  rotate: true
+  xy: 230, 31
+  size: 106, 139
+  orig: 106, 139
+  offset: 0, 0
+  index: -1
+B-textWhite
+  rotate: true
+  xy: 571, 295
+  size: 319, 86
+  orig: 319, 86
+  offset: 0, 0
+  index: -1
+B-textureNen
+  rotate: false
+  xy: 1204, 501
+  size: 728, 113
+  orig: 728, 113
+  offset: 0, 0
+  index: -1
+F-BrightTail
+  rotate: true
+  xy: 661, 303
+  size: 311, 93
+  orig: 311, 93
+  offset: 0, 0
+  index: -1
+F-TextE1
+  rotate: false
+  xy: 1424, 233
+  size: 107, 139
+  orig: 107, 139
+  offset: 0, 0
+  index: -1
+F-dot
+  rotate: false
+  xy: 1726, 248
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+F-sangNgusac
+  rotate: false
+  xy: 758, 305
+  size: 155, 309
+  orig: 155, 309
+  offset: 0, 0
+  index: -1
+F-sangTron1
+  rotate: false
+  xy: 1714, 391
+  size: 106, 106
+  orig: 106, 106
+  offset: 0, 0
+  index: -1
+F-sangTron2
+  rotate: false
+  xy: 1824, 391
+  size: 106, 106
+  orig: 106, 106
+  offset: 0, 0
+  index: -1
+F-sangTugiac
+  rotate: true
+  xy: 1874, 231
+  size: 53, 59
+  orig: 53, 59
+  offset: 0, 0
+  index: -1
+F-sangVienTron
+  rotate: true
+  xy: 759, 4
+  size: 151, 300
+  orig: 151, 300
+  offset: 0, 0
+  index: -1
+F-sangloe
+  rotate: true
+  xy: 1791, 288
+  size: 99, 96
+  orig: 99, 96
+  offset: 0, 0
+  index: -1
+F-textF
+  rotate: false
+  xy: 1301, 231
+  size: 119, 139
+  orig: 119, 139
+  offset: 0, 0
+  index: -1
+F-textI
+  rotate: false
+  xy: 1643, 246
+  size: 79, 137
+  orig: 79, 137
+  offset: 0, 0
+  index: -1
+F-textN
+  rotate: true
+  xy: 1063, 5
+  size: 158, 137
+  orig: 158, 137
+  offset: 0, 0
+  index: -1
+F-textP
+  rotate: true
+  xy: 1204, 374
+  size: 123, 137
+  orig: 123, 137
+  offset: 0, 0
+  index: -1
+F-textR
+  rotate: false
+  xy: 1204, 38
+  size: 121, 139
+  orig: 121, 139
+  offset: 0, 0
+  index: -1
+F-textS
+  rotate: false
+  xy: 738, 159
+  size: 95, 140
+  orig: 95, 140
+  offset: 0, 0
+  index: -1
+F-toara1
+  rotate: true
+  xy: 230, 141
+  size: 473, 53
+  orig: 473, 53
+  offset: 0, 0
+  index: -1
+F-toaraManh
+  rotate: false
+  xy: 4, 24
+  size: 431, 3
+  orig: 431, 3
+  offset: 0, 0
+  index: -1
+SangNgang
+  rotate: true
+  xy: 4, 31
+  size: 583, 109
+  orig: 583, 109
+  offset: 0, 0
+  index: -1
+SangNgangTim
+  rotate: true
+  xy: 117, 31
+  size: 583, 109
+  orig: 583, 109
+  offset: 0, 0
+  index: -1
+free-disco-180
+  rotate: false
+  xy: 1548, 6
+  size: 238, 235
+  orig: 238, 235
+  offset: 0, 0
+  index: -1
+free-disco2
+  rotate: false
+  xy: 935, 167
+  size: 221, 189
+  orig: 221, 189
+  offset: 0, 0
+  index: -1
+free-disco3
+  rotate: true
+  xy: 1329, 6
+  size: 221, 215
+  orig: 221, 215
+  offset: 0, 0
+  index: -1

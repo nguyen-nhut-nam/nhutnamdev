@@ -1,0 +1,160 @@
+
+Anim-MoRuong.png
+size: 1280,525
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L-hopduoi
+  rotate: false
+  xy: 2, 2
+  size: 330, 172
+  orig: 330, 172
+  offset: 0, 0
+  index: -1
+L-napDong
+  rotate: true
+  xy: 328, 192
+  size: 331, 146
+  orig: 331, 146
+  offset: 0, 0
+  index: -1
+L-napMo
+  rotate: false
+  xy: 612, 8
+  size: 310, 192
+  orig: 310, 192
+  offset: 0, 0
+  index: -1
+TienRoi4
+  rotate: false
+  xy: 365, 12
+  size: 52, 19
+  orig: 52, 19
+  offset: 0, 0
+  index: -1
+bong
+  rotate: true
+  xy: 672, 237
+  size: 286, 105
+  orig: 286, 105
+  offset: 0, 0
+  index: -1
+dot
+  rotate: false
+  xy: 336, 6
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+flare
+  rotate: true
+  xy: 1151, 85
+  size: 97, 99
+  orig: 97, 99
+  offset: 0, 0
+  index: -1
+giua-hopduoi
+  rotate: true
+  xy: 2, 178
+  size: 345, 170
+  orig: 345, 170
+  offset: 0, 0
+  index: -1
+giua-napdong
+  rotate: true
+  xy: 176, 179
+  size: 344, 148
+  orig: 344, 148
+  offset: 0, 0
+  index: -1
+giua-napmo
+  rotate: true
+  xy: 478, 204
+  size: 319, 190
+  orig: 319, 190
+  offset: 0, 0
+  index: -1
+sang trang
+  rotate: false
+  xy: 1151, 186
+  size: 125, 125
+  orig: 125, 125
+  offset: 0, 0
+  index: -1
+sangvuong copy
+  rotate: true
+  xy: 328, 178
+  size: 10, 50
+  orig: 10, 50
+  offset: 0, 0
+  index: -1
+sangxanh
+  rotate: false
+  xy: 926, 25
+  size: 221, 222
+  orig: 221, 222
+  offset: 0, 0
+  index: -1
+tien
+  rotate: true
+  xy: 781, 251
+  size: 272, 115
+  orig: 272, 115
+  offset: 0, 0
+  index: -1
+tienRoi2
+  rotate: true
+  xy: 1006, 251
+  size: 60, 61
+  orig: 60, 61
+  offset: 0, 0
+  index: -1
+tienRoi3
+  rotate: false
+  xy: 1071, 262
+  size: 48, 49
+  orig: 48, 49
+  offset: 0, 0
+  index: -1
+tienRoi5
+  rotate: false
+  xy: 1151, 30
+  size: 81, 51
+  orig: 81, 51
+  offset: 0, 0
+  index: -1
+tienRot1
+  rotate: false
+  xy: 781, 214
+  size: 86, 33
+  orig: 86, 33
+  offset: 0, 0
+  index: -1
+tien_1
+  rotate: true
+  xy: 900, 251
+  size: 272, 102
+  orig: 272, 102
+  offset: 0, 0
+  index: -1
+tien_2
+  rotate: false
+  xy: 1006, 421
+  size: 272, 102
+  orig: 272, 102
+  offset: 0, 0
+  index: -1
+tien_3
+  rotate: false
+  xy: 1006, 315
+  size: 272, 102
+  orig: 272, 102
+  offset: 0, 0
+  index: -1
+tien_5
+  rotate: false
+  xy: 336, 35
+  size: 272, 139
+  orig: 272, 139
+  offset: 0, 0
+  index: -1

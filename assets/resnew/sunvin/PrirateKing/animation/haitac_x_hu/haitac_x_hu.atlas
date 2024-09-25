@@ -1,0 +1,131 @@
+
+haitac_x_hu.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+As
+  rotate: false
+  xy: 232, 18
+  size: 48, 45
+  orig: 48, 45
+  offset: 0, 0
+  index: -1
+As 2
+  rotate: false
+  xy: 232, 18
+  size: 48, 45
+  orig: 48, 45
+  offset: 0, 0
+  index: -1
+As3
+  rotate: false
+  xy: 232, 18
+  size: 48, 45
+  orig: 48, 45
+  offset: 0, 0
+  index: -1
+Bg
+  rotate: false
+  xy: 2, 65
+  size: 334, 445
+  orig: 334, 445
+  offset: 0, 0
+  index: -1
+nuoc
+  rotate: false
+  xy: 131, 37
+  size: 99, 26
+  orig: 99, 26
+  offset: 0, 0
+  index: -1
+nuoc1
+  rotate: false
+  xy: 2, 2
+  size: 115, 28
+  orig: 115, 28
+  offset: 0, 0
+  index: -1
+nuoc2
+  rotate: false
+  xy: 2, 32
+  size: 127, 31
+  orig: 127, 31
+  offset: 0, 0
+  index: -1
+xhu/x2
+  rotate: false
+  xy: 338, 360
+  size: 172, 73
+  orig: 172, 73
+  offset: 0, 0
+  index: -1
+xhu/x3
+  rotate: false
+  xy: 338, 285
+  size: 172, 73
+  orig: 172, 73
+  offset: 0, 0
+  index: -1
+xhu/x4
+  rotate: false
+  xy: 338, 61
+  size: 172, 72
+  orig: 172, 72
+  offset: 0, 0
+  index: -1
+xhu/x7
+  rotate: false
+  xy: 338, 210
+  size: 172, 73
+  orig: 172, 73
+  offset: 0, 0
+  index: -1
+xhu/x8
+  rotate: false
+  xy: 338, 435
+  size: 172, 75
+  orig: 172, 75
+  offset: 0, 0
+  index: -1
+xhu/x9
+  rotate: false
+  xy: 338, 135
+  size: 172, 73
+  orig: 172, 73
+  offset: 0, 0
+  index: -1
+
+haitac_x_hu2.png
+size: 348,172
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ship
+  rotate: true
+  xy: 201, 78
+  size: 91, 135
+  orig: 91, 135
+  offset: 0, 0
+  index: -1
+xhu/x10
+  rotate: false
+  xy: 2, 97
+  size: 197, 72
+  orig: 197, 72
+  offset: 0, 0
+  index: -1
+xhu/x5
+  rotate: false
+  xy: 2, 21
+  size: 170, 74
+  orig: 170, 74
+  offset: 0, 0
+  index: -1
+xhu/x6
+  rotate: false
+  xy: 174, 2
+  size: 170, 74
+  orig: 170, 74
+  offset: 0, 0
+  index: -1

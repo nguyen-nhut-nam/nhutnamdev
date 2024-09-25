@@ -1,0 +1,118 @@
+
+oXYCLUB.png
+size: 2048, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+B
+  rotate: true
+  xy: 367, 70
+  size: 95, 118
+  orig: 95, 118
+  offset: 0, 0
+  index: -1
+C
+  rotate: true
+  xy: 488, 169
+  size: 99, 120
+  orig: 99, 120
+  offset: 0, 0
+  index: -1
+L
+  rotate: true
+  xy: 134, 63
+  size: 83, 118
+  orig: 83, 118
+  offset: 0, 0
+  index: -1
+O
+  rotate: true
+  xy: 367, 166
+  size: 102, 120
+  orig: 102, 120
+  offset: 0, 0
+  index: -1
+U
+  rotate: true
+  xy: 609, 170
+  size: 98, 119
+  orig: 98, 119
+  offset: 0, 0
+  index: -1
+X
+  rotate: false
+  xy: 256, 150
+  size: 110, 118
+  orig: 110, 118
+  offset: 0, 0
+  index: -1
+Y
+  rotate: true
+  xy: 729, 167
+  size: 101, 118
+  orig: 101, 118
+  offset: 0, 0
+  index: -1
+anh sang 1
+  rotate: true
+  xy: 880, 388
+  size: 591, 632
+  orig: 591, 632
+  offset: 0, 0
+  index: -1
+anh sang 2
+  rotate: false
+  xy: 1, 402
+  size: 878, 577
+  orig: 878, 577
+  offset: 0, 0
+  index: -1
+cham
+  rotate: false
+  xy: 1432, 340
+  size: 44, 47
+  orig: 44, 47
+  offset: 0, 0
+  index: -1
+rong phai
+  rotate: true
+  xy: 850, 1
+  size: 386, 581
+  orig: 386, 581
+  offset: 0, 0
+  index: -1
+rong trai
+  rotate: false
+  xy: 1513, 296
+  size: 509, 683
+  orig: 509, 683
+  offset: 0, 0
+  index: -1
+tien
+  rotate: false
+  xy: 1, 269
+  size: 848, 132
+  orig: 848, 132
+  offset: 0, 0
+  index: -1
+xucxac_1
+  rotate: false
+  xy: 1, 4
+  size: 122, 128
+  orig: 122, 128
+  offset: 0, 0
+  index: -1
+xucxac_2
+  rotate: false
+  xy: 134, 147
+  size: 121, 121
+  orig: 121, 121
+  offset: 0, 0
+  index: -1
+xucxac_3
+  rotate: false
+  xy: 1, 133
+  size: 132, 135
+  orig: 132, 135
+  offset: 0, 0
+  index: -1

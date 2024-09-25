@@ -1,0 +1,13 @@
+
+phoenix.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+phoenix
+  rotate: false
+  xy: 2, 2
+  size: 193, 182
+  orig: 193, 182
+  offset: 0, 0
+  index: -1

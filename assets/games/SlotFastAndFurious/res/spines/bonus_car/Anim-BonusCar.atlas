@@ -1,0 +1,48 @@
+
+Anim-BonusCar.png
+size: 658,398
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+car
+  rotate: false
+  xy: 2, 75
+  size: 524, 321
+  orig: 524, 321
+  offset: 0, 0
+  index: -1
+denphaP
+  rotate: false
+  xy: 393, 30
+  size: 122, 41
+  orig: 122, 41
+  offset: 0, 0
+  index: -1
+denphaT
+  rotate: true
+  xy: 616, 171
+  size: 225, 40
+  orig: 225, 40
+  offset: 0, 0
+  index: -1
+tiasang
+  rotate: true
+  xy: 586, 138
+  size: 258, 26
+  orig: 258, 26
+  offset: 0, 0
+  index: -1
+vongday
+  rotate: true
+  xy: 530, 82
+  size: 314, 52
+  orig: 314, 52
+  offset: 0, 0
+  index: -1
+vongmanh
+  rotate: false
+  xy: 2, 2
+  size: 387, 69
+  orig: 387, 69
+  offset: 0, 0
+  index: -1

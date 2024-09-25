@@ -1,0 +1,62 @@
+
+Animation_Coin.png
+size: 279,278
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+goldcoin0
+  rotate: false
+  xy: 2, 74
+  size: 87, 103
+  orig: 87, 103
+  offset: 0, 0
+  index: -1
+goldcoin1
+  rotate: false
+  xy: 2, 179
+  size: 107, 97
+  orig: 107, 97
+  offset: 0, 0
+  index: -1
+goldcoin2
+  rotate: false
+  xy: 216, 170
+  size: 59, 106
+  orig: 59, 106
+  offset: 0, 0
+  index: -1
+goldcoin3
+  rotate: false
+  xy: 132, 94
+  size: 56, 101
+  orig: 56, 101
+  offset: 0, 0
+  index: -1
+goldcoin4
+  rotate: false
+  xy: 111, 197
+  size: 103, 79
+  orig: 103, 79
+  offset: 0, 0
+  index: -1
+goldcoin5
+  rotate: false
+  xy: 2, 2
+  size: 106, 70
+  orig: 106, 70
+  offset: 0, 0
+  index: -1
+goldcoin6
+  rotate: true
+  xy: 190, 74
+  size: 94, 87
+  orig: 94, 87
+  offset: 0, 0
+  index: -1
+goldcoin7
+  rotate: false
+  xy: 91, 75
+  size: 39, 102
+  orig: 39, 102
+  offset: 0, 0
+  index: -1

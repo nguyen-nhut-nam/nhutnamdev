@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8abc8145-17ac-433c-b851-9f2e0d4bb0b6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 357,
+  "height": 58,
+  "platformSettings": {},
+  "subMetas": {
+    "lb_logo_2.png": {
+      "ver": "1.0.6",
+      "uuid": "19be6632-4dc3-42aa-a0c2-bb4c30c3526a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8abc8145-17ac-433c-b851-9f2e0d4bb0b6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -178,
+      "offsetY": -18.5,
+      "trimX": 0,
+      "trimY": 47,
+      "width": 1,
+      "height": 1,
+      "rawWidth": 357,
+      "rawHeight": 58,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

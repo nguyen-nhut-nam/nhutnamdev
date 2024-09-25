@@ -1,0 +1,90 @@
+
+newyear_hd.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5
+  rotate: false
+  xy: 1691, 8
+  size: 34, 36
+  orig: 34, 36
+  offset: 0, 0
+  index: -1
+Jackpots
+  rotate: true
+  xy: 1872, 121
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+LD1
+  rotate: true
+  xy: 1564, 22
+  size: 22, 57
+  orig: 22, 57
+  offset: 0, 0
+  index: -1
+LD2
+  rotate: true
+  xy: 1623, 22
+  size: 22, 46
+  orig: 22, 46
+  offset: 0, 0
+  index: -1
+LD3
+  rotate: true
+  xy: 1655, 4
+  size: 16, 34
+  orig: 16, 34
+  offset: 0, 0
+  index: -1
+LM_1
+  rotate: false
+  xy: 1671, 30
+  size: 11, 14
+  orig: 11, 14
+  offset: 0, 0
+  index: -1
+Mai1
+  rotate: false
+  xy: 1872, 255
+  size: 100, 100
+  orig: 106, 106
+  offset: 3, 3
+  index: -1
+as1
+  rotate: false
+  xy: 1890, 58
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+as2
+  rotate: false
+  xy: 1699, 294
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+as3
+  rotate: true
+  xy: 1699, 160
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+as4
+  rotate: true
+  xy: 1762, 160
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+mai
+  rotate: true
+  xy: 1562, 145
+  size: 210, 135
+  orig: 220, 136
+  offset: 10, 0
+  index: -1

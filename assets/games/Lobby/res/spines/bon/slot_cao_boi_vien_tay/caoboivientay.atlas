@@ -1,0 +1,139 @@
+
+caoboivientay.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 2, 93
+  size: 135, 351
+  orig: 135, 351
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 2, 230
+  size: 280, 537
+  orig: 280, 537
+  offset: 0, 0
+  index: -1
+AO11
+  rotate: true
+  xy: 565, 129
+  size: 60, 177
+  orig: 60, 177
+  offset: 0, 0
+  index: -1
+T1
+  rotate: true
+  xy: 942, 312
+  size: 198, 77
+  orig: 198, 77
+  offset: 0, 0
+  index: -1
+T11
+  rotate: false
+  xy: 287, 32
+  size: 15, 11
+  orig: 15, 11
+  offset: 0, 0
+  index: -1
+T22
+  rotate: true
+  xy: 1003, 285
+  size: 25, 19
+  orig: 25, 19
+  offset: 0, 0
+  index: -1
+bg11
+  rotate: true
+  xy: 541, 242
+  size: 268, 399
+  orig: 268, 399
+  offset: 0, 0
+  index: -1
+bg22
+  rotate: false
+  xy: 355, 117
+  size: 208, 111
+  orig: 208, 111
+  offset: 0, 0
+  index: -1
+bg3
+  rotate: false
+  xy: 565, 191
+  size: 216, 49
+  orig: 216, 49
+  offset: 0, 0
+  index: -1
+c1
+  rotate: true
+  xy: 675, 85
+  size: 42, 47
+  orig: 42, 47
+  offset: 0, 0
+  index: -1
+e1
+  rotate: false
+  xy: 943, 189
+  size: 42, 63
+  orig: 42, 63
+  offset: 0, 0
+  index: -1
+e2
+  rotate: false
+  xy: 943, 126
+  size: 44, 61
+  orig: 44, 61
+  offset: 0, 0
+  index: -1
+khan
+  rotate: true
+  xy: 783, 133
+  size: 107, 158
+  orig: 107, 158
+  offset: 0, 0
+  index: -1
+m
+  rotate: true
+  xy: 744, 158
+  size: 31, 37
+  orig: 31, 37
+  offset: 0, 0
+  index: -1
+mu
+  rotate: false
+  xy: 942, 254
+  size: 59, 56
+  orig: 59, 56
+  offset: 0, 0
+  index: -1
+t2
+  rotate: false
+  xy: 205, 45
+  size: 158, 46
+  orig: 158, 46
+  offset: 0, 0
+  index: -1
+tay
+  rotate: true
+  xy: 205, 2
+  size: 41, 80
+  orig: 41, 80
+  offset: 0, 0
+  index: -1
+tay1
+  rotate: true
+  xy: 2, 2
+  size: 89, 201
+  orig: 89, 201
+  offset: 0, 0
+  index: -1
+tay11
+  rotate: true
+  xy: 565, 100
+  size: 27, 108
+  orig: 27, 108
+  offset: 0, 0
+  index: -1

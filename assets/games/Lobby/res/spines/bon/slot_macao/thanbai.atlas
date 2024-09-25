@@ -1,0 +1,97 @@
+
+thanbai.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: false
+  xy: 2, 105
+  size: 270, 401
+  orig: 270, 401
+  offset: 0, 0
+  index: -1
+b1
+  rotate: false
+  xy: 314, 222
+  size: 30, 27
+  orig: 30, 27
+  offset: 0, 0
+  index: -1
+b2
+  rotate: true
+  xy: 2, 2
+  size: 17, 27
+  orig: 17, 27
+  offset: 0, 0
+  index: -1
+b3
+  rotate: false
+  xy: 896, 467
+  size: 36, 39
+  orig: 36, 39
+  offset: 0, 0
+  index: -1
+bg2
+  rotate: false
+  xy: 469, 393
+  size: 210, 113
+  orig: 210, 113
+  offset: 0, 0
+  index: -1
+cha
+  rotate: false
+  xy: 274, 251
+  size: 193, 255
+  orig: 193, 255
+  offset: 0, 0
+  index: -1
+cha1
+  rotate: true
+  xy: 2, 21
+  size: 82, 237
+  orig: 82, 237
+  offset: 0, 0
+  index: -1
+chai
+  rotate: false
+  xy: 241, 22
+  size: 30, 81
+  orig: 30, 81
+  offset: 0, 0
+  index: -1
+mc
+  rotate: false
+  xy: 469, 345
+  size: 205, 46
+  orig: 205, 46
+  offset: 0, 0
+  index: -1
+tay1
+  rotate: false
+  xy: 274, 125
+  size: 38, 124
+  orig: 38, 124
+  offset: 0, 0
+  index: -1
+tay22
+  rotate: false
+  xy: 469, 263
+  size: 68, 80
+  orig: 68, 80
+  offset: 0, 0
+  index: -1
+tay33
+  rotate: false
+  xy: 681, 409
+  size: 42, 45
+  orig: 42, 45
+  offset: 0, 0
+  index: -1
+tb
+  rotate: false
+  xy: 681, 456
+  size: 213, 50
+  orig: 213, 50
+  offset: 0, 0
+  index: -1

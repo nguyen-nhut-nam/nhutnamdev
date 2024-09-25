@@ -1,0 +1,55 @@
+
+samloc.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+11
+  rotate: false
+  xy: 234, 88
+  size: 201, 148
+  orig: 201, 148
+  offset: 0, 0
+  index: -1
+BG1
+  rotate: false
+  xy: 2, 47
+  size: 230, 189
+  orig: 230, 189
+  offset: 0, 0
+  index: -1
+SAMLOC
+  rotate: false
+  xy: 437, 170
+  size: 209, 66
+  orig: 209, 66
+  offset: 0, 0
+  index: -1
+b1
+  rotate: true
+  xy: 437, 74
+  size: 94, 107
+  orig: 94, 107
+  offset: 0, 0
+  index: -1
+b2
+  rotate: true
+  xy: 234, 2
+  size: 84, 103
+  orig: 84, 103
+  offset: 0, 0
+  index: -1
+b3
+  rotate: true
+  xy: 339, 15
+  size: 71, 91
+  orig: 71, 91
+  offset: 0, 0
+  index: -1
+b4
+  rotate: true
+  xy: 546, 79
+  size: 89, 106
+  orig: 89, 106
+  offset: 0, 0
+  index: -1

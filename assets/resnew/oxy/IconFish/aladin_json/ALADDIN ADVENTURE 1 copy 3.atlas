@@ -1,0 +1,90 @@
+
+ALADDIN ADVENTURE 1 copy 3.png
+size: 2028, 1397
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 1 copy 3
+  rotate: false
+  xy: 1513, 399
+  size: 514, 997
+  orig: 514, 997
+  offset: 0, 0
+  index: -1
+aladin
+  rotate: false
+  xy: 1, 169
+  size: 755, 1227
+  orig: 755, 1227
+  offset: 0, 0
+  index: -1
+bao2_1
+  rotate: false
+  xy: 1, 1
+  size: 200, 167
+  orig: 200, 167
+  offset: 0, 0
+  index: -1
+bao2_2
+  rotate: false
+  xy: 202, 1
+  size: 200, 167
+  orig: 200, 167
+  offset: 0, 0
+  index: -1
+bao2_3
+  rotate: false
+  xy: 403, 1
+  size: 200, 167
+  orig: 200, 167
+  offset: 0, 0
+  index: -1
+bao2_4
+  rotate: false
+  xy: 604, 1
+  size: 200, 167
+  orig: 200, 167
+  offset: 0, 0
+  index: -1
+guangdian
+  rotate: false
+  xy: 1007, 67
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+guangquan
+  rotate: false
+  xy: 805, 48
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+guangxian
+  rotate: true
+  xy: 926, 128
+  size: 40, 200
+  orig: 40, 200
+  offset: 0, 0
+  index: -1
+khung tiền copy 8
+  rotate: false
+  xy: 1513, 103
+  size: 508, 295
+  orig: 508, 295
+  offset: 0, 0
+  index: -1
+logo-small-300x241
+  rotate: false
+  xy: 757, 169
+  size: 755, 1227
+  orig: 755, 1227
+  offset: 0, 0
+  index: -1
+xingxing
+  rotate: false
+  xy: 926, 47
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1

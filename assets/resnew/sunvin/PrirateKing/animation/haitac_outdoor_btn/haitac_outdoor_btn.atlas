@@ -1,0 +1,90 @@
+
+haitac_outdoor_btn.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chest/Frame 1
+  rotate: false
+  xy: 447, 235
+  size: 394, 231
+  orig: 394, 231
+  offset: 0, 0
+  index: -1
+chest/Frame 1 glow
+  rotate: false
+  xy: 2, 375
+  size: 443, 284
+  orig: 443, 284
+  offset: 0, 0
+  index: -1
+chest/Frame 2
+  rotate: false
+  xy: 398, 2
+  size: 394, 231
+  orig: 394, 231
+  offset: 0, 0
+  index: -1
+chest/Frame 3
+  rotate: false
+  xy: 447, 468
+  size: 394, 244
+  orig: 394, 244
+  offset: 0, 0
+  index: -1
+chest/Frame 4
+  rotate: false
+  xy: 2, 111
+  size: 394, 262
+  orig: 394, 262
+  offset: 0, 0
+  index: -1
+chest/Frame 5
+  rotate: false
+  xy: 447, 714
+  size: 394, 295
+  orig: 394, 295
+  offset: 0, 0
+  index: -1
+chest/Frame 5 glow
+  rotate: false
+  xy: 2, 661
+  size: 443, 348
+  orig: 443, 348
+  offset: 0, 0
+  index: -1
+result/haitac_outdoor_item_1
+  rotate: false
+  xy: 843, 739
+  size: 148, 134
+  orig: 148, 134
+  offset: 0, 0
+  index: -1
+result/haitac_outdoor_item_2
+  rotate: false
+  xy: 843, 603
+  size: 148, 134
+  orig: 148, 134
+  offset: 0, 0
+  index: -1
+result/haitac_outdoor_item_3
+  rotate: false
+  xy: 843, 467
+  size: 148, 134
+  orig: 148, 134
+  offset: 0, 0
+  index: -1
+result/haitac_outdoor_item_4
+  rotate: false
+  xy: 843, 331
+  size: 148, 134
+  orig: 148, 134
+  offset: 0, 0
+  index: -1
+result/haitac_outdoor_item_5
+  rotate: false
+  xy: 843, 875
+  size: 148, 134
+  orig: 148, 134
+  offset: 0, 0
+  index: -1

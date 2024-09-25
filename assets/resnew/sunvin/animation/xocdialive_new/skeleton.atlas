@@ -1,0 +1,97 @@
+
+skeleton.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+445 copy
+  rotate: true
+  xy: 687, 180
+  size: 35, 34
+  orig: 35, 34
+  offset: 0, 0
+  index: -1
+445 copy 2
+  rotate: true
+  xy: 687, 180
+  size: 35, 34
+  orig: 35, 34
+  offset: 0, 0
+  index: -1
+557 copy
+  rotate: true
+  xy: 687, 143
+  size: 35, 34
+  orig: 35, 34
+  offset: 0, 0
+  index: -1
+557 copy 2
+  rotate: true
+  xy: 687, 143
+  size: 35, 34
+  orig: 35, 34
+  offset: 0, 0
+  index: -1
+Ellipse 1 copy1
+  rotate: true
+  xy: 2, 32
+  size: 183, 186
+  orig: 183, 186
+  offset: 0, 0
+  index: -1
+LIVESTREAM
+  rotate: false
+  xy: 687, 30
+  size: 266, 102
+  orig: 266, 102
+  offset: 0, 0
+  index: -1
+Layer 6
+  rotate: true
+  xy: 2, 217
+  size: 266, 420
+  orig: 266, 420
+  offset: 0, 0
+  index: -1
+Layer 733
+  rotate: true
+  xy: 424, 217
+  size: 266, 312
+  orig: 266, 312
+  offset: 0, 0
+  index: -1
+Particle
+  rotate: false
+  xy: 738, 134
+  size: 254, 349
+  orig: 254, 349
+  offset: 0, 0
+  index: -1
+images-13 copy 2
+  rotate: false
+  xy: 190, 74
+  size: 141, 141
+  orig: 141, 141
+  offset: 0, 0
+  index: -1
+âPngtreeâlight effect_10602
+  rotate: false
+  xy: 333, 97
+  size: 264, 118
+  orig: 264, 118
+  offset: 0, 0
+  index: -1
+ĐĨA
+  rotate: true
+  xy: 599, 2
+  size: 213, 86
+  orig: 213, 86
+  offset: 0, 0
+  index: -1
+ĐĨA 2
+  rotate: false
+  xy: 333, 9
+  size: 213, 86
+  orig: 213, 86
+  offset: 0, 0
+  index: -1

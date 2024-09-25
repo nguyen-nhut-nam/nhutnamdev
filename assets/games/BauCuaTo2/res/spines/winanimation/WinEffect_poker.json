@@ -1,0 +1,5837 @@
+{
+    "skeleton": {
+        "hash": "oiWuBFu1oq9RJObCqoP4MB9fG60",
+        "spine": "3.7.93",
+        "width": 281,
+        "height": 269,
+        "images": "",
+        "audio": ""
+    },
+    "bones": [{
+        "name": "root"
+    }, {
+        "name": "bone",
+        "parent": "root",
+        "x": -0.11,
+        "y": -0.02
+    }, {
+        "name": "bone2",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone3",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone4",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone5",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone6",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone7",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone8",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone9",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone10",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone11",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone12",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone13",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone14",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone15",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone16",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone17",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone18",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone19",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }, {
+        "name": "bone20",
+        "parent": "root",
+        "x": -0.11,
+        "y": -2.95
+    }],
+    "slots": [{
+        "name": "CircleEffect",
+        "bone": "root",
+        "attachment": "CircleEffect"
+    }, {
+        "name": "IconMoney_animation1",
+        "bone": "bone2",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation11",
+        "bone": "bone3",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation21",
+        "bone": "bone4",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation31",
+        "bone": "bone5",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation41",
+        "bone": "bone6",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation51",
+        "bone": "bone7",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation61",
+        "bone": "bone8",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation71",
+        "bone": "bone9",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation81",
+        "bone": "bone10",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation91",
+        "bone": "bone11",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation101",
+        "bone": "bone12",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation111",
+        "bone": "bone13",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation121",
+        "bone": "bone14",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation131",
+        "bone": "bone15",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation141",
+        "bone": "bone16",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation181",
+        "bone": "bone20",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation171",
+        "bone": "bone19",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation161",
+        "bone": "bone18",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation151",
+        "bone": "bone17",
+        "attachment": "IconMoney_animation0"
+    }, {
+        "name": "IconMoney_animation2",
+        "bone": "bone2",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation12",
+        "bone": "bone3",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation22",
+        "bone": "bone4",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation32",
+        "bone": "bone5",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation42",
+        "bone": "bone6",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation52",
+        "bone": "bone7",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation62",
+        "bone": "bone8",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation72",
+        "bone": "bone9",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation82",
+        "bone": "bone10",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation92",
+        "bone": "bone11",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation102",
+        "bone": "bone12",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation112",
+        "bone": "bone13",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation122",
+        "bone": "bone14",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation132",
+        "bone": "bone15",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation142",
+        "bone": "bone16",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation182",
+        "bone": "bone20",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation172",
+        "bone": "bone19",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation162",
+        "bone": "bone18",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation152",
+        "bone": "bone17",
+        "attachment": "IconMoney_animation1"
+    }, {
+        "name": "IconMoney_animation3",
+        "bone": "bone2",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation13",
+        "bone": "bone3",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation23",
+        "bone": "bone4",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation33",
+        "bone": "bone5",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation43",
+        "bone": "bone6",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation53",
+        "bone": "bone7",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation63",
+        "bone": "bone8",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation73",
+        "bone": "bone9",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation83",
+        "bone": "bone10",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation93",
+        "bone": "bone11",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation103",
+        "bone": "bone12",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation113",
+        "bone": "bone13",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation123",
+        "bone": "bone14",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation133",
+        "bone": "bone15",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation143",
+        "bone": "bone16",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation183",
+        "bone": "bone20",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation173",
+        "bone": "bone19",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation163",
+        "bone": "bone18",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation153",
+        "bone": "bone17",
+        "attachment": "IconMoney_animation2"
+    }, {
+        "name": "IconMoney_animation4",
+        "bone": "bone2",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation14",
+        "bone": "bone3",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation24",
+        "bone": "bone4",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation34",
+        "bone": "bone5",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation44",
+        "bone": "bone6",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation54",
+        "bone": "bone7",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation64",
+        "bone": "bone8",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation74",
+        "bone": "bone9",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation84",
+        "bone": "bone10",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation94",
+        "bone": "bone11",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation104",
+        "bone": "bone12",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation114",
+        "bone": "bone13",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation124",
+        "bone": "bone14",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation134",
+        "bone": "bone15",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation144",
+        "bone": "bone16",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation184",
+        "bone": "bone20",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation174",
+        "bone": "bone19",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation164",
+        "bone": "bone18",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation154",
+        "bone": "bone17",
+        "attachment": "IconMoney_animation3"
+    }, {
+        "name": "IconMoney_animation5",
+        "bone": "bone2",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation15",
+        "bone": "bone3",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation25",
+        "bone": "bone4",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation35",
+        "bone": "bone5",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation45",
+        "bone": "bone6",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation55",
+        "bone": "bone7",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation65",
+        "bone": "bone8",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation75",
+        "bone": "bone9",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation85",
+        "bone": "bone10",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation95",
+        "bone": "bone11",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation105",
+        "bone": "bone12",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation115",
+        "bone": "bone13",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation125",
+        "bone": "bone14",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation135",
+        "bone": "bone15",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation145",
+        "bone": "bone16",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation185",
+        "bone": "bone20",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation175",
+        "bone": "bone19",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation165",
+        "bone": "bone18",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation155",
+        "bone": "bone17",
+        "attachment": "IconMoney_animation4"
+    }, {
+        "name": "IconMoney_animation6",
+        "bone": "bone2",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation16",
+        "bone": "bone3",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation26",
+        "bone": "bone4",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation36",
+        "bone": "bone5",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation46",
+        "bone": "bone6",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation56",
+        "bone": "bone7",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation66",
+        "bone": "bone8",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation76",
+        "bone": "bone9",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation86",
+        "bone": "bone10",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation96",
+        "bone": "bone11",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation106",
+        "bone": "bone12",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation116",
+        "bone": "bone13",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation126",
+        "bone": "bone14",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation136",
+        "bone": "bone15",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation146",
+        "bone": "bone16",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation186",
+        "bone": "bone20",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation176",
+        "bone": "bone19",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation166",
+        "bone": "bone18",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation156",
+        "bone": "bone17",
+        "attachment": "IconMoney_animation5"
+    }, {
+        "name": "IconMoney_animation7",
+        "bone": "bone2",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation17",
+        "bone": "bone3",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation27",
+        "bone": "bone4",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation37",
+        "bone": "bone5",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation47",
+        "bone": "bone6",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation57",
+        "bone": "bone7",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation67",
+        "bone": "bone8",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation77",
+        "bone": "bone9",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation87",
+        "bone": "bone10",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation97",
+        "bone": "bone11",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation107",
+        "bone": "bone12",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation117",
+        "bone": "bone13",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation127",
+        "bone": "bone14",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation137",
+        "bone": "bone15",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation147",
+        "bone": "bone16",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation187",
+        "bone": "bone20",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation177",
+        "bone": "bone19",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation167",
+        "bone": "bone18",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation157",
+        "bone": "bone17",
+        "attachment": "IconMoney_animation6"
+    }, {
+        "name": "IconMoney_animation8",
+        "bone": "bone2",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation18",
+        "bone": "bone3",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation28",
+        "bone": "bone4",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation38",
+        "bone": "bone5",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation48",
+        "bone": "bone6",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation58",
+        "bone": "bone7",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation68",
+        "bone": "bone8",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation78",
+        "bone": "bone9",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation88",
+        "bone": "bone10",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation98",
+        "bone": "bone11",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation108",
+        "bone": "bone12",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation118",
+        "bone": "bone13",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation128",
+        "bone": "bone14",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation138",
+        "bone": "bone15",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation148",
+        "bone": "bone16",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation188",
+        "bone": "bone20",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation178",
+        "bone": "bone19",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation168",
+        "bone": "bone18",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation158",
+        "bone": "bone17",
+        "attachment": "IconMoney_animation7"
+    }, {
+        "name": "IconMoney_animation9",
+        "bone": "bone2",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation19",
+        "bone": "bone3",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation29",
+        "bone": "bone4",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation39",
+        "bone": "bone5",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation49",
+        "bone": "bone6",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation59",
+        "bone": "bone7",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation69",
+        "bone": "bone8",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation79",
+        "bone": "bone9",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation89",
+        "bone": "bone10",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation99",
+        "bone": "bone11",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation109",
+        "bone": "bone12",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation119",
+        "bone": "bone13",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation129",
+        "bone": "bone14",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation139",
+        "bone": "bone15",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation149",
+        "bone": "bone16",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation189",
+        "bone": "bone20",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation179",
+        "bone": "bone19",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation169",
+        "bone": "bone18",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation159",
+        "bone": "bone17",
+        "attachment": "IconMoney_animation8"
+    }, {
+        "name": "IconMoney_animation10",
+        "bone": "bone2",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation20",
+        "bone": "bone3",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation30",
+        "bone": "bone4",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation40",
+        "bone": "bone5",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation50",
+        "bone": "bone6",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation60",
+        "bone": "bone7",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation70",
+        "bone": "bone8",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation80",
+        "bone": "bone9",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation90",
+        "bone": "bone10",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation100",
+        "bone": "bone11",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation110",
+        "bone": "bone12",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation120",
+        "bone": "bone13",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation130",
+        "bone": "bone14",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation140",
+        "bone": "bone15",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation150",
+        "bone": "bone16",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation190",
+        "bone": "bone20",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation180",
+        "bone": "bone19",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation170",
+        "bone": "bone18",
+        "attachment": "IconMoney_animation9"
+    }, {
+        "name": "IconMoney_animation160",
+        "bone": "bone17",
+        "attachment": "IconMoney_animation9"
+    }],
+    "skins": {
+        "default": {
+            "CircleEffect": {
+                "CircleEffect": {
+                    "type": "mesh",
+                    "uvs": [0, 0, 1, 0, 1, 1, 0, 1],
+                    "triangles": [3, 0, 1, 3, 1, 2],
+                    "vertices": [1, 1, -139.89, 135.02, 1, 1, 1, 141.11, 135.02, 1, 1, 1, 141.11, -133.98, 1, 1, 1, -139.89, -133.98, 1],
+                    "hull": 4,
+                    "edges": [0, 2, 2, 4, 4, 6, 0, 6],
+                    "width": 281,
+                    "height": 269
+                }
+            },
+            "IconMoney_animation1": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation10": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation100": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation101": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation102": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation103": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation104": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation105": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation106": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation107": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation108": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation109": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation11": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation110": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation111": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation112": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation113": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation114": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation115": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation116": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation117": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation118": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation119": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation12": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation120": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation121": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation122": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation123": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation124": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation125": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation126": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation127": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation128": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation129": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation13": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation130": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation131": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation132": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation133": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation134": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation135": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation136": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation137": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation138": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation139": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation14": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation140": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation141": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation142": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation143": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation144": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation145": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation146": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation147": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation148": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation149": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation15": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation150": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation151": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation152": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation153": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation154": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation155": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation156": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation157": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation158": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation159": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation16": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation160": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation161": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation162": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation163": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation164": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation165": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation166": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation167": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation168": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation169": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation17": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation170": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation171": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation172": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation173": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation174": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation175": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation176": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation177": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation178": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation179": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation18": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation180": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation181": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation182": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation183": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation184": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation185": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation186": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation187": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation188": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation189": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation19": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation190": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation2": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation20": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation21": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation22": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation23": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation24": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation25": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation26": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation27": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation28": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation29": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation3": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation30": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation31": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation32": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation33": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation34": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation35": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation36": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation37": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation38": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation39": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation4": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation40": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation41": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation42": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation43": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation44": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation45": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation46": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation47": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation48": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation49": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation5": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation50": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation51": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation52": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation53": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation54": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation55": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation56": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation57": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation58": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation59": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation6": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation60": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation61": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation62": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation63": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation64": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation65": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation66": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation67": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation68": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation69": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation7": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation70": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation71": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation72": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation73": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation74": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation75": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation76": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation77": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation78": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation79": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation8": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation80": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation81": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation82": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation83": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation84": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation85": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation86": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation87": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation88": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation89": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation9": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation90": {
+                "IconMoney_animation9": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation91": {
+                "IconMoney_animation0": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation92": {
+                "IconMoney_animation1": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation93": {
+                "IconMoney_animation2": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation94": {
+                "IconMoney_animation3": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation95": {
+                "IconMoney_animation4": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation96": {
+                "IconMoney_animation5": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation97": {
+                "IconMoney_animation6": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation98": {
+                "IconMoney_animation7": {
+                    "width": 18,
+                    "height": 32
+                }
+            },
+            "IconMoney_animation99": {
+                "IconMoney_animation8": {
+                    "width": 18,
+                    "height": 32
+                }
+            }
+        }
+    },
+    "animations": {
+        "animation": {
+            "slots": {
+                "IconMoney_animation1": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation2": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.1333,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.3,
+                        "name": null
+                    }, {
+                        "time": 1.4667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.6333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation3": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.3,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 0.4333,
+                        "name": null
+                    }, {
+                        "time": 1.6333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.7667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation4": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.4333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 0.5667,
+                        "name": null
+                    }, {
+                        "time": 1.7667,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.9,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation5": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.5667,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 0.7,
+                        "name": null
+                    }, {
+                        "time": 1.9,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 2.0333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation6": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 0.9,
+                        "name": null
+                    }, {
+                        "time": 2.0333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 2.2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation7": {
+                    "color": [{
+                        "time": 2.2,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.9,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.0333,
+                        "name": null
+                    }, {
+                        "time": 2.2,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 2.3333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation8": {
+                    "color": [{
+                        "time": 2.3333,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.0333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.1667,
+                        "name": null
+                    }, {
+                        "time": 2.3333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.4667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation9": {
+                    "color": [{
+                        "time": 2.4667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0.1333,
+                        "name": null
+                    }, {
+                        "time": 1.1667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.4667,
+                        "name": null
+                    }, {
+                        "time": 2.4667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation10": {
+                    "color": [{
+                        "time": 2.6667,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.6667,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation11": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation12": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.1333,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.3,
+                        "name": null
+                    }, {
+                        "time": 1.3667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation13": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.3,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 0.4,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation14": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.4,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 0.5333,
+                        "name": null
+                    }, {
+                        "time": 1.6667,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.8,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation15": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.5333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 0.6667,
+                        "name": null
+                    }, {
+                        "time": 1.8,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.9,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation16": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6667,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 0.8333,
+                        "name": null
+                    }, {
+                        "time": 1.9,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 2.0667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation17": {
+                    "color": [{
+                        "time": 2.0667,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.8333,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 0.9667,
+                        "name": null
+                    }, {
+                        "time": 2.0667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 2.2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation18": {
+                    "color": [{
+                        "time": 2.2,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.9667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.0667,
+                        "name": null
+                    }, {
+                        "time": 2.2,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.3333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation19": {
+                    "color": [{
+                        "time": 2.3333,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0.1333,
+                        "name": null
+                    }, {
+                        "time": 1.0667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.3667,
+                        "name": null
+                    }, {
+                        "time": 2.3333,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.5,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation20": {
+                    "color": [{
+                        "time": 2.5,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.5,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation21": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation22": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.1,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.2333,
+                        "name": null
+                    }, {
+                        "time": 1.1,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.2333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation23": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.2333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 0.3333,
+                        "name": null
+                    }, {
+                        "time": 1.2333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation24": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.3333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 0.4333,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation25": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.4333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 0.5333,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation26": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.5333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 0.6667,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation27": {
+                    "color": [{
+                        "time": 1.6667,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 0.7667,
+                        "name": null
+                    }, {
+                        "time": 1.6667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.7667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation28": {
+                    "color": [{
+                        "time": 1.7667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 0.8667,
+                        "name": null
+                    }, {
+                        "time": 1.7667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.8667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation29": {
+                    "color": [{
+                        "time": 1.8667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0.1,
+                        "name": null
+                    }, {
+                        "time": 0.8667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.1,
+                        "name": null
+                    }, {
+                        "time": 1.8667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation30": {
+                    "color": [{
+                        "time": 2,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation31": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation32": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.1,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.2333,
+                        "name": null
+                    }, {
+                        "time": 1.1,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.2333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation33": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.2333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 0.3333,
+                        "name": null
+                    }, {
+                        "time": 1.2333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation34": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.3333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 0.4333,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation35": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.4333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 0.5333,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation36": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.5333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 0.6667,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation37": {
+                    "color": [{
+                        "time": 1.6667,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 0.7667,
+                        "name": null
+                    }, {
+                        "time": 1.6667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.7667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation38": {
+                    "color": [{
+                        "time": 1.7667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 0.8667,
+                        "name": null
+                    }, {
+                        "time": 1.7667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.8667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation39": {
+                    "color": [{
+                        "time": 1.8667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0.1,
+                        "name": null
+                    }, {
+                        "time": 0.8667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.1,
+                        "name": null
+                    }, {
+                        "time": 1.8667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation40": {
+                    "color": [{
+                        "time": 2,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation41": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation42": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.5,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.6333,
+                        "name": null
+                    }, {
+                        "time": 1.5,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.6333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation43": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 0.7333,
+                        "name": null
+                    }, {
+                        "time": 1.6333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.7333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation44": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 0.8333,
+                        "name": null
+                    }, {
+                        "time": 1.7333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.8333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation45": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.8333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 0.9333,
+                        "name": null
+                    }, {
+                        "time": 1.8333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.9333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation46": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.9333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.0667,
+                        "name": null
+                    }, {
+                        "time": 1.9333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 2.0667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation47": {
+                    "color": [{
+                        "time": 2.0667,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.0667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.1667,
+                        "name": null
+                    }, {
+                        "time": 2.0667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 2.1667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation48": {
+                    "color": [{
+                        "time": 2.1667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.1667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.2667,
+                        "name": null
+                    }, {
+                        "time": 2.1667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.2667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation49": {
+                    "color": [{
+                        "time": 2.2667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.3333,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 0.5,
+                        "name": null
+                    }, {
+                        "time": 1.2667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.5,
+                        "name": null
+                    }, {
+                        "time": 2.2667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.4,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation50": {
+                    "color": [{
+                        "time": 2.4,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.4,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation51": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation52": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.1,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.2333,
+                        "name": null
+                    }, {
+                        "time": 1.1,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.2333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation53": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.2333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 0.3333,
+                        "name": null
+                    }, {
+                        "time": 1.2333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation54": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.3333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 0.4333,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation55": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.4333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 0.5333,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation56": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.5333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 0.6667,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation57": {
+                    "color": [{
+                        "time": 1.6667,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 0.7667,
+                        "name": null
+                    }, {
+                        "time": 1.6667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.7667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation58": {
+                    "color": [{
+                        "time": 1.7667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 0.8667,
+                        "name": null
+                    }, {
+                        "time": 1.7667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.8667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation59": {
+                    "color": [{
+                        "time": 1.8667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0.1,
+                        "name": null
+                    }, {
+                        "time": 0.8667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.1,
+                        "name": null
+                    }, {
+                        "time": 1.8667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation60": {
+                    "color": [{
+                        "time": 2,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation61": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation62": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.2667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.4,
+                        "name": null
+                    }, {
+                        "time": 1.2667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.4,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation63": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.4,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 0.5,
+                        "name": null
+                    }, {
+                        "time": 1.4,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.5,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation64": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.5,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 0.6,
+                        "name": null
+                    }, {
+                        "time": 1.5,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.6,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation65": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 0.7,
+                        "name": null
+                    }, {
+                        "time": 1.6,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.7,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation66": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 0.8333,
+                        "name": null
+                    }, {
+                        "time": 1.7,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.8333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation67": {
+                    "color": [{
+                        "time": 1.8333,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.8333,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 0.9333,
+                        "name": null
+                    }, {
+                        "time": 1.8333,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.9333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation68": {
+                    "color": [{
+                        "time": 1.9333,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.9333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.0333,
+                        "name": null
+                    }, {
+                        "time": 1.9333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.0333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation69": {
+                    "color": [{
+                        "time": 2.0333,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.1667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 0.2667,
+                        "name": null
+                    }, {
+                        "time": 1.0333,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.2667,
+                        "name": null
+                    }, {
+                        "time": 2.0333,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.1667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation70": {
+                    "color": [{
+                        "time": 2.1667,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.1667,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation71": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation72": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.7333,
+                        "name": null
+                    }, {
+                        "time": 1.6,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.7333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation73": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 0.8333,
+                        "name": null
+                    }, {
+                        "time": 1.7333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.8333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation74": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.8333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 0.9333,
+                        "name": null
+                    }, {
+                        "time": 1.8333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.9333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation75": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.9333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.0333,
+                        "name": null
+                    }, {
+                        "time": 1.9333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 2.0333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation76": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.0333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.1667,
+                        "name": null
+                    }, {
+                        "time": 2.0333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 2.1667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation77": {
+                    "color": [{
+                        "time": 2.1667,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.1667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.2667,
+                        "name": null
+                    }, {
+                        "time": 2.1667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 2.2667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation78": {
+                    "color": [{
+                        "time": 2.2667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.2667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.3667,
+                        "name": null
+                    }, {
+                        "time": 2.2667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.3667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation79": {
+                    "color": [{
+                        "time": 2.3667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.5,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 0.6,
+                        "name": null
+                    }, {
+                        "time": 1.3667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.6,
+                        "name": null
+                    }, {
+                        "time": 2.3667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.5,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation80": {
+                    "color": [{
+                        "time": 2.5,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.5,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation81": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation82": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.1,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.2333,
+                        "name": null
+                    }, {
+                        "time": 1.1,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.2333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation83": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.2333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 0.3333,
+                        "name": null
+                    }, {
+                        "time": 1.2333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation84": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.3333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 0.4333,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation85": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.4333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 0.5333,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation86": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.5333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 0.6667,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation87": {
+                    "color": [{
+                        "time": 1.6667,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 0.7667,
+                        "name": null
+                    }, {
+                        "time": 1.6667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.7667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation88": {
+                    "color": [{
+                        "time": 1.7667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 0.8667,
+                        "name": null
+                    }, {
+                        "time": 1.7667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.8667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation89": {
+                    "color": [{
+                        "time": 1.8667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0.1,
+                        "name": null
+                    }, {
+                        "time": 0.8667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.1,
+                        "name": null
+                    }, {
+                        "time": 1.8667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation90": {
+                    "color": [{
+                        "time": 2,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation91": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation92": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.9,
+                        "name": null
+                    }, {
+                        "time": 1.7667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.9,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation93": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.9,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1,
+                        "name": null
+                    }, {
+                        "time": 1.9,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation94": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.1,
+                        "name": null
+                    }, {
+                        "time": 2,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 2.1,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation95": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.1,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.2,
+                        "name": null
+                    }, {
+                        "time": 2.1,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 2.2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation96": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.2,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }, {
+                        "time": 2.2,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 2.3333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation97": {
+                    "color": [{
+                        "time": 2.3333,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }, {
+                        "time": 2.3333,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 2.4333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation98": {
+                    "color": [{
+                        "time": 2.4333,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }, {
+                        "time": 2.4333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.5333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation99": {
+                    "color": [{
+                        "time": 2.5333,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 0.7667,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.7667,
+                        "name": null
+                    }, {
+                        "time": 2.5333,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation100": {
+                    "color": [{
+                        "time": 2.6667,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.6667,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation101": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation102": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.1,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.2333,
+                        "name": null
+                    }, {
+                        "time": 1.1,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.2333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation103": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.2333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 0.3333,
+                        "name": null
+                    }, {
+                        "time": 1.2333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation104": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.3333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 0.4333,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation105": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.4333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 0.5333,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation106": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.5333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 0.6667,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation107": {
+                    "color": [{
+                        "time": 1.6667,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 0.7667,
+                        "name": null
+                    }, {
+                        "time": 1.6667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.7667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation108": {
+                    "color": [{
+                        "time": 1.7667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 0.8667,
+                        "name": null
+                    }, {
+                        "time": 1.7667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.8667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation109": {
+                    "color": [{
+                        "time": 1.8667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0.1,
+                        "name": null
+                    }, {
+                        "time": 0.8667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.1,
+                        "name": null
+                    }, {
+                        "time": 1.8667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation110": {
+                    "color": [{
+                        "time": 2,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation111": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation112": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.4333,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.5667,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.5667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation113": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.5667,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 0.6667,
+                        "name": null
+                    }, {
+                        "time": 1.5667,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation114": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6667,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 0.7667,
+                        "name": null
+                    }, {
+                        "time": 1.6667,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.7667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation115": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7667,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 0.8667,
+                        "name": null
+                    }, {
+                        "time": 1.7667,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.8667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation116": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.8667,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1,
+                        "name": null
+                    }, {
+                        "time": 1.8667,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation117": {
+                    "color": [{
+                        "time": 2,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.1,
+                        "name": null
+                    }, {
+                        "time": 2,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 2.1,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation118": {
+                    "color": [{
+                        "time": 2.1,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.1,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.2,
+                        "name": null
+                    }, {
+                        "time": 2.1,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation119": {
+                    "color": [{
+                        "time": 2.2,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.3333,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 0.4333,
+                        "name": null
+                    }, {
+                        "time": 1.2,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }, {
+                        "time": 2.2,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.3333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation120": {
+                    "color": [{
+                        "time": 2.3333,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.3333,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation121": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation122": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.9,
+                        "name": null
+                    }, {
+                        "time": 1.7667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.9,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation123": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.9,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1,
+                        "name": null
+                    }, {
+                        "time": 1.9,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation124": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.1,
+                        "name": null
+                    }, {
+                        "time": 2,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 2.1,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation125": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.1,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.2,
+                        "name": null
+                    }, {
+                        "time": 2.1,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 2.2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation126": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.2,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }, {
+                        "time": 2.2,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 2.3333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation127": {
+                    "color": [{
+                        "time": 2.3333,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }, {
+                        "time": 2.3333,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 2.4333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation128": {
+                    "color": [{
+                        "time": 2.4333,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }, {
+                        "time": 2.4333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.5333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation129": {
+                    "color": [{
+                        "time": 2.5333,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 0.7667,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.7667,
+                        "name": null
+                    }, {
+                        "time": 2.5333,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation130": {
+                    "color": [{
+                        "time": 2.6667,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.6667,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation131": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation132": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.1,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 0.2333,
+                        "name": null
+                    }, {
+                        "time": 1.1,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.2333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation133": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.2333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 0.3333,
+                        "name": null
+                    }, {
+                        "time": 1.2333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation134": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.3333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 0.4333,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation135": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.4333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 0.5333,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation136": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.5333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 0.6667,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation137": {
+                    "color": [{
+                        "time": 1.6667,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.6667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 0.7667,
+                        "name": null
+                    }, {
+                        "time": 1.6667,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.7667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation138": {
+                    "color": [{
+                        "time": 1.7667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.7667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 0.8667,
+                        "name": null
+                    }, {
+                        "time": 1.7667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.8667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation139": {
+                    "color": [{
+                        "time": 1.8667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0.1,
+                        "name": null
+                    }, {
+                        "time": 0.8667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.1,
+                        "name": null
+                    }, {
+                        "time": 1.8667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation140": {
+                    "color": [{
+                        "time": 2,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation141": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation142": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.0667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.1667,
+                        "name": null
+                    }, {
+                        "time": 1.9,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 2.0333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation143": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.1667,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.2667,
+                        "name": null
+                    }, {
+                        "time": 2.0333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 2.1,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation144": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.2667,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }, {
+                        "time": 2.1,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 2.2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation145": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }, {
+                        "time": 2.2,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 2.2667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation146": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }, {
+                        "time": 2.2667,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 2.4,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation147": {
+                    "color": [{
+                        "time": 2.4,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.6333,
+                        "name": null
+                    }, {
+                        "time": 2.4,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 2.4667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation148": {
+                    "color": [{
+                        "time": 2.4667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.6333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.7,
+                        "name": null
+                    }, {
+                        "time": 2.4667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.5667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation149": {
+                    "color": [{
+                        "time": 2.5667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.9667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.0667,
+                        "name": null
+                    }, {
+                        "time": 1.7,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.9,
+                        "name": null
+                    }, {
+                        "time": 2.5667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation150": {
+                    "color": [{
+                        "time": 2.6667,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.6667,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation151": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation152": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.0667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.1667,
+                        "name": null
+                    }, {
+                        "time": 1.9,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 2.0333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation153": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.1667,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.2667,
+                        "name": null
+                    }, {
+                        "time": 2.0333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 2.1,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation154": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.2667,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }, {
+                        "time": 2.1,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 2.2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation155": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }, {
+                        "time": 2.2,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 2.2667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation156": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }, {
+                        "time": 2.2667,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 2.4,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation157": {
+                    "color": [{
+                        "time": 2.4,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.6333,
+                        "name": null
+                    }, {
+                        "time": 2.4,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 2.4667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation158": {
+                    "color": [{
+                        "time": 2.4667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.6333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.7,
+                        "name": null
+                    }, {
+                        "time": 2.4667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.5667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation159": {
+                    "color": [{
+                        "time": 2.5667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.9667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.0667,
+                        "name": null
+                    }, {
+                        "time": 1.7,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.9,
+                        "name": null
+                    }, {
+                        "time": 2.5667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation160": {
+                    "color": [{
+                        "time": 2.6667,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.6667,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation161": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation162": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.0667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.1667,
+                        "name": null
+                    }, {
+                        "time": 1.9,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 2.0333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation163": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.1667,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.2667,
+                        "name": null
+                    }, {
+                        "time": 2.0333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 2.1,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation164": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.2667,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }, {
+                        "time": 2.1,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 2.2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation165": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }, {
+                        "time": 2.2,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 2.2667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation166": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }, {
+                        "time": 2.2667,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 2.4,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation167": {
+                    "color": [{
+                        "time": 2.4,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.6333,
+                        "name": null
+                    }, {
+                        "time": 2.4,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 2.4667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation168": {
+                    "color": [{
+                        "time": 2.4667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.6333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.7,
+                        "name": null
+                    }, {
+                        "time": 2.4667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.5667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation169": {
+                    "color": [{
+                        "time": 2.5667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.9667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.0667,
+                        "name": null
+                    }, {
+                        "time": 1.7,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.9,
+                        "name": null
+                    }, {
+                        "time": 2.5667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation170": {
+                    "color": [{
+                        "time": 2.6667,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.6667,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation171": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation172": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.0667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.1667,
+                        "name": null
+                    }, {
+                        "time": 1.9,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 2.0333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation173": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.1667,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.2667,
+                        "name": null
+                    }, {
+                        "time": 2.0333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 2.1,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation174": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.2667,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }, {
+                        "time": 2.1,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 2.2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation175": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }, {
+                        "time": 2.2,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 2.2667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation176": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }, {
+                        "time": 2.2667,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 2.4,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation177": {
+                    "color": [{
+                        "time": 2.4,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.6333,
+                        "name": null
+                    }, {
+                        "time": 2.4,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 2.4667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation178": {
+                    "color": [{
+                        "time": 2.4667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.6333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.7,
+                        "name": null
+                    }, {
+                        "time": 2.4667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.5667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation179": {
+                    "color": [{
+                        "time": 2.5667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.9667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.0667,
+                        "name": null
+                    }, {
+                        "time": 1.7,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.9,
+                        "name": null
+                    }, {
+                        "time": 2.5667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation180": {
+                    "color": [{
+                        "time": 2.6667,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.6667,
+                        "name": "IconMoney_animation9"
+                    }]
+                },
+                "IconMoney_animation181": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation182": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.0667,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 1.1667,
+                        "name": null
+                    }, {
+                        "time": 1.9,
+                        "name": "IconMoney_animation1"
+                    }, {
+                        "time": 2.0333,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation183": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.1667,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 1.2667,
+                        "name": null
+                    }, {
+                        "time": 2.0333,
+                        "name": "IconMoney_animation2"
+                    }, {
+                        "time": 2.1,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation184": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.2667,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 1.3333,
+                        "name": null
+                    }, {
+                        "time": 2.1,
+                        "name": "IconMoney_animation3"
+                    }, {
+                        "time": 2.2,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation185": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.3333,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 1.4333,
+                        "name": null
+                    }, {
+                        "time": 2.2,
+                        "name": "IconMoney_animation4"
+                    }, {
+                        "time": 2.2667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation186": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.4333,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 1.5333,
+                        "name": null
+                    }, {
+                        "time": 2.2667,
+                        "name": "IconMoney_animation5"
+                    }, {
+                        "time": 2.4,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation187": {
+                    "color": [{
+                        "time": 2.4,
+                        "color": "ffffff76"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.5333,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 1.6333,
+                        "name": null
+                    }, {
+                        "time": 2.4,
+                        "name": "IconMoney_animation6"
+                    }, {
+                        "time": 2.4667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation188": {
+                    "color": [{
+                        "time": 2.4667,
+                        "color": "ffffff4e"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 1.6333,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 1.7,
+                        "name": null
+                    }, {
+                        "time": 2.4667,
+                        "name": "IconMoney_animation7"
+                    }, {
+                        "time": 2.5667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation189": {
+                    "color": [{
+                        "time": 2.5667,
+                        "color": "ffffff2a"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 0.9667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.0667,
+                        "name": null
+                    }, {
+                        "time": 1.7,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 1.9,
+                        "name": null
+                    }, {
+                        "time": 2.5667,
+                        "name": "IconMoney_animation8"
+                    }, {
+                        "time": 2.6667,
+                        "name": null
+                    }]
+                },
+                "IconMoney_animation190": {
+                    "color": [{
+                        "time": 2.6667,
+                        "color": "ffffff00"
+                    }],
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }, {
+                        "time": 2.6667,
+                        "name": "IconMoney_animation9"
+                    }]
+                }
+            },
+            "bones": {
+                "bone": {
+                    "rotate": [{
+                        "time": 0,
+                        "angle": 0
+                    }, {
+                        "time": 0.3333,
+                        "angle": -89.29
+                    }, {
+                        "time": 0.6667,
+                        "angle": 178.86
+                    }, {
+                        "time": 1.3333,
+                        "angle": 0
+                    }, {
+                        "time": 1.6667,
+                        "angle": -89.29
+                    }, {
+                        "time": 2,
+                        "angle": 178.86
+                    }, {
+                        "time": 2.6667,
+                        "angle": 0
+                    }]
+                },
+                "bone2": {
+                    "translate": [{
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.6667,
+                        "x": 116.71,
+                        "y": 95.52
+                    }],
+                    "scale": [{
+                        "time": 0,
+                        "x": 0.384,
+                        "y": 0.384
+                    }, {
+                        "time": 2.6667,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone3": {
+                    "translate": [{
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.5,
+                        "x": -118.99,
+                        "y": 67.81
+                    }],
+                    "scale": [{
+                        "time": 0,
+                        "x": 0.4,
+                        "y": 0.4
+                    }, {
+                        "time": 2.5,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone4": {
+                    "translate": [{
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2,
+                        "x": 130.73,
+                        "y": -23.8
+                    }],
+                    "scale": [{
+                        "time": 0,
+                        "x": 0.326,
+                        "y": 0.326
+                    }, {
+                        "time": 2,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone5": {
+                    "translate": [{
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2,
+                        "x": 47.6,
+                        "y": 106.93
+                    }],
+                    "scale": [{
+                        "time": 0,
+                        "x": 0.395,
+                        "y": 0.395
+                    }, {
+                        "time": 2,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone6": {
+                    "translate": [{
+                        "time": 0.3333,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.4,
+                        "x": -51.18,
+                        "y": 106.93
+                    }],
+                    "scale": [{
+                        "time": 0.3333,
+                        "x": 0.441,
+                        "y": 0.441
+                    }, {
+                        "time": 2.4,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone7": {
+                    "translate": [{
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2,
+                        "x": -116.71,
+                        "y": 7.82
+                    }],
+                    "scale": [{
+                        "time": 0,
+                        "x": 0.373,
+                        "y": 0.373
+                    }, {
+                        "time": 2,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone8": {
+                    "translate": [{
+                        "time": 0.1667,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.1667,
+                        "x": -92.91,
+                        "y": -53.79
+                    }],
+                    "scale": [{
+                        "time": 0.1667,
+                        "x": 0.347,
+                        "y": 0.347
+                    }, {
+                        "time": 2.1667,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone9": {
+                    "translate": [{
+                        "time": 0.5,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.5,
+                        "x": 81.17,
+                        "y": -74.98
+                    }],
+                    "scale": [{
+                        "time": 0.5,
+                        "x": 0.346,
+                        "y": 0.346
+                    }, {
+                        "time": 2.5,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone10": {
+                    "translate": [{
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2,
+                        "x": -23.8,
+                        "y": -81.17
+                    }],
+                    "scale": [{
+                        "time": 0,
+                        "x": 0.404,
+                        "y": 0.404
+                    }, {
+                        "time": 2,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone11": {
+                    "translate": [{
+                        "time": 0.6667,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.6667,
+                        "x": 4.89,
+                        "y": 108.56
+                    }],
+                    "scale": [{
+                        "time": 0.6667,
+                        "x": 0.436,
+                        "y": 0.436
+                    }, {
+                        "time": 2.6667,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone12": {
+                    "translate": [{
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2,
+                        "x": 103.99,
+                        "y": 37.82
+                    }],
+                    "scale": [{
+                        "time": 0,
+                        "x": 0.436,
+                        "y": 0.436
+                    }, {
+                        "time": 2,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone13": {
+                    "translate": [{
+                        "time": 0.3333,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.3333,
+                        "x": -70.09,
+                        "y": 78.24
+                    }],
+                    "scale": [{
+                        "time": 0.3333,
+                        "x": 0.443,
+                        "y": 0.443
+                    }, {
+                        "time": 2.3333,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone14": {
+                    "translate": [{
+                        "time": 0.6667,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.6667,
+                        "x": 73.35,
+                        "y": 84.11
+                    }],
+                    "scale": [{
+                        "time": 0.6667,
+                        "x": 0.454,
+                        "y": 0.454
+                    }, {
+                        "time": 2.6667,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone15": {
+                    "translate": [{
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2,
+                        "x": -27.06,
+                        "y": 95.84
+                    }],
+                    "scale": [{
+                        "time": 0,
+                        "x": 0.505,
+                        "y": 0.505
+                    }, {
+                        "time": 2,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone16": {
+                    "translate": [{
+                        "time": 0.9667,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.6667,
+                        "x": -22.17,
+                        "y": 76.28
+                    }],
+                    "scale": [{
+                        "time": 0.9667,
+                        "x": 0.542,
+                        "y": 0.542
+                    }, {
+                        "time": 2.6667,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone17": {
+                    "translate": [{
+                        "time": 0.9667,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.6667,
+                        "x": -92.91,
+                        "y": 38.79
+                    }],
+                    "scale": [{
+                        "time": 0.9667,
+                        "x": 0.542,
+                        "y": 0.542
+                    }, {
+                        "time": 2.6667,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone18": {
+                    "translate": [{
+                        "time": 0.9667,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.6667,
+                        "x": -85.41,
+                        "y": -31.62
+                    }],
+                    "scale": [{
+                        "time": 0.9667,
+                        "x": 0.542,
+                        "y": 0.542
+                    }, {
+                        "time": 2.6667,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone19": {
+                    "translate": [{
+                        "time": 0.9667,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.6667,
+                        "x": 63.9,
+                        "y": -34.23
+                    }],
+                    "scale": [{
+                        "time": 0.9667,
+                        "x": 0.542,
+                        "y": 0.542
+                    }, {
+                        "time": 2.6667,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone20": {
+                    "translate": [{
+                        "time": 0.9667,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.6667,
+                        "x": 42.71,
+                        "y": 62.92
+                    }],
+                    "scale": [{
+                        "time": 0.9667,
+                        "x": 0.542,
+                        "y": 0.542
+                    }, {
+                        "time": 2.6667,
+                        "x": 1,
+                        "y": 1
+                    }]
+                }
+            }
+        }
+    }
+}

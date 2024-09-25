@@ -1,0 +1,153 @@
+
+anim-BonusGame.png
+size: 1544,566
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 297, 13
+  size: 257, 288
+  orig: 257, 288
+  offset: 0, 0
+  index: -1
+1-Glow
+  rotate: true
+  xy: 1030, 134
+  size: 211, 145
+  orig: 211, 145
+  offset: 0, 0
+  index: -1
+1-Grey
+  rotate: false
+  xy: 1413, 419
+  size: 127, 143
+  orig: 127, 143
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 558, 274
+  size: 254, 288
+  orig: 254, 288
+  offset: 0, 0
+  index: -1
+2-Glow
+  rotate: true
+  xy: 1114, 352
+  size: 210, 145
+  orig: 210, 145
+  offset: 0, 0
+  index: -1
+2-Grey
+  rotate: true
+  xy: 1067, 4
+  size: 126, 143
+  orig: 126, 143
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 282, 274
+  size: 272, 288
+  orig: 272, 288
+  offset: 0, 0
+  index: -1
+3-Glow
+  rotate: true
+  xy: 965, 349
+  size: 213, 145
+  orig: 213, 145
+  offset: 0, 0
+  index: -1
+3-Grey
+  rotate: true
+  xy: 1214, 4
+  size: 135, 143
+  orig: 135, 143
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 4, 8
+  size: 262, 289
+  orig: 262, 289
+  offset: 0, 0
+  index: -1
+4-Glow
+  rotate: true
+  xy: 816, 345
+  size: 217, 145
+  orig: 217, 145
+  offset: 0, 0
+  index: -1
+4-Grey
+  rotate: true
+  xy: 1328, 143
+  size: 130, 143
+  orig: 130, 143
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 4, 274
+  size: 274, 288
+  orig: 274, 288
+  offset: 0, 0
+  index: -1
+5-Glow
+  rotate: true
+  xy: 881, 124
+  size: 217, 145
+  orig: 217, 145
+  offset: 0, 0
+  index: -1
+5-Grey
+  rotate: true
+  xy: 1328, 277
+  size: 134, 143
+  orig: 134, 143
+  offset: 0, 0
+  index: -1
+6
+  rotate: true
+  xy: 589, 16
+  size: 254, 288
+  orig: 254, 288
+  offset: 0, 0
+  index: -1
+6-Glow
+  rotate: true
+  xy: 1179, 143
+  size: 205, 145
+  orig: 205, 145
+  offset: 0, 0
+  index: -1
+6-Grey
+  rotate: true
+  xy: 1361, 13
+  size: 126, 143
+  orig: 126, 143
+  offset: 0, 0
+  index: -1
+Target
+  rotate: false
+  xy: 881, 15
+  size: 105, 105
+  orig: 105, 105
+  offset: 0, 0
+  index: -1
+effect1
+  rotate: true
+  xy: 1263, 415
+  size: 147, 146
+  orig: 147, 146
+  offset: 0, 0
+  index: -1
+red
+  rotate: true
+  xy: 990, 23
+  size: 97, 73
+  orig: 97, 73
+  offset: 0, 0
+  index: -1

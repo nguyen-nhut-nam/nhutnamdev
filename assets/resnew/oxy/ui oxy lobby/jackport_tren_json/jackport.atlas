@@ -1,0 +1,125 @@
+
+jackport.png
+size: 1971, 578
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+20,000,000
+  rotate: true
+  xy: 1021, 241
+  size: 336, 79
+  orig: 336, 79
+  offset: 0, 0
+  index: -1
+6-(1)
+  rotate: false
+  xy: 1848, 421
+  size: 122, 156
+  orig: 122, 156
+  offset: 0, 0
+  index: -1
+6-(2)
+  rotate: false
+  xy: 1101, 181
+  size: 122, 156
+  orig: 122, 156
+  offset: 0, 0
+  index: -1
+6-(3)
+  rotate: false
+  xy: 1224, 181
+  size: 122, 156
+  orig: 122, 156
+  offset: 0, 0
+  index: -1
+6-(4)
+  rotate: false
+  xy: 1347, 181
+  size: 122, 156
+  orig: 122, 156
+  offset: 0, 0
+  index: -1
+6-(5)
+  rotate: false
+  xy: 1470, 181
+  size: 122, 156
+  orig: 122, 156
+  offset: 0, 0
+  index: -1
+6-(6)
+  rotate: false
+  xy: 1593, 181
+  size: 122, 156
+  orig: 122, 156
+  offset: 0, 0
+  index: -1
+6-(7)
+  rotate: false
+  xy: 1716, 181
+  size: 122, 156
+  orig: 122, 156
+  offset: 0, 0
+  index: -1
+6-(8)
+  rotate: false
+  xy: 1839, 264
+  size: 122, 156
+  orig: 122, 156
+  offset: 0, 0
+  index: -1
+jackport
+  rotate: false
+  xy: 1101, 450
+  size: 746, 127
+  orig: 746, 127
+  offset: 0, 0
+  index: -1
+pngegg (11)
+  rotate: false
+  xy: 620, 177
+  size: 400, 400
+  orig: 400, 400
+  offset: 0, 0
+  index: -1
+rib1
+  rotate: false
+  xy: 1, 1
+  size: 831, 159
+  orig: 831, 159
+  offset: 0, 0
+  index: -1
+ribbon
+  rotate: false
+  xy: 833, 2
+  size: 672, 174
+  orig: 672, 174
+  offset: 0, 0
+  index: -1
+sau
+  rotate: false
+  xy: 1, 161
+  size: 618, 416
+  orig: 618, 416
+  offset: 0, 0
+  index: -1
+tien1
+  rotate: true
+  xy: 1506, 7
+  size: 173, 142
+  orig: 173, 142
+  offset: 0, 0
+  index: -1
+tien2
+  rotate: true
+  xy: 1649, 7
+  size: 173, 142
+  orig: 173, 142
+  offset: 0, 0
+  index: -1
+vang
+  rotate: false
+  xy: 1101, 338
+  size: 697, 111
+  orig: 697, 111
+  offset: 0, 0
+  index: -1

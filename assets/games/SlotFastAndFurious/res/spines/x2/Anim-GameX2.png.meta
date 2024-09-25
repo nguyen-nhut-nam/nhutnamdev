@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8b9c7c29-2d81-467b-bc0a-a445c6cf3fed",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1205,
+  "height": 233,
+  "platformSettings": {},
+  "subMetas": {
+    "Anim-GameX2": {
+      "ver": "1.0.6",
+      "uuid": "f5599326-4b28-4491-85eb-25e105f2c4f7",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8b9c7c29-2d81-467b-bc0a-a445c6cf3fed",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 3,
+      "trimY": 3,
+      "width": 1199,
+      "height": 227,
+      "rawWidth": 1205,
+      "rawHeight": 233,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

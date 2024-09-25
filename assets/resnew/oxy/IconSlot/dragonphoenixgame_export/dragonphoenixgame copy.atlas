@@ -1,0 +1,41 @@
+
+dragonphoenixgame copy.png
+size: 1905, 1325
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: true
+  xy: 755, 299
+  size: 514, 994
+  orig: 514, 994
+  offset: 0, 0
+  index: -1
+dragon
+  rotate: true
+  xy: 755, 815
+  size: 508, 1060
+  orig: 508, 1060
+  offset: 0, 0
+  index: -1
+khung duoi
+  rotate: false
+  xy: 1395, 2
+  size: 508, 295
+  orig: 508, 295
+  offset: 0, 0
+  index: -1
+khung vbiern
+  rotate: false
+  xy: 2, 82
+  size: 751, 1241
+  orig: 751, 1241
+  offset: 0, 0
+  index: -1
+logo dragon
+  rotate: false
+  xy: 755, 22
+  size: 638, 275
+  orig: 638, 275
+  offset: 0, 0
+  index: -1

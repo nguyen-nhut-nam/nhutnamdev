@@ -1,0 +1,83 @@
+
+WinEffect_poker.png
+size: 307,307
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CircleEffect
+  rotate: false
+  xy: 2, 36
+  size: 281, 269
+  orig: 281, 269
+  offset: 0, 0
+  index: -1
+IconMoney_animation0
+  rotate: false
+  xy: 2, 2
+  size: 18, 32
+  orig: 18, 32
+  offset: 0, 0
+  index: -1
+IconMoney_animation1
+  rotate: false
+  xy: 285, 273
+  size: 18, 32
+  orig: 18, 32
+  offset: 0, 0
+  index: -1
+IconMoney_animation2
+  rotate: false
+  xy: 22, 2
+  size: 18, 32
+  orig: 18, 32
+  offset: 0, 0
+  index: -1
+IconMoney_animation3
+  rotate: false
+  xy: 285, 239
+  size: 18, 32
+  orig: 18, 32
+  offset: 0, 0
+  index: -1
+IconMoney_animation4
+  rotate: false
+  xy: 42, 2
+  size: 18, 32
+  orig: 18, 32
+  offset: 0, 0
+  index: -1
+IconMoney_animation5
+  rotate: false
+  xy: 285, 205
+  size: 18, 32
+  orig: 18, 32
+  offset: 0, 0
+  index: -1
+IconMoney_animation6
+  rotate: false
+  xy: 62, 2
+  size: 18, 32
+  orig: 18, 32
+  offset: 0, 0
+  index: -1
+IconMoney_animation7
+  rotate: false
+  xy: 285, 171
+  size: 18, 32
+  orig: 18, 32
+  offset: 0, 0
+  index: -1
+IconMoney_animation8
+  rotate: false
+  xy: 82, 2
+  size: 18, 32
+  orig: 18, 32
+  offset: 0, 0
+  index: -1
+IconMoney_animation9
+  rotate: false
+  xy: 285, 137
+  size: 18, 32
+  orig: 18, 32
+  offset: 0, 0
+  index: -1

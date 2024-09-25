@@ -1,0 +1,90 @@
+
+skeleton.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FX_1
+  rotate: true
+  xy: 1179, 155
+  size: 354, 344
+  orig: 354, 344
+  offset: 0, 0
+  index: -1
+FX_2
+  rotate: false
+  xy: 626, 319
+  size: 190, 190
+  orig: 190, 190
+  offset: 0, 0
+  index: -1
+FX_3
+  rotate: true
+  xy: 1010, 323
+  size: 186, 167
+  orig: 186, 167
+  offset: 0, 0
+  index: -1
+FX_4
+  rotate: false
+  xy: 858, 132
+  size: 179, 185
+  orig: 179, 185
+  offset: 0, 0
+  index: -1
+FX_6
+  rotate: false
+  xy: 818, 319
+  size: 190, 190
+  orig: 190, 190
+  offset: 0, 0
+  index: -1
+jackpot_board
+  rotate: false
+  xy: 2, 11
+  size: 387, 57
+  orig: 387, 57
+  offset: 0, 0
+  index: -1
+long_1
+  rotate: false
+  xy: 2, 295
+  size: 622, 214
+  orig: 622, 214
+  offset: 0, 0
+  index: -1
+long_2
+  rotate: false
+  xy: 2, 70
+  size: 565, 223
+  orig: 565, 223
+  offset: 0, 0
+  index: -1
+long_3
+  rotate: false
+  xy: 391, 25
+  size: 201, 43
+  orig: 201, 43
+  offset: 0, 0
+  index: -1
+long_4
+  rotate: false
+  xy: 569, 92
+  size: 287, 201
+  orig: 287, 201
+  offset: 0, 0
+  index: -1
+long_light
+  rotate: true
+  xy: 1039, 104
+  size: 217, 132
+  orig: 217, 132
+  offset: 0, 0
+  index: -1
+money_icon
+  rotate: true
+  xy: 391, 2
+  size: 21, 38
+  orig: 21, 38
+  offset: 0, 0
+  index: -1

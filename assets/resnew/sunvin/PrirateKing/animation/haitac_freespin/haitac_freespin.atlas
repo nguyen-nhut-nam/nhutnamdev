@@ -1,0 +1,83 @@
+
+haitac_freespin.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 96, 89
+  size: 48, 45
+  orig: 48, 45
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 96, 89
+  size: 48, 45
+  orig: 48, 45
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 96, 89
+  size: 48, 45
+  orig: 48, 45
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 96, 89
+  size: 48, 45
+  orig: 48, 45
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 1946, 434
+  size: 57, 50
+  orig: 57, 50
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 1946, 387
+  size: 48, 45
+  orig: 48, 45
+  offset: 0, 0
+  index: -1
+blade
+  rotate: false
+  xy: 2, 2
+  size: 92, 132
+  orig: 92, 132
+  offset: 0, 0
+  index: -1
+free/1
+  rotate: false
+  xy: 2, 136
+  size: 484, 348
+  orig: 484, 348
+  offset: 0, 0
+  index: -1
+free/2
+  rotate: false
+  xy: 488, 136
+  size: 484, 348
+  orig: 484, 348
+  offset: 0, 0
+  index: -1
+free/3
+  rotate: false
+  xy: 974, 136
+  size: 484, 348
+  orig: 484, 348
+  offset: 0, 0
+  index: -1
+free/4
+  rotate: false
+  xy: 1460, 136
+  size: 484, 348
+  orig: 484, 348
+  offset: 0, 0
+  index: -1

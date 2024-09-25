@@ -1,0 +1,48 @@
+
+Vinhdanh.png
+size: 2048,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+duoi
+  rotate: false
+  xy: 670, 31
+  size: 272, 69
+  orig: 272, 69
+  offset: 0, 0
+  index: -1
+in side
+  rotate: false
+  xy: 356, 31
+  size: 312, 69
+  orig: 312, 69
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 1210, 4
+  size: 141, 96
+  orig: 141, 96
+  offset: 0, 0
+  index: -1
+out side
+  rotate: false
+  xy: 2, 31
+  size: 352, 69
+  orig: 352, 69
+  offset: 0, 0
+  index: -1
+text
+  rotate: false
+  xy: 2, 2
+  size: 187, 27
+  orig: 187, 27
+  offset: 0, 0
+  index: -1
+tren
+  rotate: false
+  xy: 944, 37
+  size: 264, 63
+  orig: 264, 63
+  offset: 0, 0
+  index: -1

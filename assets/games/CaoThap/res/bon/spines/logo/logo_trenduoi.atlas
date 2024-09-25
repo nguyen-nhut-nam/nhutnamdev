@@ -1,0 +1,62 @@
+
+logo_trenduoi.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coin
+  rotate: true
+  xy: 123, 38
+  size: 57, 51
+  orig: 57, 51
+  offset: 0, 0
+  index: -1
+coin2
+  rotate: false
+  xy: 2, 101
+  size: 74, 66
+  orig: 74, 66
+  offset: 0, 0
+  index: -1
+coin3
+  rotate: false
+  xy: 176, 44
+  size: 57, 51
+  orig: 57, 51
+  offset: 0, 0
+  index: -1
+coin4
+  rotate: false
+  xy: 78, 101
+  size: 74, 66
+  orig: 74, 66
+  offset: 0, 0
+  index: -1
+duoi
+  rotate: false
+  xy: 2, 169
+  size: 165, 85
+  orig: 165, 85
+  offset: 0, 0
+  index: -1
+muiten
+  rotate: false
+  xy: 2, 6
+  size: 56, 89
+  orig: 56, 89
+  offset: 0, 0
+  index: -1
+muiten2
+  rotate: false
+  xy: 60, 2
+  size: 61, 97
+  orig: 61, 97
+  offset: 0, 0
+  index: -1
+tren
+  rotate: true
+  xy: 169, 97
+  size: 157, 84
+  orig: 157, 84
+  offset: 0, 0
+  index: -1

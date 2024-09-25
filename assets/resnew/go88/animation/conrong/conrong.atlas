@@ -1,0 +1,27 @@
+
+conrong.png
+size: 461,68
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tienlen1
+  rotate: false
+  xy: 2, 2
+  size: 374, 64
+  orig: 374, 64
+  offset: 0, 0
+  index: -1
+tienlen2
+  rotate: false
+  xy: 380, 17
+  size: 48, 49
+  orig: 48, 49
+  offset: 0, 0
+  index: -1
+tienlen3
+  rotate: false
+  xy: 432, 6
+  size: 27, 60
+  orig: 27, 60
+  offset: 0, 0
+  index: -1

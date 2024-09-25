@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9b48690c-2110-4b04-a658-97c1d1deb818",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 2048,
+  "height": 1024,
+  "platformSettings": {},
+  "subMetas": {
+    "aliceinboderland copy": {
+      "ver": "1.0.6",
+      "uuid": "17f91ec1-a8bf-4023-93d9-16d31c98f825",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9b48690c-2110-4b04-a658-97c1d1deb818",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -28,
+      "offsetY": 6.5,
+      "trimX": 1,
+      "trimY": 4,
+      "width": 1990,
+      "height": 1003,
+      "rawWidth": 2048,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

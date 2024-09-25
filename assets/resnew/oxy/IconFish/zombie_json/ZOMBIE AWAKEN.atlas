@@ -1,0 +1,132 @@
+
+ZOMBIE AWAKEN.png
+size: 1443, 1029
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: true
+  xy: 1, 514
+  size: 514, 997
+  orig: 514, 997
+  offset: 0, 0
+  index: -1
+ef/dd
+  rotate: false
+  xy: 1113, 101
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+ef/q
+  rotate: false
+  xy: 710, 1
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+ef/tx_huo01
+  rotate: false
+  xy: 1113, 70
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+ef/tx_huo03
+  rotate: false
+  xy: 1113, 39
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+ef/tx_huo05
+  rotate: false
+  xy: 999, 580
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+ef/tx_huo07
+  rotate: false
+  xy: 1030, 580
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+ef/tx_huo09
+  rotate: false
+  xy: 1061, 580
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+ef/tx_huo11
+  rotate: false
+  xy: 1092, 580
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+ef/tx_huo13
+  rotate: false
+  xy: 1123, 580
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+ef/tx_huo15
+  rotate: false
+  xy: 999, 549
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+logo glow
+  rotate: false
+  xy: 710, 152
+  size: 457, 361
+  orig: 457, 361
+  offset: 0, 0
+  index: -1
+logo1
+  rotate: false
+  xy: 710, 152
+  size: 457, 361
+  orig: 457, 361
+  offset: 0, 0
+  index: -1
+nguoi
+  rotate: true
+  xy: 1, 6
+  size: 507, 708
+  orig: 507, 708
+  offset: 0, 0
+  index: -1
+tay1
+  rotate: true
+  xy: 861, 13
+  size: 138, 251
+  orig: 138, 251
+  offset: 0, 0
+  index: -1
+tay2
+  rotate: true
+  xy: 1168, 246
+  size: 364, 254
+  orig: 364, 254
+  offset: 0, 0
+  index: -1
+tay3
+  rotate: false
+  xy: 999, 611
+  size: 357, 417
+  orig: 357, 417
+  offset: 0, 0
+  index: -1
+xac
+  rotate: false
+  xy: 1168, 50
+  size: 274, 195
+  orig: 274, 195
+  offset: 0, 0
+  index: -1

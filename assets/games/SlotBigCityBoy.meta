@@ -1,0 +1,21 @@
+{
+  "ver": "1.1.3",
+  "uuid": "e6c69410-08ae-484d-b22c-af89417a3f28",
+  "importer": "folder",
+  "isBundle": true,
+  "bundleName": "",
+  "priority": "5",
+  "compressionType": {
+    "android": "default"
+  },
+  "optimizeHotUpdate": {
+    "android": false
+  },
+  "inlineSpriteFrames": {
+    "android": false
+  },
+  "isRemoteBundle": {
+    "android": true
+  },
+  "subMetas": {}
+}

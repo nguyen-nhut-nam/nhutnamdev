@@ -1,0 +1,41 @@
+
+Thang.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+icon
+  rotate: false
+  xy: 137, 137
+  size: 99, 116
+  orig: 99, 116
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 2, 126
+  size: 133, 127
+  orig: 133, 127
+  offset: 0, 0
+  index: -1
+light bg
+  rotate: true
+  xy: 2, 2
+  size: 122, 138
+  orig: 122, 138
+  offset: 0, 0
+  index: -1
+mt
+  rotate: false
+  xy: 238, 246
+  size: 12, 7
+  orig: 12, 7
+  offset: 0, 0
+  index: -1
+text
+  rotate: false
+  xy: 142, 108
+  size: 81, 27
+  orig: 81, 27
+  offset: 0, 0
+  index: -1

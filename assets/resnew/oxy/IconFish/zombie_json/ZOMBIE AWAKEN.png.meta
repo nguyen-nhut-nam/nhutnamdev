@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9ea81382-9c25-40d4-9a5c-8147d3f7e3c6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1443,
+  "height": 1029,
+  "platformSettings": {},
+  "subMetas": {
+    "ZOMBIE AWAKEN": {
+      "ver": "1.0.6",
+      "uuid": "dac135cc-847b-47a1-9a9d-133545315d5c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9ea81382-9c25-40d4-9a5c-8147d3f7e3c6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -2.5,
+      "trimX": 2,
+      "trimY": 7,
+      "width": 1439,
+      "height": 1020,
+      "rawWidth": 1443,
+      "rawHeight": 1029,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

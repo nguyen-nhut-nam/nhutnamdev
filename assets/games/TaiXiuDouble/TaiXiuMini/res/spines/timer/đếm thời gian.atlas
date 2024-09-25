@@ -1,0 +1,41 @@
+
+đếm thời gian.png
+size: 402, 445
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+1
+  rotate: true
+  xy: 168, 1
+  size: 108, 217
+  orig: 108, 217
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 180, 110
+  size: 162, 221
+  orig: 162, 221
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 1, 1
+  size: 166, 225
+  orig: 166, 225
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 1, 227
+  size: 178, 217
+  orig: 178, 217
+  offset: 0, 0
+  index: -1
+5
+  rotate: true
+  xy: 180, 273
+  size: 171, 221
+  orig: 171, 221
+  offset: 0, 0
+  index: -1

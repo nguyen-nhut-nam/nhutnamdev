@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "81fd01cb-9f7b-4f93-b309-31a9920e5198",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 764,
+  "height": 144,
+  "platformSettings": {},
+  "subMetas": {
+    "Wild_iteam_Anim": {
+      "ver": "1.0.6",
+      "uuid": "f0099a83-4140-4cd1-b52f-9ff31bb5463f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "81fd01cb-9f7b-4f93-b309-31a9920e5198",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 760,
+      "height": 140,
+      "rawWidth": 764,
+      "rawHeight": 144,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

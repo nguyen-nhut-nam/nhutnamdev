@@ -1,0 +1,34 @@
+
+mui ten xuong.png
+size: 396, 124
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+duoi
+  rotate: true
+  xy: 285, 2
+  size: 121, 59
+  orig: 121, 59
+  offset: 0, 0
+  index: -1
+mui ten len
+  rotate: true
+  xy: 1, 3
+  size: 120, 141
+  orig: 120, 141
+  offset: 0, 0
+  index: -1
+mui ten xuong
+  rotate: true
+  xy: 143, 4
+  size: 119, 141
+  orig: 119, 141
+  offset: 0, 0
+  index: -1
+tren
+  rotate: true
+  xy: 345, 1
+  size: 122, 50
+  orig: 122, 50
+  offset: 0, 0
+  index: -1

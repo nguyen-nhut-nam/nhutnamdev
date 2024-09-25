@@ -1,0 +1,55 @@
+
+latbai.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 199
+  size: 194, 269
+  orig: 194, 269
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 198, 200
+  size: 195, 268
+  orig: 195, 268
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 395, 200
+  size: 195, 268
+  orig: 195, 268
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 592, 200
+  size: 195, 268
+  orig: 195, 268
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 789, 200
+  size: 195, 268
+  orig: 195, 268
+  offset: 0, 0
+  index: -1
+6
+  rotate: true
+  xy: 2, 2
+  size: 195, 268
+  orig: 195, 268
+  offset: 0, 0
+  index: -1
+7
+  rotate: true
+  xy: 272, 3
+  size: 195, 268
+  orig: 195, 268
+  offset: 0, 0
+  index: -1

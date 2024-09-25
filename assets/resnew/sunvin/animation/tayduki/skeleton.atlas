@@ -1,0 +1,146 @@
+
+skeleton.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: false
+  xy: 2, 593
+  size: 269, 428
+  orig: 269, 428
+  offset: 0, 0
+  index: -1
+Layer 33
+  rotate: true
+  xy: 317, 796
+  size: 225, 125
+  orig: 229, 142
+  offset: 0, 8
+  index: -1
+Layer 33_2
+  rotate: true
+  xy: 444, 796
+  size: 225, 125
+  orig: 229, 142
+  offset: 0, 8
+  index: -1
+Layer 39
+  rotate: false
+  xy: 350, 287
+  size: 33, 56
+  orig: 33, 56
+  offset: 0, 0
+  index: -1
+SD
+  rotate: true
+  xy: 273, 775
+  size: 246, 42
+  orig: 246, 42
+  offset: 0, 0
+  index: -1
+SD_1
+  rotate: true
+  xy: 2, 4
+  size: 269, 243
+  orig: 269, 243
+  offset: 0, 0
+  index: -1
+TB
+  rotate: true
+  xy: 262, 345
+  size: 246, 201
+  orig: 254, 205
+  offset: 0, 4
+  index: -1
+TB_2
+  rotate: true
+  xy: 302, 27
+  size: 246, 201
+  orig: 254, 205
+  offset: 0, 4
+  index: -1
+body
+  rotate: false
+  xy: 2, 275
+  size: 258, 316
+  orig: 258, 351
+  offset: 0, 22
+  index: -1
+hand_P
+  rotate: true
+  xy: 463, 674
+  size: 32, 70
+  orig: 32, 70
+  offset: 0, 0
+  index: -1
+hand_t_1
+  rotate: true
+  xy: 367, 661
+  size: 133, 94
+  orig: 133, 94
+  offset: 0, 0
+  index: -1
+hand_t_2
+  rotate: true
+  xy: 262, 275
+  size: 68, 86
+  orig: 68, 86
+  offset: 0, 0
+  index: -1
+hand_t_3
+  rotate: false
+  xy: 461, 298
+  size: 41, 45
+  orig: 41, 45
+  offset: 0, 0
+  index: -1
+hand_t_4
+  rotate: false
+  xy: 385, 288
+  size: 45, 55
+  orig: 45, 55
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 273, 614
+  size: 92, 159
+  orig: 92, 159
+  offset: 0, 0
+  index: -1
+lb_khung_ten
+  rotate: true
+  xy: 247, 8
+  size: 265, 53
+  orig: 277, 53
+  offset: 6, 0
+  index: -1
+lb_money_icon (1)
+  rotate: false
+  xy: 432, 293
+  size: 27, 50
+  orig: 27, 50
+  offset: 0, 0
+  index: -1
+light_1
+  rotate: false
+  xy: 463, 708
+  size: 86, 86
+  orig: 86, 86
+  offset: 0, 0
+  index: -1
+light_2
+  rotate: false
+  xy: 302, 2
+  size: 54, 23
+  orig: 58, 23
+  offset: 4, 0
+  index: -1
+light_4
+  rotate: false
+  xy: 367, 622
+  size: 116, 37
+  orig: 116, 37
+  offset: 0, 0
+  index: -1

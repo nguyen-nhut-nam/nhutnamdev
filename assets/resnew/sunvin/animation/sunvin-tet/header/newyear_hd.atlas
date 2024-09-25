@@ -1,0 +1,90 @@
+
+newyear_hd.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+HD_light_1
+  rotate: false
+  xy: 1564, 10
+  size: 89, 10
+  orig: 89, 10
+  offset: 0, 0
+  index: -1
+HD_light_2
+  rotate: false
+  xy: 1564, 46
+  size: 324, 30
+  orig: 359, 35
+  offset: 18, 5
+  index: -1
+Layer 1 copy 3
+  rotate: false
+  xy: 2, 248
+  size: 1558, 261
+  orig: 1558, 261
+  offset: 0, 0
+  index: -1
+Layer 15
+  rotate: false
+  xy: 1727, 14
+  size: 29, 30
+  orig: 29, 30
+  offset: 0, 0
+  index: -1
+Particle_KT_1
+  rotate: false
+  xy: 1564, 78
+  size: 306, 65
+  orig: 306, 65
+  offset: 0, 0
+  index: -1
+Particle_KT_2
+  rotate: false
+  xy: 1562, 434
+  size: 475, 75
+  orig: 475, 75
+  offset: 0, 0
+  index: -1
+btn_naptien
+  rotate: false
+  xy: 2, 165
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+lb_header_right
+  rotate: false
+  xy: 2, 9
+  size: 1560, 134
+  orig: 1560, 135
+  offset: 0, 0
+  index: -1
+lb_money_icon (1)
+  rotate: false
+  xy: 1935, 132
+  size: 58, 68
+  orig: 65, 68
+  offset: 4, 0
+  index: -1
+lighh2 copy 4
+  rotate: false
+  xy: 1890, 2
+  size: 54, 54
+  orig: 88, 89
+  offset: 17, 18
+  index: -1
+lucky_gold
+  rotate: false
+  xy: 1974, 202
+  size: 65, 153
+  orig: 65, 153
+  offset: 0, 0
+  index: -1
+sun_0005_khung_tien2
+  rotate: false
+  xy: 1562, 357
+  size: 475, 75
+  orig: 475, 75
+  offset: 0, 0
+  index: -1

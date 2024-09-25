@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "3b5c64ac-7c45-438d-aec7-e9bc20aaccdf",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 1024,
+  "platformSettings": {},
+  "subMetas": {
+    "Dragon OUT DONE5": {
+      "ver": "1.0.6",
+      "uuid": "f8253a1c-ec04-4346-ad11-30c1004b52d8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "3b5c64ac-7c45-438d-aec7-e9bc20aaccdf",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -24.5,
+      "offsetY": 44.5,
+      "trimX": 62,
+      "trimY": 57,
+      "width": 851,
+      "height": 821,
+      "rawWidth": 1024,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

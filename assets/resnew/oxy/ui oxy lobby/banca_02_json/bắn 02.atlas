@@ -1,0 +1,34 @@
+
+bắn 02.png
+size: 1640, 812
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BAN CA
+  rotate: false
+  xy: 1, 654
+  size: 500, 157
+  orig: 500, 157
+  offset: 0, 0
+  index: -1
+BG
+  rotate: true
+  xy: 1, 1
+  size: 514, 997
+  orig: 514, 997
+  offset: 0, 0
+  index: -1
+KHUNG
+  rotate: false
+  xy: 502, 516
+  size: 508, 295
+  orig: 508, 295
+  offset: 0, 0
+  index: -1
+ca xanh
+  rotate: false
+  xy: 1011, 47
+  size: 628, 764
+  orig: 628, 764
+  offset: 0, 0
+  index: -1

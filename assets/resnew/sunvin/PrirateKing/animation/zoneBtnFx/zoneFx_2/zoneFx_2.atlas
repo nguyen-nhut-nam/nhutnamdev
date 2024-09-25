@@ -1,0 +1,34 @@
+
+skeleton.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1000
+  rotate: false
+  xy: 247, 156
+  size: 239, 74
+  orig: 239, 74
+  offset: 0, 0
+  index: -1
+Ship
+  rotate: false
+  xy: 2, 5
+  size: 243, 225
+  orig: 243, 225
+  offset: 0, 0
+  index: -1
+gold 1
+  rotate: false
+  xy: 247, 2
+  size: 138, 54
+  orig: 138, 54
+  offset: 0, 0
+  index: -1
+gold 2
+  rotate: false
+  xy: 247, 58
+  size: 175, 96
+  orig: 175, 96
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,41 @@
+
+nohu_minipoker.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg_nohu
+  rotate: false
+  xy: 1155, 376
+  size: 429, 83
+  orig: 429, 83
+  offset: 0, 0
+  index: -1
+light1
+  rotate: false
+  xy: 568, 243
+  size: 585, 529
+  orig: 585, 529
+  offset: 0, 0
+  index: -1
+light2
+  rotate: false
+  xy: 1155, 461
+  size: 623, 311
+  orig: 623, 311
+  offset: 0, 0
+  index: -1
+no
+  rotate: false
+  xy: 2, 2
+  size: 486, 204
+  orig: 486, 204
+  offset: 0, 0
+  index: -1
+set
+  rotate: false
+  xy: 2, 208
+  size: 564, 564
+  orig: 564, 564
+  offset: 0, 0
+  index: -1

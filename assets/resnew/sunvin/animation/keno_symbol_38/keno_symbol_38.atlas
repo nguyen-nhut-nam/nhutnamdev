@@ -1,0 +1,103 @@
+keno_symbol_38.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+6
+  rotate: false
+  xy: 584, 31
+  size: 123, 123
+  orig: 123, 123
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 345, 14
+  size: 89, 91
+  orig: 90, 91
+  offset: 1, 0
+  index: -1
+8
+  rotate: false
+  xy: 2, 13
+  size: 74, 74
+  orig: 74, 74
+  offset: 0, 0
+  index: -1
+9
+  rotate: false
+  xy: 274, 107
+  size: 100, 102
+  orig: 102, 102
+  offset: 0, 0
+  index: -1
+BG
+  rotate: false
+  xy: 2, 89
+  size: 270, 420
+  orig: 270, 420
+  offset: 0, 0
+  index: -1
+Layer 131
+  rotate: false
+  xy: 594, 232
+  size: 270, 277
+  orig: 270, 277
+  offset: 0, 0
+  index: -1
+coin big
+  rotate: false
+  xy: 376, 108
+  size: 42, 46
+  orig: 42, 46
+  offset: 0, 0
+  index: -1
+coin small
+  rotate: true
+  xy: 420, 120
+  size: 34, 27
+  orig: 34, 27
+  offset: 0, 0
+  index: -1
+flare
+  rotate: false
+  xy: 449, 18
+  size: 133, 136
+  orig: 133, 136
+  offset: 0, 0
+  index: -1
+keno
+  rotate: true
+  xy: 274, 211
+  size: 298, 158
+  orig: 300, 158
+  offset: 2, 0
+  index: -1
+keno_2
+  rotate: true
+  xy: 434, 211
+  size: 298, 158
+  orig: 300, 158
+  offset: 2, 0
+  index: -1
+lb_khung_ten
+  rotate: false
+  xy: 376, 156
+  size: 265, 53
+  orig: 277, 53
+  offset: 6, 0
+  index: -1
+lb_money_icon (1)
+  rotate: true
+  xy: 584, 2
+  size: 27, 50
+  orig: 27, 50
+  offset: 0, 0
+  index: -1
+loc phat
+  rotate: false
+  xy: 78, 14
+  size: 265, 73
+  orig: 267, 93
+  offset: 2, 5
+  index: -1

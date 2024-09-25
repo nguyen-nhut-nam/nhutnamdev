@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "81d124ad-89d1-4644-a28e-0bd4f09e165f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 512,
+  "platformSettings": {},
+  "subMetas": {
+    "Mystery MINE": {
+      "ver": "1.0.6",
+      "uuid": "33baae8a-92b8-4fca-a0a9-6e3da3c5b03f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "81d124ad-89d1-4644-a28e-0bd4f09e165f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -10.5,
+      "offsetY": 1.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 1001,
+      "height": 507,
+      "rawWidth": 1024,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

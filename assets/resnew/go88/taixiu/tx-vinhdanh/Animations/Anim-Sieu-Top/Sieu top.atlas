@@ -1,0 +1,153 @@
+
+Sieu top.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DEN SAU
+  rotate: false
+  xy: 754, 444
+  size: 46, 39
+  orig: 46, 39
+  offset: 0, 0
+  index: -1
+DEN TRUOC
+  rotate: false
+  xy: 754, 485
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+L1
+  rotate: false
+  xy: 2, 114
+  size: 417, 441
+  orig: 417, 441
+  offset: 0, 0
+  index: -1
+L2
+  rotate: true
+  xy: 896, 663
+  size: 335, 472
+  orig: 335, 472
+  offset: 0, 0
+  index: -1
+L3
+  rotate: false
+  xy: 1796, 540
+  size: 247, 458
+  orig: 247, 458
+  offset: 0, 0
+  index: -1
+L4
+  rotate: true
+  xy: 422, 662
+  size: 336, 472
+  orig: 336, 472
+  offset: 0, 0
+  index: -1
+L5
+  rotate: false
+  xy: 2, 557
+  size: 418, 441
+  orig: 418, 441
+  offset: 0, 0
+  index: -1
+Pad
+  rotate: false
+  xy: 422, 552
+  size: 435, 108
+  orig: 435, 108
+  offset: 0, 0
+  index: -1
+SIÊU TOP
+  rotate: false
+  xy: 896, 593
+  size: 271, 68
+  orig: 271, 68
+  offset: 0, 0
+  index: -1
+Z1000
+  rotate: false
+  xy: 421, 249
+  size: 202, 156
+  orig: 202, 156
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 421, 140
+  size: 107, 107
+  orig: 107, 107
+  offset: 0, 0
+  index: -1
+light z1000
+  rotate: false
+  xy: 1370, 619
+  size: 424, 379
+  orig: 424, 379
+  offset: 0, 0
+  index: -1
+pad 2
+  rotate: false
+  xy: 421, 407
+  size: 331, 143
+  orig: 331, 143
+  offset: 0, 0
+  index: -1
+shadow text
+  rotate: false
+  xy: 2, 2
+  size: 310, 110
+  orig: 310, 110
+  offset: 0, 0
+  index: -1
+star 2
+  rotate: false
+  xy: 859, 626
+  size: 34, 34
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+star 4
+  rotate: false
+  xy: 530, 204
+  size: 43, 43
+  orig: 43, 43
+  offset: 0, 0
+  index: -1
+star 4 copy
+  rotate: false
+  xy: 530, 204
+  size: 43, 43
+  orig: 43, 43
+  offset: 0, 0
+  index: -1
+star 5
+  rotate: false
+  xy: 314, 12
+  size: 39, 39
+  orig: 39, 39
+  offset: 0, 0
+  index: -1
+xx1
+  rotate: false
+  xy: 625, 352
+  size: 53, 53
+  orig: 53, 53
+  offset: 0, 0
+  index: -1
+xx2
+  rotate: false
+  xy: 1169, 608
+  size: 52, 53
+  orig: 52, 53
+  offset: 0, 0
+  index: -1
+xx3
+  rotate: false
+  xy: 314, 53
+  size: 57, 59
+  orig: 57, 59
+  offset: 0, 0
+  index: -1

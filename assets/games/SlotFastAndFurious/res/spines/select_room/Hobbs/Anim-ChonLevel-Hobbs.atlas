@@ -1,0 +1,76 @@
+
+Anim-ChonLevel-Hobbs.png
+size: 850,332
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bright
+  rotate: false
+  xy: 371, 100
+  size: 279, 230
+  orig: 279, 230
+  offset: 0, 0
+  index: -1
+chanduoi
+  rotate: true
+  xy: 441, 42
+  size: 54, 147
+  orig: 54, 147
+  offset: 0, 0
+  index: -1
+dau
+  rotate: true
+  xy: 775, 2
+  size: 43, 53
+  orig: 43, 53
+  offset: 0, 0
+  index: -1
+daubanchan
+  rotate: false
+  xy: 441, 3
+  size: 52, 35
+  orig: 52, 35
+  offset: 0, 0
+  index: -1
+dot
+  rotate: false
+  xy: 832, 24
+  size: 13, 21
+  orig: 13, 21
+  offset: 0, 0
+  index: -1
+dui
+  rotate: false
+  xy: 371, 40
+  size: 66, 56
+  orig: 66, 56
+  offset: 0, 0
+  index: -1
+kieng
+  rotate: false
+  xy: 592, 42
+  size: 54, 54
+  orig: 54, 54
+  offset: 0, 0
+  index: -1
+nguoi
+  rotate: false
+  xy: 654, 35
+  size: 117, 295
+  orig: 117, 295
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 775, 49
+  size: 281, 73
+  orig: 281, 73
+  offset: 0, 0
+  index: -1
+xe
+  rotate: false
+  xy: 2, 15
+  size: 365, 315
+  orig: 365, 315
+  offset: 0, 0
+  index: -1

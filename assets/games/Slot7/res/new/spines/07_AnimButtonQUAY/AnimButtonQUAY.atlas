@@ -1,0 +1,97 @@
+
+AnimButtonQUAY.png
+size: 711,711
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle
+  rotate: false
+  xy: 2, 45
+  size: 134, 134
+  orig: 134, 134
+  offset: 0, 0
+  index: -1
+circle light_0
+  rotate: false
+  xy: 138, 112
+  size: 99, 67
+  orig: 99, 67
+  offset: 0, 0
+  index: -1
+light0
+  rotate: false
+  xy: 238, 26
+  size: 151, 17
+  orig: 151, 17
+  offset: 0, 0
+  index: -1
+light1
+  rotate: false
+  xy: 2, 2
+  size: 131, 41
+  orig: 131, 41
+  offset: 0, 0
+  index: -1
+starx2
+  rotate: true
+  xy: 138, 21
+  size: 89, 98
+  orig: 89, 98
+  offset: 0, 0
+  index: -1
+xoay0
+  rotate: false
+  xy: 2, 447
+  size: 245, 262
+  orig: 245, 262
+  offset: 0, 0
+  index: -1
+xoay1
+  rotate: false
+  xy: 2, 181
+  size: 235, 264
+  orig: 235, 264
+  offset: 0, 0
+  index: -1
+xoay2
+  rotate: false
+  xy: 249, 459
+  size: 232, 250
+  orig: 232, 250
+  offset: 0, 0
+  index: -1
+xoay3
+  rotate: false
+  xy: 483, 460
+  size: 219, 249
+  orig: 219, 249
+  offset: 0, 0
+  index: -1
+xoay4
+  rotate: true
+  xy: 249, 250
+  size: 207, 225
+  orig: 207, 225
+  offset: 0, 0
+  index: -1
+xoay5
+  rotate: true
+  xy: 239, 45
+  size: 203, 223
+  orig: 203, 223
+  offset: 0, 0
+  index: -1
+xoay6
+  rotate: true
+  xy: 483, 259
+  size: 199, 219
+  orig: 199, 219
+  offset: 0, 0
+  index: -1
+xoay7
+  rotate: true
+  xy: 476, 66
+  size: 191, 220
+  orig: 191, 220
+  offset: 0, 0
+  index: -1

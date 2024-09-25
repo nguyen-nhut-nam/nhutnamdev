@@ -1,0 +1,69 @@
+
+Bau_cua.png
+size: 824,240
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+AS_2
+  rotate: false
+  xy: 629, 48
+  size: 101, 91
+  orig: 101, 91
+  offset: 0, 0
+  index: -1
+AS_User_1
+  rotate: false
+  xy: 441, 51
+  size: 186, 186
+  orig: 186, 186
+  offset: 0, 0
+  index: -1
+AS_hu_loc
+  rotate: false
+  xy: 228, 56
+  size: 211, 181
+  orig: 211, 181
+  offset: 0, 0
+  index: -1
+AS_sao
+  rotate: false
+  xy: 779, 198
+  size: 40, 39
+  orig: 40, 39
+  offset: 0, 0
+  index: -1
+AS_tron
+  rotate: false
+  xy: 779, 183
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+AS_user_2
+  rotate: false
+  xy: 2, 15
+  size: 224, 222
+  orig: 224, 222
+  offset: 0, 0
+  index: -1
+dia
+  rotate: false
+  xy: 629, 141
+  size: 148, 96
+  orig: 148, 96
+  offset: 0, 0
+  index: -1
+nap
+  rotate: true
+  xy: 732, 36
+  size: 103, 84
+  orig: 103, 84
+  offset: 0, 0
+  index: -1
+ruy_bang
+  rotate: false
+  xy: 228, 2
+  size: 209, 52
+  orig: 209, 52
+  offset: 0, 0
+  index: -1

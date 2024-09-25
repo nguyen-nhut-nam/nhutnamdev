@@ -1,0 +1,76 @@
+
+Thai blossoms2.png
+size: 1992, 965
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Curves 1
+  rotate: false
+  xy: 465, 69
+  size: 457, 895
+  orig: 457, 895
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: true
+  xy: 1447, 638
+  size: 326, 544
+  orig: 326, 544
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: true
+  xy: 1, 1
+  size: 65, 73
+  orig: 65, 73
+  offset: 0, 0
+  index: -1
+anh sang
+  rotate: false
+  xy: 923, 404
+  size: 523, 560
+  orig: 523, 560
+  offset: 0, 0
+  index: -1
+khung
+  rotate: false
+  xy: 1, 67
+  size: 463, 897
+  orig: 463, 897
+  offset: 0, 0
+  index: -1
+khung tiền copy 8
+  rotate: false
+  xy: 1447, 371
+  size: 457, 266
+  orig: 457, 266
+  offset: 0, 0
+  index: -1
+logo glow
+  rotate: false
+  xy: 1415, 81
+  size: 435, 289
+  orig: 435, 289
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 1415, 81
+  size: 435, 289
+  orig: 435, 289
+  offset: 0, 0
+  index: -1
+tay
+  rotate: false
+  xy: 1851, 108
+  size: 127, 262
+  orig: 127, 262
+  offset: 0, 0
+  index: -1
+voi
+  rotate: true
+  xy: 923, 1
+  size: 402, 491
+  orig: 402, 491
+  offset: 0, 0
+  index: -1

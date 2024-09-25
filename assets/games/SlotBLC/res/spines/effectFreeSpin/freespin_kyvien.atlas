@@ -1,0 +1,41 @@
+
+freespin_kyvien.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg
+  rotate: false
+  xy: 2, 310
+  size: 658, 343
+  orig: 658, 343
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 2, 2
+  size: 534, 306
+  orig: 534, 306
+  offset: 0, 0
+  index: -1
+light2
+  rotate: false
+  xy: 907, 581
+  size: 551, 412
+  orig: 551, 412
+  offset: 0, 0
+  index: -1
+light3
+  rotate: false
+  xy: 2, 655
+  size: 903, 338
+  orig: 903, 338
+  offset: 0, 0
+  index: -1
+tl
+  rotate: false
+  xy: 1460, 893
+  size: 337, 100
+  orig: 337, 100
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "95e257ae-76a0-48ca-a00d-c042abea4529",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 2028,
+  "height": 1397,
+  "platformSettings": {},
+  "subMetas": {
+    "ALADDIN ADVENTURE 1 copy 3": {
+      "ver": "1.0.6",
+      "uuid": "f4d02595-3ffa-4d54-810a-6a49802cfded",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "95e257ae-76a0-48ca-a00d-c042abea4529",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 25.5,
+      "offsetY": 0,
+      "trimX": 53,
+      "trimY": 2,
+      "width": 1973,
+      "height": 1393,
+      "rawWidth": 2028,
+      "rawHeight": 1397,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

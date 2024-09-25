@@ -1,0 +1,27 @@
+
+NEn.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Nen
+  rotate: false
+  xy: 1, 1
+  size: 1072, 588
+  orig: 1072, 588
+  offset: 0, 0
+  index: -1
+1
+  rotate: false
+  xy: 1, 591
+  size: 13, 84
+  orig: 13, 84
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 1, 677
+  size: 24, 19
+  orig: 24, 19
+  offset: 0, 0
+  index: -1

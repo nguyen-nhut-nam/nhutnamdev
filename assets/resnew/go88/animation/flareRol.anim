@@ -1,0 +1,26 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "flareRol",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 5,
+  "speed": 0.4,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [],
+      "angle": [
+        {
+          "frame": 0,
+          "value": -402.36518753779194
+        },
+        {
+          "frame": 1,
+          "value": -762.3421875377919
+        }
+      ]
+    }
+  },
+  "events": []
+}

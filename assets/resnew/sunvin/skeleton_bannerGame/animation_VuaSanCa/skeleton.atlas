@@ -1,0 +1,995 @@
+
+Dragon OUT DONE.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+123
+  rotate: false
+  xy: 2, 672
+  size: 350, 350
+  orig: 350, 350
+  offset: 0, 0
+  index: -1
+1_0000_1_00055
+  rotate: false
+  xy: 2, 2
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0001_1_00054
+  rotate: false
+  xy: 188, 2
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0002_1_00053
+  rotate: false
+  xy: 619, 516
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0003_1_00052
+  rotate: false
+  xy: 805, 541
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0004_1_00051
+  rotate: false
+  xy: 374, 18
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0005_1_00050
+  rotate: false
+  xy: 560, 18
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0006_1_00049
+  rotate: false
+  xy: 746, 18
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+AT_00000
+  rotate: false
+  xy: 932, 143
+  size: 90, 185
+  orig: 90, 185
+  offset: 0, 0
+  index: -1
+AT_00006
+  rotate: false
+  xy: 932, 143
+  size: 90, 185
+  orig: 90, 185
+  offset: 0, 0
+  index: -1
+BG-WEB
+  rotate: true
+  xy: 354, 766
+  size: 256, 411
+  orig: 256, 411
+  offset: 0, 0
+  index: -1
+BLa_0000_Layer-1
+  rotate: false
+  xy: 354, 501
+  size: 263, 263
+  orig: 263, 263
+  offset: 0, 0
+  index: -1
+BORDER
+  rotate: false
+  xy: 2, 252
+  size: 265, 418
+  orig: 265, 418
+  offset: 0, 0
+  index: -1
+CR
+  rotate: false
+  xy: 932, 75
+  size: 79, 66
+  orig: 79, 66
+  offset: 0, 0
+  index: -1
+Layer 123
+  rotate: true
+  xy: 269, 591
+  size: 79, 83
+  orig: 79, 83
+  offset: 0, 0
+  index: -1
+Layer 161
+  rotate: false
+  xy: 319, 510
+  size: 29, 31
+  orig: 29, 31
+  offset: 0, 0
+  index: -1
+Layer 162
+  rotate: false
+  xy: 269, 504
+  size: 48, 85
+  orig: 48, 85
+  offset: 0, 0
+  index: -1
+Layer 163
+  rotate: false
+  xy: 1005, 996
+  size: 17, 26
+  orig: 17, 26
+  offset: 0, 0
+  index: -1
+Layer 164
+  rotate: false
+  xy: 374, 5
+  size: 19, 11
+  orig: 19, 11
+  offset: 0, 0
+  index: -1
+Layer 165
+  rotate: true
+  xy: 619, 503
+  size: 11, 27
+  orig: 11, 27
+  offset: 0, 0
+  index: -1
+Layer 166
+  rotate: true
+  xy: 1010, 497
+  size: 21, 12
+  orig: 21, 12
+  offset: 0, 0
+  index: -1
+Layer 167
+  rotate: false
+  xy: 767, 766
+  size: 10, 23
+  orig: 10, 23
+  offset: 0, 0
+  index: -1
+Layer 169
+  rotate: true
+  xy: 1010, 520
+  size: 22, 12
+  orig: 22, 12
+  offset: 0, 0
+  index: -1
+Layer 17
+  rotate: false
+  xy: 877, 268
+  size: 31, 60
+  orig: 31, 60
+  offset: 0, 0
+  index: -1
+Layer 170
+  rotate: true
+  xy: 269, 252
+  size: 14, 20
+  orig: 14, 20
+  offset: 0, 0
+  index: -1
+Layer 171 copy
+  rotate: false
+  xy: 910, 278
+  size: 16, 50
+  orig: 16, 50
+  offset: 0, 0
+  index: -1
+Layer 173 copy
+  rotate: true
+  xy: 805, 517
+  size: 22, 48
+  orig: 22, 48
+  offset: 0, 0
+  index: -1
+Layer 176 copy
+  rotate: true
+  xy: 779, 771
+  size: 18, 24
+  orig: 18, 24
+  offset: 0, 0
+  index: -1
+Layer 185
+  rotate: false
+  xy: 745, 268
+  size: 130, 246
+  orig: 130, 246
+  offset: 0, 0
+  index: -1
+Layer 188
+  rotate: true
+  xy: 932, 16
+  size: 57, 75
+  orig: 57, 75
+  offset: 0, 0
+  index: -1
+Layer 189 copy
+  rotate: false
+  xy: 319, 543
+  size: 33, 46
+  orig: 33, 46
+  offset: 0, 0
+  index: -1
+TTE_0000_t_00036
+  rotate: false
+  xy: 767, 791
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0001_t_00035
+  rotate: false
+  xy: 269, 268
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0002_t_00034
+  rotate: false
+  xy: 507, 268
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+VUA SAN CA
+  rotate: true
+  xy: 877, 330
+  size: 209, 131
+  orig: 209, 131
+  offset: 0, 0
+  index: -1
+Vector Smart Object51 copy
+  rotate: true
+  xy: 991, 544
+  size: 245, 28
+  orig: 245, 28
+  offset: 0, 0
+  index: -1
+
+Dragon OUT DONE2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_0007_1_00048
+  rotate: false
+  xy: 2, 774
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0008_1_00047
+  rotate: false
+  xy: 2, 524
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0009_1_00046
+  rotate: false
+  xy: 2, 274
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0010_1_00045
+  rotate: false
+  xy: 2, 24
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0011_1_00044
+  rotate: true
+  xy: 188, 838
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0012_1_00043
+  rotate: true
+  xy: 438, 838
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0013_1_00042
+  rotate: true
+  xy: 688, 838
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0014_1_00041
+  rotate: true
+  xy: 188, 652
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0015_1_00040
+  rotate: true
+  xy: 438, 652
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0016_1_00039
+  rotate: true
+  xy: 688, 652
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0017_1_00038
+  rotate: false
+  xy: 188, 402
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0018_1_00037
+  rotate: false
+  xy: 188, 152
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0019_1_00036
+  rotate: false
+  xy: 374, 402
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0020_1_00035
+  rotate: false
+  xy: 374, 152
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0021_1_00034
+  rotate: true
+  xy: 703, 466
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0022_1_00033
+  rotate: false
+  xy: 560, 215
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0023_1_00032
+  rotate: false
+  xy: 746, 216
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+AT_00001
+  rotate: true
+  xy: 516, 60
+  size: 90, 185
+  orig: 90, 185
+  offset: 0, 0
+  index: -1
+AT_00005
+  rotate: true
+  xy: 516, 60
+  size: 90, 185
+  orig: 90, 185
+  offset: 0, 0
+  index: -1
+AT_00002
+  rotate: false
+  xy: 560, 465
+  size: 90, 185
+  orig: 90, 185
+  offset: 0, 0
+  index: -1
+AT_00004
+  rotate: false
+  xy: 560, 465
+  size: 90, 185
+  orig: 90, 185
+  offset: 0, 0
+  index: -1
+AT_00003
+  rotate: false
+  xy: 703, 28
+  size: 90, 185
+  orig: 90, 185
+  offset: 0, 0
+  index: -1
+CRB
+  rotate: false
+  xy: 938, 827
+  size: 55, 30
+  orig: 55, 30
+  offset: 0, 0
+  index: -1
+GUN
+  rotate: false
+  xy: 795, 33
+  size: 179, 181
+  orig: 179, 181
+  offset: 0, 0
+  index: -1
+Layer 133
+  rotate: false
+  xy: 938, 785
+  size: 49, 40
+  orig: 49, 40
+  offset: 0, 0
+  index: -1
+Layer 166 copy 2
+  rotate: true
+  xy: 938, 859
+  size: 40, 55
+  orig: 40, 55
+  offset: 0, 0
+  index: -1
+Layer 168
+  rotate: true
+  xy: 77, 4
+  size: 18, 26
+  orig: 18, 26
+  offset: 0, 0
+  index: -1
+Layer 172 copy
+  rotate: true
+  xy: 938, 901
+  size: 25, 64
+  orig: 25, 64
+  offset: 0, 0
+  index: -1
+Layer 174 copy
+  rotate: true
+  xy: 2, 3
+  size: 19, 73
+  orig: 19, 73
+  offset: 0, 0
+  index: -1
+Layer 180 copy
+  rotate: true
+  xy: 938, 979
+  size: 43, 82
+  orig: 43, 82
+  offset: 0, 0
+  index: -1
+Layer 186
+  rotate: true
+  xy: 354, 13
+  size: 137, 160
+  orig: 137, 160
+  offset: 0, 0
+  index: -1
+Layer 22
+  rotate: false
+  xy: 938, 928
+  size: 65, 49
+  orig: 65, 49
+  offset: 0, 0
+  index: -1
+Layer 33
+  rotate: false
+  xy: 188, 2
+  size: 164, 148
+  orig: 164, 148
+  offset: 0, 0
+  index: -1
+
+Dragon OUT DONE3.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_0024_1_00031
+  rotate: true
+  xy: 346, 746
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0025_1_00030
+  rotate: true
+  xy: 596, 746
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0026_1_00029
+  rotate: true
+  xy: 2, 585
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0027_1_00028
+  rotate: true
+  xy: 252, 560
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0028_1_00027
+  rotate: true
+  xy: 502, 560
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0029_1_00026
+  rotate: true
+  xy: 752, 560
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0030_1_00025
+  rotate: true
+  xy: 2, 399
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0031_1_00024
+  rotate: true
+  xy: 252, 374
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0032_1_00023
+  rotate: true
+  xy: 502, 374
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0033_1_00022
+  rotate: true
+  xy: 752, 374
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0034_1_00021
+  rotate: true
+  xy: 2, 213
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0035_1_00020
+  rotate: true
+  xy: 252, 188
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0036_1_00019
+  rotate: true
+  xy: 502, 188
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0037_1_00018
+  rotate: true
+  xy: 752, 188
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0038_1_00017
+  rotate: true
+  xy: 2, 27
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0039_1_00016
+  rotate: true
+  xy: 252, 2
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0040_1_00015
+  rotate: true
+  xy: 502, 2
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0041_1_00014
+  rotate: true
+  xy: 752, 2
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+LL
+  rotate: false
+  xy: 167, 771
+  size: 177, 159
+  orig: 177, 159
+  offset: 0, 0
+  index: -1
+Layer 33 copy 3
+  rotate: false
+  xy: 2, 780
+  size: 163, 150
+  orig: 163, 150
+  offset: 0, 0
+  index: -1
+
+Dragon OUT DONE4.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+TTE_0003_t_00033
+  rotate: false
+  xy: 2, 701
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0004_t_00032
+  rotate: false
+  xy: 2, 468
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0005_t_00031
+  rotate: false
+  xy: 240, 701
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0006_t_00030
+  rotate: false
+  xy: 2, 235
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0007_t_00029
+  rotate: false
+  xy: 240, 468
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0008_t_00028
+  rotate: false
+  xy: 478, 701
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0009_t_00027
+  rotate: false
+  xy: 2, 2
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0010_t_00026
+  rotate: false
+  xy: 240, 235
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0011_t_00025
+  rotate: false
+  xy: 478, 468
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0012_t_00024
+  rotate: false
+  xy: 716, 701
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0013_t_00023
+  rotate: false
+  xy: 240, 2
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0014_t_00022
+  rotate: false
+  xy: 478, 235
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0015_t_00021
+  rotate: false
+  xy: 716, 468
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0016_t_00020
+  rotate: false
+  xy: 478, 2
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0017_t_00019
+  rotate: false
+  xy: 716, 235
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0018_t_00018
+  rotate: false
+  xy: 716, 2
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+
+Dragon OUT DONE5.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+TTE_0019_t_00017
+  rotate: false
+  xy: 2, 701
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0020_t_00016
+  rotate: false
+  xy: 2, 468
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0021_t_00015
+  rotate: false
+  xy: 240, 701
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0022_t_00014
+  rotate: false
+  xy: 2, 235
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0023_t_00013
+  rotate: false
+  xy: 240, 468
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0024_t_00012
+  rotate: false
+  xy: 478, 701
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0025_t_00011
+  rotate: false
+  xy: 2, 2
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0026_t_00010
+  rotate: false
+  xy: 240, 235
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0027_t_00009
+  rotate: false
+  xy: 478, 468
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0028_t_00008
+  rotate: false
+  xy: 716, 701
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0029_t_00007
+  rotate: false
+  xy: 240, 2
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0030_t_00006
+  rotate: false
+  xy: 478, 235
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0031_t_00005
+  rotate: false
+  xy: 716, 468
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0032_t_00004
+  rotate: false
+  xy: 478, 2
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0033_t_00003
+  rotate: false
+  xy: 716, 235
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0034_t_00002
+  rotate: false
+  xy: 716, 2
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+
+Dragon OUT DONE6.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_0042_1_00013
+  rotate: false
+  xy: 240, 718
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0043_1_00012
+  rotate: false
+  xy: 2, 252
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0044_1_00011
+  rotate: false
+  xy: 426, 718
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0045_1_00010
+  rotate: true
+  xy: 240, 532
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0046_1_00009
+  rotate: false
+  xy: 2, 2
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0047_1_00008
+  rotate: false
+  xy: 612, 718
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0048_1_00007
+  rotate: true
+  xy: 490, 532
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0049_1_00006
+  rotate: false
+  xy: 798, 718
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0050_1_00005
+  rotate: true
+  xy: 740, 532
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0051_1_00004
+  rotate: false
+  xy: 188, 252
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0052_1_00003
+  rotate: false
+  xy: 188, 2
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0053_1_00002
+  rotate: false
+  xy: 374, 282
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0054_1_00001
+  rotate: false
+  xy: 374, 32
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+1_0055_1_00000
+  rotate: false
+  xy: 560, 282
+  size: 184, 248
+  orig: 184, 248
+  offset: 0, 0
+  index: -1
+TTE_0035_t_00001
+  rotate: false
+  xy: 2, 735
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1
+TTE_0036_t_00000
+  rotate: false
+  xy: 2, 502
+  size: 236, 231
+  orig: 236, 231
+  offset: 0, 0
+  index: -1

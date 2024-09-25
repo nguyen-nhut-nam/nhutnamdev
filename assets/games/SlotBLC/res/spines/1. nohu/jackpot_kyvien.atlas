@@ -1,0 +1,41 @@
+
+jackpot_kyvien.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jack
+  rotate: false
+  xy: 463, 49
+  size: 128, 38
+  orig: 128, 38
+  offset: 0, 0
+  index: -1
+lgiht2
+  rotate: false
+  xy: 2, 2
+  size: 239, 247
+  orig: 239, 247
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 243, 23
+  size: 218, 226
+  orig: 218, 226
+  offset: 0, 0
+  index: -1
+rong1
+  rotate: false
+  xy: 655, 89
+  size: 164, 160
+  orig: 164, 160
+  offset: 0, 0
+  index: -1
+rong2
+  rotate: false
+  xy: 463, 89
+  size: 190, 160
+  orig: 190, 160
+  offset: 0, 0
+  index: -1

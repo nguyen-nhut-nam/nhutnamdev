@@ -1,0 +1,111 @@
+
+gaixinh live.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+18+
+  rotate: false
+  xy: 51, 70
+  size: 53, 27
+  orig: 53, 27
+  offset: 0, 0
+  index: -1
+A
+  rotate: false
+  xy: 746, 752
+  size: 47, 74
+  orig: 47, 74
+  offset: 0, 0
+  index: -1
+G
+  rotate: false
+  xy: 796, 764
+  size: 44, 62
+  orig: 44, 62
+  offset: 0, 0
+  index: -1
+H
+  rotate: false
+  xy: 3, 35
+  size: 45, 62
+  orig: 45, 62
+  offset: 0, 0
+  index: -1
+I 1
+  rotate: true
+  xy: 529, 627
+  size: 28, 62
+  orig: 28, 62
+  offset: 0, 0
+  index: -1
+I 2
+  rotate: true
+  xy: 529, 627
+  size: 28, 62
+  orig: 28, 62
+  offset: 0, 0
+  index: -1
+LIVE
+  rotate: false
+  xy: 265, 592
+  size: 62, 30
+  orig: 62, 30
+  offset: 0, 0
+  index: -1
+LIVE copy
+  rotate: false
+  xy: 3, 100
+  size: 162, 107
+  orig: 162, 107
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 746, 829
+  size: 258, 172
+  orig: 258, 172
+  offset: 0, 0
+  index: -1
+N
+  rotate: false
+  xy: 168, 145
+  size: 45, 62
+  orig: 45, 62
+  offset: 0, 0
+  index: -1
+X
+  rotate: false
+  xy: 746, 687
+  size: 45, 62
+  orig: 45, 62
+  offset: 0, 0
+  index: -1
+gai
+  rotate: false
+  xy: 265, 625
+  size: 261, 376
+  orig: 261, 376
+  offset: 0, 0
+  index: -1
+girl-0nen
+  rotate: false
+  xy: 3, 586
+  size: 259, 415
+  orig: 259, 415
+  offset: 0, 0
+  index: -1
+khung
+  rotate: false
+  xy: 3, 210
+  size: 244, 373
+  orig: 244, 373
+  offset: 0, 0
+  index: -1
+nen
+  rotate: false
+  xy: 529, 658
+  size: 214, 343
+  orig: 214, 343
+  offset: 0, 0
+  index: -1

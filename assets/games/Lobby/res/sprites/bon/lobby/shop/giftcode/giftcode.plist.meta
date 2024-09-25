@@ -1,0 +1,59 @@
+{
+  "ver": "1.2.6",
+  "uuid": "6a967421-e4a5-4c28-8d07-5211581202e8",
+  "importer": "sprite-atlas",
+  "rawTextureUuid": "e921efe8-2c80-4a43-9d09-588ec43fded5",
+  "size": {
+    "width": 352,
+    "height": 229
+  },
+  "type": "Texture Packer",
+  "subMetas": {
+    "btn_xacnhan.png": {
+      "ver": "1.0.6",
+      "uuid": "46b128ac-ec9a-4fcb-8c20-b45152b0ac7e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e921efe8-2c80-4a43-9d09-588ec43fded5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": true,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 227,
+      "height": 80,
+      "rawWidth": 227,
+      "rawHeight": 80,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    },
+    "fb.png": {
+      "ver": "1.0.6",
+      "uuid": "db6a34aa-427a-4891-92f8-31aac3e10c44",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e921efe8-2c80-4a43-9d09-588ec43fded5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 83,
+      "trimY": 1,
+      "width": 268,
+      "height": 178,
+      "rawWidth": 268,
+      "rawHeight": 178,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    }
+  }
+}

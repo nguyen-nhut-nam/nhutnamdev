@@ -1,0 +1,34 @@
+
+Spine_xocdia_baucua.png
+size: 260,260
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+MoBat
+  rotate: true
+  xy: 190, 141
+  size: 117, 32
+  orig: 117, 32
+  offset: 0, 0
+  index: -1
+caidia
+  rotate: false
+  xy: 2, 123
+  size: 186, 135
+  orig: 186, 135
+  offset: 0, 0
+  index: -1
+caito
+  rotate: false
+  xy: 2, 8
+  size: 132, 113
+  orig: 132, 113
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 136, 2
+  size: 119, 88
+  orig: 119, 88
+  offset: 0, 0
+  index: -1

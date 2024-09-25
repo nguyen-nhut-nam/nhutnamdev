@@ -1,0 +1,48 @@
+
+bắn 03.png
+size: 1815, 1054
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 1, 56
+  size: 514, 997
+  orig: 514, 997
+  offset: 0, 0
+  index: -1
+ca
+  rotate: true
+  xy: 1621, 71
+  size: 254, 166
+  orig: 254, 166
+  offset: 0, 0
+  index: -1
+khung tien
+  rotate: false
+  xy: 1112, 30
+  size: 508, 295
+  orig: 508, 295
+  offset: 0, 0
+  index: -1
+rieu
+  rotate: true
+  xy: 1112, 326
+  size: 727, 702
+  orig: 727, 702
+  offset: 0, 0
+  index: -1
+rong
+  rotate: false
+  xy: 516, 158
+  size: 595, 895
+  orig: 595, 895
+  offset: 0, 0
+  index: -1
+vua san ca
+  rotate: false
+  xy: 516, 1
+  size: 508, 156
+  orig: 508, 156
+  offset: 0, 0
+  index: -1

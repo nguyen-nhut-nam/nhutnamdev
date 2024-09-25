@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "4ed6e57d-e314-4963-b18c-f5c5d2a7f681",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 201,
+  "height": 53,
+  "platformSettings": {},
+  "subMetas": {
+    "lb_khung_ten.png": {
+      "ver": "1.0.6",
+      "uuid": "50deec85-5bc4-4ba7-8aa4-c800063eaf20",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "4ed6e57d-e314-4963-b18c-f5c5d2a7f681",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 201,
+      "height": 53,
+      "rawWidth": 201,
+      "rawHeight": 53,
+      "borderTop": 14,
+      "borderBottom": 13,
+      "borderLeft": 35,
+      "borderRight": 30,
+      "subMetas": {}
+    }
+  }
+}

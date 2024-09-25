@@ -1,0 +1,153 @@
+
+Anim-Items-WILD.png
+size: 1032,204
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 510, 2
+  size: 24, 181
+  orig: 24, 181
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 691, 32
+  size: 24, 181
+  orig: 24, 181
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 321, 22
+  size: 25, 181
+  orig: 25, 181
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 608, 60
+  size: 24, 182
+  orig: 24, 182
+  offset: 0, 0
+  index: -1
+5
+  rotate: true
+  xy: 423, 59
+  size: 25, 181
+  orig: 25, 181
+  offset: 0, 0
+  index: -1
+6
+  rotate: true
+  xy: 136, 21
+  size: 26, 181
+  orig: 26, 181
+  offset: 0, 0
+  index: -1
+7
+  rotate: true
+  xy: 506, 30
+  size: 25, 181
+  orig: 25, 181
+  offset: 0, 0
+  index: -1
+8
+  rotate: true
+  xy: 794, 60
+  size: 24, 181
+  orig: 24, 181
+  offset: 0, 0
+  index: -1
+Layer 160 copy 3
+  rotate: true
+  xy: 2, 51
+  size: 151, 417
+  orig: 151, 417
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 423, 88
+  size: 114, 392
+  orig: 114, 392
+  offset: 0, 0
+  index: -1
+den
+  rotate: false
+  xy: 929, 22
+  size: 86, 11
+  orig: 86, 11
+  offset: 0, 0
+  index: -1
+densang
+  rotate: true
+  xy: 1019, 11
+  size: 22, 11
+  orig: 22, 11
+  offset: 0, 0
+  index: -1
+dotCam
+  rotate: true
+  xy: 947, 39
+  size: 17, 10
+  orig: 17, 10
+  offset: 0, 0
+  index: -1
+dotVang
+  rotate: true
+  xy: 929, 40
+  size: 16, 14
+  orig: 16, 14
+  offset: 0, 0
+  index: -1
+dotWhite
+  rotate: false
+  xy: 961, 49
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1
+khungSide
+  rotate: true
+  xy: 136, 8
+  size: 9, 370
+  orig: 9, 370
+  offset: 0, 0
+  index: -1
+khungtop
+  rotate: true
+  xy: 979, 37
+  size: 165, 51
+  orig: 165, 51
+  offset: 0, 0
+  index: -1
+mat
+  rotate: true
+  xy: 891, 137
+  size: 65, 67
+  orig: 65, 67
+  offset: 0, 0
+  index: -1
+text
+  rotate: false
+  xy: 2, 9
+  size: 130, 38
+  orig: 130, 38
+  offset: 0, 0
+  index: -1
+toc
+  rotate: true
+  xy: 819, 118
+  size: 84, 68
+  orig: 84, 68
+  offset: 0, 0
+  index: -1
+toc1
+  rotate: false
+  xy: 876, 7
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: -1

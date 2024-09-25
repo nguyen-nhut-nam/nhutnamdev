@@ -1,0 +1,146 @@
+
+haitac_expanding_wild.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Frame/bg
+  rotate: false
+  xy: 670, 52
+  size: 130, 435
+  orig: 130, 435
+  offset: 0, 0
+  index: -1
+Frame/frame
+  rotate: false
+  xy: 202, 52
+  size: 154, 435
+  orig: 154, 435
+  offset: 0, 0
+  index: -1
+Frame/frame dark
+  rotate: false
+  xy: 358, 52
+  size: 154, 435
+  orig: 154, 435
+  offset: 0, 0
+  index: -1
+Frame/frame glowing
+  rotate: false
+  xy: 2, 6
+  size: 198, 481
+  orig: 198, 481
+  offset: 0, 0
+  index: -1
+Frame/frame light
+  rotate: false
+  xy: 514, 52
+  size: 154, 435
+  orig: 154, 435
+  offset: 0, 0
+  index: -1
+char/body
+  rotate: false
+  xy: 802, 184
+  size: 129, 303
+  orig: 129, 303
+  offset: 0, 0
+  index: -1
+char/feather
+  rotate: true
+  xy: 1915, 410
+  size: 77, 81
+  orig: 77, 81
+  offset: 0, 0
+  index: -1
+char/hand
+  rotate: false
+  xy: 802, 82
+  size: 116, 100
+  orig: 116, 100
+  offset: 0, 0
+  index: -1
+char/head
+  rotate: false
+  xy: 933, 249
+  size: 135, 134
+  orig: 135, 134
+  offset: 0, 0
+  index: -1
+fx1/spark 1
+  rotate: false
+  xy: 1131, 423
+  size: 156, 64
+  orig: 156, 64
+  offset: 0, 0
+  index: -1
+fx1/spark 2
+  rotate: false
+  xy: 1289, 423
+  size: 156, 64
+  orig: 156, 64
+  offset: 0, 0
+  index: -1
+fx1/spark 3
+  rotate: false
+  xy: 1447, 435
+  size: 156, 52
+  orig: 156, 52
+  offset: 0, 0
+  index: -1
+fx1/spark 4
+  rotate: false
+  xy: 1761, 439
+  size: 152, 48
+  orig: 152, 48
+  offset: 0, 0
+  index: -1
+fx1/spark 5
+  rotate: false
+  xy: 1605, 437
+  size: 154, 50
+  orig: 154, 50
+  offset: 0, 0
+  index: -1
+wild/W1
+  rotate: false
+  xy: 933, 199
+  size: 133, 48
+  orig: 133, 48
+  offset: 0, 0
+  index: -1
+wild/W2
+  rotate: true
+  xy: 1070, 250
+  size: 133, 48
+  orig: 133, 48
+  offset: 0, 0
+  index: -1
+wild/W3
+  rotate: false
+  xy: 202, 2
+  size: 133, 48
+  orig: 133, 48
+  offset: 0, 0
+  index: -1
+wild/W4
+  rotate: false
+  xy: 337, 2
+  size: 133, 48
+  orig: 133, 48
+  offset: 0, 0
+  index: -1
+wild/WILD
+  rotate: false
+  xy: 472, 2
+  size: 133, 48
+  orig: 133, 48
+  offset: 0, 0
+  index: -1
+wild/WL
+  rotate: false
+  xy: 933, 385
+  size: 196, 102
+  orig: 196, 102
+  offset: 0, 0
+  index: -1

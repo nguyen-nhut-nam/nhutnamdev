@@ -1,0 +1,83 @@
+
+dealerok.png
+size: 512,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tai
+  rotate: false
+  xy: 1, 257
+  size: 164, 154
+  orig: 320, 325
+  offset: 57, 81
+  index: -1
+Chan
+  rotate: false
+  xy: 1, 442
+  size: 272, 115
+  orig: 272, 115
+  offset: 0, 0
+  index: -1
+TayPhai
+  rotate: false
+  xy: 404, 1
+  size: 53, 226
+  orig: 83, 362
+  offset: 30, 136
+  index: -1
+Body
+  rotate: false
+  xy: 1, 1
+  size: 209, 254
+  orig: 229, 403
+  offset: 11, 146
+  index: -1
+Nguc
+  rotate: false
+  xy: 212, 245
+  size: 168, 195
+  orig: 168, 195
+  offset: 0, 0
+  index: -1
+Dau
+  rotate: false
+  xy: 212, 1
+  size: 190, 242
+  orig: 190, 242
+  offset: 0, 0
+  index: -1
+MatNham
+  rotate: false
+  xy: 275, 442
+  size: 58, 19
+  orig: 58, 19
+  offset: 0, 0
+  index: -1
+TayTrai
+  rotate: false
+  xy: 382, 245
+  size: 65, 222
+  orig: 65, 222
+  offset: 0, 0
+  index: -1
+MiengCuoi
+  rotate: false
+  xy: 449, 229
+  size: 50, 38
+  orig: 50, 38
+  offset: 0, 0
+  index: -1
+right_hand
+  rotate: false
+  xy: 275, 469
+  size: 229, 55
+  orig: 231, 94
+  offset: 2, 16
+  index: -1
+dealer
+  rotate: false
+  xy: 275, 526
+  size: 130, 31
+  orig: 512, 128
+  offset: 134, 4
+  index: -1

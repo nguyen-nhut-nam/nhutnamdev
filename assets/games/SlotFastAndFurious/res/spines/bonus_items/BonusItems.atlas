@@ -1,0 +1,118 @@
+
+BonusItems.png
+size: 669,304
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Radiator
+  rotate: true
+  xy: 513, 112
+  size: 97, 57
+  orig: 97, 57
+  offset: 0, 0
+  index: -1
+canso
+  rotate: true
+  xy: 567, 13
+  size: 68, 100
+  orig: 68, 100
+  offset: 0, 0
+  index: -1
+gear box
+  rotate: false
+  xy: 382, 209
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+goldenBrakeDisk copy
+  rotate: false
+  xy: 397, 45
+  size: 91, 85
+  orig: 91, 85
+  offset: 0, 0
+  index: -1
+kamil-chojnacki
+  rotate: false
+  xy: 290, 16
+  size: 103, 83
+  orig: 103, 83
+  offset: 0, 0
+  index: -1
+khung
+  rotate: false
+  xy: 2, 4
+  size: 141, 141
+  orig: 141, 141
+  offset: 0, 0
+  index: -1
+nos
+  rotate: true
+  xy: 390, 134
+  size: 71, 119
+  orig: 71, 119
+  offset: 0, 0
+  index: -1
+outerGlow
+  rotate: false
+  xy: 2, 149
+  size: 153, 153
+  orig: 153, 153
+  offset: 0, 0
+  index: -1
+phuocnhun
+  rotate: true
+  xy: 577, 199
+  size: 103, 79
+  orig: 103, 79
+  offset: 0, 0
+  index: -1
+pin
+  rotate: false
+  xy: 279, 203
+  size: 99, 99
+  orig: 99, 99
+  offset: 0, 0
+  index: -1
+toara
+  rotate: false
+  xy: 147, 2
+  size: 139, 143
+  orig: 139, 143
+  offset: 0, 0
+  index: -1
+turbine
+  rotate: true
+  xy: 574, 85
+  size: 110, 63
+  orig: 110, 63
+  offset: 0, 0
+  index: -1
+tyre
+  rotate: false
+  xy: 492, 12
+  size: 71, 96
+  orig: 71, 96
+  offset: 0, 0
+  index: -1
+unknow-car sounds
+  rotate: false
+  xy: 290, 103
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+volang
+  rotate: false
+  xy: 479, 213
+  size: 94, 89
+  orig: 94, 89
+  offset: 0, 0
+  index: -1
+vongtron
+  rotate: false
+  xy: 159, 186
+  size: 116, 116
+  orig: 116, 116
+  offset: 0, 0
+  index: -1

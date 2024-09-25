@@ -1,0 +1,90 @@
+
+Mr.png
+size: 1927, 1065
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 465, 169
+  size: 463, 895
+  orig: 463, 895
+  offset: 0, 0
+  index: -1
+EFect sau
+  rotate: false
+  xy: 929, 449
+  size: 617, 615
+  orig: 617, 615
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: true
+  xy: 929, 1
+  size: 447, 662
+  orig: 447, 662
+  offset: 0, 0
+  index: -1
+Mr.
+  rotate: false
+  xy: 1592, 28
+  size: 228, 153
+  orig: 228, 153
+  offset: 0, 0
+  index: -1
+banh tay
+  rotate: true
+  xy: 277, 28
+  size: 138, 175
+  orig: 138, 175
+  offset: 0, 0
+  index: -1
+dau
+  rotate: false
+  xy: 1547, 640
+  size: 379, 424
+  orig: 379, 424
+  offset: 0, 0
+  index: -1
+khung tien
+  rotate: true
+  xy: 1592, 182
+  size: 457, 266
+  orig: 457, 266
+  offset: 0, 0
+  index: -1
+khung vien
+  rotate: false
+  xy: 1, 167
+  size: 463, 897
+  orig: 463, 897
+  offset: 0, 0
+  index: -1
+luck
+  rotate: false
+  xy: 1, 23
+  size: 275, 143
+  orig: 275, 143
+  offset: 0, 0
+  index: -1
+sao 1
+  rotate: false
+  xy: 657, 21
+  size: 148, 147
+  orig: 148, 147
+  offset: 0, 0
+  index: -1
+sao 2
+  rotate: false
+  xy: 657, 21
+  size: 148, 147
+  orig: 148, 147
+  offset: 0, 0
+  index: -1
+tay
+  rotate: true
+  xy: 465, 59
+  size: 109, 191
+  orig: 109, 191
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,132 @@
+
+POKER.png
+size: 2048, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 1440, 632
+  size: 384, 370
+  orig: 384, 370
+  offset: 0, 0
+  index: -1
+E
+  rotate: false
+  xy: 1975, 771
+  size: 63, 77
+  orig: 63, 77
+  offset: 0, 0
+  index: -1
+K
+  rotate: false
+  xy: 1294, 85
+  size: 70, 77
+  orig: 70, 77
+  offset: 0, 0
+  index: -1
+O
+  rotate: false
+  xy: 1900, 768
+  size: 74, 80
+  orig: 74, 80
+  offset: 0, 0
+  index: -1
+P
+  rotate: false
+  xy: 1900, 612
+  size: 63, 77
+  orig: 63, 77
+  offset: 0, 0
+  index: -1
+R
+  rotate: false
+  xy: 1900, 690
+  size: 67, 77
+  orig: 67, 77
+  offset: 0, 0
+  index: -1
+R2
+  rotate: false
+  xy: 1900, 690
+  size: 67, 77
+  orig: 67, 77
+  offset: 0, 0
+  index: -1
+anh sang 1
+  rotate: false
+  xy: 1, 502
+  size: 525, 500
+  orig: 525, 500
+  offset: 0, 0
+  index: -1
+anh sang 2
+  rotate: false
+  xy: 1, 1
+  size: 518, 500
+  orig: 518, 500
+  offset: 0, 0
+  index: -1
+anh sang 3
+  rotate: false
+  xy: 527, 502
+  size: 518, 500
+  orig: 518, 500
+  offset: 0, 0
+  index: -1
+cuc tron
+  rotate: false
+  xy: 1039, 24
+  size: 254, 272
+  orig: 254, 272
+  offset: 0, 0
+  index: -1
+duoi
+  rotate: true
+  xy: 1825, 619
+  size: 383, 74
+  orig: 383, 74
+  offset: 0, 0
+  index: -1
+la bai
+  rotate: false
+  xy: 1046, 297
+  size: 365, 330
+  orig: 365, 330
+  offset: 0, 0
+  index: -1
+qua1
+  rotate: true
+  xy: 1294, 163
+  size: 133, 104
+  orig: 133, 104
+  offset: 0, 0
+  index: -1
+qua2
+  rotate: true
+  xy: 1294, 163
+  size: 133, 104
+  orig: 133, 104
+  offset: 0, 0
+  index: -1
+tien
+  rotate: false
+  xy: 520, 1
+  size: 518, 500
+  orig: 518, 500
+  offset: 0, 0
+  index: -1
+tron trong
+  rotate: false
+  xy: 1900, 849
+  size: 138, 153
+  orig: 138, 153
+  offset: 0, 0
+  index: -1
+viền
+  rotate: false
+  xy: 1046, 628
+  size: 393, 374
+  orig: 393, 374
+  offset: 0, 0
+  index: -1

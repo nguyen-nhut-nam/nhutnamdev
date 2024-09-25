@@ -1,0 +1,90 @@
+
+minipoker.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b1
+  rotate: true
+  xy: 422, 73
+  size: 46, 57
+  orig: 46, 57
+  offset: 0, 0
+  index: -1
+b2
+  rotate: false
+  xy: 494, 171
+  size: 64, 83
+  orig: 64, 83
+  offset: 0, 0
+  index: -1
+b3
+  rotate: false
+  xy: 178, 2
+  size: 48, 61
+  orig: 48, 61
+  offset: 0, 0
+  index: -1
+bg1
+  rotate: false
+  xy: 234, 121
+  size: 258, 133
+  orig: 258, 133
+  offset: 0, 0
+  index: -1
+bg22
+  rotate: false
+  xy: 2, 65
+  size: 230, 189
+  orig: 230, 189
+  offset: 0, 0
+  index: -1
+bg33
+  rotate: false
+  xy: 234, 82
+  size: 186, 37
+  orig: 186, 37
+  offset: 0, 0
+  index: -1
+c1
+  rotate: false
+  xy: 658, 218
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+c2
+  rotate: false
+  xy: 823, 223
+  size: 43, 31
+  orig: 43, 31
+  offset: 0, 0
+  index: -1
+c4
+  rotate: false
+  xy: 741, 218
+  size: 80, 36
+  orig: 80, 36
+  offset: 0, 0
+  index: -1
+mn2
+  rotate: false
+  xy: 560, 207
+  size: 96, 47
+  orig: 96, 47
+  offset: 0, 0
+  index: -1
+n
+  rotate: true
+  xy: 494, 125
+  size: 44, 72
+  orig: 44, 72
+  offset: 0, 0
+  index: -1
+pk2
+  rotate: false
+  xy: 2, 7
+  size: 174, 56
+  orig: 174, 56
+  offset: 0, 0
+  index: -1

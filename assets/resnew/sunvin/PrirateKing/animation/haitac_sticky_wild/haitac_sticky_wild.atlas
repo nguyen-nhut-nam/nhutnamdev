@@ -1,0 +1,83 @@
+
+haitac_sticky_wild.png
+size: 868,156
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+W1
+  rotate: false
+  xy: 455, 6
+  size: 135, 49
+  orig: 135, 49
+  offset: 0, 0
+  index: -1
+W2
+  rotate: false
+  xy: 592, 6
+  size: 135, 49
+  orig: 135, 49
+  offset: 0, 0
+  index: -1
+W3
+  rotate: false
+  xy: 729, 104
+  size: 135, 49
+  orig: 135, 49
+  offset: 0, 0
+  index: -1
+W4
+  rotate: false
+  xy: 729, 53
+  size: 135, 49
+  orig: 135, 49
+  offset: 0, 0
+  index: -1
+WILD
+  rotate: false
+  xy: 729, 2
+  size: 135, 49
+  orig: 135, 49
+  offset: 0, 0
+  index: -1
+WL
+  rotate: false
+  xy: 455, 57
+  size: 182, 96
+  orig: 182, 96
+  offset: 0, 0
+  index: -1
+as1
+  rotate: false
+  xy: 317, 4
+  size: 120, 10
+  orig: 120, 10
+  offset: 0, 0
+  index: -1
+khung
+  rotate: false
+  xy: 317, 16
+  size: 136, 137
+  orig: 136, 137
+  offset: 0, 0
+  index: -1
+long
+  rotate: true
+  xy: 639, 81
+  size: 72, 77
+  orig: 72, 77
+  offset: 0, 0
+  index: -1
+pirate
+  rotate: false
+  xy: 171, 3
+  size: 144, 150
+  orig: 144, 150
+  offset: 0, 0
+  index: -1
+slot_ui_cut_png_0007_WILD
+  rotate: false
+  xy: 2, 3
+  size: 167, 150
+  orig: 167, 150
+  offset: 0, 0
+  index: -1

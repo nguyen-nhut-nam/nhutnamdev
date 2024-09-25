@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "45df4fea-b607-4aa6-874c-ba890cd24d94",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 878,
+  "height": 878,
+  "platformSettings": {},
+  "subMetas": {
+    "Animation_Western_bonusgame": {
+      "ver": "1.0.6",
+      "uuid": "d749b0e8-11e7-442a-b51e-484d1b131a14",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "45df4fea-b607-4aa6-874c-ba890cd24d94",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 874,
+      "height": 874,
+      "rawWidth": 878,
+      "rawHeight": 878,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

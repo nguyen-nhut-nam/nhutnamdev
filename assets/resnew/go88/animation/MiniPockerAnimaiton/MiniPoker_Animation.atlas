@@ -1,0 +1,55 @@
+
+MiniPoker_Animation.png
+size: 183,183
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Effect_MuiTen0
+  rotate: false
+  xy: 47, 102
+  size: 82, 79
+  orig: 82, 79
+  offset: 0, 0
+  index: -1
+Effect_MuiTen1
+  rotate: false
+  xy: 2, 4
+  size: 43, 177
+  orig: 43, 177
+  offset: 0, 0
+  index: -1
+Effect_MuiTen2
+  rotate: false
+  xy: 131, 18
+  size: 27, 163
+  orig: 27, 163
+  offset: 0, 0
+  index: -1
+cangat
+  rotate: true
+  xy: 160, 58
+  size: 123, 15
+  orig: 123, 15
+  offset: 0, 0
+  index: -1
+deduoi
+  rotate: false
+  xy: 47, 2
+  size: 32, 46
+  orig: 32, 46
+  offset: 0, 0
+  index: -1
+detren
+  rotate: true
+  xy: 47, 50
+  size: 50, 82
+  orig: 50, 82
+  offset: 0, 0
+  index: -1
+tay nam
+  rotate: false
+  xy: 81, 16
+  size: 31, 32
+  orig: 31, 32
+  offset: 0, 0
+  index: -1

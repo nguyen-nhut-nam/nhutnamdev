@@ -1,0 +1,55 @@
+
+SÂM LỐC.png
+size: 2048, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 493, 480
+  size: 480, 462
+  orig: 480, 462
+  offset: 0, 0
+  index: -1
+Lốc
+  rotate: false
+  xy: 1450, 668
+  size: 197, 180
+  orig: 197, 180
+  offset: 0, 0
+  index: -1
+Sâm
+  rotate: false
+  xy: 1648, 742
+  size: 227, 106
+  orig: 227, 106
+  offset: 0, 0
+  index: -1
+bai
+  rotate: false
+  xy: 1, 1
+  size: 477, 472
+  orig: 477, 472
+  offset: 0, 0
+  index: -1
+chip
+  rotate: false
+  xy: 974, 536
+  size: 475, 406
+  orig: 475, 406
+  offset: 0, 0
+  index: -1
+duoi
+  rotate: false
+  xy: 1450, 849
+  size: 479, 93
+  orig: 479, 93
+  offset: 0, 0
+  index: -1
+viền
+  rotate: false
+  xy: 1, 474
+  size: 491, 468
+  orig: 491, 468
+  offset: 0, 0
+  index: -1

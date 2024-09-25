@@ -1,0 +1,55 @@
+
+skeleton.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: false
+  xy: 2, 90
+  size: 261, 420
+  orig: 261, 420
+  offset: 0, 0
+  index: -1
+MAIN
+  rotate: false
+  xy: 265, 155
+  size: 216, 355
+  orig: 216, 355
+  offset: 0, 0
+  index: -1
+Treasure
+  rotate: false
+  xy: 483, 249
+  size: 247, 261
+  orig: 247, 261
+  offset: 0, 0
+  index: -1
+coral
+  rotate: true
+  xy: 265, 2
+  size: 151, 134
+  orig: 151, 134
+  offset: 0, 0
+  index: -1
+gold 3
+  rotate: false
+  xy: 732, 343
+  size: 263, 167
+  orig: 263, 167
+  offset: 0, 0
+  index: -1
+jackpot pool
+  rotate: false
+  xy: 732, 221
+  size: 266, 120
+  orig: 266, 120
+  offset: 0, 0
+  index: -1
+named
+  rotate: false
+  xy: 401, 56
+  size: 266, 97
+  orig: 266, 97
+  offset: 0, 0
+  index: -1

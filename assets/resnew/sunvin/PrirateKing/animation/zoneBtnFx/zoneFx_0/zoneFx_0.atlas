@@ -1,0 +1,27 @@
+
+skeleton.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CHƠI THỬ
+  rotate: true
+  xy: 400, 2
+  size: 239, 74
+  orig: 239, 74
+  offset: 0, 0
+  index: -1
+Skull 2
+  rotate: false
+  xy: 2, 46
+  size: 219, 195
+  orig: 219, 195
+  offset: 0, 0
+  index: -1
+Skull 3
+  rotate: false
+  xy: 223, 87
+  size: 175, 154
+  orig: 175, 154
+  offset: 0, 0
+  index: -1

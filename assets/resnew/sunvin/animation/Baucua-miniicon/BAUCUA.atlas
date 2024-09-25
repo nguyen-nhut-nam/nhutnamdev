@@ -1,0 +1,55 @@
+
+BAUCUA.png
+size: 720,720
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BGO
+  rotate: false
+  xy: 3, 288
+  size: 261, 208
+  orig: 261, 208
+  offset: 0, 0
+  index: -1
+BẦU CUA
+  rotate: false
+  xy: 267, 384
+  size: 165, 52
+  orig: 165, 52
+  offset: 0, 0
+  index: -1
+IC1
+  rotate: false
+  xy: 3, 147
+  size: 232, 138
+  orig: 232, 138
+  offset: 0, 0
+  index: -1
+IC2
+  rotate: false
+  xy: 3, 32
+  size: 118, 112
+  orig: 118, 112
+  offset: 0, 0
+  index: -1
+IC3
+  rotate: false
+  xy: 124, 71
+  size: 67, 73
+  orig: 67, 73
+  offset: 0, 0
+  index: -1
+IC4
+  rotate: false
+  xy: 267, 331
+  size: 48, 50
+  orig: 48, 50
+  offset: 0, 0
+  index: -1
+LIGHT
+  rotate: false
+  xy: 267, 439
+  size: 232, 57
+  orig: 232, 57
+  offset: 0, 0
+  index: -1

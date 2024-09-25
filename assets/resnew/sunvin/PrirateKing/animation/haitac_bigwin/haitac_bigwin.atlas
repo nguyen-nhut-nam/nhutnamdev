@@ -1,0 +1,194 @@
+
+skeleton.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BW/1
+  rotate: true
+  xy: 560, 371
+  size: 651, 208
+  orig: 651, 208
+  offset: 0, 0
+  index: -1
+BW/2
+  rotate: true
+  xy: 770, 371
+  size: 651, 208
+  orig: 651, 208
+  offset: 0, 0
+  index: -1
+BW/3
+  rotate: true
+  xy: 980, 371
+  size: 651, 208
+  orig: 651, 208
+  offset: 0, 0
+  index: -1
+Bigwin
+  rotate: true
+  xy: 1190, 371
+  size: 651, 208
+  orig: 651, 208
+  offset: 0, 0
+  index: -1
+Layer 45
+  rotate: true
+  xy: 320, 356
+  size: 666, 238
+  orig: 666, 238
+  offset: 0, 0
+  index: -1
+as/1
+  rotate: true
+  xy: 1387, 12
+  size: 50, 48
+  orig: 50, 48
+  offset: 0, 0
+  index: -1
+as/2
+  rotate: true
+  xy: 1565, 15
+  size: 47, 44
+  orig: 47, 44
+  offset: 0, 0
+  index: -1
+as/3
+  rotate: true
+  xy: 1437, 12
+  size: 50, 46
+  orig: 50, 46
+  offset: 0, 0
+  index: -1
+as/4
+  rotate: false
+  xy: 1485, 14
+  size: 78, 48
+  orig: 78, 48
+  offset: 0, 0
+  index: -1
+as/5
+  rotate: false
+  xy: 1485, 14
+  size: 78, 48
+  orig: 78, 48
+  offset: 0, 0
+  index: -1
+cuonphai
+  rotate: false
+  xy: 510, 2
+  size: 168, 352
+  orig: 168, 352
+  offset: 0, 0
+  index: -1
+cuontrai
+  rotate: false
+  xy: 1263, 14
+  size: 122, 355
+  orig: 122, 355
+  offset: 0, 0
+  index: -1
+giua
+  rotate: true
+  xy: 2, 338
+  size: 684, 316
+  orig: 684, 316
+  offset: 0, 0
+  index: -1
+lacophai
+  rotate: false
+  xy: 1813, 437
+  size: 200, 287
+  orig: 200, 287
+  offset: 0, 0
+  index: -1
+lacotrai
+  rotate: false
+  xy: 1847, 726
+  size: 182, 296
+  orig: 182, 296
+  offset: 0, 0
+  index: -1
+skull
+  rotate: true
+  xy: 1847, 311
+  size: 124, 134
+  orig: 124, 134
+  offset: 0, 0
+  index: -1
+untitled folder/1
+  rotate: true
+  xy: 1400, 474
+  size: 273, 411
+  orig: 273, 411
+  offset: 0, 0
+  index: -1
+untitled folder/2
+  rotate: true
+  xy: 1400, 749
+  size: 273, 412
+  orig: 273, 412
+  offset: 0, 0
+  index: -1
+untitled folder/5
+  rotate: true
+  xy: 973, 5
+  size: 364, 288
+  orig: 364, 288
+  offset: 0, 0
+  index: -1
+untitled folder/6
+  rotate: true
+  xy: 680, 3
+  size: 366, 291
+  orig: 366, 291
+  offset: 0, 0
+  index: -1
+untitled folder/7
+  rotate: false
+  xy: 1387, 64
+  size: 458, 305
+  orig: 458, 305
+  offset: 0, 0
+  index: -1
+untitled folder/8
+  rotate: false
+  xy: 2, 21
+  size: 506, 315
+  orig: 506, 315
+  offset: 0, 0
+  index: -1
+
+skeleton2.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cuongiay
+  rotate: true
+  xy: 938, 123
+  size: 283, 394
+  orig: 283, 394
+  offset: 0, 0
+  index: -1
+kiemphai
+  rotate: false
+  xy: 2, 2
+  size: 483, 404
+  orig: 483, 404
+  offset: 0, 0
+  index: -1
+untitled folder/3
+  rotate: true
+  xy: 487, 37
+  size: 369, 449
+  orig: 369, 449
+  offset: 0, 0
+  index: -1
+untitled folder/4
+  rotate: false
+  xy: 1334, 136
+  size: 295, 270
+  orig: 295, 270
+  offset: 0, 0
+  index: -1

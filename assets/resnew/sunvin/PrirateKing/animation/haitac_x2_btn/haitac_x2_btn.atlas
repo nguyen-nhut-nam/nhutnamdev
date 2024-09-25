@@ -1,0 +1,244 @@
+
+skeleton.png
+size: 900,900
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+explode ship/bot/bot 1
+  rotate: false
+  xy: 845, 117
+  size: 41, 91
+  orig: 41, 91
+  offset: 0, 0
+  index: -1
+explode ship/bot/bot 2
+  rotate: true
+  xy: 824, 51
+  size: 48, 47
+  orig: 48, 47
+  offset: 0, 0
+  index: -1
+explode ship/bot/bot 3
+  rotate: true
+  xy: 748, 2
+  size: 37, 63
+  orig: 37, 63
+  offset: 0, 0
+  index: -1
+explode ship/bot/bot 4
+  rotate: true
+  xy: 745, 367
+  size: 66, 60
+  orig: 66, 60
+  offset: 0, 0
+  index: -1
+explode ship/bot/bot 5
+  rotate: true
+  xy: 343, 7
+  size: 20, 63
+  orig: 20, 63
+  offset: 0, 0
+  index: -1
+explode ship/bot/bot6
+  rotate: true
+  xy: 863, 576
+  size: 42, 30
+  orig: 42, 30
+  offset: 0, 0
+  index: -1
+explode ship/mid/mid 1
+  rotate: true
+  xy: 690, 197
+  size: 167, 119
+  orig: 167, 119
+  offset: 0, 0
+  index: -1
+explode ship/mid/mid 2
+  rotate: true
+  xy: 343, 29
+  size: 163, 116
+  orig: 163, 116
+  offset: 0, 0
+  index: -1
+explode ship/mid/mid 3
+  rotate: false
+  xy: 762, 101
+  size: 81, 94
+  orig: 81, 94
+  offset: 0, 0
+  index: -1
+explode ship/top/top 1
+  rotate: false
+  xy: 748, 41
+  size: 74, 58
+  orig: 74, 58
+  offset: 0, 0
+  index: -1
+explode ship/top/top2
+  rotate: true
+  xy: 863, 620
+  size: 42, 35
+  orig: 42, 35
+  offset: 0, 0
+  index: -1
+explode ship/top/top3
+  rotate: false
+  xy: 461, 8
+  size: 60, 42
+  orig: 60, 42
+  offset: 0, 0
+  index: -1
+explode ship/water
+  rotate: true
+  xy: 745, 435
+  size: 220, 116
+  orig: 220, 116
+  offset: 0, 0
+  index: -1
+explode/2
+  rotate: false
+  xy: 660, 11
+  size: 86, 90
+  orig: 86, 90
+  offset: 0, 0
+  index: -1
+explode/3
+  rotate: false
+  xy: 660, 103
+  size: 100, 92
+  orig: 100, 92
+  offset: 0, 0
+  index: -1
+explode/4
+  rotate: true
+  xy: 461, 52
+  size: 146, 107
+  orig: 146, 107
+  offset: 0, 0
+  index: -1
+explode/5
+  rotate: false
+  xy: 528, 221
+  size: 160, 143
+  orig: 160, 143
+  offset: 0, 0
+  index: -1
+explode/6
+  rotate: true
+  xy: 332, 429
+  size: 247, 189
+  orig: 247, 189
+  offset: 0, 0
+  index: -1
+explode/7
+  rotate: false
+  xy: 297, 678
+  size: 257, 218
+  orig: 257, 218
+  offset: 0, 0
+  index: -1
+explode/8
+  rotate: false
+  xy: 2, 663
+  size: 293, 233
+  orig: 293, 233
+  offset: 0, 0
+  index: -1
+ship_outerglow
+  rotate: false
+  xy: 2, 387
+  size: 245, 274
+  orig: 245, 274
+  offset: 0, 0
+  index: -1
+treasure & Skull/light 100
+  rotate: true
+  xy: 556, 657
+  size: 239, 240
+  orig: 239, 240
+  offset: 0, 0
+  index: -1
+treasure & Skull/skull
+  rotate: false
+  xy: 249, 4
+  size: 92, 132
+  orig: 92, 132
+  offset: 0, 0
+  index: -1
+treasure & Skull/treasure
+  rotate: false
+  xy: 523, 448
+  size: 220, 207
+  orig: 220, 207
+  offset: 0, 0
+  index: -1
+wave/1
+  rotate: true
+  xy: 811, 210
+  size: 223, 77
+  orig: 223, 77
+  offset: 0, 0
+  index: -1
+wave/2
+  rotate: false
+  xy: 528, 366
+  size: 215, 80
+  orig: 215, 80
+  offset: 0, 0
+  index: -1
+wave/3
+  rotate: true
+  xy: 570, 2
+  size: 217, 88
+  orig: 217, 88
+  offset: 0, 0
+  index: -1
+wave/4
+  rotate: true
+  xy: 337, 194
+  size: 233, 95
+  orig: 233, 95
+  offset: 0, 0
+  index: -1
+wave/5
+  rotate: true
+  xy: 798, 664
+  size: 232, 99
+  orig: 232, 99
+  offset: 0, 0
+  index: -1
+wave/6
+  rotate: true
+  xy: 434, 200
+  size: 227, 92
+  orig: 227, 92
+  offset: 0, 0
+  index: -1
+wave/7
+  rotate: true
+  xy: 245, 138
+  size: 247, 90
+  orig: 247, 90
+  offset: 0, 0
+  index: -1
+wave/8
+  rotate: false
+  xy: 2, 18
+  size: 245, 91
+  orig: 245, 91
+  offset: 0, 0
+  index: -1
+wave/9
+  rotate: true
+  xy: 249, 397
+  size: 264, 81
+  orig: 264, 81
+  offset: 0, 0
+  index: -1
+wave/ship 1
+  rotate: false
+  xy: 2, 111
+  size: 241, 274
+  orig: 241, 274
+  offset: 0, 0
+  index: -1

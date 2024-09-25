@@ -1,0 +1,90 @@
+
+co_gai.png
+size: 240,272
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 11
+  rotate: true
+  xy: 217, 127
+  size: 24, 14
+  orig: 24, 14
+  offset: 0, 0
+  index: -1
+Layer 4
+  rotate: false
+  xy: 2, 87
+  size: 109, 182
+  orig: 109, 182
+  offset: 0, 0
+  index: -1
+Layer 8
+  rotate: true
+  xy: 217, 153
+  size: 36, 21
+  orig: 36, 21
+  offset: 0, 0
+  index: -1
+eye_01
+  rotate: true
+  xy: 214, 231
+  size: 38, 21
+  orig: 38, 21
+  offset: 0, 0
+  index: -1
+eye_02
+  rotate: true
+  xy: 214, 191
+  size: 38, 21
+  orig: 38, 21
+  offset: 0, 0
+  index: -1
+tayphai
+  rotate: false
+  xy: 113, 87
+  size: 60, 86
+  orig: 60, 86
+  offset: 0, 0
+  index: -1
+tayphai_01
+  rotate: false
+  xy: 138, 42
+  size: 89, 36
+  orig: 89, 36
+  offset: 0, 0
+  index: -1
+tayphai_01 copy
+  rotate: false
+  xy: 175, 80
+  size: 40, 93
+  orig: 40, 93
+  offset: 0, 0
+  index: -1
+tayphai_02
+  rotate: false
+  xy: 93, 2
+  size: 43, 83
+  orig: 43, 83
+  offset: 0, 0
+  index: -1
+taytrai
+  rotate: true
+  xy: 2, 12
+  size: 73, 89
+  orig: 73, 89
+  offset: 0, 0
+  index: -1
+taytrai_01
+  rotate: false
+  xy: 138, 6
+  size: 89, 34
+  orig: 89, 34
+  offset: 0, 0
+  index: -1
+than
+  rotate: false
+  xy: 113, 175
+  size: 99, 94
+  orig: 99, 94
+  offset: 0, 0
+  index: -1

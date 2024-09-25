@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "bf750677-0c31-4810-93bf-3397e2955cab",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 1024,
+  "platformSettings": {},
+  "subMetas": {
+    "haitac_outdoor_btn": {
+      "ver": "1.0.6",
+      "uuid": "e2135c14-2f9f-4ce6-b772-e802acf75b6a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "bf750677-0c31-4810-93bf-3397e2955cab",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -16,
+      "offsetY": 5.5,
+      "trimX": 2,
+      "trimY": 4,
+      "width": 988,
+      "height": 1005,
+      "rawWidth": 1024,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

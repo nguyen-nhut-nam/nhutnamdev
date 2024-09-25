@@ -1,0 +1,209 @@
+
+Sicbo38.png
+size: 1080,429
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 24
+  rotate: false
+  xy: 814, 68
+  size: 168, 90
+  orig: 168, 90
+  offset: 0, 0
+  index: -1
+Layer 25
+  rotate: false
+  xy: 814, 160
+  size: 186, 90
+  orig: 186, 90
+  offset: 0, 0
+  index: -1
+Layer 26
+  rotate: false
+  xy: 708, 125
+  size: 104, 125
+  orig: 104, 125
+  offset: 0, 0
+  index: -1
+Layer 27
+  rotate: false
+  xy: 979, 352
+  size: 73, 77
+  orig: 73, 77
+  offset: 0, 0
+  index: -1
+Layer 29
+  rotate: false
+  xy: 1046, 282
+  size: 27, 34
+  orig: 27, 34
+  offset: 0, 0
+  index: -1
+Layer 30
+  rotate: false
+  xy: 1054, 406
+  size: 26, 23
+  orig: 26, 23
+  offset: 0, 0
+  index: -1
+Layer 31
+  rotate: false
+  xy: 979, 260
+  size: 65, 56
+  orig: 65, 56
+  offset: 0, 0
+  index: -1
+Layer 32
+  rotate: false
+  xy: 772, 0
+  size: 142, 66
+  orig: 142, 66
+  offset: 0, 0
+  index: -1
+Layer-10
+  rotate: false
+  xy: 984, 52
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Layer-11
+  rotate: false
+  xy: 916, 16
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Layer-12
+  rotate: false
+  xy: 968, 0
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Layer-13
+  rotate: false
+  xy: 1020, 0
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Layer-4
+  rotate: false
+  xy: 1002, 208
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Layer-5
+  rotate: false
+  xy: 1002, 156
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Layer-6
+  rotate: false
+  xy: 528, 47
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Layer-7
+  rotate: false
+  xy: 266, 27
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Layer-8
+  rotate: false
+  xy: 318, 27
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Layer-9
+  rotate: false
+  xy: 984, 104
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Levels 2
+  rotate: false
+  xy: 395, 99
+  size: 207, 120
+  orig: 207, 120
+  offset: 0, 0
+  index: -1
+Levels 5
+  rotate: false
+  xy: 0, 12
+  size: 264, 417
+  orig: 264, 417
+  offset: 0, 0
+  index: -1
+Levels 6
+  rotate: false
+  xy: 708, 252
+  size: 269, 177
+  orig: 269, 177
+  offset: 0, 0
+  index: -1
+Levels 7
+  rotate: false
+  xy: 395, 221
+  size: 311, 208
+  orig: 311, 208
+  offset: 0, 0
+  index: -1
+MD5
+  rotate: false
+  xy: 979, 318
+  size: 73, 32
+  orig: 73, 32
+  offset: 0, 0
+  index: -1
+X88
+  rotate: false
+  xy: 266, 79
+  size: 116, 89
+  orig: 116, 89
+  offset: 0, 0
+  index: -1
+ball
+  rotate: false
+  xy: 604, 113
+  size: 79, 80
+  orig: 79, 80
+  offset: 0, 0
+  index: -1
+cup
+  rotate: false
+  xy: 266, 170
+  size: 127, 259
+  orig: 127, 259
+  offset: 0, 0
+  index: -1
+scaft
+  rotate: false
+  xy: 604, 12
+  size: 166, 99
+  orig: 166, 99
+  offset: 0, 0
+  index: -1
+scaft1
+  rotate: false
+  xy: 604, 195
+  size: 95, 24
+  orig: 95, 24
+  offset: 0, 0
+  index: -1
+sparkle
+  rotate: false
+  xy: 384, 29
+  size: 142, 68
+  orig: 142, 68
+  offset: 0, 0
+  index: -1

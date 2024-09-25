@@ -1,0 +1,41 @@
+
+Ngay.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+icon
+  rotate: false
+  xy: 137, 130
+  size: 112, 108
+  orig: 112, 108
+  offset: 0, 0
+  index: -1
+light bg
+  rotate: false
+  xy: 2, 109
+  size: 133, 129
+  orig: 133, 129
+  offset: 0, 0
+  index: -1
+mt
+  rotate: false
+  xy: 2, 2
+  size: 12, 7
+  orig: 12, 7
+  offset: 0, 0
+  index: -1
+text
+  rotate: false
+  xy: 137, 103
+  size: 63, 25
+  orig: 63, 25
+  offset: 0, 0
+  index: -1
+wing
+  rotate: false
+  xy: 2, 11
+  size: 133, 96
+  orig: 133, 96
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,153 @@
+
+Anim-Items-3Special.png
+size: 1236,126
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bn-Bg
+  rotate: true
+  xy: 233, 10
+  size: 114, 109
+  orig: 114, 109
+  offset: 0, 0
+  index: -1
+Bn-Dom
+  rotate: false
+  xy: 526, 20
+  size: 84, 104
+  orig: 84, 104
+  offset: 0, 0
+  index: -1
+Bn-Text
+  rotate: false
+  xy: 960, 45
+  size: 128, 25
+  orig: 128, 25
+  offset: 0, 0
+  index: -1
+Bn-TextGlow
+  rotate: false
+  xy: 1098, 89
+  size: 136, 35
+  orig: 136, 35
+  offset: 0, 0
+  index: -1
+Bn-hobb
+  rotate: false
+  xy: 614, 24
+  size: 63, 100
+  orig: 63, 100
+  offset: 0, 0
+  index: -1
+Bn-nick
+  rotate: false
+  xy: 782, 28
+  size: 62, 96
+  orig: 62, 96
+  offset: 0, 0
+  index: -1
+Bn-vuong1
+  rotate: false
+  xy: 681, 27
+  size: 97, 97
+  orig: 97, 97
+  offset: 0, 0
+  index: -1
+Bn-vuong2
+  rotate: false
+  xy: 110, 5
+  size: 119, 119
+  orig: 119, 119
+  offset: 0, 0
+  index: -1
+Fr-Bg
+  rotate: false
+  xy: 346, 12
+  size: 112, 112
+  orig: 112, 112
+  offset: 0, 0
+  index: -1
+Fr-car01
+  rotate: true
+  xy: 891, 38
+  size: 86, 65
+  orig: 86, 65
+  offset: 0, 0
+  index: -1
+Fr-car02
+  rotate: false
+  xy: 955, 3
+  size: 72, 31
+  orig: 72, 31
+  offset: 0, 0
+  index: -1
+Fr-text
+  rotate: true
+  xy: 848, 33
+  size: 91, 39
+  orig: 91, 39
+  offset: 0, 0
+  index: -1
+J-Bright
+  rotate: true
+  xy: 2, 2
+  size: 122, 104
+  orig: 122, 104
+  offset: 0, 0
+  index: -1
+J-Car
+  rotate: true
+  xy: 462, 12
+  size: 112, 60
+  orig: 112, 60
+  offset: 0, 0
+  index: -1
+J-base
+  rotate: false
+  xy: 960, 74
+  size: 134, 50
+  orig: 134, 50
+  offset: 0, 0
+  index: -1
+J-dot
+  rotate: false
+  xy: 526, 3
+  size: 8, 13
+  orig: 8, 13
+  offset: 0, 0
+  index: -1
+J-flash
+  rotate: false
+  xy: 827, 5
+  size: 124, 19
+  orig: 124, 19
+  offset: 0, 0
+  index: -1
+J-sang
+  rotate: true
+  xy: 614, 4
+  size: 16, 73
+  orig: 16, 73
+  offset: 0, 0
+  index: -1
+J-text
+  rotate: false
+  xy: 691, 3
+  size: 132, 20
+  orig: 132, 20
+  offset: 0, 0
+  index: -1
+J-textGlow
+  rotate: false
+  xy: 1031, 3
+  size: 146, 38
+  orig: 146, 38
+  offset: 0, 0
+  index: -1
+fr-nguoi
+  rotate: true
+  xy: 1098, 51
+  size: 34, 44
+  orig: 34, 44
+  offset: 0, 0
+  index: -1

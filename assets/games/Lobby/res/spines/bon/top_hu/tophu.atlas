@@ -1,0 +1,76 @@
+
+tophu.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 354, 97
+  size: 27, 28
+  orig: 27, 28
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 163, 17
+  size: 29, 15
+  orig: 29, 15
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 247, 100
+  size: 25, 58
+  orig: 25, 58
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 220, 34
+  size: 22, 50
+  orig: 22, 50
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 90, 14
+  size: 71, 74
+  orig: 71, 74
+  offset: 0, 0
+  index: -1
+F1
+  rotate: false
+  xy: 163, 34
+  size: 55, 50
+  orig: 55, 50
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 2, 90
+  size: 154, 35
+  orig: 154, 35
+  offset: 0, 0
+  index: -1
+f2
+  rotate: false
+  xy: 2, 2
+  size: 86, 86
+  orig: 86, 86
+  offset: 0, 0
+  index: -1
+f3
+  rotate: true
+  xy: 307, 93
+  size: 32, 45
+  orig: 32, 45
+  offset: 0, 0
+  index: -1
+txt
+  rotate: false
+  xy: 163, 86
+  size: 82, 39
+  orig: 82, 39
+  offset: 0, 0
+  index: -1

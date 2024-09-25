@@ -1,0 +1,47 @@
+sun_lobby_otp.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5
+  rotate: false
+  xy: 1494, 55
+  size: 34, 36
+  orig: 34, 36
+  offset: 0, 0
+  index: -1
+Jackpots
+  rotate: false
+  xy: 393, 30
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+as1
+  rotate: false
+  xy: 527, 30
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+as2
+  rotate: false
+  xy: 661, 30
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+as3
+  rotate: false
+  xy: 795, 30
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1
+as4
+  rotate: false
+  xy: 929, 30
+  size: 132, 61
+  orig: 132, 61
+  offset: 0, 0
+  index: -1

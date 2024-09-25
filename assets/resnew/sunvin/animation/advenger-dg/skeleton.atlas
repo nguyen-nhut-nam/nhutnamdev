@@ -1,0 +1,97 @@
+
+skeleton.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+175819afbf67050 copy 14
+  rotate: false
+  xy: 105, 1
+  size: 266, 35
+  orig: 266, 35
+  offset: 0, 0
+  index: -1
+BORDER
+  rotate: false
+  xy: 1, 81
+  size: 264, 417
+  orig: 264, 417
+  offset: 0, 0
+  index: -1
+LOGO-AVENEGERS-NEW-OUT-ANIM_0000_Layer-512
+  rotate: true
+  xy: 744, 202
+  size: 296, 222
+  orig: 296, 222
+  offset: 0, 0
+  index: -1
+Levels 1
+  rotate: false
+  xy: 618, 8
+  size: 149, 186
+  orig: 149, 186
+  offset: 0, 0
+  index: -1
+Levels 1 copy
+  rotate: true
+  xy: 768, 54
+  size: 147, 222
+  orig: 147, 222
+  offset: 0, 0
+  index: -1
+Levels 1 copy 2
+  rotate: true
+  xy: 1, 3
+  size: 77, 103
+  orig: 77, 103
+  offset: 0, 0
+  index: -1
+Levels 1 copy 3
+  rotate: false
+  xy: 525, 195
+  size: 218, 303
+  orig: 218, 303
+  offset: 0, 0
+  index: -1
+Levels 1 copy 4
+  rotate: false
+  xy: 266, 85
+  size: 258, 413
+  orig: 258, 413
+  offset: 0, 0
+  index: -1
+Levels 5 copy 4
+  rotate: true
+  xy: 991, 18
+  size: 221, 106
+  orig: 221, 106
+  offset: 0, 0
+  index: -1
+Vector Smart Object
+  rotate: true
+  xy: 967, 240
+  size: 258, 114
+  orig: 258, 114
+  offset: 0, 0
+  index: -1
+Vector Smart Object51 copy
+  rotate: false
+  xy: 372, 21
+  size: 245, 28
+  orig: 245, 28
+  offset: 0, 0
+  index: -1
+Vector Smart Object7 copy 3
+  rotate: false
+  xy: 128, 50
+  size: 266, 30
+  orig: 266, 30
+  offset: 0, 0
+  index: -1
+icon_vang
+  rotate: false
+  xy: 105, 37
+  size: 22, 43
+  orig: 68, 89
+  offset: 21, 20
+  index: -1

@@ -1,0 +1,139 @@
+
+Prirate King.png
+size: 1542, 1030
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 465, 145
+  size: 457, 884
+  orig: 457, 884
+  offset: 0, 0
+  index: -1
+K
+  rotate: false
+  xy: 1316, 367
+  size: 41, 48
+  orig: 41, 48
+  offset: 0, 0
+  index: -1
+P
+  rotate: false
+  xy: 1316, 416
+  size: 44, 48
+  orig: 44, 48
+  offset: 0, 0
+  index: -1
+a
+  rotate: false
+  xy: 782, 47
+  size: 43, 48
+  orig: 43, 48
+  offset: 0, 0
+  index: -1
+duoi
+  rotate: false
+  xy: 923, 48
+  size: 457, 266
+  orig: 457, 266
+  offset: 0, 0
+  index: -1
+e
+  rotate: false
+  xy: 1381, 161
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+g
+  rotate: false
+  xy: 1426, 210
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+i
+  rotate: true
+  xy: 1, 1
+  size: 18, 48
+  orig: 18, 48
+  offset: 0, 0
+  index: -1
+i2
+  rotate: true
+  xy: 1, 1
+  size: 18, 48
+  orig: 18, 48
+  offset: 0, 0
+  index: -1
+khung
+  rotate: false
+  xy: 1, 20
+  size: 536, 111
+  orig: 536, 111
+  offset: 0, 0
+  index: -1
+khung vien
+  rotate: false
+  xy: 1, 132
+  size: 463, 897
+  orig: 463, 897
+  offset: 0, 0
+  index: -1
+n
+  rotate: false
+  xy: 828, 96
+  size: 43, 48
+  orig: 43, 48
+  offset: 0, 0
+  index: -1
+nguoi
+  rotate: false
+  xy: 923, 315
+  size: 392, 714
+  orig: 392, 714
+  offset: 0, 0
+  index: -1
+r
+  rotate: false
+  xy: 1381, 204
+  size: 44, 48
+  orig: 44, 48
+  offset: 0, 0
+  index: -1
+r2
+  rotate: false
+  xy: 1381, 204
+  size: 44, 48
+  orig: 44, 48
+  offset: 0, 0
+  index: -1
+t
+  rotate: false
+  xy: 782, 96
+  size: 45, 48
+  orig: 45, 48
+  offset: 0, 0
+  index: -1
+tay phai
+  rotate: false
+  xy: 538, 3
+  size: 243, 141
+  orig: 243, 141
+  offset: 0, 0
+  index: -1
+tay1
+  rotate: true
+  xy: 1381, 253
+  size: 211, 160
+  orig: 211, 160
+  offset: 0, 0
+  index: -1
+tay2
+  rotate: true
+  xy: 1316, 465
+  size: 564, 205
+  orig: 564, 205
+  offset: 0, 0
+  index: -1

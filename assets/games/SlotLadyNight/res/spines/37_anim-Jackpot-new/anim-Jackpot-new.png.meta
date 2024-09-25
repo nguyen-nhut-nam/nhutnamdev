@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "44f41cd7-9d34-4f5f-94ff-86cd8bffd675",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1982,
+  "height": 452,
+  "platformSettings": {},
+  "subMetas": {
+    "anim-Jackpot-new": {
+      "ver": "1.0.6",
+      "uuid": "8b9a83f8-97d3-4d01-9363-02b1bea34749",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "44f41cd7-9d34-4f5f-94ff-86cd8bffd675",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 4,
+      "trimY": 4,
+      "width": 1974,
+      "height": 444,
+      "rawWidth": 1982,
+      "rawHeight": 452,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

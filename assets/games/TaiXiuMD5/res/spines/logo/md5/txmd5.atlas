@@ -1,0 +1,13 @@
+
+txmd5.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+taixiu
+  rotate: false
+  xy: 2, 2
+  size: 266, 82
+  orig: 266, 82
+  offset: 0, 0
+  index: -1

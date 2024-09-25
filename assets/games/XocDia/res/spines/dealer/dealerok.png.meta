@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9c21c9f5-2790-44aa-87ea-5e8ba86e1635",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 512,
+  "height": 1024,
+  "platformSettings": {},
+  "subMetas": {
+    "dealerok": {
+      "ver": "1.0.6",
+      "uuid": "3da5b0c2-6a47-4eaf-ab08-a57389e38d3c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9c21c9f5-2790-44aa-87ea-5e8ba86e1635",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -3.5,
+      "offsetY": 233,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 503,
+      "height": 556,
+      "rawWidth": 512,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

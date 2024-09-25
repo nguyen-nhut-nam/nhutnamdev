@@ -1,0 +1,55 @@
+
+free.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cocxe
+  rotate: false
+  xy: 894, 183
+  size: 310, 149
+  orig: 310, 149
+  offset: 0, 0
+  index: -1
+free
+  rotate: false
+  xy: 894, 334
+  size: 693, 150
+  orig: 693, 150
+  offset: 0, 0
+  index: -1
+fx2
+  rotate: false
+  xy: 2, 87
+  size: 890, 397
+  orig: 890, 397
+  offset: 0, 0
+  index: -1
+fx3
+  rotate: false
+  xy: 2, 2
+  size: 774, 83
+  orig: 774, 83
+  offset: 0, 0
+  index: -1
+t1
+  rotate: true
+  xy: 1589, 353
+  size: 131, 161
+  orig: 131, 161
+  offset: 0, 0
+  index: -1
+t2
+  rotate: true
+  xy: 894, 112
+  size: 69, 120
+  orig: 69, 120
+  offset: 0, 0
+  index: -1
+t3
+  rotate: false
+  xy: 1206, 201
+  size: 112, 131
+  orig: 112, 131
+  offset: 0, 0
+  index: -1

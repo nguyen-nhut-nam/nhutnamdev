@@ -1,0 +1,69 @@
+
+Trên Dưới.png
+size: 1024, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 1, 139
+  size: 432, 416
+  orig: 432, 416
+  offset: 0, 0
+  index: -1
+bang duoi
+  rotate: false
+  xy: 444, 767
+  size: 431, 210
+  orig: 431, 210
+  offset: 0, 0
+  index: -1
+duoi
+  rotate: true
+  xy: 876, 775
+  size: 202, 97
+  orig: 202, 97
+  offset: 0, 0
+  index: -1
+duoi glow
+  rotate: false
+  xy: 1, 1
+  size: 244, 137
+  orig: 244, 137
+  offset: 0, 0
+  index: -1
+mui ten len
+  rotate: false
+  xy: 246, 43
+  size: 81, 95
+  orig: 81, 95
+  offset: 0, 0
+  index: -1
+mui ten xuong
+  rotate: false
+  xy: 665, 671
+  size: 81, 95
+  orig: 81, 95
+  offset: 0, 0
+  index: -1
+tren
+  rotate: false
+  xy: 444, 588
+  size: 202, 82
+  orig: 202, 82
+  offset: 0, 0
+  index: -1
+tren glow
+  rotate: false
+  xy: 444, 671
+  size: 220, 95
+  orig: 220, 95
+  offset: 0, 0
+  index: -1
+vien
+  rotate: false
+  xy: 1, 556
+  size: 442, 421
+  orig: 442, 421
+  offset: 0, 0
+  index: -1

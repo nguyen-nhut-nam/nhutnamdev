@@ -1,0 +1,97 @@
+
+bonglaicac.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 408, 49
+  size: 73, 85
+  orig: 73, 85
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 887, 410
+  size: 86, 84
+  orig: 86, 84
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 2, 93
+  size: 270, 401
+  orig: 270, 401
+  offset: 0, 0
+  index: -1
+bg2
+  rotate: false
+  xy: 680, 248
+  size: 210, 113
+  orig: 210, 113
+  offset: 0, 0
+  index: -1
+cha
+  rotate: true
+  xy: 274, 124
+  size: 151, 300
+  orig: 151, 300
+  offset: 0, 0
+  index: -1
+cha111
+  rotate: true
+  xy: 274, 277
+  size: 217, 404
+  orig: 217, 404
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 680, 363
+  size: 205, 131
+  orig: 205, 131
+  offset: 0, 0
+  index: -1
+tay111
+  rotate: true
+  xy: 2, 29
+  size: 62, 233
+  orig: 62, 233
+  offset: 0, 0
+  index: -1
+toc1
+  rotate: true
+  xy: 274, 94
+  size: 28, 132
+  orig: 28, 132
+  offset: 0, 0
+  index: -1
+toc111
+  rotate: true
+  xy: 2, 2
+  size: 25, 92
+  orig: 25, 92
+  offset: 0, 0
+  index: -1
+toc2
+  rotate: true
+  xy: 887, 390
+  size: 18, 61
+  orig: 18, 61
+  offset: 0, 0
+  index: -1
+toc3
+  rotate: false
+  xy: 630, 215
+  size: 35, 60
+  orig: 35, 60
+  offset: 0, 0
+  index: -1
+toc443
+  rotate: false
+  xy: 576, 141
+  size: 52, 134
+  orig: 52, 134
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,48 @@
+
+cleopatragame copy.png
+size: 1758, 1598
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 1246, 609
+  size: 511, 988
+  orig: 511, 988
+  offset: 0, 0
+  index: -1
+anh sang sau
+  rotate: true
+  xy: 1038, 1
+  size: 607, 649
+  orig: 607, 649
+  offset: 0, 0
+  index: -1
+khung tien
+  rotate: false
+  xy: 520, 51
+  size: 508, 295
+  orig: 508, 295
+  offset: 0, 0
+  index: -1
+khung vien
+  rotate: true
+  xy: 1, 896
+  size: 701, 1244
+  orig: 701, 1244
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 1, 12
+  size: 518, 334
+  orig: 518, 334
+  offset: 0, 0
+  index: -1
+nhan vat
+  rotate: true
+  xy: 1, 347
+  size: 548, 1036
+  orig: 548, 1036
+  offset: 0, 0
+  index: -1

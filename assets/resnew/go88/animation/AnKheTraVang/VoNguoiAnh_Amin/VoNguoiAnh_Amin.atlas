@@ -1,0 +1,125 @@
+
+VoNguoiAnh_Amin.png
+size: 220,268
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: false
+  xy: 182, 231
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+ChanMay
+  rotate: true
+  xy: 182, 187
+  size: 42, 13
+  orig: 42, 13
+  offset: 0, 0
+  index: -1
+HueSaturation 34
+  rotate: true
+  xy: 106, 31
+  size: 70, 39
+  orig: 70, 39
+  offset: 0, 0
+  index: -1
+Khung1
+  rotate: false
+  xy: 96, 182
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Layer 299
+  rotate: true
+  xy: 2, 101
+  size: 165, 92
+  orig: 165, 92
+  offset: 0, 0
+  index: -1
+Layer 301 copy 5
+  rotate: false
+  xy: 2, 5
+  size: 102, 94
+  orig: 102, 94
+  offset: 0, 0
+  index: -1
+Muoth
+  rotate: true
+  xy: 199, 107
+  size: 23, 13
+  orig: 23, 13
+  offset: 0, 0
+  index: -1
+Star
+  rotate: false
+  xy: 197, 202
+  size: 21, 27
+  orig: 21, 27
+  offset: 0, 0
+  index: -1
+connguoi1
+  rotate: false
+  xy: 197, 190
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+connguoi2
+  rotate: false
+  xy: 207, 180
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+daychuyen
+  rotate: true
+  xy: 151, 46
+  size: 77, 46
+  orig: 77, 46
+  offset: 0, 0
+  index: -1
+daychuyen copy
+  rotate: false
+  xy: 96, 125
+  size: 87, 55
+  orig: 87, 55
+  offset: 0, 0
+  index: -1
+eye1
+  rotate: false
+  xy: 147, 24
+  size: 52, 20
+  orig: 52, 20
+  offset: 0, 0
+  index: -1
+eye2
+  rotate: false
+  xy: 106, 2
+  size: 52, 20
+  orig: 52, 20
+  offset: 0, 0
+  index: -1
+eye3
+  rotate: false
+  xy: 96, 103
+  size: 53, 20
+  orig: 53, 20
+  offset: 0, 0
+  index: -1
+eye4
+  rotate: true
+  xy: 185, 132
+  size: 53, 20
+  orig: 53, 20
+  offset: 0, 0
+  index: -1
+eye5
+  rotate: false
+  xy: 160, 2
+  size: 52, 20
+  orig: 52, 20
+  offset: 0, 0
+  index: -1

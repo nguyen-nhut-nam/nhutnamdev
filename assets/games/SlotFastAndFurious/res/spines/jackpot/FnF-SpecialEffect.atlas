@@ -1,0 +1,125 @@
+
+FnF-SpecialEffect.png
+size: 682,511
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BGxoay
+  rotate: false
+  xy: 2, 292
+  size: 469, 217
+  orig: 469, 217
+  offset: 0, 0
+  index: -1
+broken1
+  rotate: false
+  xy: 286, 16
+  size: 88, 50
+  orig: 88, 50
+  offset: 0, 0
+  index: -1
+broken2
+  rotate: false
+  xy: 493, 95
+  size: 53, 53
+  orig: 53, 53
+  offset: 0, 0
+  index: -1
+broken3
+  rotate: false
+  xy: 415, 41
+  size: 71, 52
+  orig: 71, 52
+  offset: 0, 0
+  index: -1
+broken4
+  rotate: true
+  xy: 378, 19
+  size: 47, 33
+  orig: 47, 33
+  offset: 0, 0
+  index: -1
+broken5
+  rotate: false
+  xy: 551, 36
+  size: 44, 49
+  orig: 44, 49
+  offset: 0, 0
+  index: -1
+car
+  rotate: true
+  xy: 257, 70
+  size: 218, 154
+  orig: 218, 154
+  offset: 0, 0
+  index: -1
+denxe
+  rotate: true
+  xy: 415, 97
+  size: 157, 74
+  orig: 157, 74
+  offset: 0, 0
+  index: -1
+flare1-jp
+  rotate: false
+  xy: 2, 2
+  size: 280, 31
+  orig: 280, 31
+  offset: 0, 0
+  index: -1
+jp-bangxanh
+  rotate: true
+  xy: 475, 258
+  size: 251, 80
+  orig: 251, 80
+  offset: 0, 0
+  index: -1
+jp-bangxanhsang
+  rotate: true
+  xy: 674, 119
+  size: 390, 6
+  orig: 390, 6
+  offset: 0, 0
+  index: -1
+jp-black
+  rotate: true
+  xy: 624, 79
+  size: 430, 38
+  orig: 430, 38
+  offset: 0, 0
+  index: -1
+jp-blackBright
+  rotate: true
+  xy: 666, 63
+  size: 446, 4
+  orig: 446, 4
+  offset: 0, 0
+  index: -1
+jp-glass
+  rotate: false
+  xy: 490, 33
+  size: 57, 58
+  orig: 57, 58
+  offset: 0, 0
+  index: -1
+jp-text
+  rotate: true
+  xy: 559, 89
+  size: 420, 61
+  orig: 420, 61
+  offset: 0, 0
+  index: -1
+money
+  rotate: true
+  xy: 493, 152
+  size: 102, 43
+  orig: 102, 43
+  offset: 0, 0
+  index: -1
+sangsau
+  rotate: false
+  xy: 2, 37
+  size: 251, 251
+  orig: 251, 251
+  offset: 0, 0
+  index: -1

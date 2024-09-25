@@ -1,0 +1,61 @@
+sun_lobby_otp.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+HD_light_1
+  rotate: true
+  xy: 1530, 2
+  size: 89, 10
+  orig: 89, 10
+  offset: 0, 0
+  index: -1
+HD_light_2
+  rotate: false
+  xy: 1133, 56
+  size: 359, 35
+  orig: 359, 35
+  offset: 0, 0
+  index: -1
+Particle_KT_1
+  rotate: false
+  xy: 85, 26
+  size: 306, 65
+  orig: 306, 65
+  offset: 0, 0
+  index: -1
+Particle_KT_2
+  rotate: false
+  xy: 1564, 139
+  size: 475, 75
+  orig: 475, 75
+  offset: 0, 0
+  index: -1
+btn_naptien
+  rotate: false
+  xy: 2, 10
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+lb_header_right
+  rotate: false
+  xy: 2, 93
+  size: 1560, 121
+  orig: 1560, 131
+  offset: 0, 10
+  index: -1
+lb_money_icon (1)
+  rotate: true
+  xy: 1063, 33
+  size: 58, 68
+  orig: 65, 68
+  offset: 4, 0
+  index: -1
+sun_0005_khung_tien2
+  rotate: false
+  xy: 1564, 62
+  size: 475, 75
+  orig: 475, 75
+  offset: 0, 0
+  index: -1

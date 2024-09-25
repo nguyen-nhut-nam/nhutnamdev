@@ -1,0 +1,20 @@
+
+chip.png
+size: 64,32
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 19 copy 3
+  rotate: false
+  xy: 2, 4
+  size: 34, 23
+  orig: 34, 23
+  offset: 0, 0
+  index: -1
+Group 19 copy 4
+  rotate: true
+  xy: 38, 2
+  size: 25, 21
+  orig: 25, 21
+  offset: 0, 0
+  index: -1

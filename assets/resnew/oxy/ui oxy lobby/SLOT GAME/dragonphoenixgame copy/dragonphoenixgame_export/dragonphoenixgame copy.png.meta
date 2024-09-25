@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e6e33d19-9cb5-4b03-a2ce-d747ab8d0bd2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1905,
+  "height": 1325,
+  "platformSettings": {},
+  "subMetas": {
+    "dragonphoenixgame copy": {
+      "ver": "1.0.6",
+      "uuid": "2b732182-5f98-4ded-bfec-a22977a0db3d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e6e33d19-9cb5-4b03-a2ce-d747ab8d0bd2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 0,
+      "trimX": 5,
+      "trimY": 3,
+      "width": 1897,
+      "height": 1319,
+      "rawWidth": 1905,
+      "rawHeight": 1325,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

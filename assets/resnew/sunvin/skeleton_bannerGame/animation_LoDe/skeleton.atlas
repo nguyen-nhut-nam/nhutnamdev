@@ -1,0 +1,48 @@
+
+skeleton.png
+size: 872,659
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+72d34489796a3e2117c74ca2d96ffeeb
+  rotate: false
+  xy: 439, 29
+  size: 257, 293
+  orig: 257, 293
+  offset: 0, 0
+  index: -1
+Layer 1 copy 4
+  rotate: true
+  xy: 2, 2
+  size: 273, 435
+  orig: 273, 435
+  offset: 0, 0
+  index: -1
+Rounded Rectangle 5 copy2
+  rotate: true
+  xy: 719, 453
+  size: 204, 87
+  orig: 204, 87
+  offset: 0, 0
+  index: -1
+yellow_ball
+  rotate: false
+  xy: 698, 151
+  size: 172, 171
+  orig: 172, 171
+  offset: 0, 0
+  index: -1
+yellow_ball_1
+  rotate: false
+  xy: 384, 324
+  size: 333, 333
+  orig: 333, 333
+  offset: 0, 0
+  index: -1
+yellow_ball_1 copy
+  rotate: false
+  xy: 2, 277
+  size: 380, 380
+  orig: 380, 380
+  offset: 0, 0
+  index: -1

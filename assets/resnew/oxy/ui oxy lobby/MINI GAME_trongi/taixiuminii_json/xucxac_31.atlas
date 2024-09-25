@@ -1,0 +1,34 @@
+
+xucxac_31.png
+size: 556, 113
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TÀI XỈU
+  rotate: false
+  xy: 1, 40
+  size: 220, 72
+  orig: 220, 72
+  offset: 0, 0
+  index: -1
+xucxac_1
+  rotate: true
+  xy: 222, 1
+  size: 111, 116
+  orig: 111, 116
+  offset: 0, 0
+  index: -1
+xucxac_2
+  rotate: false
+  xy: 339, 2
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+xucxac_3
+  rotate: false
+  xy: 450, 6
+  size: 105, 106
+  orig: 105, 106
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7dc82079-8c66-4f6e-9d9f-80f9064db954",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1890,
+  "height": 906,
+  "platformSettings": {},
+  "subMetas": {
+    "tower offortuna copy": {
+      "ver": "1.0.6",
+      "uuid": "a6a95e37-7a15-4bda-9a73-389253641e74",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7dc82079-8c66-4f6e-9d9f-80f9064db954",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 1888,
+      "height": 904,
+      "rawWidth": 1890,
+      "rawHeight": 906,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

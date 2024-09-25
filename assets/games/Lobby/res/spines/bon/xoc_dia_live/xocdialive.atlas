@@ -1,0 +1,83 @@
+
+xocdialive.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 750, 58
+  size: 265, 186
+  orig: 265, 186
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 1017, 45
+  size: 248, 199
+  orig: 248, 199
+  offset: 0, 0
+  index: -1
+BG
+  rotate: true
+  xy: 2, 2
+  size: 242, 373
+  orig: 242, 373
+  offset: 0, 0
+  index: -1
+CHA
+  rotate: true
+  xy: 377, 44
+  size: 200, 371
+  orig: 200, 371
+  offset: 0, 0
+  index: -1
+c1
+  rotate: false
+  xy: 1267, 59
+  size: 56, 52
+  orig: 56, 52
+  offset: 0, 0
+  index: -1
+c2
+  rotate: false
+  xy: 1604, 219
+  size: 32, 25
+  orig: 32, 25
+  offset: 0, 0
+  index: -1
+c3
+  rotate: false
+  xy: 1408, 125
+  size: 44, 34
+  orig: 44, 34
+  offset: 0, 0
+  index: -1
+live
+  rotate: false
+  xy: 1267, 113
+  size: 139, 46
+  orig: 139, 46
+  offset: 0, 0
+  index: -1
+toc1
+  rotate: true
+  xy: 1489, 183
+  size: 61, 113
+  orig: 61, 113
+  offset: 0, 0
+  index: -1
+toc2
+  rotate: true
+  xy: 377, 10
+  size: 32, 47
+  orig: 32, 47
+  offset: 0, 0
+  index: -1
+xd
+  rotate: false
+  xy: 1267, 161
+  size: 220, 83
+  orig: 220, 83
+  offset: 0, 0
+  index: -1

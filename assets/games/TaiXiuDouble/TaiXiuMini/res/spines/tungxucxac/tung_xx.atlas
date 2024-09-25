@@ -1,0 +1,251 @@
+
+tung_xx.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+diceroll1
+  rotate: true
+  xy: 1400, 103
+  size: 86, 84
+  orig: 86, 84
+  offset: 0, 0
+  index: -1
+diceroll10
+  rotate: true
+  xy: 1361, 191
+  size: 110, 106
+  orig: 110, 106
+  offset: 0, 0
+  index: -1
+diceroll11
+  rotate: false
+  xy: 1469, 193
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+diceroll12
+  rotate: false
+  xy: 1247, 189
+  size: 112, 112
+  orig: 112, 112
+  offset: 0, 0
+  index: -1
+diceroll13
+  rotate: true
+  xy: 1132, 183
+  size: 116, 113
+  orig: 116, 113
+  offset: 0, 0
+  index: -1
+diceroll14
+  rotate: true
+  xy: 1015, 176
+  size: 120, 115
+  orig: 120, 115
+  offset: 0, 0
+  index: -1
+diceroll15
+  rotate: false
+  xy: 1839, 310
+  size: 124, 121
+  orig: 124, 121
+  offset: 0, 0
+  index: -1
+diceroll16
+  rotate: false
+  xy: 1711, 309
+  size: 126, 122
+  orig: 126, 122
+  offset: 0, 0
+  index: -1
+diceroll17
+  rotate: false
+  xy: 1580, 307
+  size: 129, 124
+  orig: 129, 124
+  offset: 0, 0
+  index: -1
+diceroll18
+  rotate: false
+  xy: 1446, 305
+  size: 132, 126
+  orig: 132, 126
+  offset: 0, 0
+  index: -1
+diceroll19
+  rotate: false
+  xy: 1310, 303
+  size: 134, 128
+  orig: 134, 128
+  offset: 0, 0
+  index: -1
+diceroll2
+  rotate: true
+  xy: 1226, 92
+  size: 89, 86
+  orig: 89, 86
+  offset: 0, 0
+  index: -1
+diceroll20
+  rotate: false
+  xy: 1032, 301
+  size: 136, 130
+  orig: 136, 130
+  offset: 0, 0
+  index: -1
+diceroll21
+  rotate: false
+  xy: 1170, 304
+  size: 138, 127
+  orig: 138, 127
+  offset: 0, 0
+  index: -1
+diceroll22
+  rotate: false
+  xy: 890, 298
+  size: 140, 133
+  orig: 140, 133
+  offset: 0, 0
+  index: -1
+diceroll23
+  rotate: false
+  xy: 600, 289
+  size: 142, 142
+  orig: 142, 142
+  offset: 0, 0
+  index: -1
+diceroll24
+  rotate: false
+  xy: 455, 290
+  size: 143, 141
+  orig: 143, 141
+  offset: 0, 0
+  index: -1
+diceroll25
+  rotate: false
+  xy: 153, 146
+  size: 145, 141
+  orig: 145, 141
+  offset: 0, 0
+  index: -1
+diceroll26
+  rotate: false
+  xy: 154, 289
+  size: 147, 142
+  orig: 147, 142
+  offset: 0, 0
+  index: -1
+diceroll27
+  rotate: false
+  xy: 2, 2
+  size: 148, 141
+  orig: 148, 141
+  offset: 0, 0
+  index: -1
+diceroll28
+  rotate: false
+  xy: 2, 145
+  size: 149, 142
+  orig: 149, 142
+  offset: 0, 0
+  index: -1
+diceroll29
+  rotate: false
+  xy: 2, 289
+  size: 150, 142
+  orig: 150, 142
+  offset: 0, 0
+  index: -1
+diceroll3
+  rotate: false
+  xy: 1132, 92
+  size: 92, 89
+  orig: 92, 89
+  offset: 0, 0
+  index: -1
+diceroll30
+  rotate: false
+  xy: 303, 292
+  size: 150, 139
+  orig: 150, 139
+  offset: 0, 0
+  index: -1
+diceroll31
+  rotate: false
+  xy: 744, 293
+  size: 144, 138
+  orig: 144, 138
+  offset: 0, 0
+  index: -1
+diceroll32
+  rotate: true
+  xy: 890, 174
+  size: 122, 123
+  orig: 122, 123
+  offset: 0, 0
+  index: -1
+diceroll33
+  rotate: true
+  xy: 1901, 200
+  size: 108, 105
+  orig: 108, 105
+  offset: 0, 0
+  index: -1
+diceroll34
+  rotate: false
+  xy: 1783, 106
+  size: 96, 92
+  orig: 96, 92
+  offset: 0, 0
+  index: -1
+diceroll35
+  rotate: true
+  xy: 1314, 100
+  size: 87, 84
+  orig: 87, 84
+  offset: 0, 0
+  index: -1
+diceroll4
+  rotate: false
+  xy: 1881, 106
+  size: 95, 92
+  orig: 95, 92
+  offset: 0, 0
+  index: -1
+diceroll5
+  rotate: false
+  xy: 1684, 101
+  size: 97, 97
+  orig: 97, 97
+  offset: 0, 0
+  index: -1
+diceroll6
+  rotate: false
+  xy: 1581, 100
+  size: 101, 99
+  orig: 101, 99
+  offset: 0, 0
+  index: -1
+diceroll7
+  rotate: true
+  xy: 1692, 200
+  size: 105, 101
+  orig: 105, 101
+  offset: 0, 0
+  index: -1
+diceroll8
+  rotate: true
+  xy: 1795, 200
+  size: 107, 104
+  orig: 107, 104
+  offset: 0, 0
+  index: -1
+diceroll9
+  rotate: false
+  xy: 1581, 201
+  size: 109, 104
+  orig: 109, 104
+  offset: 0, 0
+  index: -1

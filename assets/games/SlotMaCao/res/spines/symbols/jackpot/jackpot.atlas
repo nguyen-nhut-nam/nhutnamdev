@@ -1,0 +1,153 @@
+
+jackpot.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bai1
+  rotate: false
+  xy: 209, 147
+  size: 31, 33
+  orig: 31, 33
+  offset: 0, 0
+  index: -1
+bg11
+  rotate: false
+  xy: 2, 2
+  size: 205, 178
+  orig: 205, 178
+  offset: 0, 0
+  index: -1
+bg22
+  rotate: false
+  xy: 1383, 173
+  size: 146, 146
+  orig: 146, 146
+  offset: 0, 0
+  index: -1
+cha11
+  rotate: false
+  xy: 2, 182
+  size: 243, 323
+  orig: 243, 323
+  offset: 0, 0
+  index: -1
+fx/BG1_00000
+  rotate: false
+  xy: 439, 129
+  size: 188, 186
+  orig: 188, 186
+  offset: 0, 0
+  index: -1
+fx/BG1_00001
+  rotate: false
+  xy: 631, 131
+  size: 188, 186
+  orig: 188, 186
+  offset: 0, 0
+  index: -1
+fx/BG1_00002
+  rotate: true
+  xy: 1019, 319
+  size: 186, 190
+  orig: 186, 190
+  offset: 0, 0
+  index: -1
+fx/BG1_00003
+  rotate: true
+  xy: 1011, 133
+  size: 184, 188
+  orig: 184, 188
+  offset: 0, 0
+  index: -1
+fx/BG1_00004
+  rotate: false
+  xy: 1201, 129
+  size: 180, 188
+  orig: 180, 188
+  offset: 0, 0
+  index: -1
+fx/BG1_00005
+  rotate: false
+  xy: 439, 317
+  size: 190, 188
+  orig: 190, 188
+  offset: 0, 0
+  index: -1
+fx/BG1_00006
+  rotate: false
+  xy: 631, 319
+  size: 192, 186
+  orig: 192, 186
+  offset: 0, 0
+  index: -1
+fx/BG1_00007
+  rotate: false
+  xy: 1211, 321
+  size: 192, 184
+  orig: 192, 184
+  offset: 0, 0
+  index: -1
+fx/BG1_00008
+  rotate: false
+  xy: 247, 129
+  size: 190, 182
+  orig: 190, 182
+  offset: 0, 0
+  index: -1
+fx/BG1_00009
+  rotate: false
+  xy: 247, 313
+  size: 190, 192
+  orig: 190, 192
+  offset: 0, 0
+  index: -1
+fx/BG1_00010
+  rotate: true
+  xy: 825, 319
+  size: 186, 192
+  orig: 186, 192
+  offset: 0, 0
+  index: -1
+fx/BG1_00011
+  rotate: true
+  xy: 1405, 321
+  size: 184, 192
+  orig: 184, 192
+  offset: 0, 0
+  index: -1
+fx/BG1_00012
+  rotate: true
+  xy: 1599, 321
+  size: 184, 192
+  orig: 184, 192
+  offset: 0, 0
+  index: -1
+fx/BG1_00013
+  rotate: true
+  xy: 1793, 317
+  size: 188, 190
+  orig: 188, 190
+  offset: 0, 0
+  index: -1
+fx/BG1_00014
+  rotate: false
+  xy: 821, 131
+  size: 188, 186
+  orig: 188, 186
+  offset: 0, 0
+  index: -1
+jp
+  rotate: false
+  xy: 1531, 281
+  size: 135, 38
+  orig: 135, 38
+  offset: 0, 0
+  index: -1
+tay
+  rotate: false
+  xy: 1985, 351
+  size: 46, 154
+  orig: 46, 154
+  offset: 0, 0
+  index: -1

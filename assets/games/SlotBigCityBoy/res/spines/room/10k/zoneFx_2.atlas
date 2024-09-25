@@ -1,0 +1,48 @@
+
+zoneFx_2.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Head
+  rotate: false
+  xy: 490, 48
+  size: 99, 112
+  orig: 99, 112
+  offset: 0, 0
+  index: -1
+Untitled-1_0002_Layer-58-copy
+  rotate: false
+  xy: 2, 2
+  size: 271, 78
+  orig: 271, 78
+  offset: 0, 0
+  index: -1
+Untitled-1_0008_Layer-6430-copy-3
+  rotate: false
+  xy: 2, 82
+  size: 287, 418
+  orig: 287, 418
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 291, 162
+  size: 272, 338
+  orig: 272, 338
+  offset: 0, 0
+  index: -1
+hand1
+  rotate: true
+  xy: 275, 6
+  size: 74, 115
+  orig: 74, 115
+  offset: 0, 0
+  index: -1
+hand2
+  rotate: true
+  xy: 392, 13
+  size: 147, 96
+  orig: 147, 96
+  offset: 0, 0
+  index: -1

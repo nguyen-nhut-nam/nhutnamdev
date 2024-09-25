@@ -1,0 +1,27 @@
+
+vang.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: false
+  xy: 2, 2
+  size: 220, 174
+  orig: 220, 174
+  offset: 0, 0
+  index: -1
+vang
+  rotate: false
+  xy: 345, 94
+  size: 100, 82
+  orig: 100, 82
+  offset: 0, 0
+  index: -1
+vang2
+  rotate: false
+  xy: 224, 79
+  size: 119, 97
+  orig: 119, 97
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "87fa25fd-d008-42b4-a7d9-af06dff06ed9",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 850,
+  "height": 332,
+  "platformSettings": {},
+  "subMetas": {
+    "Anim-ChonLevel-Hobbs": {
+      "ver": "1.0.6",
+      "uuid": "47c63e22-50de-452b-921d-fa2c5fbaba8c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "87fa25fd-d008-42b4-a7d9-af06dff06ed9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 3,
+      "trimY": 3,
+      "width": 844,
+      "height": 326,
+      "rawWidth": 850,
+      "rawHeight": 332,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

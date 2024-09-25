@@ -1,0 +1,41 @@
+
+iWin_nohu_xocdia.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+as2
+  rotate: false
+  xy: 542, 38
+  size: 86, 85
+  orig: 86, 85
+  offset: 0, 0
+  index: -1
+as3
+  rotate: false
+  xy: 630, 80
+  size: 40, 43
+  orig: 40, 43
+  offset: 0, 0
+  index: -1
+day
+  rotate: false
+  xy: 2, 2
+  size: 178, 121
+  orig: 178, 121
+  offset: 0, 0
+  index: -1
+it
+  rotate: false
+  xy: 182, 17
+  size: 178, 106
+  orig: 178, 106
+  offset: 0, 0
+  index: -1
+voi
+  rotate: false
+  xy: 362, 17
+  size: 178, 106
+  orig: 178, 106
+  offset: 0, 0
+  index: -1

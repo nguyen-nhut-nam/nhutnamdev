@@ -1,0 +1,90 @@
+
+TAI XIU.png
+size: 2048, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BG
+  rotate: false
+  xy: 618, 199
+  size: 406, 794
+  orig: 406, 794
+  offset: 0, 0
+  index: -1
+dia
+  rotate: false
+  xy: 1025, 567
+  size: 515, 426
+  orig: 515, 426
+  offset: 0, 0
+  index: -1
+khung tien
+  rotate: false
+  xy: 618, 107
+  size: 406, 91
+  orig: 406, 91
+  offset: 0, 0
+  index: -1
+khung1
+  rotate: false
+  xy: 1541, 931
+  size: 234, 62
+  orig: 234, 62
+  offset: 0, 0
+  index: -1
+khung2
+  rotate: false
+  xy: 1541, 931
+  size: 234, 62
+  orig: 234, 62
+  offset: 0, 0
+  index: -1
+tai
+  rotate: false
+  xy: 1025, 113
+  size: 174, 119
+  orig: 174, 119
+  offset: 0, 0
+  index: -1
+to
+  rotate: false
+  xy: 1025, 233
+  size: 254, 333
+  orig: 254, 333
+  offset: 0, 0
+  index: -1
+vien ngoai
+  rotate: false
+  xy: 1, 1
+  size: 616, 992
+  orig: 616, 992
+  offset: 0, 0
+  index: -1
+xiu
+  rotate: false
+  xy: 1280, 461
+  size: 158, 105
+  orig: 158, 105
+  offset: 0, 0
+  index: -1
+xucsac1
+  rotate: false
+  xy: 1541, 810
+  size: 112, 120
+  orig: 112, 120
+  offset: 0, 0
+  index: -1
+xucsac2
+  rotate: false
+  xy: 1280, 366
+  size: 86, 94
+  orig: 86, 94
+  offset: 0, 0
+  index: -1
+xucsac3
+  rotate: false
+  xy: 618, 7
+  size: 95, 99
+  orig: 95, 99
+  offset: 0, 0
+  index: -1

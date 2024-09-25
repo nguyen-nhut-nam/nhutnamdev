@@ -1,0 +1,41 @@
+
+skeleton.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: false
+  xy: 2, 84
+  size: 266, 420
+  orig: 266, 420
+  offset: 0, 0
+  index: -1
+COIN
+  rotate: false
+  xy: 538, 296
+  size: 254, 208
+  orig: 254, 208
+  offset: 0, 0
+  index: -1
+Frog
+  rotate: false
+  xy: 270, 113
+  size: 266, 391
+  orig: 266, 391
+  offset: 0, 0
+  index: -1
+Named
+  rotate: false
+  xy: 2, 2
+  size: 259, 80
+  orig: 259, 80
+  offset: 0, 0
+  index: -1
+jackpot pool
+  rotate: false
+  xy: 538, 180
+  size: 266, 114
+  orig: 266, 114
+  offset: 0, 0
+  index: -1

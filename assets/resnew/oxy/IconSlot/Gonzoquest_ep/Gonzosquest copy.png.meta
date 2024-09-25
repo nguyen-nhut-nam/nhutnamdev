@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7ce35e18-1bc5-414d-8cd2-fe9a6af0d8be",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 2048,
+  "height": 2048,
+  "platformSettings": {},
+  "subMetas": {
+    "Gonzosquest copy": {
+      "ver": "1.0.6",
+      "uuid": "b15c77f7-3a08-4f50-9df9-b83298902621",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7ce35e18-1bc5-414d-8cd2-fe9a6af0d8be",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -37.5,
+      "offsetY": 20,
+      "trimX": 2,
+      "trimY": 3,
+      "width": 1969,
+      "height": 2002,
+      "rawWidth": 2048,
+      "rawHeight": 2048,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

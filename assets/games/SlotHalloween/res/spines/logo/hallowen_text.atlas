@@ -1,0 +1,13 @@
+
+hallowen_text.png
+size: 262,75
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+logo11
+  rotate: false
+  xy: 2, 2
+  size: 258, 71
+  orig: 260, 73
+  offset: 1, 1
+  index: -1

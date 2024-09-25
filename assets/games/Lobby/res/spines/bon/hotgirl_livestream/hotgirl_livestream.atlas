@@ -1,0 +1,48 @@
+
+hotgirl_livestream.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg
+  rotate: true
+  xy: 344, 172
+  size: 270, 401
+  orig: 270, 401
+  offset: 0, 0
+  index: -1
+girl
+  rotate: true
+  xy: 924, 200
+  size: 242, 66
+  orig: 242, 66
+  offset: 0, 0
+  index: -1
+girl1
+  rotate: false
+  xy: 747, 128
+  size: 175, 314
+  orig: 175, 314
+  offset: 0, 0
+  index: -1
+girl2
+  rotate: true
+  xy: 344, 2
+  size: 168, 328
+  orig: 168, 328
+  offset: 0, 0
+  index: -1
+hot
+  rotate: false
+  xy: 2, 42
+  size: 204, 57
+  orig: 204, 57
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 2, 101
+  size: 340, 341
+  orig: 340, 341
+  offset: 0, 0
+  index: -1

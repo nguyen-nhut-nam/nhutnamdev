@@ -1,0 +1,62 @@
+
+Anim-ChonLevel-Dom.png
+size: 1016,224
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 380, 106
+  size: 116, 326
+  orig: 116, 326
+  offset: 0, 0
+  index: -1
+bright
+  rotate: false
+  xy: 710, 29
+  size: 243, 193
+  orig: 243, 193
+  offset: 0, 0
+  index: -1
+car
+  rotate: false
+  xy: 2, 3
+  size: 374, 219
+  orig: 374, 219
+  offset: 0, 0
+  index: -1
+dau
+  rotate: false
+  xy: 640, 41
+  size: 45, 61
+  orig: 45, 61
+  offset: 0, 0
+  index: -1
+dot
+  rotate: false
+  xy: 640, 16
+  size: 13, 21
+  orig: 13, 21
+  offset: 0, 0
+  index: -1
+sangcam
+  rotate: false
+  xy: 957, 70
+  size: 27, 23
+  orig: 27, 23
+  offset: 0, 0
+  index: -1
+sangxanh
+  rotate: true
+  xy: 957, 97
+  size: 125, 57
+  orig: 125, 57
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 380, 2
+  size: 256, 100
+  orig: 256, 100
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "4511d9c9-9614-42c6-a994-50bd5d10c824",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 127,
+  "platformSettings": {},
+  "subMetas": {
+    "lb_download_circle.png": {
+      "ver": "1.0.6",
+      "uuid": "437eb3ba-201d-44d0-a4d9-9f0e379b238d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "4511d9c9-9614-42c6-a994-50bd5d10c824",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 128,
+      "height": 127,
+      "rawWidth": 128,
+      "rawHeight": 127,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

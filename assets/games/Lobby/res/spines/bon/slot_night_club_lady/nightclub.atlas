@@ -1,0 +1,195 @@
+
+nightclub.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+P-body
+  rotate: false
+  xy: 272, 267
+  size: 340, 222
+  orig: 340, 222
+  offset: 0, 0
+  index: -1
+P-body-tren
+  rotate: true
+  xy: 614, 285
+  size: 204, 270
+  orig: 204, 270
+  offset: 0, 0
+  index: -1
+P-chanTrai
+  rotate: true
+  xy: 272, 105
+  size: 160, 264
+  orig: 160, 264
+  offset: 0, 0
+  index: -1
+P-chansau
+  rotate: false
+  xy: 886, 326
+  size: 167, 184
+  orig: 167, 184
+  offset: 0, 0
+  index: -1
+P-cot
+  rotate: true
+  xy: 272, 491
+  size: 19, 577
+  orig: 19, 577
+  offset: 0, 0
+  index: -1
+P-moi
+  rotate: false
+  xy: 538, 113
+  size: 37, 29
+  orig: 37, 29
+  offset: 0, 0
+  index: -1
+P-tayPTruoc
+  rotate: true
+  xy: 1213, 401
+  size: 109, 220
+  orig: 109, 220
+  offset: 0, 0
+  index: -1
+P-tayPhai
+  rotate: true
+  xy: 1645, 387
+  size: 123, 202
+  orig: 123, 202
+  offset: 0, 0
+  index: -1
+P-tayTrai
+  rotate: false
+  xy: 2, 12
+  size: 164, 97
+  orig: 164, 97
+  offset: 0, 0
+  index: -1
+P-tayTraiTruoc
+  rotate: true
+  xy: 1213, 341
+  size: 58, 183
+  orig: 58, 183
+  offset: 0, 0
+  index: -1
+P-toc1
+  rotate: true
+  xy: 886, 282
+  size: 42, 95
+  orig: 42, 95
+  offset: 0, 0
+  index: -1
+P-toc2
+  rotate: true
+  xy: 168, 18
+  size: 91, 101
+  orig: 91, 101
+  offset: 0, 0
+  index: -1
+P-toc3
+  rotate: false
+  xy: 1165, 266
+  size: 60, 58
+  orig: 60, 58
+  offset: 0, 0
+  index: -1
+P-toc4
+  rotate: true
+  xy: 983, 243
+  size: 81, 89
+  orig: 81, 89
+  offset: 0, 0
+  index: -1
+P-toc5
+  rotate: false
+  xy: 492, 27
+  size: 34, 76
+  orig: 34, 76
+  offset: 0, 0
+  index: -1
+P-toc6
+  rotate: true
+  xy: 1074, 271
+  size: 53, 89
+  orig: 53, 89
+  offset: 0, 0
+  index: -1
+P-tocP
+  rotate: false
+  xy: 1398, 352
+  size: 21, 47
+  orig: 21, 47
+  offset: 0, 0
+  index: -1
+P-tocP2
+  rotate: true
+  xy: 1074, 233
+  size: 36, 73
+  orig: 36, 73
+  offset: 0, 0
+  index: -1
+P-tocP3
+  rotate: true
+  xy: 492, 2
+  size: 23, 68
+  orig: 23, 68
+  offset: 0, 0
+  index: -1
+bg/8
+  rotate: false
+  xy: 385, 17
+  size: 105, 86
+  orig: 105, 86
+  offset: 0, 0
+  index: -1
+bg/9
+  rotate: true
+  xy: 1966, 419
+  size: 91, 73
+  orig: 91, 73
+  offset: 0, 0
+  index: -1
+bg/LADY
+  rotate: true
+  xy: 538, 144
+  size: 121, 48
+  orig: 121, 48
+  offset: 0, 0
+  index: -1
+bg/bg
+  rotate: false
+  xy: 2, 111
+  size: 268, 399
+  orig: 268, 399
+  offset: 0, 0
+  index: -1
+bg/bg1
+  rotate: false
+  xy: 1435, 399
+  size: 208, 111
+  orig: 208, 111
+  offset: 0, 0
+  index: -1
+bg/fx1
+  rotate: false
+  xy: 1849, 407
+  size: 115, 103
+  orig: 115, 103
+  offset: 0, 0
+  index: -1
+bg/fx2
+  rotate: false
+  xy: 271, 3
+  size: 112, 100
+  orig: 112, 100
+  offset: 0, 0
+  index: -1
+dau
+  rotate: false
+  xy: 1055, 326
+  size: 156, 184
+  orig: 156, 184
+  offset: 0, 0
+  index: -1

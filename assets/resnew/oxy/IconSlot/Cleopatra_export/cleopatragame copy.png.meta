@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f9429c9c-4c97-4e58-8bf7-7db6e5815a4c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1758,
+  "height": 1598,
+  "platformSettings": {},
+  "subMetas": {
+    "cleopatragame copy": {
+      "ver": "1.0.6",
+      "uuid": "c033f16b-269f-4fd4-b640-ef92caf6c84a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f9429c9c-4c97-4e58-8bf7-7db6e5815a4c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -4.5,
+      "trimX": 2,
+      "trimY": 11,
+      "width": 1754,
+      "height": 1585,
+      "rawWidth": 1758,
+      "rawHeight": 1598,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

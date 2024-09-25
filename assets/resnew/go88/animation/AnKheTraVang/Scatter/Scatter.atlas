@@ -1,0 +1,63 @@
+
+
+Scatter.png
+size: 356,160
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Khung1-4
+  rotate: true
+  xy: 269, 68
+  size: 88, 85
+  orig: 88, 85
+  offset: 0, 0
+  index: -1
+La1
+  rotate: true
+  xy: 2, 5
+  size: 59, 109
+  orig: 59, 109
+  offset: 0, 0
+  index: -1
+La2
+  rotate: false
+  xy: 119, 45
+  size: 82, 58
+  orig: 82, 58
+  offset: 0, 0
+  index: -1
+Scatter
+  rotate: false
+  xy: 119, 105
+  size: 148, 51
+  orig: 148, 51
+  offset: 0, 0
+  index: -1
+TraiKhe
+  rotate: false
+  xy: 2, 66
+  size: 115, 90
+  orig: 115, 90
+  offset: 0, 0
+  index: -1
+miengkhe1
+  rotate: false
+  xy: 267, 6
+  size: 66, 60
+  orig: 66, 60
+  offset: 0, 0
+  index: -1
+miengkhe2
+  rotate: false
+  xy: 203, 41
+  size: 62, 62
+  orig: 62, 62
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 113, 2
+  size: 50, 41
+  orig: 50, 41
+  offset: 0, 0
+  index: -1

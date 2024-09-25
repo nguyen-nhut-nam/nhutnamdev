@@ -1,0 +1,118 @@
+
+BanCa.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ChonGame1/Eyesloes
+  rotate: false
+  xy: 969, 467
+  size: 41, 43
+  orig: 41, 43
+  offset: 0, 0
+  index: -1
+ChonGame1/Layer 130
+  rotate: false
+  xy: 690, 228
+  size: 24, 14
+  orig: 24, 14
+  offset: 0, 0
+  index: -1
+ChonGame1/Layer 130 copy
+  rotate: false
+  xy: 2, 2
+  size: 23, 18
+  orig: 23, 18
+  offset: 0, 0
+  index: -1
+ChonGame1/Layer 131
+  rotate: true
+  xy: 493, 87
+  size: 80, 76
+  orig: 80, 76
+  offset: 0, 0
+  index: -1
+ChonGame1/Layer 85
+  rotate: false
+  xy: 272, 169
+  size: 291, 341
+  orig: 291, 341
+  offset: 0, 0
+  index: -1
+ChonGame1/Layer 86
+  rotate: false
+  xy: 565, 357
+  size: 209, 153
+  orig: 209, 153
+  offset: 0, 0
+  index: -1
+ChonGame1/Layer 87
+  rotate: true
+  xy: 2, 22
+  size: 87, 234
+  orig: 87, 234
+  offset: 0, 0
+  index: -1
+ChonGame1/Layer 88
+  rotate: false
+  xy: 776, 359
+  size: 43, 47
+  orig: 43, 47
+  offset: 0, 0
+  index: -1
+ChonGame1/dia ca
+  rotate: false
+  xy: 272, 107
+  size: 118, 60
+  orig: 118, 60
+  offset: 0, 0
+  index: -1
+ChonGame1/mat1
+  rotate: false
+  xy: 238, 94
+  size: 13, 15
+  orig: 13, 15
+  offset: 0, 0
+  index: -1
+ChonGame1/mat2
+  rotate: false
+  xy: 821, 395
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 2, 111
+  size: 268, 399
+  orig: 268, 399
+  offset: 0, 0
+  index: -1
+bg1
+  rotate: false
+  xy: 565, 244
+  size: 208, 111
+  orig: 208, 111
+  offset: 0, 0
+  index: -1
+rong1
+  rotate: true
+  xy: 565, 180
+  size: 62, 123
+  orig: 62, 123
+  offset: 0, 0
+  index: -1
+rong2
+  rotate: true
+  xy: 392, 77
+  size: 90, 99
+  orig: 90, 99
+  offset: 0, 0
+  index: -1
+txt
+  rotate: false
+  xy: 776, 408
+  size: 191, 102
+  orig: 191, 102
+  offset: 0, 0
+  index: -1

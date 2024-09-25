@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7c88588c-0bc4-4de8-8bfc-7e5ced7240f4",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 2048,
+  "height": 512,
+  "platformSettings": {},
+  "subMetas": {
+    "MẬU BINH": {
+      "ver": "1.0.6",
+      "uuid": "ba8377b3-775b-4902-afca-9b8c79de77fb",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7c88588c-0bc4-4de8-8bfc-7e5ced7240f4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -39,
+      "offsetY": 21,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 1966,
+      "height": 466,
+      "rawWidth": 2048,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,62 @@
+
+hades copy.png
+size: 1706, 1116
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+8b4cb6f5b13b63048c566259ea54d020110a282875cd5-hoEUDP
+  rotate: false
+  xy: 923, 145
+  size: 461, 461
+  orig: 461, 461
+  offset: 0, 0
+  index: -1
+BG
+  rotate: false
+  xy: 465, 221
+  size: 457, 894
+  orig: 457, 894
+  offset: 0, 0
+  index: -1
+dau
+  rotate: true
+  xy: 465, 27
+  size: 193, 394
+  orig: 193, 394
+  offset: 0, 0
+  index: -1
+glow
+  rotate: true
+  xy: 1385, 80
+  size: 526, 320
+  orig: 526, 320
+  offset: 0, 0
+  index: -1
+hades
+  rotate: false
+  xy: 1, 1
+  size: 418, 216
+  orig: 418, 216
+  offset: 0, 0
+  index: -1
+khung duoi
+  rotate: true
+  xy: 1431, 658
+  size: 457, 266
+  orig: 457, 266
+  offset: 0, 0
+  index: -1
+nguoi
+  rotate: false
+  xy: 923, 607
+  size: 507, 508
+  orig: 507, 508
+  offset: 0, 0
+  index: -1
+vien
+  rotate: false
+  xy: 1, 218
+  size: 463, 897
+  orig: 463, 897
+  offset: 0, 0
+  index: -1

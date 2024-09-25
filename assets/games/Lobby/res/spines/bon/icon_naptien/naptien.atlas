@@ -1,0 +1,27 @@
+
+naptien.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 15
+  size: 231, 110
+  orig: 231, 110
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 235, 64
+  size: 221, 61
+  orig: 221, 61
+  offset: 0, 0
+  index: -1
+TXT11
+  rotate: false
+  xy: 235, 2
+  size: 158, 60
+  orig: 158, 60
+  offset: 0, 0
+  index: -1

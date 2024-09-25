@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a40e2552-4768-45f8-b848-859689a9a25a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 200,
+  "height": 43,
+  "platformSettings": {},
+  "subMetas": {
+    "tx_current_bet_tai.png": {
+      "ver": "1.0.6",
+      "uuid": "655c5078-1ada-4d53-98be-4a96f08d566e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a40e2552-4768-45f8-b848-859689a9a25a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 200,
+      "height": 43,
+      "rawWidth": 200,
+      "rawHeight": 43,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

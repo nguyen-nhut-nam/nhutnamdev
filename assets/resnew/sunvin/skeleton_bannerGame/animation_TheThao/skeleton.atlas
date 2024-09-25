@@ -1,0 +1,90 @@
+
+skeleton.png
+size: 916,436
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: true
+  xy: 277, 3
+  size: 156, 219
+  orig: 156, 219
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: true
+  xy: 277, 161
+  size: 273, 435
+  orig: 273, 435
+  offset: 0, 0
+  index: -1
+Layer 8
+  rotate: true
+  xy: 767, 62
+  size: 78, 68
+  orig: 78, 68
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 2, 5
+  size: 273, 429
+  orig: 273, 429
+  offset: 0, 0
+  index: -1
+hand_p_1
+  rotate: false
+  xy: 837, 87
+  size: 77, 53
+  orig: 77, 53
+  offset: 0, 0
+  index: -1
+hand_p_2
+  rotate: false
+  xy: 793, 142
+  size: 85, 81
+  orig: 85, 81
+  offset: 0, 0
+  index: -1
+hand_p_3
+  rotate: true
+  xy: 498, 2
+  size: 50, 35
+  orig: 50, 35
+  offset: 0, 0
+  index: -1
+hand_t_1
+  rotate: true
+  xy: 535, 8
+  size: 44, 95
+  orig: 44, 95
+  offset: 0, 0
+  index: -1
+hand_t_2
+  rotate: true
+  xy: 632, 14
+  size: 38, 53
+  orig: 38, 53
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 714, 163
+  size: 60, 77
+  orig: 60, 77
+  offset: 0, 0
+  index: -1
+light1
+  rotate: false
+  xy: 714, 225
+  size: 200, 209
+  orig: 200, 209
+  offset: 0, 0
+  index: -1
+text
+  rotate: false
+  xy: 498, 54
+  size: 267, 105
+  orig: 267, 105
+  offset: 0, 0
+  index: -1

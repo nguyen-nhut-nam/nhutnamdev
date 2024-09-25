@@ -1,0 +1,579 @@
+{
+    "skeleton": {
+        "hash": "Fp6o7w8OoqFPZBS14UL+oILbsH4",
+        "spine": "3.7.93",
+        "width": 43,
+        "height": 177,
+        "images": "",
+        "audio": ""
+    },
+    "bones": [{
+        "name": "root"
+    }, {
+        "name": "bone",
+        "parent": "root",
+        "length": 106.05,
+        "rotation": 77.3,
+        "x": 1.71,
+        "y": 16.8
+    }, {
+        "name": "bone2",
+        "parent": "root",
+        "x": 26.09,
+        "y": 128.1
+    }, {
+        "name": "bone3",
+        "parent": "root",
+        "x": 179.2,
+        "y": 120.64
+    }, {
+        "name": "mask",
+        "parent": "root"
+    }, {
+        "name": "bone4",
+        "parent": "root",
+        "x": 179.2,
+        "y": 120.64
+    }],
+    "slots": [{
+        "name": "Effect_MuiTen1",
+        "bone": "root",
+        "attachment": "Effect_MuiTen1"
+    }, {
+        "name": "mask",
+        "bone": "mask",
+        "attachment": "mask"
+    }, {
+        "name": "Effect_MuiTen2",
+        "bone": "root",
+        "attachment": "Effect_MuiTen2"
+    }, {
+        "name": "Effect_MuiTen0",
+        "bone": "root",
+        "attachment": "Effect_MuiTen0",
+        "blend": "screen"
+    }, {
+        "name": "Effect_MuiTen3",
+        "bone": "root",
+        "attachment": "Effect_MuiTen0",
+        "blend": "screen"
+    }, {
+        "name": "deduoi",
+        "bone": "root"
+    }, {
+        "name": "cangat",
+        "bone": "root"
+    }, {
+        "name": "detren",
+        "bone": "root"
+    }, {
+        "name": "tay nam",
+        "bone": "root"
+    }],
+    "skins": {
+        "default": {
+            "Effect_MuiTen0": {
+                "Effect_MuiTen0": {
+                    "type": "mesh",
+                    "uvs": [0, 1, 1, 1, 1, 0, 0, 0],
+                    "triangles": [0, 3, 2, 0, 2, 1],
+                    "vertices": [1, 5, -161.75, -42.07, 1, 1, 5, -79.75, -42.07, 1, 1, 5, -79.75, 36.93, 1, 1, 5, -161.75, 36.93, 1],
+                    "hull": 4,
+                    "edges": [0, 2, 2, 4, 4, 6, 0, 6],
+                    "width": 82,
+                    "height": 79
+                }
+            },
+            "Effect_MuiTen1": {
+                "Effect_MuiTen1": {
+                    "x": 57.36,
+                    "y": 15.76,
+                    "width": 43,
+                    "height": 177
+                }
+            },
+            "Effect_MuiTen2": {
+                "Effect_MuiTen2": {
+                    "x": 57.43,
+                    "y": 15.49,
+                    "width": 27,
+                    "height": 163
+                }
+            },
+            "Effect_MuiTen3": {
+                "Effect_MuiTen0": {
+                    "type": "mesh",
+                    "uvs": [0, 1, 1, 1, 1, 0, 0, 0],
+                    "triangles": [0, 3, 2, 0, 2, 1],
+                    "vertices": [1, 3, -161.75, -42.07, 1, 1, 3, -79.75, -42.07, 1, 1, 3, -79.75, 36.93, 1, 1, 3, -161.75, 36.93, 1],
+                    "hull": 4,
+                    "edges": [0, 2, 2, 4, 4, 6, 0, 6],
+                    "width": 82,
+                    "height": 79
+                }
+            },
+            "cangat": {
+                "cangat": {
+                    "type": "mesh",
+                    "uvs": [0, 0.013, 1, 0, 1, 1, 0, 1],
+                    "triangles": [2, 3, 0, 2, 0, 1],
+                    "vertices": [1, 1, -4.9, 8.53, 1, 1, 1, 118.1, 8.32, 1, 1, 1, 118.07, -6.68, 1, 1, 1, -4.93, -6.47, 1],
+                    "hull": 4,
+                    "edges": [0, 2, 2, 4, 4, 6, 0, 6],
+                    "width": 123,
+                    "height": 15
+                }
+            },
+            "deduoi": {
+                "deduoi": {
+                    "x": -3.37,
+                    "y": 1.59,
+                    "width": 32,
+                    "height": 46
+                }
+            },
+            "detren": {
+                "detren": {
+                    "x": -20.5,
+                    "y": -0.16,
+                    "width": 50,
+                    "height": 82
+                }
+            },
+            "mask": {
+                "mask": {
+                    "type": "clipping",
+                    "end": "mask",
+                    "vertexCount": 47,
+                    "vertices": [44.08, 96.72, 57.4, 89.52, 70.36, 97.08, 70.54, 75.66, 57.21, 67.51, 57.22, 62.5, 70.35, 69.67, 70.54, 48.77, 57.58, 40.64, 57.8, 36.52, 70.6, 43.8, 70.73, 23.31, 57.9, 14.48, 57.96, 9.68, 70.68, 17.2, 70.8, -3.98, 57.26, -12.58, 57.3, -16.24, 70.72, -9.18, 70.78, -29.96, 57.48, -38.34, 57.44, -43.22, 70.74, -36.06, 70.98, -56.64, 58.84, -65.46, 56.11, -65.34, 44.06, -56.57, 43.96, -36.02, 57.34, -43.24, 57.44, -38.3, 44.02, -29.92, 44.08, -9.12, 57.28, -16.2, 57.26, -12.6, 44.11, -4.08, 44.05, 17.05, 57.9, 9.68, 57.82, 14.46, 44.08, 23.28, 44.08, 43.44, 57.77, 36.53, 57.56, 40.62, 44.11, 49.08, 44.17, 69.59, 57.19, 62.53, 57.16, 67.51, 44.35, 75.88],
+                    "color": "ce3a3aff"
+                }
+            },
+            "tay nam": {
+                "tay nam": {
+                    "type": "mesh",
+                    "uvs": [0.00387, 0.99625, 1, 1, 1, 0, 0, 0],
+                    "triangles": [0, 3, 2, 0, 2, 1],
+                    "vertices": [1, 2, -15.53, -15.22, 1, 1, 2, 15.47, -15.22, 1, 1, 2, 15.47, 16.78, 1, 1, 2, -15.53, 16.78, 1],
+                    "hull": 4,
+                    "edges": [0, 2, 2, 4, 4, 6, 0, 6],
+                    "width": 31,
+                    "height": 32
+                }
+            }
+        }
+    },
+    "animations": {
+        "GatCan": {
+            "slots": {
+                "Effect_MuiTen0": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "Effect_MuiTen1": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "Effect_MuiTen2": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "Effect_MuiTen3": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "cangat": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": "cangat"
+                    }]
+                },
+                "deduoi": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": "deduoi"
+                    }]
+                },
+                "detren": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": "detren"
+                    }]
+                },
+                "mask": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "tay nam": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": "tay nam"
+                    }]
+                }
+            },
+            "bones": {
+                "bone": {
+                    "rotate": [{
+                        "time": 0,
+                        "angle": 0
+                    }, {
+                        "time": 0.0333,
+                        "angle": -7.23
+                    }, {
+                        "time": 0.0667,
+                        "angle": -25.64
+                    }, {
+                        "time": 0.1,
+                        "angle": -41.99
+                    }, {
+                        "time": 0.1667,
+                        "angle": -91.61
+                    }, {
+                        "time": 0.2333,
+                        "angle": -113.24
+                    }, {
+                        "time": 0.5667,
+                        "angle": -91.61
+                    }, {
+                        "time": 0.7,
+                        "angle": -69.98
+                    }, {
+                        "time": 0.8333,
+                        "angle": -34.99
+                    }, {
+                        "time": 0.9333,
+                        "angle": -14
+                    }, {
+                        "time": 1.0667,
+                        "angle": 0
+                    }],
+                    "translate": [{
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 0.0333,
+                        "x": 0.84,
+                        "y": -1.61
+                    }, {
+                        "time": 0.0667,
+                        "x": 2.09,
+                        "y": -4.03
+                    }, {
+                        "time": 0.1,
+                        "x": 2.2,
+                        "y": -5.52
+                    }, {
+                        "time": 0.1667,
+                        "x": 2.56,
+                        "y": -22.32
+                    }, {
+                        "time": 0.2333,
+                        "x": 1.55,
+                        "y": -30.69
+                    }, {
+                        "time": 0.5667,
+                        "x": 2.56,
+                        "y": -22.32
+                    }, {
+                        "time": 0.7,
+                        "x": 2.63,
+                        "y": -11.47
+                    }, {
+                        "time": 0.8333,
+                        "x": 2.09,
+                        "y": -4.03
+                    }, {
+                        "time": 0.9333,
+                        "x": 0.84,
+                        "y": -1.61
+                    }, {
+                        "time": 1.0667,
+                        "x": 0,
+                        "y": 0
+                    }],
+                    "scale": [{
+                        "time": 0,
+                        "x": 1,
+                        "y": 1
+                    }, {
+                        "time": 0.0333,
+                        "x": 0.774,
+                        "y": 1
+                    }, {
+                        "time": 0.0667,
+                        "x": 0.598,
+                        "y": 1
+                    }, {
+                        "time": 0.1,
+                        "x": 0.508,
+                        "y": 1
+                    }, {
+                        "time": 0.1667,
+                        "x": 0.442,
+                        "y": 1
+                    }, {
+                        "time": 0.2333,
+                        "x": 0.476,
+                        "y": 1
+                    }, {
+                        "time": 0.7,
+                        "x": 0.457,
+                        "y": 1
+                    }, {
+                        "time": 0.7667,
+                        "x": 0.476,
+                        "y": 1
+                    }, {
+                        "time": 0.8333,
+                        "x": 0.549,
+                        "y": 1
+                    }, {
+                        "time": 0.9333,
+                        "x": 0.747,
+                        "y": 1
+                    }, {
+                        "time": 1,
+                        "x": 0.872,
+                        "y": 1
+                    }, {
+                        "time": 1.0667,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone2": {
+                    "translate": [{
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 0.0333,
+                        "x": 16.05,
+                        "y": -44.85
+                    }, {
+                        "time": 0.0667,
+                        "x": 20.62,
+                        "y": -59.98
+                    }, {
+                        "time": 0.1,
+                        "x": 25.14,
+                        "y": -95.58
+                    }, {
+                        "time": 0.1333,
+                        "x": 27.4,
+                        "y": -105.4
+                    }, {
+                        "time": 0.1667,
+                        "x": 26.43,
+                        "y": -145.95
+                    }, {
+                        "time": 0.2333,
+                        "x": 21.67,
+                        "y": -174.53
+                    }, {
+                        "time": 0.5667,
+                        "x": 26.43,
+                        "y": -148.78
+                    }, {
+                        "time": 0.6333,
+                        "x": 28.45,
+                        "y": -132.02
+                    }, {
+                        "time": 0.7,
+                        "x": 29.56,
+                        "y": -115.34
+                    }, {
+                        "time": 0.8333,
+                        "x": 26.57,
+                        "y": -75.41
+                    }, {
+                        "time": 0.9,
+                        "x": 22.72,
+                        "y": -53.28
+                    }, {
+                        "time": 0.9333,
+                        "x": 16.46,
+                        "y": -30.16
+                    }, {
+                        "time": 0.9667,
+                        "x": 14.91,
+                        "y": -21.99
+                    }, {
+                        "time": 1.0667,
+                        "x": 0,
+                        "y": 0
+                    }],
+                    "scale": [{
+                        "time": 0,
+                        "x": 1,
+                        "y": 1
+                    }, {
+                        "time": 0.0667,
+                        "x": 1.242,
+                        "y": 1.242
+                    }, {
+                        "time": 0.1333,
+                        "x": 1.342,
+                        "y": 1.342
+                    }, {
+                        "time": 0.1667,
+                        "x": 1.368,
+                        "y": 1.368,
+                        "curve": "stepped"
+                    }, {
+                        "time": 0.5667,
+                        "x": 1.368,
+                        "y": 1.368
+                    }, {
+                        "time": 0.8333,
+                        "x": 1.323,
+                        "y": 1.323
+                    }, {
+                        "time": 0.9,
+                        "x": 1.242,
+                        "y": 1.242
+                    }, {
+                        "time": 1.0667,
+                        "x": 1,
+                        "y": 1,
+                        "curve": "stepped"
+                    }, {
+                        "time": 1.3333,
+                        "x": 1,
+                        "y": 1
+                    }]
+                }
+            }
+        },
+        "MuiTen": {
+            "bones": {
+                "bone3": {
+                    "translate": [{
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 1.5,
+                        "x": 0,
+                        "y": -207.27
+                    }],
+                    "scale": [{
+                        "time": 0,
+                        "x": 1,
+                        "y": 1
+                    }, {
+                        "time": 0.7667,
+                        "x": 1,
+                        "y": 2.166
+                    }, {
+                        "time": 1.5,
+                        "x": 1,
+                        "y": 1
+                    }]
+                },
+                "bone4": {
+                    "translate": [{
+                        "time": 1.2,
+                        "x": 0,
+                        "y": 0
+                    }, {
+                        "time": 2.6667,
+                        "x": 0,
+                        "y": -207.27
+                    }],
+                    "scale": [{
+                        "time": 1.2,
+                        "x": 1,
+                        "y": 1
+                    }, {
+                        "time": 1.9667,
+                        "x": 1,
+                        "y": 2.166
+                    }, {
+                        "time": 2.6667,
+                        "x": 1,
+                        "y": 1
+                    }]
+                }
+            }
+        },
+        "waiting": {
+            "slots": {
+                "Effect_MuiTen0": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "Effect_MuiTen1": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "Effect_MuiTen2": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "Effect_MuiTen3": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "cangat": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": "cangat"
+                    }]
+                },
+                "deduoi": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": "deduoi"
+                    }]
+                },
+                "detren": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": "detren"
+                    }]
+                },
+                "mask": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": null
+                    }]
+                },
+                "tay nam": {
+                    "attachment": [{
+                        "time": 0,
+                        "name": "tay nam"
+                    }]
+                }
+            },
+            "bones": {
+                "bone2": {
+                    "scale": [{
+                        "time": 2.8333,
+                        "x": 1,
+                        "y": 1
+                    }]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+
+bigcity_main.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Rounded Rectangle 4 copy 2
+  rotate: false
+  xy: 1363, 22
+  size: 135, 157
+  orig: 135, 158
+  offset: 0, 1
+  index: -1
+x2 copy
+  rotate: false
+  xy: 1131, 134
+  size: 127, 119
+  orig: 131, 129
+  offset: 3, 4
+  index: -1
+x2 copy_1
+  rotate: true
+  xy: 1242, 5
+  size: 127, 119
+  orig: 131, 129
+  offset: 3, 4
+  index: -1

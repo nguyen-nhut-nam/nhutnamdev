@@ -1,0 +1,90 @@
+
+Xóc Đĩa.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+530736e8fe411aa94584f40940dbbc644ab3180fdf76-w8kQTY
+  rotate: false
+  xy: 1131, 603
+  size: 342, 341
+  orig: 342, 341
+  offset: 0, 0
+  index: -1
+BG
+  rotate: false
+  xy: 650, 482
+  size: 480, 462
+  orig: 480, 462
+  offset: 0, 0
+  index: -1
+bat
+  rotate: false
+  xy: 1131, 307
+  size: 295, 295
+  orig: 295, 295
+  offset: 0, 0
+  index: -1
+dia
+  rotate: false
+  xy: 1474, 611
+  size: 339, 333
+  orig: 339, 333
+  offset: 0, 0
+  index: -1
+do 1
+  rotate: false
+  xy: 1814, 859
+  size: 86, 85
+  orig: 86, 85
+  offset: 0, 0
+  index: -1
+do 2
+  rotate: false
+  xy: 1814, 859
+  size: 86, 85
+  orig: 86, 85
+  offset: 0, 0
+  index: -1
+duoi
+  rotate: false
+  xy: 1, 1
+  size: 479, 93
+  orig: 479, 93
+  offset: 0, 0
+  index: -1
+trang1
+  rotate: false
+  xy: 553, 234
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+trang 2
+  rotate: false
+  xy: 553, 234
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+vien
+  rotate: false
+  xy: 1, 319
+  size: 648, 625
+  orig: 648, 625
+  offset: 0, 0
+  index: -1
+xoc dia
+  rotate: false
+  xy: 650, 358
+  size: 459, 123
+  orig: 459, 123
+  offset: 0, 0
+  index: -1
+xocdia glow
+  rotate: false
+  xy: 1, 95
+  size: 551, 223
+  orig: 551, 223
+  offset: 0, 0
+  index: -1

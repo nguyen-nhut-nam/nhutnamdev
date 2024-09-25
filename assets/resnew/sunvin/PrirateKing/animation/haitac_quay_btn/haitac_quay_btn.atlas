@@ -1,0 +1,62 @@
+
+skeleton.png
+size: 924,420
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+35_bac
+  rotate: false
+  xy: 298, 208
+  size: 206, 208
+  orig: 206, 208
+  offset: 0, 0
+  index: -1
+Dừng
+  rotate: false
+  xy: 508, 165
+  size: 111, 41
+  orig: 111, 41
+  offset: 0, 0
+  index: -1
+GIỮ ĐỂ TỰ QUAY
+  rotate: false
+  xy: 2, 49
+  size: 155, 73
+  orig: 155, 73
+  offset: 0, 0
+  index: -1
+Layer 35
+  rotate: false
+  xy: 506, 208
+  size: 206, 208
+  orig: 206, 208
+  offset: 0, 0
+  index: -1
+Layer 36_bac
+  rotate: true
+  xy: 714, 2
+  size: 206, 208
+  orig: 206, 208
+  offset: 0, 0
+  index: -1
+Layer 49
+  rotate: true
+  xy: 298, 4
+  size: 202, 208
+  orig: 202, 208
+  offset: 0, 0
+  index: -1
+Layer 50
+  rotate: false
+  xy: 2, 124
+  size: 294, 292
+  orig: 294, 292
+  offset: 0, 0
+  index: -1
+Layer-35_0003_Layer-45
+  rotate: true
+  xy: 714, 210
+  size: 206, 208
+  orig: 206, 208
+  offset: 0, 0
+  index: -1

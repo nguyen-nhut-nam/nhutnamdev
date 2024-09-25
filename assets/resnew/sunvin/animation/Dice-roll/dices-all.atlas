@@ -1,0 +1,320 @@
+
+dices-all.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+10
+  rotate: false
+  xy: 3, 630
+  size: 350, 314
+  orig: 350, 314
+  offset: 0, 0
+  index: -1
+11
+  rotate: false
+  xy: 3, 947
+  size: 386, 321
+  orig: 386, 321
+  offset: 0, 0
+  index: -1
+12
+  rotate: false
+  xy: 854, 1364
+  size: 404, 335
+  orig: 404, 335
+  offset: 0, 0
+  index: -1
+13
+  rotate: false
+  xy: 854, 1702
+  size: 433, 340
+  orig: 433, 340
+  offset: 0, 0
+  index: -1
+14
+  rotate: false
+  xy: 1261, 1352
+  size: 390, 334
+  orig: 390, 334
+  offset: 0, 0
+  index: -1
+15
+  rotate: false
+  xy: 395, 1312
+  size: 367, 345
+  orig: 367, 345
+  offset: 0, 0
+  index: -1
+16
+  rotate: false
+  xy: 765, 1025
+  size: 376, 336
+  orig: 376, 336
+  offset: 0, 0
+  index: -1
+17
+  rotate: false
+  xy: 1290, 1689
+  size: 386, 353
+  orig: 386, 353
+  offset: 0, 0
+  index: -1
+18
+  rotate: false
+  xy: 1654, 1312
+  size: 372, 349
+  orig: 372, 349
+  offset: 0, 0
+  index: -1
+19
+  rotate: true
+  xy: 3, 1271
+  size: 387, 389
+  orig: 387, 389
+  offset: 0, 0
+  index: -1
+20
+  rotate: true
+  xy: 395, 932
+  size: 377, 331
+  orig: 377, 331
+  offset: 0, 0
+  index: -1
+21
+  rotate: false
+  xy: 3, 1661
+  size: 430, 381
+  orig: 430, 381
+  offset: 0, 0
+  index: -1
+22
+  rotate: false
+  xy: 436, 1660
+  size: 415, 382
+  orig: 415, 382
+  offset: 0, 0
+  index: -1
+23
+  rotate: false
+  xy: 1679, 1664
+  size: 348, 378
+  orig: 348, 378
+  offset: 0, 0
+  index: -1
+24
+  rotate: true
+  xy: 1497, 986
+  size: 323, 330
+  orig: 323, 330
+  offset: 0, 0
+  index: -1
+25
+  rotate: true
+  xy: 1144, 1040
+  size: 309, 350
+  orig: 309, 350
+  offset: 0, 0
+  index: -1
+26
+  rotate: false
+  xy: 649, 530
+  size: 298, 236
+  orig: 298, 236
+  offset: 0, 0
+  index: -1
+27
+  rotate: true
+  xy: 740, 42
+  size: 227, 218
+  orig: 227, 218
+  offset: 0, 0
+  index: -1
+28
+  rotate: true
+  xy: 1368, 15
+  size: 207, 192
+  orig: 207, 192
+  offset: 0, 0
+  index: -1
+29
+  rotate: true
+  xy: 520, 53
+  size: 234, 217
+  orig: 234, 217
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 272, 191
+  size: 245, 229
+  orig: 245, 229
+  offset: 0, 0
+  index: -1
+30
+  rotate: false
+  xy: 1385, 225
+  size: 264, 230
+  orig: 264, 230
+  offset: 0, 0
+  index: -1
+31
+  rotate: false
+  xy: 356, 681
+  size: 290, 248
+  orig: 290, 248
+  offset: 0, 0
+  index: -1
+32
+  rotate: true
+  xy: 1473, 698
+  size: 285, 287
+  orig: 285, 287
+  offset: 0, 0
+  index: -1
+33
+  rotate: true
+  xy: 1143, 505
+  size: 248, 256
+  orig: 248, 256
+  offset: 0, 0
+  index: -1
+34
+  rotate: true
+  xy: 1652, 66
+  size: 247, 239
+  orig: 247, 239
+  offset: 0, 0
+  index: -1
+35
+  rotate: true
+  xy: 950, 544
+  size: 222, 190
+  orig: 222, 190
+  offset: 0, 0
+  index: -1
+36
+  rotate: true
+  xy: 961, 31
+  size: 211, 199
+  orig: 211, 199
+  offset: 0, 0
+  index: -1
+37
+  rotate: false
+  xy: 3, 158
+  size: 233, 218
+  orig: 233, 218
+  offset: 0, 0
+  index: -1
+38
+  rotate: false
+  xy: 1402, 458
+  size: 267, 237
+  orig: 267, 237
+  offset: 0, 0
+  index: -1
+39
+  rotate: false
+  xy: 896, 272
+  size: 244, 255
+  orig: 244, 255
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 3, 379
+  size: 266, 248
+  orig: 266, 248
+  offset: 0, 0
+  index: -1
+40
+  rotate: true
+  xy: 1143, 245
+  size: 257, 239
+  orig: 257, 239
+  offset: 0, 0
+  index: -1
+41
+  rotate: false
+  xy: 1672, 316
+  size: 267, 237
+  orig: 267, 237
+  offset: 0, 0
+  index: -1
+42
+  rotate: true
+  xy: 1830, 1076
+  size: 233, 215
+  orig: 233, 215
+  offset: 0, 0
+  index: -1
+43
+  rotate: false
+  xy: 1830, 870
+  size: 211, 203
+  orig: 211, 203
+  offset: 0, 0
+  index: -1
+44
+  rotate: false
+  xy: 1163, 42
+  size: 202, 200
+  orig: 202, 200
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 356, 423
+  size: 267, 255
+  orig: 267, 255
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 729, 769
+  size: 299, 253
+  orig: 299, 253
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 626, 290
+  size: 267, 237
+  orig: 267, 237
+  offset: 0, 0
+  index: -1
+8
+  rotate: true
+  xy: 1763, 556
+  size: 311, 259
+  orig: 311, 259
+  offset: 0, 0
+  index: -1
+9
+  rotate: false
+  xy: 1144, 756
+  size: 326, 281
+  orig: 326, 281
+  offset: 0, 0
+  index: -1
+
+dices-all2.png
+size: 720,720
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 3, 204
+  size: 196, 197
+  orig: 196, 197
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 3, 3
+  size: 195, 198
+  orig: 195, 198
+  offset: 0, 0
+  index: -1

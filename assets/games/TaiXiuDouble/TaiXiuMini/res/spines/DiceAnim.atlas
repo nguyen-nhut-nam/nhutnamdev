@@ -1,0 +1,314 @@
+
+DiceAnim.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+skeleton-animation05
+  rotate: false
+  xy: 720, 172
+  size: 158, 160
+  orig: 200, 203
+  offset: 19, 23
+  index: -1
+skeleton-animation00
+  rotate: false
+  xy: 1044, 156
+  size: 147, 149
+  orig: 200, 203
+  offset: 25, 29
+  index: -1
+skeleton-animation06
+  rotate: false
+  xy: 1881, 671
+  size: 160, 162
+  orig: 200, 203
+  offset: 18, 22
+  index: -1
+skeleton-animation16
+  rotate: false
+  xy: 1329, 789
+  size: 183, 185
+  orig: 200, 203
+  offset: 6, 11
+  index: -1
+skeleton-animation18
+  rotate: false
+  xy: 577, 789
+  size: 187, 189
+  orig: 200, 203
+  offset: 4, 9
+  index: -1
+skeleton-animation01
+  rotate: false
+  xy: 893, 491
+  size: 149, 151
+  orig: 200, 203
+  offset: 24, 28
+  index: -1
+skeleton-animation39
+  rotate: false
+  xy: 735, 493
+  size: 156, 157
+  orig: 200, 203
+  offset: 20, 25
+  index: -1
+skeleton-animation37
+  rotate: false
+  xy: 1881, 835
+  size: 161, 160
+  orig: 200, 203
+  offset: 18, 23
+  index: -1
+skeleton-animation13
+  rotate: false
+  xy: 556, 579
+  size: 177, 178
+  orig: 200, 203
+  offset: 9, 15
+  index: -1
+skeleton-animation30
+  rotate: false
+  xy: 377, 579
+  size: 177, 178
+  orig: 200, 203
+  offset: 9, 14
+  index: -1
+skeleton-animation41
+  rotate: false
+  xy: 881, 1
+  size: 151, 153
+  orig: 200, 203
+  offset: 23, 27
+  index: -1
+skeleton-animation40
+  rotate: false
+  xy: 878, 334
+  size: 154, 155
+  orig: 200, 203
+  offset: 21, 26
+  index: -1
+skeleton-animation22
+  rotate: false
+  xy: 1, 1
+  size: 195, 197
+  orig: 200, 203
+  offset: 0, 6
+  index: -1
+skeleton-animation25
+  rotate: false
+  xy: 386, 789
+  size: 189, 190
+  orig: 200, 203
+  offset: 3, 9
+  index: -1
+skeleton-animation15
+  rotate: false
+  xy: 1698, 789
+  size: 181, 183
+  orig: 200, 203
+  offset: 7, 12
+  index: -1
+skeleton-animation23
+  rotate: false
+  xy: 1, 397
+  size: 193, 194
+  orig: 200, 203
+  offset: 1, 7
+  index: -1
+skeleton-animation31
+  rotate: false
+  xy: 198, 1
+  size: 177, 176
+  orig: 200, 203
+  offset: 10, 15
+  index: -1
+skeleton-animation28
+  rotate: false
+  xy: 1514, 789
+  size: 182, 182
+  orig: 200, 203
+  offset: 7, 12
+  index: -1
+skeleton-animation11
+  rotate: false
+  xy: 374, 179
+  size: 172, 173
+  orig: 200, 203
+  offset: 12, 17
+  index: -1
+skeleton-animation19
+  rotate: false
+  xy: 194, 789
+  size: 190, 191
+  orig: 200, 203
+  offset: 2, 8
+  index: -1
+skeleton-animation27
+  rotate: false
+  xy: 1142, 789
+  size: 185, 184
+  orig: 200, 203
+  offset: 5, 11
+  index: -1
+skeleton-animation35
+  rotate: false
+  xy: 1881, 170
+  size: 166, 166
+  orig: 200, 203
+  offset: 15, 21
+  index: -1
+skeleton-animation09
+  rotate: false
+  xy: 551, 1
+  size: 168, 169
+  orig: 200, 203
+  offset: 14, 19
+  index: -1
+skeleton-animation38
+  rotate: false
+  xy: 721, 1
+  size: 158, 159
+  orig: 200, 203
+  offset: 19, 24
+  index: -1
+skeleton-animation21
+  rotate: false
+  xy: 1, 200
+  size: 195, 195
+  orig: 200, 203
+  offset: 0, 7
+  index: -1
+skeleton-animation29
+  rotate: false
+  xy: 196, 397
+  size: 180, 180
+  orig: 200, 203
+  offset: 8, 13
+  index: -1
+skeleton-animation34
+  rotate: false
+  xy: 550, 347
+  size: 168, 168
+  orig: 200, 203
+  offset: 14, 20
+  index: -1
+skeleton-animation26
+  rotate: false
+  xy: 766, 789
+  size: 187, 188
+  orig: 200, 203
+  offset: 4, 10
+  index: -1
+skeleton-animation04
+  rotate: false
+  xy: 720, 334
+  size: 156, 157
+  orig: 200, 203
+  offset: 20, 25
+  index: -1
+skeleton-animation07
+  rotate: false
+  xy: 1881, 504
+  size: 163, 165
+  orig: 200, 203
+  offset: 17, 21
+  index: -1
+skeleton-animation42
+  rotate: false
+  xy: 1034, 319
+  size: 149, 149
+  orig: 200, 203
+  offset: 24, 28
+  index: -1
+skeleton-animation02
+  rotate: false
+  xy: 1034, 1
+  size: 152, 153
+  orig: 200, 203
+  offset: 22, 27
+  index: -1
+skeleton-animation17
+  rotate: false
+  xy: 955, 789
+  size: 185, 187
+  orig: 200, 203
+  offset: 5, 10
+  index: -1
+skeleton-animation24
+  rotate: false
+  xy: 1, 789
+  size: 191, 192
+  orig: 200, 203
+  offset: 2, 8
+  index: -1
+skeleton-animation03
+  rotate: false
+  xy: 880, 162
+  size: 154, 155
+  orig: 200, 203
+  offset: 21, 26
+  index: -1
+skeleton-animation10
+  rotate: false
+  xy: 378, 354
+  size: 170, 171
+  orig: 200, 203
+  offset: 13, 18
+  index: -1
+skeleton-animation33
+  rotate: false
+  xy: 548, 175
+  size: 170, 170
+  orig: 200, 203
+  offset: 13, 18
+  index: -1
+skeleton-animation14
+  rotate: false
+  xy: 196, 579
+  size: 179, 181
+  orig: 200, 203
+  offset: 8, 13
+  index: -1
+skeleton-animation08
+  rotate: false
+  xy: 1881, 1
+  size: 166, 167
+  orig: 200, 203
+  offset: 15, 20
+  index: -1
+skeleton-animation20
+  rotate: false
+  xy: 1, 593
+  size: 193, 194
+  orig: 200, 203
+  offset: 1, 7
+  index: -1
+skeleton-animation36
+  rotate: false
+  xy: 1881, 338
+  size: 164, 164
+  orig: 200, 203
+  offset: 16, 22
+  index: -1
+skeleton-animation32
+  rotate: false
+  xy: 377, 1
+  size: 172, 172
+  orig: 200, 203
+  offset: 12, 17
+  index: -1
+skeleton-animation43
+  rotate: false
+  xy: 1188, 1
+  size: 147, 148
+  orig: 200, 203
+  offset: 25, 29
+  index: -1
+skeleton-animation12
+  rotate: false
+  xy: 198, 179
+  size: 174, 175
+  orig: 200, 203
+  offset: 11, 16
+  index: -1

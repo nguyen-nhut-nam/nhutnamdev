@@ -1,0 +1,69 @@
+
+xocdia.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bat00
+  rotate: false
+  xy: 375, 96
+  size: 200, 146
+  orig: 200, 146
+  offset: 0, 0
+  index: -1
+bat22
+  rotate: false
+  xy: 756, 108
+  size: 152, 134
+  orig: 152, 134
+  offset: 0, 0
+  index: -1
+bg11
+  rotate: true
+  xy: 2, 2
+  size: 240, 371
+  orig: 240, 371
+  offset: 0, 0
+  index: -1
+dia
+  rotate: false
+  xy: 375, 16
+  size: 137, 78
+  orig: 137, 78
+  offset: 0, 0
+  index: -1
+t11
+  rotate: true
+  xy: 577, 98
+  size: 22, 36
+  orig: 22, 36
+  offset: 0, 0
+  index: -1
+t22
+  rotate: false
+  xy: 910, 126
+  size: 51, 40
+  orig: 51, 40
+  offset: 0, 0
+  index: -1
+t33
+  rotate: false
+  xy: 514, 49
+  size: 53, 45
+  orig: 53, 45
+  offset: 0, 0
+  index: -1
+x11
+  rotate: false
+  xy: 910, 168
+  size: 84, 74
+  orig: 84, 74
+  offset: 0, 0
+  index: -1
+xoc
+  rotate: false
+  xy: 577, 122
+  size: 177, 120
+  orig: 177, 120
+  offset: 0, 0
+  index: -1

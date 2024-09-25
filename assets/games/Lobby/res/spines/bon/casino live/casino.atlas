@@ -1,0 +1,55 @@
+
+casino.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 521, 17
+  size: 232, 127
+  orig: 232, 127
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 722, 8
+  size: 103, 90
+  orig: 103, 90
+  offset: 0, 0
+  index: -1
+bg
+  rotate: true
+  xy: 146, 7
+  size: 242, 373
+  orig: 242, 373
+  offset: 0, 0
+  index: -1
+cassino
+  rotate: true
+  xy: 650, 27
+  size: 222, 70
+  orig: 222, 70
+  offset: 0, 0
+  index: -1
+cha
+  rotate: false
+  xy: 2, 2
+  size: 142, 247
+  orig: 142, 247
+  offset: 0, 0
+  index: -1
+cha1
+  rotate: true
+  xy: 722, 113
+  size: 136, 286
+  orig: 136, 286
+  offset: 0, 0
+  index: -1
+live
+  rotate: false
+  xy: 814, 65
+  size: 139, 46
+  orig: 139, 46
+  offset: 0, 0
+  index: -1
