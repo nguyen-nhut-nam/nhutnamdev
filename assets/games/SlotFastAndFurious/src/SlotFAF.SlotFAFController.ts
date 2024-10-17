@@ -215,12 +215,16 @@ export default class SlotFAFSlotFAFController extends cc.Component {
     private rewards = [];
     private stopImmediately = false;
     private freeSpins = 0;
-    private startD = Date.now();
-    private endD = Date.now();
     private defaultRollingTimer = 5;
     private rollingTimeOut = 5;
     private isRollingTimeOut = false;
     private _lastPrefix = "1_";
+
+    private _moneyJackPotTrial = 50000000;
+    private _moneyUserTrial = 50000000;
+    private _moneyBetPerRoll = 250000;
+    private _lineTrial = 25;
+    private _jackPotFee = 0.01;
 
     protected onLoad() {
         cc.audioEngine.stopAll();
@@ -678,6 +682,8 @@ export default class SlotFAFSlotFAFController extends cc.Component {
 
         if(!this.isPlayingTrial) {
             Configs.Login.Coin = res.currentMoney;
+        } else {
+            this.playTrialResult(res);
         }
         let matrix = res.matrix.split(",");
         this.showResult(res.prize,  matrix.map(Number), this.freeSpins);
@@ -853,11 +859,9 @@ export default class SlotFAFSlotFAFController extends cc.Component {
         this.isPlayingTrial = true;
         this.stopAllEffects();
         if (this.isPlayingTrial) {
-            this.lblLine.string = "25";
-            this.lblBet.string = "100";
-            Tween.numberTo(this.lblTotalBet, 2500, 0.3);
             this.nodeTrial.active = true;
-            this.betIdx = 2;
+            this.setupTrial();
+            this.betIdx = 5;
             this._prefix = `3_`;
             this.rollerCtrl.setItemsRandom(true, this._prefix);
             this._lastPrefix = this._prefix;
@@ -1065,12 +1069,15 @@ export default class SlotFAFSlotFAFController extends cc.Component {
             }
             if (!this.isPlayingTrial) {
                 SlotNetworkClient.getInstance().send(new cmd.SendPlay(this.arrLineSelect.toString()));
-                this.startD = Date.now();
             } else {
                 var rIdx = Utils.randomRangeInt(0, TrialResults.results.length);
+                if(!this.hasFreeSpin) {
+                    this._moneyUserTrial -= 250000;
+                    Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
+                }
                 this.scheduleOnce(() => {
                     this.onSpinResult(TrialResults.results[rIdx]);
-                }, 0.2);
+                }, 0.7);
             }
         }
         this.setEnabledAllButtons(false);
@@ -1086,7 +1093,6 @@ export default class SlotFAFSlotFAFController extends cc.Component {
     }
 
     showResult (moneyExchange, symbolsMatrix, freeSpinCount) {
-        this.endD = Date.now();
         this.spined();
         this.moneyExchange = moneyExchange;
         this.freeSpins = freeSpinCount;
@@ -1332,5 +1338,20 @@ export default class SlotFAFSlotFAFController extends cc.Component {
                 cc.scaleTo(0.1, 1)
             )
         );
+    }
+
+    setupTrial() {
+        this.lblLine.string = this._lineTrial.toString();
+        this.lblBet.string = "10,000";
+        Tween.numberTo(this.lblTotalBet, 250000, 0.3);
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
+    }
+
+    playTrialResult(res: cmd.ReceivePlay | any) {
+        this._moneyUserTrial += res.prize;
+        this._moneyJackPotTrial += this._moneyBetPerRoll * this._jackPotFee;
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
     }
 }

@@ -894,7 +894,6 @@ export default class BauCuaController extends cc.Component {
                 }
                 case cmd.Code.LICH_SU_NO_HU :{
                     let res = new cmd.ReceivedLichSuNoHu(data);
-                    console.log(res);
                     this.PopUpLichSuNoHu.setData(res.listTras,res.rate);
                     this.PopUpLichSuNoHu.show();
                     break;

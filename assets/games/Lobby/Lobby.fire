@@ -2773,7 +2773,7 @@
     "component": "",
     "_componentId": "05872A3wjpOT464qKBM+MO6",
     "handler": "onSelectGame",
-    "customEventData": "Maintenance"
+    "customEventData": "ShootFish"
   },
   {
     "__type__": "cc.Node",
