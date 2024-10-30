@@ -242,7 +242,6 @@ export default class Room extends cc.Component {
                     break;
                 case SamCmd.Code.PING_PONG:
                     let res = new SamCmd.ReceivePong(data);
-                    console.log(res);
                     this.timeout = 0;
                     break;
             }

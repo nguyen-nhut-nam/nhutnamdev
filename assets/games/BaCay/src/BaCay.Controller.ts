@@ -713,7 +713,6 @@ export default class BaCayController extends cc.Component {
                     {
                         App.instance.showLoading(false);
                         let res = new cmd.ReceivedJoinRoomFail(data);
-                        console.log(res);
                         cc.log("BaCay JOIN_ROOM_FAIL res : ", JSON.stringify(res));
                         let msg = "Lỗi " + res.getError() + ", không xác định.";
                         switch (res.getError()) {

@@ -33,7 +33,6 @@ export default class LobbyPopupTransferToUser extends Dialog {
     start() {
         MiniGameNetworkClient.getInstance().addListener((data) => {
             let inpacket = new InPacket(data);
-            console.log(inpacket.getCmdId());
             switch (inpacket.getCmdId()) {
                 case cmd.Code.CHECK_NICKNAME_TRANSFER: {
                     App.instance.showLoading2(false);

@@ -49,7 +49,6 @@ export default class MiniGameNetworkClient extends NetworkClient {
 
     protected onOpen(ev: Event) {
         super.onOpen(ev);
-        console.log(new cmd.SendLogin(Configs.Login.Nickname, Configs.Login.AccessToken));
         this.send(new cmd.SendLogin(Configs.Login.Nickname, Configs.Login.AccessToken));
         console.log("minigame connected");
         this.intervalPing = setInterval(() => this.ping(), 1);
@@ -71,7 +70,6 @@ export default class MiniGameNetworkClient extends NetworkClient {
         let inpacket = new InPacket(data);
         switch (inpacket.getCmdId()) {
             case cmd.Code.LOGIN:
-                console.log(inpacket);
                 this.isLogin = true;
                 if (this.onLogined != null) {
                     console.log("Logined");
