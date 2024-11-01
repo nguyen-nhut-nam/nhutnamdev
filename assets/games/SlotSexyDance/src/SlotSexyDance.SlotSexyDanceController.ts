@@ -212,6 +212,12 @@ export default class SlotSexyDanceSlotSexyDanceController extends cc.Component {
     private rollingTimeOut = 5;
     private isRollingTimeOut = false;
 
+    private _moneyJackPotTrial = 50000000;
+    private _moneyUserTrial = 50000000;
+    private _moneyBetPerRoll = 250000;
+    private _lineTrial = 25;
+    private _jackPotFee = 0.01;
+
     protected onLoad() {
         cc.audioEngine.stopAll();
         this.rollerCtrl = this.rollerNode.getComponent(RollerControllerB52);
@@ -276,14 +282,13 @@ export default class SlotSexyDanceSlotSexyDanceController extends cc.Component {
                 case cmd.Code.PLAY:
                     {
                         let res = new cmd.ReceivePlay(data);
-                        console.log(res);
                         this.onSpinResult(res);
                     }
                     break;
             }
         }, this);
 
-        console.log("SlotFAFController started");
+        console.log("SlotSexyDance started");
 
         SlotNetworkClient.getInstance().send(new cmd.SendSubcribe(this.betIdx));
         this.toast.active = false;
@@ -661,6 +666,8 @@ export default class SlotSexyDanceSlotSexyDanceController extends cc.Component {
 
         if(!this.isPlayingTrial) {
             Configs.Login.Coin = res.currentMoney;
+        } else {
+            this.playTrialResult(res);
         }
         let matrix = res.matrix.split(",");
         this.showResult(res.prize,  matrix.map(Number), this.freeSpins);
@@ -834,11 +841,9 @@ export default class SlotSexyDanceSlotSexyDanceController extends cc.Component {
         this.isPlayingTrial = true;
         this.stopAllEffects();
         if (this.isPlayingTrial) {
-            this.lblLine.string = "25";
-            this.lblBet.string = "100";
-            Tween.numberTo(this.lblTotalBet, 2500, 0.3);
+            this.setupTrial();
             this.nodeTrial.active = true;
-            this.betIdx = 2;
+            this.betIdx = 5;
             this._prefix = `1_`;
             this.rollerCtrl.setItemsRandom(true, this._prefix);
         }
@@ -1296,5 +1301,20 @@ export default class SlotSexyDanceSlotSexyDanceController extends cc.Component {
                 cc.scaleTo(0.1, 1)
             )
         );
+    }
+
+    setupTrial() {
+        this.lblLine.string = this._lineTrial.toString();
+        this.lblBet.string = "10,000";
+        Tween.numberTo(this.lblTotalBet, 250000, 0.3);
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
+    }
+
+    playTrialResult(res: cmd.ReceivePlay | any) {
+        this._moneyUserTrial += res.prize;
+        this._moneyJackPotTrial += this._moneyBetPerRoll * this._jackPotFee;
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
     }
 }

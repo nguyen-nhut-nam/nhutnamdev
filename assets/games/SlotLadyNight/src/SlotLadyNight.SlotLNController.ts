@@ -182,6 +182,12 @@ export class SlotLadyNightController extends cc.Component {
     private rollingTimeOut = 5;
     private isRollingTimeOut = false;
 
+    private _moneyJackPotTrial = 50000000;
+    private _moneyUserTrial = 50000000;
+    private _moneyBetPerRoll = 200000;
+    private _lineTrial = 20;
+    private _jackPotFee = 0.01;
+
     public static getInstance(): SlotLadyNightController {
         return this._instance;
     }
@@ -481,10 +487,7 @@ export class SlotLadyNightController extends cc.Component {
     actTrial() {
         this.isPlayingTrial = true;
         if (this.isPlayingTrial) {
-            this.lblLine.string = "20";
-            this.lblBet.string = "100";
-            // Tween.numberTo(this.lblTotalBet, 2000, 0.3);
-            this.lblTotalBet.string = Utils.formatNumberMin(2000);
+            this.setupTrial();
             this.nodeTrial.active = true;
         } else {
             this.nodeTrial.active = false;
@@ -551,6 +554,8 @@ export class SlotLadyNightController extends cc.Component {
         }
         if(!this.isPlayingTrial) {
             Configs.Login.Coin = res.currentMoney;
+        } else {
+            this.playTrialResult(res);
         }
         let matrix = res.matrix.split(",");
         this.showResult(res.prize,  matrix.map(Number), this.freeSpins);
@@ -897,6 +902,7 @@ export class SlotLadyNightController extends cc.Component {
         this.moneyExchange = moneyExchange;
         this.freeSpins = freeSpinCount;
         this.symbols = symbolsMatrix;
+        console.log(symbolsMatrix);
         this.rollerCtrl.setResult(symbolsMatrix);
         this._isFreeSpin = this.freeSpins > 0;
         let delayTime = 1.5;
@@ -1101,6 +1107,21 @@ export class SlotLadyNightController extends cc.Component {
                 cc.scaleTo(0.1, 1)
             )
         );
+    }
+
+    setupTrial() {
+        this.lblLine.string = this._lineTrial.toString();
+        this.lblBet.string = "10,000";
+        Tween.numberTo(this.lblTotalBet, 250000, 0.3);
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
+    }
+
+    playTrialResult(res: cmd.ReceiveResult | any) {
+        this._moneyUserTrial += res.prize;
+        this._moneyJackPotTrial += this._moneyBetPerRoll * this._jackPotFee;
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
     }
 }
 export default SlotLadyNightController;

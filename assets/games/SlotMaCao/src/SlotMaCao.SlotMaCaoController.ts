@@ -161,6 +161,11 @@ export class SlotMaCaoController extends cc.Component {
     private defaultRollingTimer = 5;
     private rollingTimeOut = 5;
     private isRollingTimeOut = false;
+    private _moneyJackPotTrial = 50000000;
+    private _moneyUserTrial = 50000000;
+    private _moneyBetPerRoll = 200000;
+    private _lineTrial = 20;
+    private _jackPotFee = 0.01;
 
     public static getInstance(): SlotMaCaoController {
         return this._instance;
@@ -390,10 +395,7 @@ export class SlotMaCaoController extends cc.Component {
     actTrial() {
         this.isPlayingTrial = true;
         if (this.isPlayingTrial) {
-            this.lblLine.string = "20";
-            this.lblBet.string = "100";
-            // Tween.numberTo(this.lblTotalBet, 2000, 0.3);
-            this.lblTotalBet.string = Utils.formatNumberMin(2000);
+            this.setupTrial();
             this.nodeTrial.active = true;
         } else {
             this.nodeTrial.active = false;
@@ -459,6 +461,8 @@ export class SlotMaCaoController extends cc.Component {
         }
         if(!this.isPlayingTrial) {
             Configs.Login.Coin = res.currentMoney;
+        } else {
+            this.playTrialResult(res);
         }
         let matrix = res.matrix.split(",");
         this.showResult(res.prize,  matrix.map(Number), this.freeSpins);
@@ -973,5 +977,20 @@ export class SlotMaCaoController extends cc.Component {
     //         this.hasMiniGame = false;
     //     });
     // }
+
+    setupTrial() {
+        this.lblLine.string = this._lineTrial.toString();
+        this.lblBet.string = "10,000";
+        Tween.numberTo(this.lblTotalBet, 200000, 0.3);
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
+    }
+
+    playTrialResult(res: cmd.ReceiveResult | any) {
+        this._moneyUserTrial += res.prize;
+        this._moneyJackPotTrial += this._moneyBetPerRoll * this._jackPotFee;
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
+    }
 }
 export default SlotMaCaoController;

@@ -189,6 +189,12 @@ export default class SlotBigCityBoySlotController extends cc.Component {
     private _lastPrefix = "1_";
     private _soundEffectJackpot = 0;
 
+    private _moneyJackPotTrial = 50000000;
+    private _moneyUserTrial = 50000000;
+    private _moneyBetPerRoll = 250000;
+    private _lineTrial = 25;
+    private _jackPotFee = 0.01;
+
     protected onLoad() {
         cc.audioEngine.stopAll();
         this.rollerCtrl = this.rollerNode.getComponent(RollerControllerB52);
@@ -1232,5 +1238,20 @@ export default class SlotBigCityBoySlotController extends cc.Component {
 
     playSoundMoneyWin() {
         this.playSoundEffect(this.soundMoneyWin);
+    }
+
+    setupTrial() {
+        this.lblLine.string = this._lineTrial.toString();
+        this.lblBet.string = "10,000";
+        Tween.numberTo(this.lblTotalBet, 250000, 0.3);
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
+    }
+
+    playTrialResult(res: cmd.ReceivePlay | any) {
+        this._moneyUserTrial += res.prize;
+        this._moneyJackPotTrial += this._moneyBetPerRoll * this._jackPotFee;
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
     }
 }

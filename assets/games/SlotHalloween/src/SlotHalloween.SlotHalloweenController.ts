@@ -180,6 +180,12 @@ export default class SlotHalloweenSlotHalloweenController extends cc.Component {
     private rollingTimeOut = 5;
     private isRollingTimeOut = false;
 
+    private _moneyJackPotTrial = 50000000;
+    private _moneyUserTrial = 50000000;
+    private _moneyBetPerRoll = 250000;
+    private _lineTrial = 25;
+    private _jackPotFee = 0.01;
+
     public static _instance: SlotHalloweenSlotHalloweenController = null;
 
     protected onLoad() {
@@ -510,6 +516,8 @@ export default class SlotHalloweenSlotHalloweenController extends cc.Component {
 
         if(!this.isPlayingTrial) {
             Configs.Login.Coin = res.currentMoney;
+        } else {
+            this.playTrialResult(res);
         }
         let matrix = res.matrix.split(",");
         this.showResult(res.prize,  matrix.map(Number), this.freeSpins);
@@ -670,10 +678,8 @@ export default class SlotHalloweenSlotHalloweenController extends cc.Component {
         }
         this.isPlayingTrial = this.toggleTrial.isChecked;
         if (this.toggleTrial.isChecked) {
-            this.lblLine.string = "25";
-            this.lblBet.string = "100";
+            this.setupTrial();
             this.nodeTrial.active = true;
-            Tween.numberTo(this.lblTotalBet, 2500, 0.3, (n) => this.moneyToK(n));
         } else {
             this.lblLine.string = this.arrLineSelect.length.toString();
             this.lblBet.string = this.listBetLabel[this.betIdx];
@@ -1120,5 +1126,20 @@ export default class SlotHalloweenSlotHalloweenController extends cc.Component {
 
     playSFXXuRoi() {
         this.playSoundEffect(this.soundJackPotXuRoi);
+    }
+
+    setupTrial() {
+        this.lblLine.string = this._lineTrial.toString();
+        this.lblBet.string = "10,000";
+        Tween.numberTo(this.lblTotalBet, 250000, 0.3);
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
+    }
+
+    playTrialResult(res: cmd.ReceivePlay | any) {
+        this._moneyUserTrial += res.prize;
+        this._moneyJackPotTrial += this._moneyBetPerRoll * this._jackPotFee;
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
     }
 }
