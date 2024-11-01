@@ -901,6 +901,7 @@ namespace Lobby {
                         Configs.Login.VipPointSave = userInfo["vippointSave"];
                         Configs.Login.MobileSecured = userInfo["mobileSecure"] !== 0;
                         Configs.Login.AppSecured = userInfo["appSecure"] !== 0;
+                        Configs.Login.BanTransfer = userInfo["banTransfer"];
                         // MiniGameNetworkClient.getInstance().checkConnect();
                         MiniGameNetworkClient.getInstance().sendCheck(new cmd.ReqSubcribeJackpots());
                         MiniGameNetworkClient.getInstance().sendCheck(new cmd.ReqGetSecurityInfo());

@@ -4,8 +4,6 @@ import Configs from "../../../../scripts/common/Configs";
 import MiniGameNetworkClient from "../../../../scripts/networks/MiniGameNetworkClient";
 import InPacket from "../../../../scripts/networks/Network.InPacket";
 import cmd from "../../../../scripts/common/Lobby.Cmd";
-import App from "../../../../scripts/common/App";
-import BroadcastReceiver from "../../../../scripts/common/BroadcastReceiver";
 
 const {ccclass, property} = cc._decorator;
 
@@ -23,6 +21,8 @@ export default class PopupCashout extends cc.Component {
     nodeCoin = null;
     @property(cc.Node)
     nodeWallet = null;
+    @property(cc.Node)
+    nodeTransfer = null;
     @property(cc.Node)
     nodeActivePhone = null;
     @property(cc.Node)
@@ -48,6 +48,7 @@ export default class PopupCashout extends cc.Component {
         MiniGameNetworkClient.getInstance().send(new cmd.ReqGetSecurityInfo());
         this.nodeActiveTab = this.nodeAutoBank;
         this.currentTab = ShopTabEnum.AUTO_BANK;
+        this.toggleContainer.getChildByName('TRANSFER').active = !Configs.Login.BanTransfer;
         if(PopupCashout._instance == null) {
             PopupCashout._instance = this;
         }
@@ -87,6 +88,9 @@ export default class PopupCashout extends cc.Component {
                 break;
             case ShopTabEnum.WALLET:
                 this.nodeActiveTab = this.nodeWallet;
+                break;
+            case ShopTabEnum.TRANSFER:
+                this.nodeActiveTab = this.nodeTransfer;
                 break;
             default:
                 this.nodeActiveTab = this.nodeAutoBank;

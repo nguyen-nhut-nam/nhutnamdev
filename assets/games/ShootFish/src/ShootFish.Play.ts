@@ -507,7 +507,6 @@ export default class Play extends cc.Component {
                         "password": Configs.Login.PasswordFish,
                         "index": this.roomId,//roomId
                     }, (res) => {
-                        console.log(res);
                         if (!res["ok"]) {
                             switch (res["err"]) {
                                 case 4:

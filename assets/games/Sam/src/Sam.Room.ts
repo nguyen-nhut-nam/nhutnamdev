@@ -8,6 +8,7 @@ import App from "../../../scripts/common/App";
 import BroadcastReceiver from "../../../scripts/common/BroadcastReceiver";
 import InGame from "./Sam.InGame";
 import Res from "../src/Sam.Res";
+import GameConfigManager from "../../../scripts/common/game/GameConfigManager";
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -31,6 +32,9 @@ export default class Room extends cc.Component {
     @property(cc.Node)
     popupGuide: cc.Node = null;
 
+    @property({ type: cc.AudioClip })
+    musicBackground: cc.AudioClip = null;
+
     private ingame: InGame = null;
     private listRoom = [];
     private intervalPing = -1;
@@ -38,6 +42,7 @@ export default class Room extends cc.Component {
     onLoad() {
         Room.instance = this;
         Res.getInstance();
+        this.settingMusic();
         this.ingame = this.ingameNode.getComponent(InGame);
         this.ingameNode.active = false;
 
@@ -53,6 +58,13 @@ export default class Room extends cc.Component {
         this.lblNickname.string = Configs.Login.Nickname;
         this.sprAvatar2.spriteFrame = App.instance.getAvatarSpriteFrame(Configs.Login.Avatar);
         this.intervalPing = setInterval(() => this.ping(), 5000);
+    }
+
+    settingMusic() {
+        cc.audioEngine.stopAll();
+        if(GameConfigManager.getInstance().enableBackgroundMusic) {
+            cc.audioEngine.playMusic(this.musicBackground, true);
+        }
     }
 
     ping() {
@@ -275,6 +287,7 @@ export default class Room extends cc.Component {
     }
 
     actBack() {
+        cc.audioEngine.stopAll();
         SamNetworkClient.getInstance().close();
         clearInterval(this.intervalPing);
         App.instance.loadSceneFromBundle("Lobby", {"src": "Lobby"});

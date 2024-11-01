@@ -21,6 +21,7 @@ namespace Configs {
         static VipPointSave: number = 0;
         static MobileSecured: boolean = false;
         static AppSecured: boolean = false;
+        static BanTransfer: boolean = false;
 
         static CoinFish: number = 0;
         static UserIdFish: number = 0;

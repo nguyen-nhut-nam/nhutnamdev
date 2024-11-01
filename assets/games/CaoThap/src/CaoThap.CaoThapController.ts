@@ -356,7 +356,6 @@ export default class CaoThapController extends MiniGame {
                             break;
                     }
                     Configs.Login.Coin = res.currentMoney;
-                    console.log(res);
                     this.scheduleOnce(() => {
                         BroadcastReceiver.send(BroadcastReceiver.USER_UPDATE_COIN);
                         this.lblStatus.string = "Nhấn Play để bắt đầu";

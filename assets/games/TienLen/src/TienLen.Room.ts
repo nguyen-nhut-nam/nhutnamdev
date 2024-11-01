@@ -10,6 +10,7 @@ import BroadcastReceiver from "../../../scripts/common/BroadcastReceiver";
 import TienLenGameLogic from "./TienLen.GameLogic";
 import InGame from "./TienLen.InGame";
 import Res from "./TienLen.Res";
+import GameConfigManager from "../../../scripts/common/game/GameConfigManager";
 
 const { ccclass, property } = cc._decorator;
 
@@ -34,6 +35,9 @@ export default class Room extends cc.Component {
     @property(cc.Node)
     popupGuide = null;
 
+    @property({ type: cc.AudioClip })
+    musicBackground: cc.AudioClip = null;
+
     private ingame: InGame = null;
     private listRoom = [];
     private listmember = [];
@@ -50,7 +54,7 @@ export default class Room extends cc.Component {
         //this.getRoomMember();
         Room.instance = this;
         Res.getInstance();
-
+        this.settingMusic();
         this.ingame = this.ingameNode.getComponent(InGame);
         this.ingameNode.active = false;
 
@@ -67,6 +71,13 @@ export default class Room extends cc.Component {
         this.lblNickname.string = Configs.Login.Nickname;
         this.sprAvatar2.spriteFrame = App.instance.getAvatarSpriteFrame(Configs.Login.Avatar);
         this.intervalPing = setInterval(() => this.ping(), 5000);
+    }
+
+    settingMusic() {
+        cc.audioEngine.stopAll();
+        if(GameConfigManager.getInstance().enableBackgroundMusic) {
+            cc.audioEngine.playMusic(this.musicBackground, true);
+        }
     }
 
     ping() {
@@ -237,7 +248,6 @@ export default class Room extends cc.Component {
                 }
                 case TienLenCmd.Code.PING_PONG:
                     let res = new TienLenCmd.ReceivePong(data);
-                    console.log(res);
                     this.timeout = 0;
                     break;
                 // case TienLenCmd.Code.RECONNECT_GAME_ROOM: {
@@ -335,6 +345,7 @@ export default class Room extends cc.Component {
     }
 
     actBack() {
+        cc.audioEngine.stopAll();
         TienLenNetworkClient.getInstance().close();
         clearInterval(this.intervalPing);
         App.instance.loadSceneFromBundle("Lobby", {"src": "Lobby"});

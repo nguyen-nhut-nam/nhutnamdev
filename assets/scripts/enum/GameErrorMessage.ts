@@ -28,4 +28,11 @@ export default class GameErrorMessage extends cc.Component {
     //GAME
     public static NOT_SELECT_LINES: string = 'Vui lòng chọn dòng cược.';
 
+    //TRANSFER USER TO USER
+    public static NICKNAME_BLANK: string = 'Nickname không được để trống.';
+    public static TRANSFER_NOTE_BLANK: string = 'Lý do chuyển khoản không được để trống.';
+    public static TRANSFER_AMOUNT_MIN_DESCRIPTION: string = 'Số tiền giao dịch tối thiểu 1.000';
+    public static ACCOUNT_BAN_TRANSFER: string = 'Tài khoản bị cấm chuyển tiền.';
+    public static NICKNAME_NOT_EXISTED: string = 'Nickname không tồn tại.';
+
 }

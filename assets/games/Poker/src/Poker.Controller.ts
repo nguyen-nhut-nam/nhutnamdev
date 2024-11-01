@@ -9,6 +9,7 @@ import cmd from "./Poker.Cmd";
 
 import PokerNetworkClient from "./Poker.NetworkClient";
 import CardUtils from "./Poker.CardUtil"
+import GameConfigManager from "../../../scripts/common/game/GameConfigManager";
 
 var configPlayer = [  // 9 Players
     // {
@@ -142,6 +143,8 @@ export default class PokerController extends cc.Component {
     labelNotifyContent: cc.Label = null;
     @property(cc.Node)
     popupGuide: cc.Node = null;
+    @property({ type: cc.AudioClip})
+    musicBackground = null;
 
     private seatOwner = null;
     private currentRoomBet = null;
@@ -201,8 +204,16 @@ export default class PokerController extends cc.Component {
         this.seatOwner = -1;
 
         this.initConfigPlayer();
+        this.settingMusic();
         this.sprAvatar2.spriteFrame = App.instance.getAvatarSpriteFrame(Configs.Login.Avatar);
         this.intervalPing = setInterval(() => this.ping(), 5000);
+    }
+
+    settingMusic() {
+        if(GameConfigManager.getInstance().enableBackgroundMusic) {
+            cc.audioEngine.stopAll();
+            cc.audioEngine.playMusic(this.musicBackground, true);
+        }
     }
 
     start() {

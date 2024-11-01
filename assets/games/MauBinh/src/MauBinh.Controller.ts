@@ -12,6 +12,7 @@ import CardUtils from "./MauBinh.CardUtil"
 
 import DetectPlayerCards from './MauBinh.DetectPlayerCards';
 import ItemRoom from "./MauBinh.ItemRoom";
+import GameConfigManager from "../../../scripts/common/game/GameConfigManager";
 
 var configPlayer = [
     // {
@@ -158,16 +159,15 @@ export default class MauBinhController extends cc.Component {
 
     // LIFE-CYCLE CALLBACKS:
 
-    private musicSlotState = null;
-    public remoteMusicBackground = null;
-
     private intervalPing = -1;
     private timeout = 0;
 
     settingMusic() {
-        this.remoteMusicBackground = cc.audioEngine.playMusic(this.musicBackground, true);
+        if(GameConfigManager.getInstance().enableBackgroundMusic) {
+            cc.audioEngine.stopAll();
+            cc.audioEngine.playMusic(this.musicBackground, true);
+        }
     }
-
 
     onLoad() {
         MauBinhController.instance = this;
@@ -349,7 +349,7 @@ export default class MauBinhController extends cc.Component {
     }
 
     backToLobby() {
-        cc.audioEngine.stop(this.remoteMusicBackground);
+        cc.audioEngine.stopAll();
         MauBinhNetworkClient.getInstance().close();
         clearInterval(this.intervalPing);
         App.instance.loadSceneFromBundle("Lobby", {"src": "Lobby"});
@@ -1194,7 +1194,6 @@ export default class MauBinhController extends cc.Component {
                     {
                         App.instance.showLoading(false);
                         let res = new Cmd.ReceivedUserLeaveRoom(data);
-                        cc.audioEngine.stop(this.remoteMusicBackground);
                         cc.audioEngine.play(this.soundThoatGame, false, 1);
                         cc.log("MauBinh ReceivedUserLeaveRoom res : ", JSON.stringify(res));
 

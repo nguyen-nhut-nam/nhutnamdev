@@ -11,4 +11,6 @@ export default class ShopTabEnum extends cc.Component {
     public static CARD:string = "CARD";
 
     public static GIFTCODE:string = "GIFTCODE";
+
+    public static TRANSFER: string = "TRANSFER";
 }

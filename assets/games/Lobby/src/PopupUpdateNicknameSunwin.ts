@@ -119,7 +119,6 @@ namespace Lobby {
                                     window.location.href = 'https://cskh-sunwin.vin/';
                                     break;
                                 case 2001:
-                                    this.popupUpdateNickname.show2(_this.username, _this.password);
                                     break;
                                 default:
                                     //App.instance.alertDialog.showMsg("Đăng nhập không thành công vui lòng thử lại sau.");

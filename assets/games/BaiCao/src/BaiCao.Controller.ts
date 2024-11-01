@@ -9,6 +9,7 @@ import cmd from "./BaiCao.Cmd";
 
 import BaiCaoNetworkClient from "./BaiCao.NetworkClient";
 import CardUtils from "./BaiCao.CardUtil";
+import GameConfigManager from "../../../scripts/common/game/GameConfigManager";
 
 var configPlayer = [
     // {
@@ -128,6 +129,9 @@ export default class BaiCaoController extends cc.Component {
     @property(cc.Node)
     popupGuide: cc.Node = null;
 
+    @property({ type: cc.AudioClip})
+    musicBackground = null;
+
     private seatOwner = null;
     private currentRoomBet = null;
 
@@ -169,7 +173,7 @@ export default class BaiCaoController extends cc.Component {
         BaiCaoController.instance = this;
 
         this.seatOwner = -1;
-
+        this.settingMusic();
         this.initConfigPlayer();
         this.intervalPing = setInterval(() => this.ping(), 5000);
     }
@@ -181,6 +185,13 @@ export default class BaiCaoController extends cc.Component {
         }
         this.timeout += 5;
         BaiCaoNetworkClient.getInstance().send(new cmd.CmdSendPing());
+    }
+
+    settingMusic() {
+        if(GameConfigManager.getInstance().enableBackgroundMusic) {
+            cc.audioEngine.stopAll();
+            cc.audioEngine.playMusic(this.musicBackground, true);
+        }
     }
 
     start() {
@@ -338,10 +349,10 @@ export default class BaiCaoController extends cc.Component {
     }
 
     backToLobby() {
+        cc.audioEngine.stopAll();
         BaiCaoNetworkClient.getInstance().close();
         App.instance.loadSceneFromBundle("Lobby", {"src": "Lobby"});
         clearInterval(this.intervalPing);
-        cc.audioEngine.stopAll();
     }
 
     protected onDestroy() {

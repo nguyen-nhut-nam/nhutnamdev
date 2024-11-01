@@ -141,7 +141,6 @@ export default class Lobby extends cc.Component {
                     {
                         App.instance.showLoading(false);
                         let res = new cmd.ReceiveJoinRoomFail(data);
-                        console.log(res);
                         let msg = "Lỗi " + res.getError() + ", không xác định.";
                         switch (res.getError()) {
                             case 1:

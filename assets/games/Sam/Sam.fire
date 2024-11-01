@@ -5262,6 +5262,9 @@
     "popupGuide": {
       "__id__": 95
     },
+    "musicBackground": {
+      "__uuid__": "da75fc99-f09c-47b5-abdc-d2f9bb7e7190"
+    },
     "_id": "92+z0K/eFD0bMz1RCSWhcr"
   },
   {
@@ -25424,9 +25427,6 @@
     },
     "fxWhoPlayFirst": {
       "__id__": 535
-    },
-    "musicBackground": {
-      "__uuid__": "f9630e23-9fbc-4985-927b-6eb259819e9b"
     },
     "settingPane": null,
     "bgSetting": null,

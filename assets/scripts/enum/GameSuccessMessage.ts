@@ -8,4 +8,6 @@ export default class GameSuccessMessage extends cc.Component {
     public static WITHDRAW_SUCCESSFULLY: string = 'Rút tiền thành công, vui lòng chờ';
 
     public static GET_OTP_SUCCESSFULLY: string = "Lấy OTP thành công.";
+
+    public static TRANSFER_SUCCESSFULLY: string = 'Chuyển khoản thành công.'
 }

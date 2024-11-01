@@ -10,6 +10,7 @@ import Res from "./TienLen.Res";
 import cmd from "../../../scripts/networks/Network.Cmd";
 import Configs from "../../../scripts/common/Configs";
 import nodeUtils from "../../../scripts/common/NodeUtils";
+import GameConfigManager from "../../../scripts/common/game/GameConfigManager";
 
 const { ccclass, property } = cc._decorator;
 
@@ -91,21 +92,7 @@ export default class InGame extends cc.Component {
 
     cachePlayersInfo = [];
 
-    private musicSlotState = null;
     public remoteMusicBackground = null;
-
-
-    settingMusic() {
-        this.remoteMusicBackground = cc.audioEngine.playMusic(this.musicBackground, true);
-        this.musicSlotState = 1;
-        cc.sys.localStorage.setItem("music_tlmn", "" + this.musicSlotState);
-    }
-
-    offBgMusic() {
-        this.musicSlotState = 0;
-        cc.sys.localStorage.setItem("music_tlmn", "" + this.musicSlotState);
-        cc.audioEngine.stop(this.remoteMusicBackground);
-    }
 
     onLoad() {
         InGame.instance = this;
@@ -114,7 +101,6 @@ export default class InGame extends cc.Component {
 
     initRes() {
         Res.getInstance();
-        this.settingMusic();
         this.btnsInGame.children.forEach(btn => {
             this.buttons[btn.name] = btn;
         });
@@ -122,7 +108,6 @@ export default class InGame extends cc.Component {
 
     public show(isShow: boolean, roomInfo = null) {
         if (isShow) {
-            this.settingMusic();
             this.node.active = true;
             this.cleanCardLine();
             this.cleanCardsOnBoard();
@@ -145,7 +130,6 @@ export default class InGame extends cc.Component {
     }
 
     actLeaveRoom() {
-        cc.audioEngine.stop(this.remoteMusicBackground);
         TienLenNetworkClient.getInstance().send(new TienLenCmd.SendRequestLeaveGame());
     }
 

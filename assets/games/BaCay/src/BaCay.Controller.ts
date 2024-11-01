@@ -9,6 +9,7 @@ import cmd from "./BaCay.Cmd";
 
 import BaCayNetworkClient from "./BaCay.NetworkClient";
 import CardUtils from "./BaCay.CardUtil"
+import GameConfigManager from "../../../scripts/common/game/GameConfigManager";
 
 var configPlayer = [
     // {
@@ -129,6 +130,8 @@ export default class BaCayController extends cc.Component {
     @property(cc.Node)
     popupGuide: cc.Node = null;
 
+    @property({ type: cc.AudioClip})
+    musicBackground = null;
 
     private seatOwner = null;
     private currentRoomBet = null;
@@ -173,8 +176,15 @@ export default class BaCayController extends cc.Component {
         this.seatOwner = -1;
 
         this.initConfigPlayer();
-
+        this.settingMusic();
         this.intervalPing = setInterval(() => this.ping(), 5000);
+    }
+
+    settingMusic() {
+        if(GameConfigManager.getInstance().enableBackgroundMusic) {
+            cc.audioEngine.stopAll();
+            cc.audioEngine.playMusic(this.musicBackground, true);
+        }
     }
 
     ping() {
@@ -344,10 +354,10 @@ export default class BaCayController extends cc.Component {
     }
 
     backToLobby() {
+        cc.audioEngine.stopAll();
         BaCayNetworkClient.getInstance().close();
         App.instance.loadSceneFromBundle("Lobby", {"src": "Lobby"});
         clearInterval(this.intervalPing);
-        cc.audioEngine.stopAll();
     }
 
     // Playing

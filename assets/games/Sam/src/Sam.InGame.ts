@@ -69,8 +69,6 @@ export default class SamInGame extends cc.Component {
 
     @property(cc.Node)
     fxWhoPlayFirst: cc.Node = null;
-    @property({ type: cc.AudioClip })
-    musicBackground: cc.AudioClip = null;
     @property(cc.Node)
     settingPane: cc.Node = null;
     @property(cc.Node)
@@ -90,34 +88,18 @@ export default class SamInGame extends cc.Component {
 
     cachePlayersInfo = [];
 
-    private musicSlotState = null;
-    public remoteMusicBackground = null;
-
-    settingMusic() {
-        if(GameConfigManager.getInstance().enableBackgroundMusic) {
-            cc.audioEngine.playMusic(this.musicBackground, true);
-        }
-    }
-
-    offBgMusic() {
-        this.musicSlotState = 0;
-        cc.sys.localStorage.setItem("music_tlmn", "" + this.musicSlotState);
-        cc.audioEngine.stop(this.remoteMusicBackground);
-    }
     onLoad() {
         SamInGame.instance = this;
         this.initRes();
     }
     initRes() {
         Res.getInstance();
-        this.settingMusic();
         this.btnsInGame.children.forEach(btn => {
             this.buttons[btn.name] = btn;
         });
     }
     public show(isShow: boolean, roomInfo = null) {
         if (isShow) {
-            this.settingMusic();
             this.node.active = true;
             this.cleanCardLine();
             this.cleanCardsOnBoard();
@@ -696,7 +678,7 @@ export default class SamInGame extends cc.Component {
 
 
     actLeaveRoom() {
-        cc.audioEngine.stop(this.remoteMusicBackground);
+        cc.audioEngine.stopAll();
         SamNetworkClient.getInstance().send(new SamCmd.SendRequestLeaveGame());
     }
 
