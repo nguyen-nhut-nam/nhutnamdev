@@ -221,7 +221,6 @@ export class PopupBonus extends Dialog {
             if(listFactor[i] === factor) continue;
             this.factors.push(listFactor[i]);
         }
-        console.log(this.factors);
         this.lblTotal.string = "0";
         this.totalCoin = 0;
         this._totalBonusAuto = 0;

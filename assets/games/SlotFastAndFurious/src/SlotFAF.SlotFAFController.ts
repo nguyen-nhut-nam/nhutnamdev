@@ -277,16 +277,18 @@ export default class SlotFAFSlotFAFController extends cc.Component {
                         Tween.numberTo(this.lblJP1K, res.value1000, 0.3);
                         Tween.numberTo(this.lblJP10K, res.value10000, 0.3);
 
-                        switch (this.betIdx) {
-                            case 0:
-                                Tween.numberTo(this.lblJackpot, res.value100, 0.3);
-                                break;
-                            case 1:
-                                Tween.numberTo(this.lblJackpot, res.value1000, 0.3);
-                                break;
-                            case 2:
-                                Tween.numberTo(this.lblJackpot, res.value10000, 0.3);
-                                break;
+                        if(!this.isPlayingTrial) {
+                            switch (this.betIdx) {
+                                case 0:
+                                    Tween.numberTo(this.lblJackpot, res.value100, 0.3);
+                                    break;
+                                case 1:
+                                    Tween.numberTo(this.lblJackpot, res.value1000, 0.3);
+                                    break;
+                                case 2:
+                                    Tween.numberTo(this.lblJackpot, res.value10000, 0.3);
+                                    break;
+                            }
                         }
                     }
                     break;
@@ -1301,6 +1303,7 @@ export default class SlotFAFSlotFAFController extends cc.Component {
         this.spSpinOutSide.timeScale = .5;
         this.nodeMain.forEach(node => node.active = true);
         this.nodeFreeSpin.forEach(node => node.active = false);
+        this.lblWinNow.string = '0';
     }
 
     playSFXFreeSpin() {
@@ -1342,8 +1345,8 @@ export default class SlotFAFSlotFAFController extends cc.Component {
 
     setupTrial() {
         this.lblLine.string = this._lineTrial.toString();
-        this.lblBet.string = "10,000";
-        Tween.numberTo(this.lblTotalBet, 250000, 0.3);
+        this.lblBet.string = "10K";
+        this.lblTotalBet.string = "250K";
         Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
         Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
     }

@@ -82,8 +82,8 @@ namespace Configs {
     }
 
     export class App {
-        static HOT_UPDATE_URL = "https://suonxaochuangot.pro/remote-assets/";
-        static BUNDLE_URL = "suonxaochuangot.pro/remote-assets";
+        static HOT_UPDATE_URL = "https://bon.tips/remote-assets/";
+        static BUNDLE_URL = "bon.tips/remote-assets";
         static DOMAIN: string = "https://demo.eloras.icu";
         static API: string = "https://eloras.icu/api";
         static MONEY_TYPE = 1;
@@ -93,7 +93,6 @@ namespace Configs {
         static USE_WSS = true;
         //static LINK_GROUP = "https://www.facebook.com/groups/bao99.vip";
         static LINK_GROUP = "";
-        static CONFIG_HOST_URL = "https://suonxaochuangot.pro/domainconfig.json";
         static BANCA = "https://banca.honghunghoi.net";
         static SICBO = "https://sicbo.honghunghoi.net";
         static XENG777 = "https://xeng777.honghunghoi.net";

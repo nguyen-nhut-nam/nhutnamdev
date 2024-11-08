@@ -1130,8 +1130,8 @@ export default class SlotHalloweenSlotHalloweenController extends cc.Component {
 
     setupTrial() {
         this.lblLine.string = this._lineTrial.toString();
-        this.lblBet.string = "10,000";
-        Tween.numberTo(this.lblTotalBet, 250000, 0.3);
+        this.lblBet.string = "10K";
+        this.lblTotalBet.string = '250K';
         Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
         Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
     }

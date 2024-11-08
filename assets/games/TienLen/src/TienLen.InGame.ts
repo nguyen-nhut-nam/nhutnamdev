@@ -7,10 +7,8 @@ import TienLenConstant from "./TienLen.Constant";
 import Room from "./TienLen.Room";
 import CardGroup from "./TienLen.CardGoup";
 import Res from "./TienLen.Res";
-import cmd from "../../../scripts/networks/Network.Cmd";
 import Configs from "../../../scripts/common/Configs";
 import nodeUtils from "../../../scripts/common/NodeUtils";
-import GameConfigManager from "../../../scripts/common/game/GameConfigManager";
 
 const { ccclass, property } = cc._decorator;
 
@@ -71,8 +69,6 @@ export default class InGame extends cc.Component {
 
     @property(cc.Node)
     fxWhoPlayFirst: cc.Node = null;
-    @property({ type: cc.AudioClip })
-    musicBackground: cc.AudioClip = null;
     @property(cc.Node)
     settingPane: cc.Node = null;
     @property(cc.Node)
@@ -91,8 +87,6 @@ export default class InGame extends cc.Component {
     private timeoutDelayChiaBai = null;
 
     cachePlayersInfo = [];
-
-    public remoteMusicBackground = null;
 
     onLoad() {
         InGame.instance = this;
@@ -455,7 +449,7 @@ export default class InGame extends cc.Component {
         var suggestionCards;
         if (this.checkTurn)
             suggestionCards = new CardGroup(cardsOnHand).getSuggestionCards(turnCards, data, () => {
-                let tmp = new Array();
+                let tmp = [];
                 for (var key in this.cardsOnHand) {
                     let tmpCard = this.cardsOnHand[key].getComponent(Card);
                     if (tmpCard.isSelected) {
@@ -504,11 +498,11 @@ export default class InGame extends cc.Component {
 
     setToggleCardsOnHand(cards = null) {
         if (cards === null) {
-            for (var key in this.cardsOnHand) {
+            for (let key in this.cardsOnHand) {
                 this.cardsOnHand[key].getComponent(Card).deSelect();
             }
         } else {
-            for (var key in this.cardsOnHand) {
+            for (let key in this.cardsOnHand) {
                 this.cardsOnHand[key].getComponent(Card).deSelect();
             }
             for (let i = 0; i < cards.length; i++) {
@@ -551,8 +545,8 @@ export default class InGame extends cc.Component {
                 this.players[chair].setCoin(data.currentMoney[i]);
                 if (chair == 0) {
                     Configs.Login.Coin = data.currentMoney[i];
-                    this.fxMeWin.active = coinChanges[i] > 0 ? true : false;
-                    this.fxMeLose.active = coinChanges[i] < 0 ? true : false;
+                    this.fxMeWin.active = coinChanges[i] > 0;
+                    this.fxMeLose.active = coinChanges[i] < 0;
                 }
             }
         }
@@ -601,7 +595,7 @@ export default class InGame extends cc.Component {
             this.contentPopupResult.destroyAllChildren();
             this.contentPopupResult.removeAllChildren();
 
-            let isTLMN = data.sizeWinType == 5 ? false : true;
+            let isTLMN = data.sizeWinType != 5;
 
             for (let index = 0; index < data.ketQuaTinhTienList.length; index++) {
                 if (data.ketQuaTinhTienList[index] != 0) {

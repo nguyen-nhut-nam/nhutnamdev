@@ -240,16 +240,18 @@ export default class SlotBigCityBoySlotController extends cc.Component {
                 case cmd.Code.UPDATE_POT:
                     {
                         let res = new cmd.ReceiveUpdatePot(data);
-                        switch (this.betIdx) {
-                            case 0:
-                                Tween.numberTo(this.lblJackpot, res.value100, 0.3);
-                                break;
-                            case 1:
-                                Tween.numberTo(this.lblJackpot, res.value1000, 0.3);
-                                break;
-                            case 2:
-                                Tween.numberTo(this.lblJackpot, res.value10000, 0.3);
-                                break;
+                        if(!this.isPlayingTrial) {
+                            switch (this.betIdx) {
+                                case 0:
+                                    Tween.numberTo(this.lblJackpot, res.value100, 0.3);
+                                    break;
+                                case 1:
+                                    Tween.numberTo(this.lblJackpot, res.value1000, 0.3);
+                                    break;
+                                case 2:
+                                    Tween.numberTo(this.lblJackpot, res.value10000, 0.3);
+                                    break;
+                            }
                         }
                     }
                     break;
@@ -605,6 +607,8 @@ export default class SlotBigCityBoySlotController extends cc.Component {
 
         if(!this.isPlayingTrial) {
             Configs.Login.Coin = res.currentMoney;
+        } else {
+            this.playTrialResult(res);
         }
         let matrix = res.matrix.split(",");
         this.showResult(res.prize,  matrix.map(Number), this.freeSpins);
@@ -766,9 +770,7 @@ export default class SlotBigCityBoySlotController extends cc.Component {
         this.isPlayingTrial = true;
         this.stopAllEffects();
         if (this.isPlayingTrial) {
-            this.lblLine.string = "25";
-            this.lblBet.string = "100";
-            Tween.numberTo(this.lblTotalBet, 2500, 0.3);
+            this.setupTrial();
             this.nodeTrial.active = true;
             this.betIdx = 2;
             this.rollerCtrl.setItemsRandom(true, this._prefix);
@@ -1191,6 +1193,7 @@ export default class SlotBigCityBoySlotController extends cc.Component {
         this.spSpin.setAnimation(0, "hold", true);
         this.nodeMain.forEach(node => node.active = true);
         this.nodeFreeSpin.forEach(node => node.active = false);
+        this.lblWinNow.string = '0';
     }
 
     playSFXFreeSpin() {

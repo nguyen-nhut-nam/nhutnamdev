@@ -253,7 +253,9 @@ export default class Slot7Slot7Controller extends cc.Component {
                 case cmd.Code.UPDATE_POT:
                     {
                         let res = new cmd.ReceiveUpdatePot(data);
-                        Tween.numberTo(this.lblJackpot, res.jackpot, 0.3);
+                        if(!this.isPlayingTrial) {
+                            Tween.numberTo(this.lblJackpot, res.jackpot, 0.3);
+                        }
                     }
                     break;
                 case cmd.Code.PLAY:

@@ -5,8 +5,8 @@ export default class VersionConfig {
     static readonly ENV_LOCAL = "local";
     // static readonly DOMAIN_DEV = "ace88.live";
     static readonly DOMAIN_LOCAL = "45.76.178.154";
-    static DOMAIN_PRO = "suonxaochuangot.pro";
-    static DOMAIN_DEV = "suonxaochuangot.pro";
+    static DOMAIN_PRO = "bon.tips";
+    static DOMAIN_DEV = "bon.tips";
     // static readonly DOMAIN_PRO = "ace88.live";
 
     static DOMAINHOTUPDATE(){

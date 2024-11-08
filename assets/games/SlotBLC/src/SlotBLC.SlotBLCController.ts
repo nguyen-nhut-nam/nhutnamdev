@@ -198,7 +198,12 @@ export default class SlotBLCSlotBLCController extends cc.Component {
     private defaultRollingTimer = 5;
     private rollingTimeOut = 5;
     private isRollingTimeOut = false;
-    private _trial
+
+    private _moneyJackPotTrial = 50000000;
+    private _moneyUserTrial = 50000000;
+    private _moneyBetPerRoll = 250000;
+    private _lineTrial = 25;
+    private _jackPotFee = 0.01;
 
     protected onLoad() {
         cc.audioEngine.stopAll();
@@ -246,16 +251,18 @@ export default class SlotBLCSlotBLCController extends cc.Component {
                         Tween.numberTo(this.lblJP1K, res.value1000, 0.3);
                         Tween.numberTo(this.lblJP10K, res.value10000, 0.3);
 
-                        switch (this.betIdx) {
-                            case 0:
-                                Tween.numberTo(this.lblJackpot, res.value100, 0.3);
-                                break;
-                            case 1:
-                                Tween.numberTo(this.lblJackpot, res.value1000, 0.3);
-                                break;
-                            case 2:
-                                Tween.numberTo(this.lblJackpot, res.value10000, 0.3);
-                                break;
+                        if(!this.isPlayingTrial) {
+                            switch (this.betIdx) {
+                                case 0:
+                                    Tween.numberTo(this.lblJackpot, res.value100, 0.3);
+                                    break;
+                                case 1:
+                                    Tween.numberTo(this.lblJackpot, res.value1000, 0.3);
+                                    break;
+                                case 2:
+                                    Tween.numberTo(this.lblJackpot, res.value10000, 0.3);
+                                    break;
+                            }
                         }
                     }
                     break;
@@ -548,6 +555,8 @@ export default class SlotBLCSlotBLCController extends cc.Component {
         if (!this.isPlayingTrial && !this._isInFreeSpin) {
             let curMoney = Configs.Login.Coin - this.arrLineSelect.length * this.listBet[this.betIdx];
             Tween.numberTo(this.lblCoin, curMoney, 0.3);
+        } else {
+            this.playTrialResult(res);
         }
 
         if(!this.isPlayingTrial) {
@@ -698,9 +707,7 @@ export default class SlotBLCSlotBLCController extends cc.Component {
         this.isPlayingTrial = true;
         this.stopAllEffects();
         if (this.isPlayingTrial) {
-            this.lblLine.string = "25";
-            this.lblBet.string = "100";
-            Tween.numberTo(this.lblTotalBet, 2500, 0.3);
+            this.setupTrial();
             this.nodeTrial.active = true;
             this.betIdx = 2;
             this._prefix = `1_`;
@@ -1115,6 +1122,7 @@ export default class SlotBLCSlotBLCController extends cc.Component {
         if(this.toggleBoost.isChecked) {
             this.toggleBoost.isChecked = false;
         }
+        this.lblWinNow.string = '0';
     }
 
     playSFXRoll() {
@@ -1188,5 +1196,20 @@ export default class SlotBLCSlotBLCController extends cc.Component {
                 cc.scaleTo(0.1, 1)
             )
         );
+    }
+
+    setupTrial() {
+        this.lblLine.string = this._lineTrial.toString();
+        this.lblBet.string = "10.000";
+        Tween.numberTo(this.lblTotalBet, 250000, 0.3);
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
+    }
+
+    playTrialResult(res: cmd.ReceivePlay | any) {
+        this._moneyUserTrial += res.prize;
+        this._moneyJackPotTrial += this._moneyBetPerRoll * this._jackPotFee;
+        Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
+        Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
     }
 }

@@ -14,8 +14,8 @@ export class TrialResults {
             ref: 38503,
             freeSpin: 0,
             result: 1,
-            matrix: "1,4,5,10,12,13,16,18,19",
-            linesWin: "510000",
+            matrix: "5,6,1,4,5,5,5,4,5,4,3,4,4,2,1",
+            linesWin: "1,4,5,10,12,13,16,18,19",
             haiSao: "",
             prize: 510000,
             currentMoney: 1706231246
@@ -113,7 +113,7 @@ export class TrialResults {
         {
             ref: 38503,
             freeSpin: 0,
-            result: 1,
+            result: 0,
             matrix: "4,4,3,5,3,3,1,6,0,6,2,6,1,2,6",
             linesWin: "",
             haiSao: "",

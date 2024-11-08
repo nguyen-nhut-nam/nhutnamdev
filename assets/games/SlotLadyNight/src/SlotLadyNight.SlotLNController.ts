@@ -303,19 +303,21 @@ export class SlotLadyNightController extends cc.Component {
                         Tween.numberTo(this.labelRoom1k, res.value1000, 0.3);
                         Tween.numberTo(this.labelRoom10k, res.value10000, 0.3);
 
-                        switch (this.betIdx) {
-                            case 0:
-                                Tween.numberTo(this.lblJackpot, res.value100, 0.3);
-                                break;
-                            case 1:
-                                Tween.numberTo(this.lblJackpot, res.value1000, 0.3);
-                                break;
-                            // case 2:
-                            //     Tween.numberTo(this.lblJackpot, res.valueRoom3, 0.3);
-                            //     break;
-                            case 3:
-                                Tween.numberTo(this.lblJackpot, res.value10000, 0.3);
-                                break;
+                        if(!this.isPlayingTrial) {
+                            switch (this.betIdx) {
+                                case 0:
+                                    Tween.numberTo(this.lblJackpot, res.value100, 0.3);
+                                    break;
+                                case 1:
+                                    Tween.numberTo(this.lblJackpot, res.value1000, 0.3);
+                                    break;
+                                // case 2:
+                                //     Tween.numberTo(this.lblJackpot, res.valueRoom3, 0.3);
+                                //     break;
+                                case 3:
+                                    Tween.numberTo(this.lblJackpot, res.value10000, 0.3);
+                                    break;
+                            }
                         }
                     }
                     break;
@@ -1111,8 +1113,8 @@ export class SlotLadyNightController extends cc.Component {
 
     setupTrial() {
         this.lblLine.string = this._lineTrial.toString();
-        this.lblBet.string = "10,000";
-        Tween.numberTo(this.lblTotalBet, 250000, 0.3);
+        this.lblBet.string = "10K";
+        this.lblTotalBet.string = "200K";
         Tween.numberTo(this.lblJackpot, this._moneyJackPotTrial, .3);
         Tween.numberTo(this.lblCoin, this._moneyUserTrial, .3);
     }
