@@ -5,261 +5,268 @@ format: RGBA8888
 filter: Linear,Linear
 repeat: none
 Beard
-  rotate: true
-  xy: 785, 12
+  rotate: false
+  xy: 1358, 83
   size: 45, 43
   orig: 45, 43
   offset: 0, 0
   index: -1
 Beard10
   rotate: true
-  xy: 831, 60
+  xy: 938, 62
   size: 16, 43
   orig: 16, 43
   offset: 0, 0
   index: -1
 Beard2
   rotate: false
-  xy: 1849, 103
+  xy: 1958, 105
   size: 40, 21
   orig: 40, 21
   offset: 0, 0
   index: -1
 Beard3
   rotate: false
-  xy: 1418, 104
+  xy: 1572, 106
   size: 52, 20
   orig: 52, 20
   offset: 0, 0
   index: -1
 Beard4
   rotate: false
-  xy: 1472, 103
+  xy: 1626, 105
   size: 50, 21
   orig: 50, 21
   offset: 0, 0
   index: -1
 Beard5
   rotate: true
-  xy: 1524, 103
+  xy: 1678, 105
   size: 21, 50
   orig: 21, 50
   offset: 0, 0
   index: -1
 Beard6
   rotate: true
-  xy: 2, 2
+  xy: 2, 4
   size: 17, 66
   orig: 17, 66
   offset: 0, 0
   index: -1
 Beard7
   rotate: true
-  xy: 1357, 102
+  xy: 1511, 104
   size: 22, 59
   orig: 22, 59
   offset: 0, 0
   index: -1
 Beard8
   rotate: true
-  xy: 1763, 98
+  xy: 1872, 100
   size: 26, 45
   orig: 26, 45
   offset: 0, 0
   index: -1
 Beard9
   rotate: true
-  xy: 1715, 98
+  xy: 1824, 100
   size: 26, 46
   orig: 26, 46
   offset: 0, 0
   index: -1
 Bread_Mouth
   rotate: true
-  xy: 1357, 89
+  xy: 1511, 91
   size: 11, 29
   orig: 11, 29
   offset: 0, 0
   index: -1
 Bread_Mouth2
   rotate: true
-  xy: 914, 63
+  xy: 848, 7
   size: 13, 23
   orig: 13, 23
   offset: 0, 0
   index: -1
 Bread_Mouth3
-  rotate: true
-  xy: 939, 63
+  rotate: false
+  xy: 1036, 58
   size: 13, 20
   orig: 13, 20
   offset: 0, 0
   index: -1
 Bread_Mouth4
   rotate: true
-  xy: 108, 8
+  xy: 108, 10
   size: 11, 28
   orig: 11, 28
   offset: 0, 0
   index: -1
 Bread_Mouth5
   rotate: true
-  xy: 1891, 109
+  xy: 810, 5
   size: 15, 36
   orig: 15, 36
   offset: 0, 0
   index: -1
 Eye
   rotate: false
-  xy: 2007, 111
+  xy: 873, 7
   size: 14, 13
   orig: 14, 13
   offset: 0, 0
   index: -1
 Eyebrow
   rotate: true
-  xy: 876, 62
+  xy: 2000, 112
   size: 14, 36
   orig: 14, 36
   offset: 0, 0
   index: -1
 Fang
   rotate: false
-  xy: 1960, 103
+  xy: 1014, 57
   size: 20, 21
   orig: 20, 21
   offset: 0, 0
   index: -1
 Head
   rotate: false
-  xy: 785, 59
+  xy: 892, 61
   size: 44, 65
   orig: 44, 65
   offset: 0, 0
   index: -1
 Mouth
   rotate: true
-  xy: 70, 2
+  xy: 70, 4
   size: 17, 36
   orig: 17, 36
   offset: 0, 0
   index: -1
 Nose
   rotate: false
-  xy: 1982, 106
+  xy: 785, 2
   size: 23, 18
   orig: 23, 18
   offset: 0, 0
   index: -1
 Rubi
   rotate: false
-  xy: 1929, 95
+  xy: 983, 49
   size: 29, 29
   orig: 29, 29
   offset: 0, 0
   index: -1
 bg1
   rotate: false
-  xy: 548, 2
+  xy: 548, 4
   size: 235, 122
   orig: 235, 122
   offset: 0, 0
   index: -1
 bg_vang
   rotate: false
-  xy: 2, 21
+  xy: 2, 23
   size: 544, 103
   orig: 544, 103
   offset: 0, 0
   index: -1
 c1
   rotate: true
-  xy: 1576, 93
+  xy: 1730, 95
   size: 31, 47
   orig: 31, 47
   offset: 0, 0
   index: -1
 c2
   rotate: true
-  xy: 1810, 98
+  xy: 1919, 100
   size: 26, 37
   orig: 26, 37
   offset: 0, 0
   index: -1
 frame_set/E0
   rotate: false
-  xy: 961, 76
+  xy: 1068, 78
   size: 56, 48
   orig: 56, 48
   offset: 0, 0
   index: -1
 frame_set/E2
   rotate: false
-  xy: 1019, 76
+  xy: 1126, 78
   size: 56, 48
   orig: 56, 48
   offset: 0, 0
   index: -1
 frame_set/E4
   rotate: false
-  xy: 1077, 76
+  xy: 1184, 78
   size: 56, 48
   orig: 56, 48
   offset: 0, 0
   index: -1
 frame_set/E6
   rotate: false
-  xy: 1135, 76
+  xy: 1242, 78
   size: 56, 48
   orig: 56, 48
   offset: 0, 0
   index: -1
 frame_set/E8
   rotate: false
-  xy: 1193, 76
+  xy: 1300, 78
   size: 56, 48
   orig: 56, 48
   offset: 0, 0
   index: -1
 v1
   rotate: false
-  xy: 831, 78
+  xy: 938, 80
   size: 63, 46
   orig: 63, 46
   offset: 0, 0
   index: -1
 v2
   rotate: false
-  xy: 1251, 87
+  xy: 1405, 89
   size: 51, 37
   orig: 51, 37
   offset: 0, 0
   index: -1
 v3
   rotate: false
-  xy: 1625, 86
+  xy: 892, 21
   size: 43, 38
   orig: 43, 38
   offset: 0, 0
   index: -1
 v4
   rotate: false
-  xy: 896, 78
+  xy: 1003, 80
   size: 63, 46
   orig: 63, 46
   offset: 0, 0
   index: -1
 v5
   rotate: false
-  xy: 1304, 87
+  xy: 1458, 89
   size: 51, 37
   orig: 51, 37
   offset: 0, 0
   index: -1
 v6
   rotate: false
-  xy: 1670, 86
+  xy: 1779, 88
   size: 43, 38
   orig: 43, 38
+  offset: 0, 0
+  index: -1
+xucac2
+  rotate: false
+  xy: 785, 22
+  size: 105, 104
+  orig: 105, 104
   offset: 0, 0
   index: -1

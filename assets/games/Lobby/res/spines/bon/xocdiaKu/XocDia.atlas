@@ -1,0 +1,55 @@
+
+XocDia.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Kubet
+  rotate: false
+  xy: 238, 47
+  size: 185, 53
+  orig: 185, 53
+  offset: 0, 0
+  index: -1
+Text
+  rotate: false
+  xy: 1, 16
+  size: 236, 84
+  orig: 236, 84
+  offset: 0, 0
+  index: -1
+bat
+  rotate: true
+  xy: 424, 17
+  size: 180, 167
+  orig: 180, 167
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 1, 101
+  size: 296, 410
+  orig: 296, 410
+  offset: 0, 0
+  index: -1
+coin
+  rotate: true
+  xy: 509, 272
+  size: 239, 225
+  orig: 239, 225
+  offset: 0, 0
+  index: -1
+eyes
+  rotate: true
+  xy: 238, 1
+  size: 45, 17
+  orig: 45, 17
+  offset: 0, 0
+  index: -1
+model
+  rotate: false
+  xy: 298, 198
+  size: 210, 313
+  orig: 210, 313
+  offset: 0, 0
+  index: -1

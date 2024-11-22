@@ -82,8 +82,9 @@ namespace Configs {
     }
 
     export class App {
-        static HOT_UPDATE_URL = "https://bon.tips/remote-assets/";
-        static BUNDLE_URL = "bon.tips/remote-assets";
+        static CONFIG_URL = `https://raw.githubusercontent.com/chaunhuanphat/dev-tito/master/production.json?v=${Date.now()}`;
+        static HOT_UPDATE_URL = "https://raw.githubusercontent.com/chaunhuanphat/dev-tito/master/";
+        static BUNDLE_URL = "bon5.win/remote-assets";
         static DOMAIN: string = "https://demo.eloras.icu";
         static API: string = "https://eloras.icu/api";
         static MONEY_TYPE = 1;
@@ -341,7 +342,7 @@ namespace Configs {
                     break;
                 case VersionConfig.ENV_PROD:
                     this.USE_WSS = true;
-                    this.DOMAIN = `${VersionConfig.DOMAIN_PRO}`;
+                    this.DOMAIN = `${this.getDomain("DOMAIN_GAME_PROD")}`;
                     this.MONEY_TYPE = 1;
                     this.HOST_MINIGAME.host = this.getDomain("MINIGAME_CONTEXT");
                     this.HOST_TAI_XIU_MINI2.host = this.getDomain("HOST_TAI_XIU_MINI2");
@@ -357,7 +358,7 @@ namespace Configs {
                     this.HOST_BAU_CUA_TO2.host = this.getDomain("BAUCUA_CONTEXT");
                     this.HOST_TAIXIU.host = this.getDomain("TAIXIU_CONTEXT");
                     this.HOST_TAIXIU_MD5.host = this.getDomain("TAIXIUMD5_CONTEXT");
-                    this.API = `https://${VersionConfig.DOMAIN_PRO}/api-portal`;
+                    this.API = `https://${this.DOMAIN}/api-portal`;
                     break;
                 default:
                     this.USE_WSS = true;
