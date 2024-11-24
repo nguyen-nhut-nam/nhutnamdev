@@ -15,10 +15,10 @@ export namespace cmd {
         static DICES_RESULT = 2113;
         static RESULT = 2114;
         static NEW_GAME = 2115;
-        static LOG_CHAT = 18003;
-        static SEND_CHAT = 18000;
-        static SCRIBE_CHAT = 18001;
-        static UNSCRIBE_CHAT = 18002;
+        static LOG_CHAT = 19003;
+        static SEND_CHAT = 19000;
+        static SCRIBE_CHAT = 19001;
+        static UNSCRIBE_CHAT = 19002;
     }
     // todo : gửi request vào phòng
     export class SendScribe extends OutPacket {
@@ -114,6 +114,12 @@ export namespace cmd {
         remainTimeRutLoc = 0;
         moneyHu = 0;
 
+        potChan = 0;
+        potLe = 0;
+        betChan = 0;
+        betLe = 0;
+        streamURL = "";
+
         constructor(data: Uint8Array) {
             super(data);
             this.gameId = this.getShort();
@@ -125,11 +131,18 @@ export namespace cmd {
             this.potXiu = this.getLong();
             this.betTai = this.getLong();
             this.betXiu = this.getLong();
+
+            this.potChan = this.getLong();
+            this.potLe = this.getLong();
+            this.betChan = this.getLong();
+            this.betLe = this.getLong();
+
             this.dice1 = this.getShort();
             this.dice2 = this.getShort();
             this.dice3 = this.getShort();
             this.remainTimeRutLoc = this.getShort();
             this.moneyHu = this.getLong();
+            this.streamURL = this.getString();
         }
     }
 
@@ -138,8 +151,12 @@ export namespace cmd {
         bettingState = false;
         potTai = 0;
         potXiu = 0;
+        potChan = 0;
+        potLe = 0;
         numBetTai = 0;
         numBetXiu = 0;
+        numBetChan = 0;
+        numBetLe = 0;
         moneyhu = 0;
 
         constructor(data: Uint8Array) {
@@ -148,8 +165,12 @@ export namespace cmd {
             this.bettingState = this.getBool();
             this.potTai = this.getLong();
             this.potXiu = this.getLong();
+            this.potChan = this.getLong();
+            this.potLe = this.getLong();
             this.numBetTai = this.getLong();
             this.numBetXiu = this.getLong();
+            this.numBetChan = this.getLong();
+            this.numBetLe = this.getLong();
             this.moneyhu = this.getLong();
         }
     }

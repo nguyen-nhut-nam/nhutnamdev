@@ -2485,7 +2485,7 @@
     "component": "",
     "_componentId": "05872A3wjpOT464qKBM+MO6",
     "handler": "onSelectGame",
-    "customEventData": ""
+    "customEventData": "TaiXiuKuBet"
   },
   {
     "__type__": "cc.Node",

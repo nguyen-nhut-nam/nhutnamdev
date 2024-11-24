@@ -319,6 +319,10 @@ export namespace common {
                 return "ios";
             }
         }
+
+        static checkNumberEven(number) {
+            return number % 2 === 0;
+        }
     }
     
 }

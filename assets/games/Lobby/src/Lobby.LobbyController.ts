@@ -2176,6 +2176,9 @@ namespace Lobby {
                 case 'BigCityBoy':
                     App.instance.loadSceneFromBundle('SlotBigCityBoy', {src: "SlotBigCityBoy"})
                     break;
+                case 'TaiXiuKuBet':
+                    App.instance.loadSceneFromBundle('TaiXiuLiveKub', {src: "TaiXiuLiveKub"})
+                    break;
             }
         }
 
