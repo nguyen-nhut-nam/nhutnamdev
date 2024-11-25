@@ -45,4 +45,8 @@ export default class ApiIDEnum extends cc.Component {
     public static GET_PHONE_OTP: number = 4123;//GET PHONE OTP
     public static VERIFY_PHONE_OTP: number = 4124; // VERIFY PHONE OTP
     public static QUICK_OTP_TELEGRAM: number = 4125;
+
+    //GAME TX LIVE
+    public static GET_MY_HISTORY_LIVE_TX: number = 56100;
+    public static SESSION_DETAIL_LIVE_TX: number = 56102;
 }

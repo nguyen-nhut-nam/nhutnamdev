@@ -2,6 +2,7 @@ import TaiXiuLiveKubController from "./TaiXiuLiveKub.TaiXiuLiveKubController";
 import Dialog from "../../../scripts/common/Dialog";
 import Utils from "../../../scripts/common/Utils";
 import nodeUtils from "../../../scripts/common/NodeUtils";
+import TaiXiuKuBetController from "./TaiXiuLiveKub.TaiXiuLiveKubController";
 
 const {ccclass, property} = cc._decorator;
 
@@ -71,14 +72,30 @@ namespace taixiumini {
         }
 
         dismiss() {
-            super.dismiss();
-            this.page1.active = false;
-            this.page2.active = false;
+            this.node.getChildByName('Container').runAction(
+                cc.sequence(
+                    cc.scaleTo(.15, 1.1, 1.1),
+                    cc.scaleTo(.35, 0, 0),
+                    cc.callFunc(() => {
+                        this.node.destroy();
+                        TaiXiuKuBetController.instance.toggleVideoLiveStream(true);
+                    })
+                )
+            )
         }
 
         _onShowed() {
             super._onShowed();
 
+            this.drawPage1();
+            nodeUtils.disableNode(this.btnPrev);
+            nodeUtils.activeNode(this.btnNext);
+            this.page1.active = true;
+            this.page2.active = false;
+        }
+
+        protected onLoad() {
+            this.lineTemplate.parent.active = false;
             this.drawPage1();
             nodeUtils.disableNode(this.btnPrev);
             nodeUtils.activeNode(this.btnNext);

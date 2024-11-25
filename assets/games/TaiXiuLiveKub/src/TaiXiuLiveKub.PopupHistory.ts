@@ -2,6 +2,8 @@ import Configs from "../../../scripts/common/Configs";
 import Http from "../../../scripts/common/Http";
 import Utils from "../../../scripts/common/Utils";
 import Popup from "../../../scripts/common/Popup";
+import ApiIDEnum from "../../Lobby/src/enum/ApiIDEnum";
+import TaiXiuKuBetController from "./TaiXiuLiveKub.TaiXiuLiveKubController";
 
 const { ccclass, property } = cc._decorator;
 
@@ -22,6 +24,11 @@ namespace taixiumini {
             this.loadData();
         }
 
+        runActionClose() {
+            super.runActionClose();
+            TaiXiuKuBetController.instance.toggleVideoLiveStream(true);
+        }
+
         actNextPage() {
             if (this.page < this.maxPage) {
                 this.page++;
@@ -39,7 +46,7 @@ namespace taixiumini {
         }
 
         private loadData() {
-            Http.get(Configs.App.API, { "c": 100, "p": this.page, "un": Configs.Login.Nickname, "mt": Configs.App.MONEY_TYPE, "txType": 1 }, (err, res) => {
+            Http.get(Configs.App.API, { "c": ApiIDEnum.GET_MY_HISTORY_LIVE_TX, "p": this.page, "un": Configs.Login.Nickname, "mt": Configs.App.MONEY_TYPE, "txType": 1 }, (err, res) => {
                 if (err != null) return;
                 if (!res["success"]) return;
 

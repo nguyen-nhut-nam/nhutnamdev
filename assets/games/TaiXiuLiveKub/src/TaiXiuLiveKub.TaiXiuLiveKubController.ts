@@ -1,5 +1,4 @@
 import cmd from "./TaiXiuLiveKub.Cmd";
-import PanelChat from "./TaiXiuLiveKub.PanelChat";
 import InPacket from "../../../scripts/networks/Network.InPacket";
 import Utils from "../../../scripts/common/Utils";
 import Tween from "../../../scripts/common/Tween";
@@ -9,7 +8,6 @@ import App from "../../../scripts/common/App";
 import AudioManager from "../../../scripts/common/Common.AudioManager";
 import TaiXiuKuBetNetWorkClient from "../../../scripts/networks/TaiXiuKuBetNetWorkClient";
 import nodeUtils from "../../../scripts/common/NodeUtils";
-import TaiXiuMD5NetWorkClient from "../../../scripts/networks/TaiXiuMD5NetWorkClient";
 import GameConfigManager from "../../../scripts/common/game/GameConfigManager";
 
 const {ccclass, property} = cc._decorator;
@@ -81,6 +79,10 @@ export default class TaiXiuKuBetController extends cc.Component {
     taiAnimation: cc.Node = null;
     @property(cc.Node)
     xiuAnimation: cc.Node = null;
+    @property(cc.Node)
+    chanAnimation = null;
+    @property(cc.Node)
+    leAnimation = null;
 
     @property({ type: cc.AudioClip })
     soundKetQua: cc.AudioClip = null;
@@ -108,6 +110,10 @@ export default class TaiXiuKuBetController extends cc.Component {
     webViewLiveStream = null;
     @property(cc.Label)
     lblMyCoin = null;
+    @property(cc.Sprite)
+    sprAvatar = null;
+    @property(cc.Label)
+    lblNickName = null;
 
     public isBetting = false;
     public isResult = false;
@@ -123,8 +129,6 @@ export default class TaiXiuKuBetController extends cc.Component {
     private lastWinCash = 0;
     private lastScore = 0;
     histories = [];
-    private isCanChat = true;
-    private panelChat: PanelChat = null;
     private wasCalled = false;
 
     onLoad() {
@@ -133,9 +137,12 @@ export default class TaiXiuKuBetController extends cc.Component {
             TaiXiuKuBetNetWorkClient.getInstance().send(new cmd.SendScribe());
         });
 
-        TaiXiuMD5NetWorkClient.getInstance().addOnClose(() => {
+        TaiXiuKuBetNetWorkClient.getInstance().addOnClose(() => {
             this.actBackLobby();
         }, this);
+
+        this.sprAvatar.spriteFrame = App.instance.getAvatarSpriteFrame(Configs.Login.Avatar);
+        this.lblNickName.string = Configs.Login.Nickname;
     }
 
     actRunTaiXiuAnim() {
@@ -454,24 +461,26 @@ export default class TaiXiuKuBetController extends cc.Component {
         cc.audioEngine.play(this.soundKetQua, false, 1);
         this.actRunTaiXiuAnim();
         if (this.lastScore >= 11) {
-            if (this.lastScore == 18) {
-                this.taiAnimation.active = true;
+            this.taiAnimation.active = true;
+            if (Utils.checkNumberEven(this.lastScore)) {
+                this.chanAnimation.active = true;
             } else {
-                this.taiAnimation.active = true;
+                this.leAnimation.active = true;
             }
         } else {
-            if (this.lastScore == 3) {
-                this.xiuAnimation.active = true;
+            this.xiuAnimation.active = true;
+            if (Utils.checkNumberEven(this.lastScore)) {
+                this.chanAnimation.active = true;
             } else {
-                this.xiuAnimation.active = true;
+                this.leAnimation.active = true;
             }
         }
         this.updateBtnHistories();
     }
 
     private stopWin() {
-        cc.tween(this.taiAnimation).stop();
-        cc.tween(this.xiuAnimation).stop();
+        // cc.tween(this.taiAnimation).stop();
+        // cc.tween(this.xiuAnimation).stop();
     }
 
     public showToast(message: string) {
@@ -606,6 +615,6 @@ export default class TaiXiuKuBetController extends cc.Component {
     }
 
     toggleVideoLiveStream(isUsed = false) {
-        return isUsed ? this.webViewLiveStream.y = 0 : this.webViewLiveStream.y = 5000;
+         return isUsed ? this.webViewLiveStream.node.y = 0 : this.webViewLiveStream.node.y = 5000;
     }
 }

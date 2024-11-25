@@ -1,6 +1,7 @@
 import Dialog from "../../../scripts/common/Dialog";
 import Utils from "../../../scripts/common/Utils";
 import GameGetLeaderBoard from "../../../scripts/common/Game.GetLeaderBoard";
+import TaiXiuKuBetController from "./TaiXiuLiveKub.TaiXiuLiveKubController";
 
 const { ccclass, property } = cc._decorator;
 
@@ -31,18 +32,29 @@ namespace taixiumini {
         }
 
         dismiss() {
-            super.dismiss();
-            for (let i = 0; i < this.items.length; i++) {
-                this.items[i].active = false;
-            }
+            this.node.getChildByName('Container').runAction(
+                cc.sequence(
+                    cc.scaleTo(.15, 1.1, 1.1),
+                    cc.scaleTo(.35, 0, 0),
+                    cc.callFunc(() => {
+                        this.node.destroy();
+                        TaiXiuKuBetController.instance.toggleVideoLiveStream(true);
+                    })
+                )
+            )
         }
 
         _onShowed() {
             super._onShowed();
             this.loadData();
         }
+
+        protected onLoad() {
+            this.loadData();
+        }
+
         private loadData() {
-            GameGetLeaderBoard.getInstance().getGameLeaderBoard("TaiXiu", "DAY", (res) => {
+            GameGetLeaderBoard.getInstance().getGameLeaderBoard("TaiXiuKubet", "DAY", (res) => {
                 if (res["success"]) {
                     if (this.items.length == 0) {
                         for (var i = 0; i < 10; i++) {

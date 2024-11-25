@@ -20,12 +20,12 @@ namespace taixiumini {
         edbMessage: cc.EditBox = null;
 
         private minRequireToChat = 0;
+
         start() {
             MiniGameNetworkClient.getInstance().addListener((data: Uint8Array) => {
                 if (!this.node.active) return;
                 let inpacket = new InPacket(data);
                 switch (inpacket.getCmdId()) {
-
                     case cmd.Code.LOG_CHAT: {
                         let res = new cmd.ReceiveLogChat(data);
                         this.minRequireToChat = res.chatMinRequired;
@@ -75,20 +75,8 @@ namespace taixiumini {
             if(cc.sys.platform == cc.sys.DESKTOP_BROWSER) {
                 this.edbMessage.focus();
             }
-        }
-
-        show(isShow: boolean) {
-            this.node.active = isShow;
             this.scrMessage.content.removeAllChildren(true);
-            if (isShow) {
-                // for (var i = 0; i < this.scrMessage.content.childrenCount; i++) {
-                //     let node = this.scrMessage.content.children[i];
-                //     node.active = false;
-                // }
-                MiniGameNetworkClient.getInstance().send(new cmd.SendScribeChat());
-            } else {
-                MiniGameNetworkClient.getInstance().send(new cmd.SendUnScribeChat());
-            }
+            MiniGameNetworkClient.getInstance().send(new cmd.SendScribeChat());
         }
 
         addMessage(nickname: string, message: string) {
@@ -143,7 +131,6 @@ namespace taixiumini {
             }
             var req = new cmd.SendChat(unescape(encodeURIComponent(msg)));
             MiniGameNetworkClient.getInstance().send(req); // gửi chat này
-          //  TaiXiuLiveKubController.instance.sendChat(msg);
         }
 
         scrollToBottom() {
