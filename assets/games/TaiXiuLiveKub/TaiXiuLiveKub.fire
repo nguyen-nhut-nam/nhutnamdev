@@ -2172,7 +2172,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "lblDate",
+    "_name": "lblHistoryDate",
     "_objFlags": 0,
     "_parent": {
       "__id__": 36
@@ -2269,7 +2269,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "lblTime",
+    "_name": "lblHistoryTime",
     "_objFlags": 0,
     "_parent": {
       "__id__": 36
@@ -2366,7 +2366,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "lblSessionID",
+    "_name": "lblHistorySessionID",
     "_objFlags": 0,
     "_parent": {
       "__id__": 36
@@ -10218,7 +10218,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "item",
+    "_name": "lblNickname",
     "_objFlags": 0,
     "_parent": {
       "__id__": 203
@@ -11904,7 +11904,7 @@
         "__id__": 250
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": null,
     "_opacity": 255,
@@ -16907,6 +16907,12 @@
     },
     "lblNickName": {
       "__id__": 83
+    },
+    "lblCurrentSessionDate": {
+      "__id__": 81
+    },
+    "lblCurrentSessionTime": {
+      "__id__": 79
     },
     "_id": "8edS/LUz1Ke6T9asKDsFWz"
   }

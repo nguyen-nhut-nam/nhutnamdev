@@ -119,6 +119,7 @@ export namespace cmd {
         betChan = 0;
         betLe = 0;
         streamURL = "";
+        currentSessionDateTime = "";
 
         constructor(data: Uint8Array) {
             super(data);
@@ -143,6 +144,7 @@ export namespace cmd {
             this.remainTimeRutLoc = this.getShort();
             this.moneyHu = this.getLong();
             this.streamURL = this.getString();
+            this.currentSessionDateTime = this.getString();
         }
     }
 
@@ -207,12 +209,15 @@ export namespace cmd {
 
     export class ReceiveNewGame extends InPacket {
         referenceId = 0;
+        moneyHu = 0;
         remainTimeRutLoc = 0;
-
+        currentSessionDateTime = "";
         constructor(data: Uint8Array) {
             super(data);
             this.referenceId = this.getLong();
+            this.moneyHu = this.getLong();
             this.remainTimeRutLoc = this.getShort();
+            this.currentSessionDateTime = this.getString();
         }
     }
 

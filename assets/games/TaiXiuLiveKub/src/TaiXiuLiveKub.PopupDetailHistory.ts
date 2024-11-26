@@ -3,6 +3,7 @@ import Utils from "../../../scripts/common/Utils";
 import Http from "../../../scripts/common/Http";
 import Configs from "../../../scripts/common/Configs";
 import TaiXiuLiveKubController from "./TaiXiuLiveKub.TaiXiuLiveKubController";
+import ApiIDEnum from "../../Lobby/src/enum/ApiIDEnum";
 
 const { ccclass, property } = cc._decorator;
 
@@ -100,7 +101,7 @@ export default class PopupDetailHistory extends Dialog {
         this.sprDice3.node.active = false;
         this.lblSession.string = "" + this.session;
         this.lblTime.string = "";
-        Http.get(Configs.App.API, { "c": 102, "rid": this.session, "mt": Configs.App.MONEY_TYPE }, (err, res) => {
+        Http.get(Configs.App.API, { "c": ApiIDEnum.SESSION_DETAIL_LIVE_TX, "rid": this.session, "mt": Configs.App.MONEY_TYPE }, (err, res) => {
             if (err != null) return;
             this.historiesTai = [];
             this.historiesXiu = [];

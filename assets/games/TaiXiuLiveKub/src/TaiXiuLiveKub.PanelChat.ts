@@ -136,6 +136,10 @@ namespace taixiumini {
         scrollToBottom() {
             this.scrMessage.scrollToBottom(0.2);
         }
+
+        protected onDestroy() {
+            MiniGameNetworkClient.getInstance().send(new cmd.SendUnScribeChat());
+        }
     }
 }
 export default taixiumini.PanelChat;

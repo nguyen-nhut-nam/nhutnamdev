@@ -9,6 +9,8 @@ import AudioManager from "../../../scripts/common/Common.AudioManager";
 import TaiXiuKuBetNetWorkClient from "../../../scripts/networks/TaiXiuKuBetNetWorkClient";
 import nodeUtils from "../../../scripts/common/NodeUtils";
 import GameConfigManager from "../../../scripts/common/game/GameConfigManager";
+import Http from "../../../scripts/common/Http";
+import ApiIDEnum from "../../Lobby/src/enum/ApiIDEnum";
 
 const {ccclass, property} = cc._decorator;
 
@@ -114,6 +116,10 @@ export default class TaiXiuKuBetController extends cc.Component {
     sprAvatar = null;
     @property(cc.Label)
     lblNickName = null;
+    @property(cc.Label)
+    lblCurrentSessionDate = null;
+    @property(cc.Label)
+    lblCurrentSessionTime = null;
 
     public isBetting = false;
     public isResult = false;
@@ -130,6 +136,8 @@ export default class TaiXiuKuBetController extends cc.Component {
     private lastScore = 0;
     histories = [];
     private wasCalled = false;
+    private lastSelectedSessionHistory = null;
+    private lastSelectedSessionId = null;
 
     onLoad() {
         TaiXiuKuBetController.instance = this;
@@ -175,12 +183,14 @@ export default class TaiXiuKuBetController extends cc.Component {
        TaiXiuKuBetNetWorkClient.getInstance().addListener((data: Uint8Array) => {
             if (!this.node.active) return;
             let inpacket = new InPacket(data);
-            console.log(inpacket.getCmdId());
             switch (inpacket.getCmdId()) {
                 case cmd.Code.GAME_INFO: {
                     App.instance.showLoading(false);
                     let res = new cmd.ReceiveGameInfo(data);
+                    console.log(res);
                     this.webViewLiveStream.url = res.streamURL;
+                    this.lblCurrentSessionTime.string = res.currentSessionDateTime.split(" ")[0];
+                    this.lblCurrentSessionDate.string = res.currentSessionDateTime.split(" ")[1];
                     this.stopWin();
                     if (res.bettingState) {
                         // dang trong thời gian đặt cược
@@ -227,7 +237,6 @@ export default class TaiXiuKuBetController extends cc.Component {
                 }
                 case cmd.Code.UPDATE_TIME: {
                     let res = new cmd.ReceiveUpdateTime(data);
-                    console.log(res);
                     this.lblRemainTime.string = res.remainTime.toString();
                     if (res.bettingState) {
                         this.isBetting = true;
@@ -275,7 +284,6 @@ export default class TaiXiuKuBetController extends cc.Component {
                 }
                 case cmd.Code.DICES_RESULT: {
                     let res = new cmd.ReceiveDicesResult(data);
-                    console.log(res);
                     this.lastScore = res.dice1 + res.dice2 + res.dice3;
                     this.dice1.getComponent(cc.Sprite).spriteFrame = this.sprDices[res.dice1 - 1];
                     this.dice2.getComponent(cc.Sprite).spriteFrame = this.sprDices[res.dice2 - 1];
@@ -286,12 +294,16 @@ export default class TaiXiuKuBetController extends cc.Component {
                     }
                     this.histories.push({
                         "session": this.referenceId,
+                        "datetime": Date.now(),
                         "dices": [
                             res.dice1,
                             res.dice2,
                             res.dice3
                         ]
                     });
+                    this.lastSelectedSessionHistory = this.histories[this.histories.length - 1];
+                    this.lastSelectedSessionId = this.lastSelectedSessionHistory.session;
+                    console.log(this.lastSelectedSessionHistory);
                     break;
                 }
                 case cmd.Code.RESULT: {
@@ -305,8 +317,10 @@ export default class TaiXiuKuBetController extends cc.Component {
                     this.showToast("Bắt Đầu Phiên Mới");
                     // this.noHu.active = false;
                     let res = new cmd.ReceiveNewGame(data);
+                    console.log(res);
                     AudioManager.getInstance().playEffect(this.soundPhienMoi);
-
+                    this.lblCurrentSessionTime.string = res.currentSessionDateTime.split(" ")[0];
+                    this.lblCurrentSessionDate.string = res.currentSessionDateTime.split(" ")[1];
                     this.lblTotalBetTai.string = "0";
                     this.lblTotalBetXiu.string = "0";
                     this.lblTotalBetChan.string = "0";
@@ -340,12 +354,15 @@ export default class TaiXiuKuBetController extends cc.Component {
                             ]
                         });
                     }
+                    this.lastSelectedSessionHistory = this.histories[this.histories.length - 1];
+                    this.lastSelectedSessionId = this.lastSelectedSessionHistory.session;
+                    console.log(this.lastSelectedSessionHistory);
+                    this.loadData();
                     this.updateBtnHistories();
                     break;
                 }
                 case cmd.Code.BET: {
                     let res = new cmd.ReceiveBet(data);
-                    console.log(res);
                     switch (res.result) {
                         case 0:
                             switch (this.bettingDoor) {
@@ -616,5 +633,18 @@ export default class TaiXiuKuBetController extends cc.Component {
 
     toggleVideoLiveStream(isUsed = false) {
          return isUsed ? this.webViewLiveStream.node.y = 0 : this.webViewLiveStream.node.y = 5000;
+    }
+
+    setupHistoryItem() {
+
+    }
+
+    private loadData() {
+        Http.get(Configs.App.API, { "c": ApiIDEnum.SESSION_DETAIL_LIVE_TX, "rid": this.lastSelectedSessionId, "mt": Configs.App.MONEY_TYPE }, (err, res) => {
+            if (err != null) return;
+            if (res.success && res["resultTX"] !== null) {
+                console.log(res.resultTX);
+            }
+        });
     }
 }

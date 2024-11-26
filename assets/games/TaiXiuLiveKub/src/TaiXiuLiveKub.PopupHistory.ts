@@ -7,6 +7,10 @@ import TaiXiuKuBetController from "./TaiXiuLiveKub.TaiXiuLiveKubController";
 
 const { ccclass, property } = cc._decorator;
 
+enum BetDoor {
+    Xiu, Tai, Chan, Le
+}
+
 namespace taixiumini {
     @ccclass
     export class PopupHistory extends Popup {
@@ -70,14 +74,37 @@ namespace taixiumini {
                         item.getChildByName("bg").opacity = i % 2 == 0 ? 10 : 0;
                         item.getChildByName("lblSession").getComponent(cc.Label).string = "#" + itemData["referenceId"];
 
-                       item.getChildByName("lblTime").getComponent(cc.Label).string = itemData["timestamp"].split(" ")[0].split(" ").reverse() + '\n' + itemData["timestamp"].split(" ")[1].replace(/\//gi, "-");
-                        item.getChildByName("lblBetDoor").getComponent(cc.Label).string = itemData["betSide"] == 1 ? "Tài" : "Xỉu";
+                        item.getChildByName("lblTime").getComponent(cc.Label).string = itemData["timestamp"].split(" ")[0].split(" ").reverse() + '\n' + itemData["timestamp"].split(" ")[1].replace(/\//gi, "-");
+                        switch (itemData["betSide"]) {
+                            case BetDoor.Xiu:
+                                item.getChildByName("lblBetDoor").getComponent(cc.Label).string = 'Xỉu';
+                                break;
+                            case BetDoor.Tai:
+                                item.getChildByName("lblBetDoor").getComponent(cc.Label).string = 'Tài';
+                                break;
+                            case BetDoor.Chan:
+                                item.getChildByName("lblBetDoor").getComponent(cc.Label).string = 'Chẵn';
+                                break;
+                            case BetDoor.Le:
+                                item.getChildByName("lblBetDoor").getComponent(cc.Label).string = 'Lẻ';
+                                break;
+                        }
                         let tienThang = itemData["totalPrize"];
-                        let result = itemData["resultPhien"] > 10 ? "Tài" : "Xỉu";
                         item.getChildByName("lblWin").getComponent(cc.Label).string = "+" + Utils.formatNumber(tienThang);
-                        item.getChildByName("lblResult").getComponent(cc.Label).string = itemData["resultPhien"] + "-" + result
+                        if(itemData['resultPhien'] > 10) {
+                            if(Utils.checkNumberEven(itemData['resultPhien'])) {
+                                item.getChildByName("lblResult").getComponent(cc.Label).string = `${itemData['resultPhien']}-Tài-Chẵn`;
+                            } else {
+                                item.getChildByName("lblResult").getComponent(cc.Label).string = `${itemData['resultPhien']}-Tài-Lẻ`;
+                            }
+                        } else {
+                            if(Utils.checkNumberEven(itemData['resultPhien'])) {
+                                item.getChildByName("lblResult").getComponent(cc.Label).string = `${itemData['resultPhien']}-Xỉu-Chẵn`;
+                            } else {
+                                item.getChildByName("lblResult").getComponent(cc.Label).string = `${itemData['resultPhien']}-Xỉu-Lẻ`;
+                            }
+                        }
                         item.getChildByName("lblBet").getComponent(cc.Label).string = Utils.formatNumber(itemData["betValue"]);
-                        item.getChildByName("lblRefund").getComponent(cc.Label).string = Utils.formatNumber(itemData["totalRefund"]);
                         if (itemData["totalRefund"] > 0) {
                             item.getChildByName("lblRefund").getComponent(cc.Label).node.color = cc.Color.BLACK.fromHEX("#f70100");
                         }
