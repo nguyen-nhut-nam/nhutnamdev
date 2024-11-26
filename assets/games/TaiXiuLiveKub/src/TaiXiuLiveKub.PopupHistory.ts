@@ -11,7 +11,7 @@ enum BetDoor {
     Xiu, Tai, Chan, Le
 }
 
-namespace taixiumini {
+namespace taixiukubet {
     @ccclass
     export class PopupHistory extends Popup {
 
@@ -31,6 +31,7 @@ namespace taixiumini {
         runActionClose() {
             super.runActionClose();
             TaiXiuKuBetController.instance.toggleVideoLiveStream(true);
+            TaiXiuKuBetController.instance.isOpenPopup = false;
         }
 
         actNextPage() {
@@ -117,4 +118,4 @@ namespace taixiumini {
         }
     }
 }
-export default taixiumini.PopupHistory;
+export default taixiukubet.PopupHistory;

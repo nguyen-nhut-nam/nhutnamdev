@@ -51,7 +51,7 @@ export default class App extends cc.Component {
     buttonMiniGameNode: cc.Node = null;
 
     @property(cc.Node)
-    miniGame: cc.Node = null;
+    public miniGame: cc.Node = null;
     @property(AlertDialog)
     popUpSercretCode : AlertDialog = null;
     @property({type: cc.Node})
@@ -87,6 +87,7 @@ export default class App extends cc.Component {
 
     public isDownloadingGame = false;
     public lobbyBundle = null;
+    public isMiniGameOpened = false;
 
     // LIFE-CYCLE CALLBACKS:
     nodeClickInAll : cc.Node = null;

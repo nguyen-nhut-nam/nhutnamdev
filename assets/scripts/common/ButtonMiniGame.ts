@@ -102,11 +102,13 @@ export default class ButtonMiniGame extends cc.Component {
     actButton() {
         this.panel.active = true;
         this.button.active = false;
+        App.instance.isMiniGameOpened = true;
     }
 
     actHidden() {
         this.panel.active = false;
         this.button.active = true;
+        App.instance.isMiniGameOpened = false;
     }
 
     actTaiXiu(event, game) {

@@ -5,10 +5,16 @@ import ToastMessage from "../../../scripts/common/ToastMessage";
 import Utils from "../../../scripts/common/Utils";
 import cmd from "./TaiXiuLiveKub.Cmd";
 import TaiXiuLiveKubController from "./TaiXiuLiveKub.TaiXiuLiveKubController";
+import GameErrorMessage from "../../../scripts/enum/GameErrorMessage";
+import BroadcastReceiver from "../../../scripts/common/BroadcastReceiver";
 
 const { ccclass, property } = cc._decorator;
 
-namespace taixiumini {
+enum TYPE_CHAT {
+    CHAT, TIP
+}
+
+namespace taixiukubet {
     @ccclass
     export class PanelChat extends cc.Component {
 
@@ -18,8 +24,15 @@ namespace taixiumini {
         scrMessage: cc.ScrollView = null;
         @property(cc.EditBox)
         edbMessage: cc.EditBox = null;
+        @property(cc.Node)
+        nodeChat = null;
+        @property(cc.Node)
+        nodeTip = null;
+        @property(cc.Node)
+        toggleContainer = null;
 
         private minRequireToChat = 0;
+        private _tipAmount = 0;
 
         start() {
             MiniGameNetworkClient.getInstance().addListener((data: Uint8Array) => {
@@ -31,7 +44,7 @@ namespace taixiumini {
                         this.minRequireToChat = res.chatMinRequired;
                         var msgs = JSON.parse(res.message);
                         for (var i = 0; i < msgs.length; i++) {
-                            this.addMessage(msgs[i]["u"], msgs[i]["m"]);
+                            this.addMessage(msgs[i]["u"], msgs[i]["m"], 0, 0);
                         }
                         this.scrollToBottom();
                         break;
@@ -40,7 +53,7 @@ namespace taixiumini {
                         let res = new cmd.ReceiveSendChat(data);
                         switch (res.error) {
                             case 0:
-                                this.addMessage(res.nickname, res.message);
+                                this.addMessage(res.nickname, res.message, res.type, res.money);
                                 break;
                             case 2:
                                 TaiXiuLiveKubController.instance.showToast("Bạn không có quyền Chat!");
@@ -79,7 +92,7 @@ namespace taixiumini {
             MiniGameNetworkClient.getInstance().send(new cmd.SendScribeChat());
         }
 
-        addMessage(nickname: string, message: string) {
+        addMessage(nickname: string, message: string, typeMessage: number, money: number = 0) {
             let item: cc.Node = null;
             for (var i = 0; i < this.scrMessage.content.childrenCount; i++) {
                 let node = this.scrMessage.content.children[i];
@@ -103,12 +116,29 @@ namespace taixiumini {
                 }
             }
             item.parent = this.scrMessage.content;
-            let lblNickname: cc.Label = item.getChildByName("lblNickname").getComponent(cc.Label);
-            lblNickname.string = `${nickname}:`;
-            lblNickname.node.color = nickname == Configs.Login.Nickname ? cc.Color.WHITE.fromHEX("#00cec9") : cc.Color.WHITE.fromHEX("#fd9644");
-            item.getComponent(cc.Label).string = `${lblNickname.string} ${message}`;
-            item.active = true;
-            item.zIndex = zIndex++;
+            if(typeMessage == TYPE_CHAT.CHAT) {
+                let strChat = '';
+                if(nickname == Configs.Login.Nickname) {
+                    strChat = `<color=#00cec9>${nickname}</color>: ${message}`;
+                } else {
+                    strChat = `<color=#fd9644>${nickname}</color>: ${message}`;
+                }
+
+                item.getComponent(cc.RichText).string = strChat;
+                item.active = true;
+                item.zIndex = zIndex++;
+            } else {
+                let moneyTip = money;
+                let strChat = `<color=#D69DFF>${nickname}</color> đã tip @GIFT@ cho dealer`;
+                strChat = strChat.replace("@GIFT@", "<img src='" + moneyTip + '\' width="40%" height="40%"/>');
+                item.getComponent(cc.RichText).string = strChat;
+                item.active = true;
+                item.zIndex = zIndex++;
+                this.btnChatClick();
+                this.toggleContainer.children[0].getComponent(cc.Toggle).isChecked = true;
+                Configs.Login.Coin -= moneyTip;
+                BroadcastReceiver.send(BroadcastReceiver.USER_UPDATE_COIN);
+            }
             this.scrollToBottom();
         }
 
@@ -129,7 +159,7 @@ namespace taixiumini {
                     this.edbMessage.focus();
                 }, delayTime);
             }
-            var req = new cmd.SendChat(unescape(encodeURIComponent(msg)));
+            var req = new cmd.SendChat(unescape(encodeURIComponent(msg)), TYPE_CHAT.CHAT);
             MiniGameNetworkClient.getInstance().send(req); // gửi chat này
         }
 
@@ -140,6 +170,26 @@ namespace taixiumini {
         protected onDestroy() {
             MiniGameNetworkClient.getInstance().send(new cmd.SendUnScribeChat());
         }
+
+        onBtnTipPress(event, data) {
+            this._tipAmount = parseInt(data);
+            if(this._tipAmount > Configs.Login.Coin) {
+                TaiXiuLiveKubController.instance.showToast(`${GameErrorMessage.NOT_ENOUGH_BALANCE}`);
+                return;
+            }
+            let req = new cmd.SendChat("", TYPE_CHAT.TIP, this._tipAmount);
+            MiniGameNetworkClient.getInstance().send(req);
+        }
+
+        btnChatClick() {
+            this.nodeChat.active = true;
+            this.nodeTip.active = false;
+        }
+
+        btnTipClick() {
+            this.nodeChat.active = false;
+            this.nodeTip.active = true;
+        }
     }
 }
-export default taixiumini.PanelChat;
+export default taixiukubet.PanelChat;

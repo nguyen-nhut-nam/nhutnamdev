@@ -5,7 +5,6 @@ import Tween from "../../../scripts/common/Tween";
 import Configs from "../../../scripts/common/Configs";
 import BroadcastReceiver from "../../../scripts/common/BroadcastReceiver";
 import App from "../../../scripts/common/App";
-import AudioManager from "../../../scripts/common/Common.AudioManager";
 import TaiXiuKuBetNetWorkClient from "../../../scripts/networks/TaiXiuKuBetNetWorkClient";
 import nodeUtils from "../../../scripts/common/NodeUtils";
 import GameConfigManager from "../../../scripts/common/game/GameConfigManager";
@@ -65,10 +64,6 @@ export default class TaiXiuKuBetController extends cc.Component {
     @property(cc.Sprite)
     spriteNumber = null;
     @property(cc.Node)
-    tai: cc.Node = null;
-    @property(cc.Node)
-    xiu: cc.Node = null;
-    @property(cc.Node)
     btnHistories: cc.Node = null;
     @property(cc.Node)
     nodePanelChat: cc.Node = null;
@@ -87,7 +82,7 @@ export default class TaiXiuKuBetController extends cc.Component {
     leAnimation = null;
 
     @property({ type: cc.AudioClip })
-    soundKetQua: cc.AudioClip = null;
+    soundCountDown: cc.AudioClip = null;
     @property({ type: cc.AudioClip })
     soundPhienMoi: cc.AudioClip = null;
     @property({ type: cc.AudioClip })
@@ -96,8 +91,6 @@ export default class TaiXiuKuBetController extends cc.Component {
     soundThang: cc.AudioClip = null;
     @property({ type: cc.AudioClip })
     soundClick: cc.AudioClip = null;
-    @property({ type: cc.AudioClip })
-    audioRollDice = null;
     @property(cc.Prefab)
     prefabPopupHistory = null;
     @property(cc.Prefab)
@@ -110,6 +103,8 @@ export default class TaiXiuKuBetController extends cc.Component {
     nodePopup = null;
     @property(cc.WebView)
     webViewLiveStream = null;
+    @property(cc.Node)
+    nodePlayVideo = null;
     @property(cc.Label)
     lblMyCoin = null;
     @property(cc.Sprite)
@@ -120,11 +115,30 @@ export default class TaiXiuKuBetController extends cc.Component {
     lblCurrentSessionDate = null;
     @property(cc.Label)
     lblCurrentSessionTime = null;
+    @property(cc.Label)
+    lblHistorySessionDate = null;
+    @property(cc.Label)
+    lblHistorySessionTime = null;
+    @property(cc.Label)
+    lblHistorySessionID = null;
+
+    @property(cc.Node)
+    btnNextSessionDetail = null;
+    @property(cc.Node)
+    btnPrevSessionDetail = null;
+
+    @property(cc.SpriteFrame)
+    sfResultTai = null;
+    @property(cc.SpriteFrame)
+    sfResultXiu = null;
+    @property(cc.SpriteFrame)
+    sfNumberEven = null;
+    @property(cc.SpriteFrame)
+    sfNumberOdd = null;
 
     public isBetting = false;
     public isResult = false;
     private remainTime = 0;
-    private canBet = true;
     private bettedTai = 0;
     private bettedXiu = 0;
     private bettedChan = 0;
@@ -138,6 +152,8 @@ export default class TaiXiuKuBetController extends cc.Component {
     private wasCalled = false;
     private lastSelectedSessionHistory = null;
     private lastSelectedSessionId = null;
+    private lastSelectSessionIndex = null;
+    public isOpenPopup = false;
 
     onLoad() {
         TaiXiuKuBetController.instance = this;
@@ -151,28 +167,42 @@ export default class TaiXiuKuBetController extends cc.Component {
 
         this.sprAvatar.spriteFrame = App.instance.getAvatarSpriteFrame(Configs.Login.Avatar);
         this.lblNickName.string = Configs.Login.Nickname;
+        this.actRunTaiXiuAnim();
     }
 
     actRunTaiXiuAnim() {
-        const timeDelay = 0.1;
-        // cc.tween(this.taiAnimation)
-        //     .repeatForever(
-        //         cc.tween()
-        //             .delay(timeDelay)
-        //             .to(0.2, {scale: 0.9})
-        //             .delay(timeDelay)
-        //             .to(0.2, {scale: 1.1})
-        //     )
-        //     .start();
-        // cc.tween(this.xiuAnimation)
-        //     .repeatForever(
-        //         cc.tween()
-        //             .delay(timeDelay)
-        //             .to(0.2, {scale: 0.9})
-        //             .delay(timeDelay)
-        //             .to(0.2, {scale: 1.1})
-        //     )
-        //     .start();
+        this.taiAnimation.runAction(
+            cc.repeatForever(
+                cc.sequence(
+                    cc.fadeOut(.65),
+                    cc.fadeIn(.65),
+                )
+            )
+        );
+        this.xiuAnimation.runAction(
+            cc.repeatForever(
+                cc.sequence(
+                    cc.fadeOut(.65),
+                    cc.fadeIn(.65),
+                )
+            )
+        );
+        this.chanAnimation.runAction(
+            cc.repeatForever(
+                cc.sequence(
+                    cc.fadeOut(.65),
+                    cc.fadeIn(.65),
+                )
+            )
+        );
+        this.leAnimation.runAction(
+            cc.repeatForever(
+                cc.sequence(
+                    cc.fadeOut(.65),
+                    cc.fadeIn(.65),
+                )
+            )
+        );
     }
     start() { // nghe kết quả trả về từ server
         cc.game.on(cc.game.EVENT_SHOW, this.stopWin, this);
@@ -187,7 +217,6 @@ export default class TaiXiuKuBetController extends cc.Component {
                 case cmd.Code.GAME_INFO: {
                     App.instance.showLoading(false);
                     let res = new cmd.ReceiveGameInfo(data);
-                    console.log(res);
                     this.webViewLiveStream.url = res.streamURL;
                     this.lblCurrentSessionTime.string = res.currentSessionDateTime.split(" ")[0];
                     this.lblCurrentSessionDate.string = res.currentSessionDateTime.split(" ")[1];
@@ -196,8 +225,8 @@ export default class TaiXiuKuBetController extends cc.Component {
                         // dang trong thời gian đặt cược
                         this.isResult = false;
                         this.isBetting = true;
-
                         this.lblRemainTime.string = res.remainTime.toString();
+                        this.lblRemainTime.node.color = cc.Color.WHITE;
                         Tween.numberTo(this.lblTotalBetTai, res.potTai, 0.3);
                         Tween.numberTo(this.lblTotalBetXiu, res.potXiu, 0.3);
                         Tween.numberTo(this.lblTotalBetChan, res.potChan, 0.3);
@@ -206,7 +235,8 @@ export default class TaiXiuKuBetController extends cc.Component {
                         if (res.remainTime < 5) {
                             console.log("this.wasCalled 1 -- ", this.wasCalled);
                             if (!this.wasCalled) {
-                                this.showToast("Trả tiền cân cửa");
+                                this.lblRemainTime.node.color = cc.Color.RED;
+                                this.playSoundEffect(this.soundCountDown);
                             }
                             this.wasCalled = true;
                         }
@@ -218,7 +248,6 @@ export default class TaiXiuKuBetController extends cc.Component {
                         this.dice3.getComponent(cc.Sprite).spriteFrame = this.sprDices[res.dice3 - 1];
                         this.lblTotalScore.string = this.lastScore;
                         this.isBetting = false;
-                        this.actRunTaiXiuAnim();
                         this.wasCalled = false;
                         this.showResult();
                     }
@@ -246,10 +275,11 @@ export default class TaiXiuKuBetController extends cc.Component {
                         this.lblTotalBetXiu.string = Utils.formatNumber(res.potXiu);
                         this.lblTotalBetChan.string = Utils.formatNumber(res.potChan);
                         this.lblTotalBetLe.string = Utils.formatNumber(res.potLe);
+                        this.lblRemainTime.node.color = cc.Color.WHITE;
                         if (res.remainTime < 5) {
                             console.log("this.wasCalled 2 -- ", this.wasCalled);
                             if (!this.wasCalled) {
-                                this.showToast("Trả tiền cân cửa");
+                                this.lblRemainTime.node.color = cc.Color.RED;
                             }
                             this.wasCalled = true;
                             this.lblTotalBetTai.node.stopAllActions();
@@ -259,18 +289,31 @@ export default class TaiXiuKuBetController extends cc.Component {
                             this.lblTotalBetXiu.string = Utils.formatNumber(res.potXiu);
                             this.lblTotalBetChan.string = Utils.formatNumber(res.potChan);
                             this.lblTotalBetLe.string = Utils.formatNumber(res.potLe);
+                            this.lblRemainTime.node.color = cc.Color.WHITE;
                             this.lblTotalBetTai.node.runAction(
                                 cc.sequence(
-                                    cc.scaleTo(.15, 1.2),
+                                    cc.scaleTo(.15, 1.1),
                                     cc.scaleTo(.1, 1)
                                 )
-                            )
+                            );
                             this.lblTotalBetXiu.node.runAction(
                                 cc.sequence(
-                                    cc.scaleTo(.15, 1.2),
+                                    cc.scaleTo(.15, 1.1),
                                     cc.scaleTo(.1, 1)
                                 )
-                            )
+                            );
+                            this.lblTotalBetChan.node.runAction(
+                                cc.sequence(
+                                    cc.scaleTo(.15, 1.1),
+                                    cc.scaleTo(.1, 1)
+                                )
+                            );
+                            this.lblTotalBetLe.node.runAction(
+                                cc.sequence(
+                                    cc.scaleTo(.15, 1.1),
+                                    cc.scaleTo(.1, 1)
+                                )
+                            );
                         }
                     } else {
                         this.isBetting = false;
@@ -279,6 +322,7 @@ export default class TaiXiuKuBetController extends cc.Component {
                         this.lblTotalBetXiu.string = Utils.formatNumber(res.potXiu);
                         this.lblTotalBetChan.string = Utils.formatNumber(res.potChan);
                         this.lblTotalBetLe.string = Utils.formatNumber(res.potLe);
+                        this.lblRemainTime.node.color = cc.Color.RED;
                     }
                     break;
                 }
@@ -301,24 +345,32 @@ export default class TaiXiuKuBetController extends cc.Component {
                             res.dice3
                         ]
                     });
-                    this.lastSelectedSessionHistory = this.histories[this.histories.length - 1];
+                    this.lastSelectSessionIndex = this.histories.length - 1;
+                    this.btnNextSessionDetail.active = false;
+                    this.btnPrevSessionDetail.active = true;
+                    this.lastSelectedSessionHistory = this.histories[this.lastSelectSessionIndex];
                     this.lastSelectedSessionId = this.lastSelectedSessionHistory.session;
-                    console.log(this.lastSelectedSessionHistory);
+                    this.lblHistorySessionID.string = this.lastSelectedSessionId.toString();
+                    this.lblHistorySessionTime.string = new Date().toLocaleTimeString();
+                    this.lblHistorySessionDate.string = new Date().toLocaleDateString();
+                    this.setupHistoryResult(this.lastScore);
+                    this.showResult();
+                    this.scheduleOnce(() => {
+                        this.showWinCash();
+                    }, 2);
                     break;
                 }
                 case cmd.Code.RESULT: {
                     let res = new cmd.ReceiveResult(data);
-                    // console.log(res);
                     Configs.Login.Coin = res.currentMoney;
                     this.lastWinCash = res.totalMoney;
+                    BroadcastReceiver.send(BroadcastReceiver.USER_UPDATE_COIN);
                     break;
                 }
                 case cmd.Code.NEW_GAME: {
                     this.showToast("Bắt Đầu Phiên Mới");
-                    // this.noHu.active = false;
                     let res = new cmd.ReceiveNewGame(data);
-                    console.log(res);
-                    AudioManager.getInstance().playEffect(this.soundPhienMoi);
+                    this.playSoundEffect(this.soundPhienMoi);
                     this.lblCurrentSessionTime.string = res.currentSessionDateTime.split(" ")[0];
                     this.lblCurrentSessionDate.string = res.currentSessionDateTime.split(" ")[1];
                     this.lblTotalBetTai.string = "0";
@@ -331,7 +383,6 @@ export default class TaiXiuKuBetController extends cc.Component {
                     this.lblMyBetLe.string = "0";
                     this.referenceId = res.referenceId;
                     this.lblSession.string = "#" + res.referenceId;
-                    // this.bettingDoor = BetDoor.None;
                     this.bettedTai = 0;
                     this.bettedXiu = 0;
                     this.bettedChan = 0;
@@ -354,9 +405,15 @@ export default class TaiXiuKuBetController extends cc.Component {
                             ]
                         });
                     }
-                    this.lastSelectedSessionHistory = this.histories[this.histories.length - 1];
+                    this.lastSelectSessionIndex = this.histories.length - 1;
+                    this.lastSelectedSessionHistory = this.histories[this.lastSelectSessionIndex];
                     this.lastSelectedSessionId = this.lastSelectedSessionHistory.session;
-                    console.log(this.lastSelectedSessionHistory);
+                    this.dice1.getComponent(cc.Sprite).spriteFrame = this.sprDices[this.lastSelectedSessionHistory.dices[0] - 1];
+                    this.dice2.getComponent(cc.Sprite).spriteFrame = this.sprDices[this.lastSelectedSessionHistory.dices[1] - 1];
+                    this.dice3.getComponent(cc.Sprite).spriteFrame = this.sprDices[this.lastSelectedSessionHistory.dices[2] - 1];
+                    let totalScore = this.lastSelectedSessionHistory.dices[0] + this.lastSelectedSessionHistory.dices[1] + this.lastSelectedSessionHistory.dices[2];
+                    this.lblTotalScore.string = totalScore.toString();
+                    this.setupHistoryResult(totalScore);
                     this.loadData();
                     this.updateBtnHistories();
                     break;
@@ -385,7 +442,7 @@ export default class TaiXiuKuBetController extends cc.Component {
                             }
                             Configs.Login.Coin = res.currentMoney;
                             BroadcastReceiver.send(BroadcastReceiver.USER_UPDATE_COIN);
-                            AudioManager.getInstance().playEffect(this.soundDatCuoc);
+                            this.playSoundEffect(this.soundDatCuoc);
                             break;
                         case 2:
                             this.showToast("Hết thời gian cược.");
@@ -409,74 +466,19 @@ export default class TaiXiuKuBetController extends cc.Component {
         }, this);
     }
 
-    actClose() {
-
-    }
-
-    actBetTai() {
-        AudioManager.getInstance().playEffect(this.soundClick);
-        // if (!this.isBetting) {
-        //     this.showToast("Chưa đến thời gian đặt cược.");
-        //     return;
-        // }
-        if (this.bettingValue >= 0) {
-            this.showToast("Bạn thao tác quá nhanh.");
-            return;
-        }
-        if (this.bettedXiu > 0) {
-            this.showToast("Bạn không thể đặt 2 cửa.");
-            return;
-        }
-    }
-
-    actBetXiu() {
-        AudioManager.getInstance().playEffect(this.soundClick);
-        // if (!this.isBetting) {
-        //     this.showToast("Chưa đến thời gian đặt cược.");
-        //     return;
-        // }
-        if (this.bettingValue >= 0) {
-            this.showToast("Bạn thao tác quá nhanh.");
-            return;
-        }
-        if (this.bettedTai > 0) {
-            this.showToast("Bạn không thể đặt 2 cửa.");
-            return;
-        }
-    }
-    
     actBet(event, data) {
         this.bettingDoor = parseInt(data);
-        AudioManager.getInstance().playEffect(this.soundClick);
-        console.log(this.bettingDoor);
+        if(GameConfigManager.getInstance().enableSound) {
+            cc.audioEngine.playEffect(this.soundClick, false);
+        }
         TaiXiuKuBetNetWorkClient.getInstance().send(new cmd.SendBet(this.referenceId, this.bettingValue, this.bettingDoor, this.remainTime));
     }
 
-    actAgree() {
-        AudioManager.getInstance().playEffect(this.soundClick);
-        if (this.bettingValue >= 0 || !this.canBet) {
-            this.showToast("Bạn thao tác quá nhanh.");
-            return;
-        }
-        TaiXiuKuBetNetWorkClient.getInstance().send(new cmd.SendBet(this.referenceId, this.bettingValue, this.bettingDoor == BetDoor.Tai ? 1 : 0, this.remainTime));
-        if(this.bettingValue <= 0) {
-            return;
-        }
-        this.canBet = false;
-        this.scheduleOnce(function () {
-            this.canBet = true;
-        }, 1);
-    }
-
-    actCancel() {
-        AudioManager.getInstance().playEffect(this.soundClick);
-    }
-
     private showResult() {
-        //console.error("showResult");
+        if(this.lastScore == 0) {
+            return;
+        }
         this.isResult = true;
-        cc.audioEngine.play(this.soundKetQua, false, 1);
-        this.actRunTaiXiuAnim();
         if (this.lastScore >= 11) {
             this.taiAnimation.active = true;
             if (Utils.checkNumberEven(this.lastScore)) {
@@ -492,12 +494,24 @@ export default class TaiXiuKuBetController extends cc.Component {
                 this.leAnimation.active = true;
             }
         }
+        this.actRunTaiXiuAnim();
         this.updateBtnHistories();
+
     }
 
     private stopWin() {
-        // cc.tween(this.taiAnimation).stop();
-        // cc.tween(this.xiuAnimation).stop();
+        this.taiAnimation.active = false;
+        this.taiAnimation.stopAllActions();
+        this.taiAnimation.opacity = 255;
+        this.xiuAnimation.active = false;
+        this.xiuAnimation.stopAllActions();
+        this.xiuAnimation.opacity = 255;
+        this.chanAnimation.active = false;
+        this.chanAnimation.stopAllActions();
+        this.chanAnimation.opacity = 255;
+        this.leAnimation.active = false;
+        this.leAnimation.stopAllActions();
+        this.leAnimation.opacity = 255;
     }
 
     public showToast(message: string) {
@@ -528,13 +542,22 @@ export default class TaiXiuKuBetController extends cc.Component {
 
     private showWinCash() {
         if (this.lastWinCash <= 0) return;
-        AudioManager.getInstance().playEffect(this.soundThang);
-        this.lblWinCash.node.stopAllActions();
-        this.lblWinCash.node.active = true;
+        this.playSoundEffect(this.soundThang);
+        this.lblWinCash.node.parent.stopAllActions();
+        this.lblWinCash.node.parent.active = true;
         Tween.numberTo(this.lblWinCash, this.lastWinCash, 0.5, (n) => {
             return ("+" + Utils.formatNumber(n))
         });
-
+        this.lblWinCash.node.parent.runAction(
+            cc.sequence(
+                cc.fadeIn(.25),
+                cc.delayTime(3),
+                cc.fadeOut(.25),
+                cc.callFunc(() => {
+                    this.lblWinCash.node.parent.active = false;
+                })
+            )
+        )
         BroadcastReceiver.send(BroadcastReceiver.USER_UPDATE_COIN);
     }
 
@@ -575,7 +598,7 @@ export default class TaiXiuKuBetController extends cc.Component {
     }
 
     actShowHistory() {
-        AudioManager.getInstance().playEffect(this.soundClick);
+        this.playSoundEffect(this.soundClick);
         let histories = this.histories.slice();
         if (histories.length > this.btnHistories.childrenCount) {
             histories.splice(0, histories.length - this.btnHistories.childrenCount);
@@ -583,15 +606,12 @@ export default class TaiXiuKuBetController extends cc.Component {
         let idx = histories.length - 1;
     }
 
-    actSoundClick() {
-        AudioManager.getInstance().playEffect(this.soundClick);
-    }
-
     actOpenBetHistory() {
         if(this.prefabPopupHistory) {
             let popupHistory = cc.instantiate(this.prefabPopupHistory);
             this.nodePopup.addChild(popupHistory);
             this.toggleVideoLiveStream(false);
+            this.isOpenPopup = true;
         }
     }
 
@@ -600,6 +620,7 @@ export default class TaiXiuKuBetController extends cc.Component {
             let popupGuide = cc.instantiate(this.prefabGuide);
             this.nodePopup.addChild(popupGuide);
             this.toggleVideoLiveStream(false);
+            this.isOpenPopup = true;
         }
     }
 
@@ -608,6 +629,7 @@ export default class TaiXiuKuBetController extends cc.Component {
             let popupGraph = cc.instantiate(this.prefabSoiCau);
             this.nodePopup.addChild(popupGraph);
             this.toggleVideoLiveStream(false);
+            this.isOpenPopup = true;
         }
     }
 
@@ -616,6 +638,7 @@ export default class TaiXiuKuBetController extends cc.Component {
             let popupRanking = cc.instantiate(this.prefabRanking);
             this.nodePopup.addChild(popupRanking);
             this.toggleVideoLiveStream(false);
+            this.isOpenPopup = true;
         }
     }
 
@@ -632,19 +655,100 @@ export default class TaiXiuKuBetController extends cc.Component {
     }
 
     toggleVideoLiveStream(isUsed = false) {
-         return isUsed ? this.webViewLiveStream.node.y = 0 : this.webViewLiveStream.node.y = 5000;
+        if(isUsed) {
+            this.webViewLiveStream.node.y = 0;
+            this.nodePlayVideo.y = 5000;
+        } else {
+            this.webViewLiveStream.node.y = 5000;
+            this.nodePlayVideo.y = 0;
+        }
     }
 
-    setupHistoryItem() {
+    toggleNextHistory() {
+        if(this.lastSelectSessionIndex >= this.histories.length - 1) {
+            this.btnNextSessionDetail.active = false;
+            this.btnPrevSessionDetail.active = true;
+            return;
+        }
+        this.lastSelectSessionIndex++;
+        this.lastSelectedSessionHistory = this.histories[this.lastSelectSessionIndex];
+        this.lastSelectedSessionId = this.lastSelectedSessionHistory.session;
+        this.btnPrevSessionDetail.active = true;
+        this.loadData();
+        if(this.lastSelectSessionIndex >= this.histories.length - 1) {
+            this.btnNextSessionDetail.active = false;
+        }
+    }
 
+    togglePreviousHistory() {
+        if(this.lastSelectSessionIndex < 0) {
+            this.btnNextSessionDetail.active = true;
+            this.btnPrevSessionDetail.active = false;
+            return;
+        }
+        this.lastSelectSessionIndex--;
+        this.lastSelectedSessionHistory = this.histories[this.lastSelectSessionIndex];
+        this.lastSelectedSessionId = this.lastSelectedSessionHistory.session;
+        this.btnNextSessionDetail.active = true;
+        this.loadData();
+        if(this.lastSelectSessionIndex == 0) {
+            this.btnPrevSessionDetail.active = false;
+        }
+    }
+
+    setupHistoryItem(resultTX) {
+        if(!resultTX) {
+            return;
+        }
+        this.lblHistorySessionID.string = `#${resultTX.referenceId.toString()}`;
+        this.lblHistorySessionTime.string = resultTX.timestamp.split(" ")[1];
+        this.lblHistorySessionDate.string = resultTX.timestamp.split(" ")[0];
+        this.dice1.getComponent(cc.Sprite).spriteFrame = this.sprDices[resultTX.dice1 - 1];
+        this.dice2.getComponent(cc.Sprite).spriteFrame = this.sprDices[resultTX.dice2 - 1];
+        this.dice3.getComponent(cc.Sprite).spriteFrame = this.sprDices[resultTX.dice3 - 1];
+        let totalScore = resultTX.dice1 + resultTX.dice2 + resultTX.dice3;
+        this.lblTotalScore.string = totalScore.toString();
+        this.setupHistoryResult(totalScore);
+    }
+
+    setupHistoryResult(totalScore) {
+        if(totalScore > 10) {
+            this.spriteResult.spriteFrame = this.sfResultTai;
+            if(Utils.checkNumberEven(totalScore)) {
+                this.spriteNumber.spriteFrame = this.sfNumberEven;
+            } else {
+                this.spriteNumber.spriteFrame = this.sfNumberOdd;
+            }
+        } else {
+            this.spriteResult.spriteFrame = this.sfResultXiu;
+            if(Utils.checkNumberEven(totalScore)) {
+                this.spriteNumber.spriteFrame = this.sfNumberEven;
+            } else {
+                this.spriteNumber.spriteFrame = this.sfNumberOdd;
+            }
+        }
     }
 
     private loadData() {
         Http.get(Configs.App.API, { "c": ApiIDEnum.SESSION_DETAIL_LIVE_TX, "rid": this.lastSelectedSessionId, "mt": Configs.App.MONEY_TYPE }, (err, res) => {
             if (err != null) return;
             if (res.success && res["resultTX"] !== null) {
-                console.log(res.resultTX);
+                this.setupHistoryItem(res.resultTX);
             }
         });
+    }
+
+    protected update(dt: number) {
+        if(this.isOpenPopup || App.instance.isMiniGameOpened || App.instance.miniGame.childrenCount > 0) {
+            this.toggleVideoLiveStream(false);
+        } else {
+            this.toggleVideoLiveStream(true);
+        }
+    }
+
+    playSoundEffect(audioClip) {
+        if(GameConfigManager.getInstance().enableSound) {
+            cc.audioEngine.playEffect(audioClip, false);
+        }
     }
 }

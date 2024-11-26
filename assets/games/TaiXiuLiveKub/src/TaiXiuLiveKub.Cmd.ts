@@ -70,13 +70,15 @@ export namespace cmd {
     }
     // gửi message 
     export class SendChat extends OutPacket {
-        constructor(message: string) {
+        constructor(message: string, type, money = 0) {
             super();
             this.initData(100);
             this.setControllerId(1);
             this.setCmdId(Code.SEND_CHAT);
             this.packHeader();
             this.putString(message);
+            this.putShort(type);
+            this.putLong(money);
             this.updateSize();
         }
     }
@@ -262,12 +264,16 @@ export namespace cmd {
         error = 0;
         nickname = "";
         message = "";
+        type = 0;
+        money = 0;
 
         constructor(data: Uint8Array) {
             super(data);
             this.error = this.getError();
             this.nickname = this.getString();
             this.message = this.getString()
+            this.type = this.getShort();
+            this.money = this.getLong();
         }
     }
 }

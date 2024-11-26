@@ -5,7 +5,7 @@ import TaiXiuKuBetController from "./TaiXiuLiveKub.TaiXiuLiveKubController";
 
 const { ccclass, property } = cc._decorator;
 
-namespace taixiumini {
+namespace taixiukubet {
     @ccclass
     export class PopupHonors extends Dialog {
         @property(cc.Node)
@@ -39,6 +39,7 @@ namespace taixiumini {
                     cc.callFunc(() => {
                         this.node.destroy();
                         TaiXiuKuBetController.instance.toggleVideoLiveStream(true);
+                        TaiXiuKuBetController.instance.isOpenPopup = false;
                     })
                 )
             )
@@ -204,4 +205,4 @@ namespace taixiumini {
 
 }
 
-export default taixiumini.PopupHonors;
+export default taixiukubet.PopupHonors;

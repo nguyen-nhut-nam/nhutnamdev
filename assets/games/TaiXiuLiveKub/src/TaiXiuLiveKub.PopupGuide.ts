@@ -13,6 +13,7 @@ export default class TaiXiuLiveKubPopupGuide extends cc.Component {
                 cc.callFunc(() => {
                     this.node.destroy();
                     TaiXiuKuBetController.instance.toggleVideoLiveStream(true);
+                    TaiXiuKuBetController.instance.isOpenPopup = false;
                 })
             )
         )
