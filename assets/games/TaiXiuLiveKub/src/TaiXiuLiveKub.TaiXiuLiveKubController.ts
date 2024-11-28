@@ -170,6 +170,10 @@ export default class TaiXiuKuBetController extends cc.Component {
         this.actRunTaiXiuAnim();
     }
 
+    protected onEnable() {
+        cc.audioEngine.stopAll();
+    }
+
     actRunTaiXiuAnim() {
         this.taiAnimation.runAction(
             cc.repeatForever(
@@ -218,8 +222,8 @@ export default class TaiXiuKuBetController extends cc.Component {
                     App.instance.showLoading(false);
                     let res = new cmd.ReceiveGameInfo(data);
                     this.webViewLiveStream.url = res.streamURL;
-                    this.lblCurrentSessionTime.string = res.currentSessionDateTime.split(" ")[0];
-                    this.lblCurrentSessionDate.string = res.currentSessionDateTime.split(" ")[1];
+                    this.lblCurrentSessionTime.string = res.currentSessionDateTime.split(" ")[0] ?? "";
+                    this.lblCurrentSessionDate.string = res.currentSessionDateTime.split(" ")[1] ?? "";
                     this.stopWin();
                     if (res.bettingState) {
                         // dang trong thời gian đặt cược
@@ -232,7 +236,7 @@ export default class TaiXiuKuBetController extends cc.Component {
                         Tween.numberTo(this.lblTotalBetChan, res.potChan, 0.3);
                         Tween.numberTo(this.lblTotalBetLe, res.potLe, 0.3);
                         this.stopWin();
-                        if (res.remainTime < 5) {
+                        if (res.remainTime < 5 && res.remainTime > 0) {
                             console.log("this.wasCalled 1 -- ", this.wasCalled);
                             if (!this.wasCalled) {
                                 this.lblRemainTime.node.color = cc.Color.RED;
@@ -275,7 +279,6 @@ export default class TaiXiuKuBetController extends cc.Component {
                         this.lblTotalBetXiu.string = Utils.formatNumber(res.potXiu);
                         this.lblTotalBetChan.string = Utils.formatNumber(res.potChan);
                         this.lblTotalBetLe.string = Utils.formatNumber(res.potLe);
-                        this.lblRemainTime.node.color = cc.Color.WHITE;
                         if (res.remainTime < 5) {
                             console.log("this.wasCalled 2 -- ", this.wasCalled);
                             if (!this.wasCalled) {
@@ -351,8 +354,8 @@ export default class TaiXiuKuBetController extends cc.Component {
                     this.lastSelectedSessionHistory = this.histories[this.lastSelectSessionIndex];
                     this.lastSelectedSessionId = this.lastSelectedSessionHistory.session;
                     this.lblHistorySessionID.string = this.lastSelectedSessionId.toString();
-                    this.lblHistorySessionTime.string = new Date().toLocaleTimeString();
-                    this.lblHistorySessionDate.string = new Date().toLocaleDateString();
+                    this.lblHistorySessionTime.string = App.instance.getCurrentTime();
+                    this.lblHistorySessionDate.string = App.instance.getCurrentDate();
                     this.setupHistoryResult(this.lastScore);
                     this.showResult();
                     this.scheduleOnce(() => {
@@ -393,7 +396,6 @@ export default class TaiXiuKuBetController extends cc.Component {
                 }
                 case cmd.Code.HISTORIES: {
                     let res = new cmd.ReceiveHistories(data);
-                    console.log(res);
                     var his = res.data.split(",");
                     for (let i = 0; i < his.length; i++) {
                         this.histories.push({
@@ -514,7 +516,7 @@ export default class TaiXiuKuBetController extends cc.Component {
         this.leAnimation.opacity = 255;
     }
 
-    public showToast(message: string) {
+    public showToast(message: string, delay = 2) {
         // App.instance.actShowThongBao2(message);
         this.lblToast.string = message;
         let parent = this.lblToast.node.parent;
@@ -528,7 +530,7 @@ export default class TaiXiuKuBetController extends cc.Component {
                     cc.moveTo(0.2, cc.v2(parent.x, 300)),
                     cc.fadeIn(0.2),
                 ),
-                cc.delayTime(2),
+                cc.delayTime(delay),
                 cc.spawn(
                     cc.moveTo(0.2, cc.v2(parent.x, 500)),
                     cc.fadeOut(0.2),
@@ -646,7 +648,9 @@ export default class TaiXiuKuBetController extends cc.Component {
         if(GameConfigManager.getInstance().enableSound) {
             cc.audioEngine.play(this.soundClick, false, 1);
         }
+        cc.audioEngine.stopAll();
         TaiXiuKuBetNetWorkClient.getInstance().send(new cmd.SendUnScribe());
+        TaiXiuKuBetNetWorkClient.getInstance().close();
         App.instance.loadSceneFromBundle("Lobby", {"src": "Lobby"});
     }
 

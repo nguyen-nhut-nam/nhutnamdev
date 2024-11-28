@@ -56,7 +56,7 @@ namespace taixiukubet {
                                 this.addMessage(res.nickname, res.message, res.type, res.money);
                                 break;
                             case 2:
-                                TaiXiuLiveKubController.instance.showToast("Bạn không có quyền Chat!");
+                                TaiXiuLiveKubController.instance.showToast(`${ToastMessage.TAI_XIU_CHAT_CHAT_FAST}`, 4);
                                 break;
                             case 3:
                                 TaiXiuLiveKubController.instance.showToast("Tạm thời bạn bị cấm Chat!");

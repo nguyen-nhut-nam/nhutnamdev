@@ -681,8 +681,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -731,
-        311,
+        -690,
+        310,
         0,
         0,
         0,
@@ -19081,7 +19081,9 @@
     "leAnimation": {
       "__id__": 155
     },
-    "soundCountDown": null,
+    "soundCountDown": {
+      "__uuid__": "65d5eed6-9242-4dbb-80ad-4c792f4ae93f"
+    },
     "soundPhienMoi": {
       "__uuid__": "f467d3f4-839a-418b-9ecf-cf6eb820d789"
     },

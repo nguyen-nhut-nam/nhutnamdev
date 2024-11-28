@@ -167,7 +167,7 @@ namespace Lobby {
                                     App.instance.alertDialog.showMsg("Thông tin đăng nhập không hợp lệ.");
                                     break;
                                 case 2001:
-                                    this.popupUpdateNickname.show2(_this.username, _this.password);
+                                    // this.popupUpdateNickname.show2(_this.username, _this.password);
                                     break;
                                 default:
                                     App.instance.alertDialog.showMsg("Đăng nhập không thành công vui lòng thử lại sau.");

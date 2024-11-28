@@ -19,6 +19,7 @@ import ShootFishNetworkClient from "../networks/ShootFishNetworkClient";
 import BauCuaTo2NetworkClient from "../networks/BauCuaTo2NetworkClient";
 import SPUtils from "./SPUtils";
 import BundleControl from "./BundleControl";
+import * as moment from "moment";
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -808,5 +809,13 @@ export default class App extends cc.Component {
 
     setButtonMiniGamesPosition(position) {
         this.nodeButtonMiniGames.position = position;
+    }
+
+    getCurrentDate() {
+        return moment(Date.now()).format("DD/MM/YYYY");
+    }
+
+    getCurrentTime() {
+        return moment(Date.now()).format("HH:mm:ss");
     }
 }

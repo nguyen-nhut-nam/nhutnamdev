@@ -3,7 +3,7 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class ToastMessage extends cc.Component {
     //TAIXIU
-    public static TAI_XIU_CHAT_CHAT_FAST:string = "Bạn Chat Quá Nhanh";
+    public static TAI_XIU_CHAT_CHAT_FAST:string = "Bạn Chat Quá Nhanh. Thử lại sau vài giây.";
 
     public static TAI_XIU_CHAT_CHAT_TOO_LONG: string = "Câu Chat Quá Dài";
 
