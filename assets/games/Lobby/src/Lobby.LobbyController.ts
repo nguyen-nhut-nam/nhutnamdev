@@ -540,7 +540,6 @@ namespace Lobby {
                     }
                     case cmd.Code.UPDATE_TX_MD5_JACKPOTS: {
                         let res = new cmd.ResUpdateTXMD5Jackpots(data);
-
                         // todo : update jackpot here
                         Tween.numberTo(this.huTXMD5, res.moneyHu, 2);
                         Tween.numberTo(this.moneyBetTaiTXMD5, res.moneyTai, 2);
