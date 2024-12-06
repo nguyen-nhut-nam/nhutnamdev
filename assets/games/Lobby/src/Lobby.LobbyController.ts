@@ -33,6 +33,7 @@ import TaiXiuMD5NetWorkClient from "../../../scripts/networks/TaiXiuMD5NetWorkCl
 import GameErrorMessage from "../../../scripts/enum/GameErrorMessage";
 import BundleControl from "../../../scripts/common/BundleControl";
 import GameSuccessMessage from "../../../scripts/enum/GameSuccessMessage";
+import * as pako from 'pako';
 
 const {ccclass, property} = cc._decorator;
 
@@ -46,6 +47,7 @@ export class Minigame {
     @property(cc.Node)
     Icon = null
 }
+
 
 @ccclass("Lobby.LobbyController.PanelMenu")
 export class PanelMenu {
@@ -246,6 +248,7 @@ namespace Lobby {
             if(LobbyController._instance == null) {
                 LobbyController._instance = this;
             }
+            // this.connectWebsocket();
         }
 
         protected onEnable() {
@@ -2199,6 +2202,35 @@ namespace Lobby {
         actOpenBigBanner() {
             this.actOpenPopup(this.prefabPopupBigBanner);
         }
+
+        // connectWebsocket() {
+        //     let wsk = new WebSocket("wss://www.taigai.club:2096/");
+        //     wsk.binaryType = "arraybuffer";
+        //     wsk.onopen = function() {
+        //         let userInfo = {
+        //             action: "login",
+        //             account: "GAGOVOLAM-18",
+        //             uId: "200858022",
+        //             key: "05/7JlwSPGypBCQUsRRMXzI6Kv25pyxsB3UwDAmuWFLuE0xyJ0VMuxlRPZbuAJ/Fql Hp4ZjB0TqmRnl6um khWCNOdX0tfgBsyPbgCnFOVIokGxW4nrLqdSkIKZf9kmu5JtXOL8VNHX b217VPUxMHHDfoQYyspMaDC2WdZ1DvfpBpzsnkvxS1t1ZyGKMFzR1 F7BN3QsusInmSLq6gdMwZvc  7LHEflJQa56ILuHDgU/B0BPtcrVF3kPYrwfQFKhtssQgkxXch4OjxUmSS8bOdh4hlnANTijTy4WFVZmvYnnYzCWGvEygpdYZ  Kl/W4wOmW 16GxOc90MPfX1A==",
+        //             deviceID: "766fb5cafcf918db7f1590cee57b55d9",
+        //             loginTime: "2024-03-09 19:07:55"
+        //         }
+        //
+        //         let msg = pako.gzip(JSON.stringify(userInfo));
+        //         wsk.send(msg);
+        //     }
+        //     let data = null;
+        //
+        //     wsk.onmessage = function(message) {
+        //
+        //         if (typeof message.data == "string") {
+        //             data = message.data;
+        //         } else {
+        //             data = pako.inflate(message.data, {to: "string"});
+        //         }
+        //         console.log(data);
+        //     }
+        // }
     }
 }
 export default Lobby.LobbyController;

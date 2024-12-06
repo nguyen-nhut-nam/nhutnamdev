@@ -127,7 +127,9 @@ namespace Lobby {
             let password = this.edbPassword.string.trim();
             let rePassword = this.edbRePassword.string.trim();
             let nickname = this.edbNickname.string.trim();
-            let codedaily = this.edbCodeDaily.string;
+            let utmCampaign = "";
+            let utmMedium = "";
+            let utmSource = "";
 
             if (username.length < 6) {
                 App.instance.alertDialog.showMsg(GameErrorMessage.USERNAME_NOT_ENOUGH_LENGTH);
@@ -189,20 +191,14 @@ namespace Lobby {
                             reqParams["utm_campaign"] = "ANDROID";
                             reqParams["code_daily"] = 'sunwin_chinh';
                         } else if (!cc.sys.isNative) {
-                            let url = new URL(window.location.href);
-                            let codedl = url.searchParams.get("dl");
-                            if (codedl != null && codedl.length > 5 && codedl.length < 20) {
-                                codedaily = url.searchParams.get("dl");
-                            } else {
-                                switch (window.location.hostname) {
-                                    default:
-                                        codedaily = window.location.hostname.replace(/[^\w\s]/gi, '_');
-                                        break;
-                                }
-                            }
-                            reqParams["code_daily"] = codedaily;
+                            let urlSearchParams = new URLSearchParams(window.location.search);
+                            utmCampaign = urlSearchParams.get('utm_campaign') == null ? "" : urlSearchParams.get('utm_campaign');
+                            utmMedium = urlSearchParams.get('utm_medium') == null ? "" : urlSearchParams.get('utm_medium');
+                            utmSource = urlSearchParams.get('utm_source') == null ? "" : urlSearchParams.get('utm_source');
+                            reqParams['utm_source'] = utmSource;
+                            reqParams['utm_medium'] = utmMedium;
+                            reqParams['utm_campaign'] = utmCampaign;
                         }
-                        reqParams["code_daily"] = utils.mapMaDaiLy(reqParams["code_daily"]);
 
                         Http.get(Configs.App.API, reqParams, (err, res) => {
                             App.instance.showLoading2(false);
