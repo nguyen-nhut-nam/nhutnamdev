@@ -44,10 +44,31 @@ namespace Lobby {
         checkUn = false;
         checknn = false;
 
+        private urlSearchParams = '';
+        private paramsUTM = {};
         protected onEnable() {
             super.onEnable();
             if(cc.sys.platform === cc.sys.MOBILE_BROWSER) {
                 this.node.getChildByName('Container').rotation = -90;
+            }
+            let self = this;
+            if(cc.sys.isNative) {
+                try {
+                    this.paramsUTM = {};
+                    navigator.clipboard.readText().then(text => {
+                        if(text.includes('utm')) {
+                            self.urlSearchParams = text;
+                            let listUTM = self.urlSearchParams.replace("?", "").split("&");
+                            let params = {};
+                            listUTM.forEach((item) => {
+                                let split = item.split('=');
+                                this.paramsUTM[split[0]] = split[1];
+                            })
+                        }
+                    })
+                } catch(ex) {
+                    console.log("Not Allow");
+                }
             }
         }
 
@@ -130,6 +151,7 @@ namespace Lobby {
             let utmCampaign = "";
             let utmMedium = "";
             let utmSource = "";
+            let agent = "";
 
             if (username.length < 6) {
                 App.instance.alertDialog.showMsg(GameErrorMessage.USERNAME_NOT_ENOUGH_LENGTH);
@@ -173,31 +195,41 @@ namespace Lobby {
                             "pw": md5(password),
                             "nn": nickname,
                             "cp": "1",
-                            "cid": "1"
+                            "cid": "1",
                         };
                         App.instance.showLoading2(true);
                         if (cc.sys.isNative && cc.sys.os == cc.sys.OS_IOS) {
-                            reqParams["utm_source"] = "IOS";
-                            reqParams["utm_medium"] = "IOS";
-                            reqParams["utm_term"] = "IOS";
-                            reqParams["utm_content"] = "IOS";
-                            reqParams["utm_campaign"] = "IOS";
-                            reqParams["code_daily"] = 'SUPPER_WEB';
+                            if(Object.keys(this.paramsUTM).length > 0) {
+                                reqParams["utm_source"] = this.paramsUTM['utm_source'] ?? "";
+                                reqParams["utm_medium"] = this.paramsUTM['utm_medium'] ?? "";
+                                reqParams["utm_campaign"] = this.paramsUTM['utm_campaign'] ?? "";
+                                reqParams["agent"] = this.paramsUTM['agent'] ?? "";
+                            } else {
+                                reqParams["utm_source"] = "IOS"
+                                reqParams["utm_medium"] = "IOS"
+                                reqParams["utm_campaign"] = "IOS"
+                            }
                         } else if (cc.sys.isNative && cc.sys.os == cc.sys.OS_ANDROID) {
-                            reqParams["utm_source"] = "ANDROID";
-                            reqParams["utm_medium"] = "ANDROID";
-                            reqParams["utm_term"] = "ANDROID";
-                            reqParams["utm_content"] = "ANDROID";
-                            reqParams["utm_campaign"] = "ANDROID";
-                            reqParams["code_daily"] = 'sunwin_chinh';
-                        } else if (!cc.sys.isNative) {
+                            if(Object.keys(this.paramsUTM).length > 0) {
+                                reqParams["utm_source"] = this.paramsUTM['utm_source'] ?? "";
+                                reqParams["utm_medium"] = this.paramsUTM['utm_medium'] ?? "";
+                                reqParams["utm_campaign"] = this.paramsUTM['utm_campaign'] ?? "";
+                                reqParams["agent"] = this.paramsUTM['agent'] ?? "";
+                            } else {
+                                reqParams["utm_source"] = "ANDROID";
+                                reqParams["utm_medium"] = "ANDROID";
+                                reqParams["utm_campaign"] = "ANDROID";
+                            }
+                        } else if (cc.sys.isBrowser) {
                             let urlSearchParams = new URLSearchParams(window.location.search);
                             utmCampaign = urlSearchParams.get('utm_campaign') == null ? "" : urlSearchParams.get('utm_campaign');
                             utmMedium = urlSearchParams.get('utm_medium') == null ? "" : urlSearchParams.get('utm_medium');
                             utmSource = urlSearchParams.get('utm_source') == null ? "" : urlSearchParams.get('utm_source');
+                            agent = urlSearchParams.get('agent') == null ? "" : urlSearchParams.get('agent');
                             reqParams['utm_source'] = utmSource;
                             reqParams['utm_medium'] = utmMedium;
                             reqParams['utm_campaign'] = utmCampaign;
+                            reqParams['agent'] = agent;
                         }
 
                         Http.get(Configs.App.API, reqParams, (err, res) => {
