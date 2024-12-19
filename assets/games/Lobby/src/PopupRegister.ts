@@ -59,7 +59,6 @@ namespace Lobby {
                         if(text.includes('utm')) {
                             self.urlSearchParams = text;
                             let listUTM = self.urlSearchParams.replace("?", "").split("&");
-                            let params = {};
                             listUTM.forEach((item) => {
                                 let split = item.split('=');
                                 this.paramsUTM[split[0]] = split[1];
@@ -199,6 +198,7 @@ namespace Lobby {
                         };
                         App.instance.showLoading2(true);
                         if (cc.sys.isNative && cc.sys.os == cc.sys.OS_IOS) {
+                            console.log(this.paramsUTM);
                             if(Object.keys(this.paramsUTM).length > 0) {
                                 reqParams["utm_source"] = this.paramsUTM['utm_source'] ?? "";
                                 reqParams["utm_medium"] = this.paramsUTM['utm_medium'] ?? "";

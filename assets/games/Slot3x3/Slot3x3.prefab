@@ -13104,7 +13104,7 @@
         "__id__": 328
       }
     ],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 583
@@ -17241,7 +17241,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "b397ea01-a883-4afa-b507-dda23cbc8776"
+      "__uuid__": "a23235d1-15db-4b95-8439-a2e005bfff91"
     },
     "_type": 1,
     "_sizeMode": 0,
@@ -26444,7 +26444,7 @@
       }
     ],
     "paused": false,
-    "defaultSkin": "",
+    "defaultSkin": "default",
     "defaultAnimation": "",
     "_preCacheMode": 0,
     "_cacheMode": 0,

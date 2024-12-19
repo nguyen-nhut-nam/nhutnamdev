@@ -5,6 +5,8 @@ import SubpackageDownloader from "../../scripts/common/SubpackageDownloader";
 import BundleControl from "../../scripts/common/BundleControl";
 import Utils from "../../scripts/common/Utils";
 import configs from "../../scripts/common/Configs";
+import url = cc.url;
+import SPUtils from "../../scripts/common/SPUtils";
 
 const { ccclass, property } = cc._decorator;
 
@@ -37,6 +39,18 @@ export default class LoadingController extends cc.Component {
     }
 
     start() {
+        cc.debug.setDisplayStats(false);
+        if(cc.sys.isBrowser) {
+            let urlSearchParams = new URLSearchParams(window.location.search);
+            if(urlSearchParams.toString().length > 0) {
+                let sessionKey = urlSearchParams.get('at') ?? "";
+                let username = urlSearchParams.get('un') ?? "";
+                let password = urlSearchParams.get('pw') ?? "";
+                if(username.length > 0) SPUtils.setUserName(username);
+                if(password.length > 0) SPUtils.setUserPass(password);
+            }
+        }
+
         Utils.checkHealth(Configs.App.CONFIG_URL).then((data) => {
             Configs.App.BUNDLE_URL = data['bundleUrl'];
             let DOMAIN_GAME_PROD = data['production'];
