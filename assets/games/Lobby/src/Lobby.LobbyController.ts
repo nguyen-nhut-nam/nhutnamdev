@@ -265,11 +265,11 @@ namespace Lobby {
                     GameURL.GROUP_FACEBOOK = res.groupFacebook ? res.groupFacebook : "";
                     GameURL.CSKH_TELEGRAM = res.teleCSKH ? res.teleCSKH : "";
                     if(res.botTele && res.botTele.length > 0) {
-                        GameURL.BOT_TELEGRAM = res.botTele;
+                        GameURL.BOT_TELEGRAM = res.botTele ?? "";
                     }
 
                     if(res.checkLocTele && res.checkLocTele.length > 0) {
-                        GameURL.CHECK_LOC_TELEGRAM = res.checkLocTele;
+                        GameURL.CHECK_LOC_TELEGRAM = res.checkLocTele ?? "";
                     }
                     GameURL.FANPAGE = res.fanPage ? res.fanPage : "";
                     GameURL.TELEGRAM_COMMUNITY = res.groupTele ? res.groupTele : "";
@@ -2180,6 +2180,9 @@ namespace Lobby {
                     break;
                 case 'TaiXiuKuBet':
                     App.instance.loadSceneFromBundle('TaiXiuLiveKub', {src: "TaiXiuLiveKub"})
+                    break;
+                case 'XocDiaKuBet':
+                    App.instance.loadSceneFromBundle('XocDiaLiveKub', {src: "XocDiaLiveKub"})
                     break;
             }
         }

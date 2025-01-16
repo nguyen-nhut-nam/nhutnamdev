@@ -1,0 +1,146 @@
+
+tet_bonwin_anim.png
+size: 802, 237
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+AnhDao2
+  rotate: false
+  xy: 372, 111
+  size: 298, 124
+  orig: 298, 124
+  offset: 0, 0
+  index: -1
+Anhdao
+  rotate: false
+  xy: 516, 17
+  size: 284, 92
+  orig: 284, 92
+  offset: 0, 0
+  index: -1
+Anhden
+  rotate: false
+  xy: 224, 3
+  size: 145, 80
+  orig: 150, 83
+  offset: 3, 2
+  index: -1
+Dao0
+  rotate: false
+  xy: 716, 118
+  size: 40, 30
+  orig: 42, 32
+  offset: 1, 1
+  index: -1
+Dao1
+  rotate: false
+  xy: 12, 3
+  size: 12, 9
+  orig: 14, 11
+  offset: 1, 1
+  index: -1
+Dao10
+  rotate: false
+  xy: 758, 165
+  size: 21, 26
+  orig: 23, 28
+  offset: 1, 1
+  index: -1
+Dao11
+  rotate: false
+  xy: 781, 174
+  size: 15, 17
+  orig: 17, 19
+  offset: 1, 1
+  index: -1
+Dao2
+  rotate: true
+  xy: 758, 114
+  size: 21, 18
+  orig: 23, 21
+  offset: 1, 1
+  index: -1
+Dao3
+  rotate: true
+  xy: 758, 193
+  size: 42, 28
+  orig: 44, 30
+  offset: 1, 1
+  index: -1
+Dao4
+  rotate: true
+  xy: 372, 87
+  size: 22, 20
+  orig: 24, 22
+  offset: 1, 1
+  index: -1
+Dao5
+  rotate: true
+  xy: 371, 5
+  size: 22, 26
+  orig: 24, 28
+  offset: 1, 1
+  index: -1
+Dao6
+  rotate: false
+  xy: 672, 117
+  size: 42, 31
+  orig: 45, 33
+  offset: 1, 1
+  index: -1
+Dao7
+  rotate: false
+  xy: 758, 137
+  size: 21, 26
+  orig: 23, 28
+  offset: 1, 1
+  index: -1
+Dao8
+  rotate: false
+  xy: 778, 115
+  size: 19, 20
+  orig: 21, 22
+  offset: 1, 1
+  index: -1
+Dao9
+  rotate: true
+  xy: 2, 2
+  size: 10, 8
+  orig: 12, 10
+  offset: 1, 1
+  index: -1
+Khan
+  rotate: true
+  xy: 224, 85
+  size: 150, 146
+  orig: 150, 146
+  offset: 0, 0
+  index: -1
+Longden
+  rotate: false
+  xy: 399, 3
+  size: 115, 106
+  orig: 115, 106
+  offset: 0, 0
+  index: -1
+PhaoHoa1
+  rotate: false
+  xy: 2, 14
+  size: 220, 221
+  orig: 227, 227
+  offset: 4, 3
+  index: -1
+PhaoHoa2
+  rotate: true
+  xy: 672, 150
+  size: 85, 84
+  orig: 91, 90
+  offset: 3, 3
+  index: -1
+Tualua
+  rotate: false
+  xy: 371, 29
+  size: 22, 54
+  orig: 22, 54
+  offset: 0, 0
+  index: -1

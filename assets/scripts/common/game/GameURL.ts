@@ -17,5 +17,5 @@ export default class GameURL extends cc.Component {
 
     public static MD5_CHECKER: string = "https://md5.is";
 
-    public static CHECK_LOC_TELEGRAM: string = "https://t.me/YenNhi2006";
+    public static CHECK_LOC_TELEGRAM: string = "https://t.me/nguyetsieuquay";
 }

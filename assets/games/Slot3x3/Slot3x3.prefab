@@ -602,7 +602,7 @@
       }
     ],
     "paused": false,
-    "defaultSkin": "",
+    "defaultSkin": "default",
     "defaultAnimation": "animation",
     "_preCacheMode": 0,
     "_cacheMode": 0,
@@ -13104,7 +13104,7 @@
         "__id__": 328
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 583

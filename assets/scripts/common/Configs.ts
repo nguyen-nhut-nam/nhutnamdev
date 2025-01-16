@@ -179,6 +179,10 @@ namespace Configs {
             host: "wbaucuato2.eloras.icu",
             port: 12044
         };
+        static  HOST_XOCDIA_LIVE_KUBET = {
+            host: "wbaucuato2.eloras.icu",
+            port: 12044
+        };
 
         static readonly SERVER_CONFIG = {
             ratioNapTheVTT: 1,
@@ -364,6 +368,7 @@ namespace Configs {
                     this.HOST_TAIXIU.host = this.getDomain("TAIXIU_CONTEXT");
                     this.HOST_TAIXIU_MD5.host = this.getDomain("TAIXIUMD5_CONTEXT");
                     this.HOST_TAIXIU_LIVE_KUBET.host = 'taixiu-kubet';
+                    this.HOST_XOCDIA_LIVE_KUBET.host = 'xocdiakubet'
                     this.API = `https://${this.DOMAIN}/api-portal`;
                     break;
                 default:
