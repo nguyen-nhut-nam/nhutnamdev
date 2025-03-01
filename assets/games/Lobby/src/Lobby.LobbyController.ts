@@ -33,7 +33,7 @@ import TaiXiuMD5NetWorkClient from "../../../scripts/networks/TaiXiuMD5NetWorkCl
 import GameErrorMessage from "../../../scripts/enum/GameErrorMessage";
 import BundleControl from "../../../scripts/common/BundleControl";
 import GameSuccessMessage from "../../../scripts/enum/GameSuccessMessage";
-import * as pako from 'pako';
+// import * as pako from 'pako';
 
 const {ccclass, property} = cc._decorator;
 
@@ -2207,7 +2207,7 @@ namespace Lobby {
         }
 
         // connectWebsocket() {
-        //     let wsk = new WebSocket("wss://www.taigai.club:2096/");
+        //     let wsk = new WebSocket("wss://kuapi1.win/");
         //     wsk.binaryType = "arraybuffer";
         //     wsk.onopen = function() {
         //         let userInfo = {
