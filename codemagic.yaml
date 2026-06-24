@@ -46,47 +46,81 @@ workflows:
           mkdir -p ~/.CocosCreator
           printf '%s' '{"language":"en","simulator-customsize-resolution":{"width":960,"height":640}}' > ~/.CocosCreator/settings.json
 
-          echo "=== Pre-create project local/ files (gitignored) ==="
+          echo "=== Download pre-built Creator library from VPS ==="
+          brew install hudochenkov/sshpass/sshpass 2>/dev/null || true
+          curl -f --retry 3 --retry-delay 5 \
+            "https://win68.ltd/ipa/creator-library.tar.gz" \
+            -o /tmp/creator-library.tar.gz --progress-bar || {
+            # Fallback: scp from VPS
+            ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
+            sshpass -p "AHVwAEPLtEcf" scp -o StrictHostKeyChecking=no \
+              "$VPS_USER@$VPS_HOST:/var/app/www/ipa/creator-library.tar.gz" /tmp/creator-library.tar.gz
+          }
+          echo "Library archive: $(du -sh /tmp/creator-library.tar.gz | cut -f1)"
+
+          echo "=== Extract library ==="
+          mkdir -p "$CM_BUILD_DIR/library"
+          tar -xzf /tmp/creator-library.tar.gz -C "$CM_BUILD_DIR/library"
+          echo "Extracted: $(ls $CM_BUILD_DIR/library/)"
+          echo "Imports count: $(find $CM_BUILD_DIR/library/imports -type f 2>/dev/null | wc -l)"
+
+          echo "=== Generate uuid-to-mtime.json matching CI file mtimes ==="
+          python3 - <<'PYEOF'
+import json, os, re
+
+project = os.environ.get('CM_BUILD_DIR', '.')
+assets_dir = os.path.join(project, 'assets')
+output = os.path.join(project, 'library', 'uuid-to-mtime.json')
+
+uuid_map = {}
+UUID_RE = re.compile(r'"uuid"\s*:\s*"([0-9a-f\-]{36})"')
+
+for root, dirs, files in os.walk(assets_dir):
+    for fname in files:
+        if not fname.endswith('.meta'):
+            continue
+        meta_path = os.path.join(root, fname)
+        asset_path = meta_path[:-5]
+        try:
+            content = open(meta_path, encoding='utf-8', errors='ignore').read()
+            m = UUID_RE.search(content)
+            if not m:
+                continue
+            uuid = m.group(1)
+            meta_mtime = int(os.path.getmtime(meta_path) * 1000)
+            asset_mtime = int(os.path.getmtime(asset_path) * 1000) if os.path.exists(asset_path) else meta_mtime
+            rel = os.path.relpath(asset_path, assets_dir)
+            uuid_map[uuid] = {'asset': asset_mtime, 'meta': meta_mtime, 'relativePath': rel}
+        except Exception as e:
+            pass
+
+with open(output, 'w', encoding='utf-8') as f:
+    json.dump(uuid_map, f)
+print(f'Generated uuid-to-mtime.json: {len(uuid_map)} entries')
+PYEOF
+
+          echo "=== Pre-create project local/ files ==="
           mkdir -p "$CM_BUILD_DIR/local"
           printf '%s' '{}' > "$CM_BUILD_DIR/local/settings.json"
           printf '%s' '{"platform":"ios","debug":false}' > "$CM_BUILD_DIR/local/builder.json"
-          echo "local files created."
 
-          echo "=== Building iOS project (3-min diagnostic timeout) ==="
+          echo "=== Run Creator (imports should be skipped via cache) ==="
+          (while true; do
+            count=$(find "$CM_BUILD_DIR/library/imports" -type f 2>/dev/null | wc -l)
+            echo "[MONITOR $(date +%H:%M:%S)] import_files=$count"
+            sleep 30
+          done) &
+          MONITOR_PID=$!
+
           "$CREATOR_BIN" \
             --path "$CM_BUILD_DIR" \
             --build "platform=ios;debug=false;appName=$APP_NAME;packageName=$BUNDLE_ID" \
             --quit \
-            2>&1 &
-          CREATOR_PID=$!
+            2>&1
 
-          ELAPSED=0
-          while kill -0 $CREATOR_PID 2>/dev/null; do
-            sleep 30
-            ELAPSED=$((ELAPSED + 30))
-            lib=$(du -sh "$CM_BUILD_DIR/library" 2>/dev/null | cut -f1 || echo "none")
-            echo "[${ELAPSED}s] library=$lib"
-            if [ $ELAPSED -ge 180 ]; then
-              echo "=== DIAGNOSTIC: killing Creator at 3min ==="
-              kill -9 $CREATOR_PID 2>/dev/null || true
-              break
-            fi
-          done
-          wait $CREATOR_PID 2>/dev/null || true
-
-          echo "=== Creator internal log ==="
-          cat ~/.CocosCreator/logs/CocosCreator.log 2>/dev/null | tail -100 || echo "No log found"
-
-          echo "=== Project local dir ==="
-          ls -la "$CM_BUILD_DIR/local/" || true
-
-          echo "=== Library dir ==="
-          ls -la "$CM_BUILD_DIR/library/" 2>/dev/null || echo "library not created"
-
-          echo "=== build dir ==="
-          ls "$CM_BUILD_DIR/build/" 2>/dev/null || echo "no build output"
-
-          exit 0
+          kill $MONITOR_PID 2>/dev/null || true
+          echo "=== Xcode project ==="
+          find "$CM_BUILD_DIR/build" -name "*.xcodeproj" 2>/dev/null | head -5 || { echo "ERROR: No xcodeproj"; exit 1; }
 
           echo "=== Xcode project ==="
           find "$CM_BUILD_DIR" -name "*.xcodeproj" 2>/dev/null | head -5 || { echo "ERROR: No xcodeproj found"; exit 1; }
@@ -94,14 +128,29 @@ workflows:
       - name: Install signing cert
         script: |
           set -e
-          echo "$CERT_P12_BASE64" | base64 --decode > /tmp/cert.p12
-          echo "$MOBILEPROVISION_BASE64" | base64 --decode > /tmp/app.mobileprovision
+          echo "=== Download cert from VPS ==="
+          ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
+          sshpass -p "AHVwAEPLtEcf" scp -o StrictHostKeyChecking=no \
+            "$VPS_USER@$VPS_HOST:/var/app/www/ipa/cert.p12" /tmp/cert.p12
+          sshpass -p "AHVwAEPLtEcf" scp -o StrictHostKeyChecking=no \
+            "$VPS_USER@$VPS_HOST:/var/app/www/ipa/cert.mobileprovision" /tmp/app.mobileprovision
+          echo "cert.p12: $(wc -c < /tmp/cert.p12) bytes"
+          echo "mobileprovision: $(wc -c < /tmp/app.mobileprovision) bytes"
+
+          echo "=== Create keychain ==="
+          security delete-keychain build.keychain 2>/dev/null || true
           security create-keychain -p "temp123" build.keychain
-          security default-keychain -s build.keychain
+          security set-keychain-settings -lut 7200 build.keychain
           security unlock-keychain -p "temp123" build.keychain
-          security import /tmp/cert.p12 -k build.keychain -P "$CERT_P12_PASSWORD" \
-            -T /usr/bin/codesign -T /usr/bin/xcodebuild
-          security set-key-partition-list -S apple-tool:,apple: -s -k "temp123" build.keychain
+          security list-keychains -d user -s build.keychain $(security list-keychains -d user | tr -d '"')
+
+          echo "=== Import certificate ==="
+          security import /tmp/cert.p12 -k build.keychain -P "xincamon" \
+            -T /usr/bin/codesign -T /usr/bin/xcodebuild -A
+          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "temp123" build.keychain
+          security find-identity -v -p codesigning build.keychain
+
+          echo "=== Install provisioning profile ==="
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           UDID=$(grep -a -A 1 'UUID' /tmp/app.mobileprovision | grep string | sed 's/.*<string>\(.*\)<\/string>.*/\1/')
           cp /tmp/app.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/$UDID.mobileprovision
