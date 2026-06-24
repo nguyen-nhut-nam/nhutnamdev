@@ -19,35 +19,34 @@ workflows:
       - name: Install Cocos Creator 2.4.6
         script: |
           set -e
-          echo "=== Installing Cocos Dashboard ==="
+          echo "=== Download & mount Dashboard ==="
           curl -fL "https://download.cocos.com/CocosDashboard/v1.0.14/CocosDashboard-v1.0.14-mac-052515.dmg" \
             -o /tmp/dashboard.dmg
           hdiutil attach /tmp/dashboard.dmg -mountpoint /Volumes/Dashboard -nobrowse -quiet
           cp -R "/Volumes/Dashboard/CocosDashboard.app" /tmp/
           hdiutil detach /Volumes/Dashboard -quiet
-          echo "=== Extracting Creator 2.4.6 URL from Dashboard ==="
-          # Install asar to read Electron app code
-          npm install -g @electron/asar --silent 2>/dev/null || npm install -g asar --silent 2>/dev/null || true
-          ASAR_PATH=$(find /tmp/CocosDashboard.app -name "app.asar" | head -1)
-          echo "ASAR: $ASAR_PATH"
-          asar extract "$ASAR_PATH" /tmp/dashboard-src 2>/dev/null || true
-          # Find download URL for Creator 2.4.6
-          CREATOR_URL=$(grep -r "CocosCreator_v2.4" /tmp/dashboard-src --include="*.js" -h 2>/dev/null | \
-            grep -o 'https://[^"]*mac[^"]*\.zip' | head -1)
-          if [ -n "$CREATOR_URL" ]; then
-            echo "Found URL: $CREATOR_URL"
-            curl -fL "$CREATOR_URL" -o /tmp/cocos.zip
-          else
-            echo "URL not found in asar, checking config files..."
-            find /tmp/dashboard-src -name "*.json" 2>/dev/null | xargs grep -l "2.4.6" 2>/dev/null | head -3
-            grep -r "2.4.6" /tmp/dashboard-src --include="*.json" -h 2>/dev/null | \
-              grep -o 'https://[^"]*' | head -5
-            exit 1
-          fi
-          echo "=== Extracting Cocos Creator ==="
-          unzip -q /tmp/cocos.zip -d /tmp/cocos
-          ls -la /tmp/cocos/
-          echo "=== Cocos Creator ready ==="
+
+          echo "=== Extract asar ==="
+          ASAR_PATH="/tmp/CocosDashboard.app/Contents/Resources/app.asar"
+          npx --yes @electron/asar extract "$ASAR_PATH" /tmp/dashboard-src 2>&1 || \
+            node -e "require('asar').extractAll('$ASAR_PATH', '/tmp/dashboard-src')" 2>&1 || true
+          echo "Files in dashboard-src:"
+          ls /tmp/dashboard-src/ 2>/dev/null || echo "Empty or failed"
+
+          echo "=== Search for download URLs ==="
+          grep -r "download.cocos.com" /tmp/dashboard-src -rh 2>/dev/null | head -20 || true
+          grep -r "cocos.com" /tmp/dashboard-src -rh 2>/dev/null | grep -i "creator\|2\.4\|package\|engine" | head -20 || true
+
+          echo "=== Try Cocos API directly ==="
+          curl -s "https://creator.cocos.com/packages?version=2.4.6&platform=mac" 2>/dev/null | head -5 || true
+          curl -s "https://download.cocos.com/CocosCreator/versions.json" 2>/dev/null | head -10 || true
+          curl -s "https://packages.cocos.com/creator/2.4.6/mac" 2>/dev/null | head -5 || true
+
+          echo "=== All https URLs in dashboard ==="
+          grep -roh "https://[^\"' ]*" /tmp/dashboard-src 2>/dev/null | sort -u | grep -i "creator\|cocos\|download" | head -30 || true
+
+          echo "DIAGNOSTIC COMPLETE - check logs above for URLs"
+          exit 1
 
       - name: Build iOS project
         script: |
