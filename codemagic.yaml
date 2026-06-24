@@ -29,52 +29,31 @@ workflows:
           ASAR="/tmp/CocosDashboard.app/Contents/Resources/app.asar"
           echo "ASAR size: $(wc -c < $ASAR) bytes"
 
-          echo "=== Parse ASAR with Python ==="
-          python3 - << 'PYEOF'
-import struct, json, sys, re
+          echo "=== ASAR header hex ==="
+          python3 -c "
+import struct
+f=open('$ASAR','rb'); raw=f.read(64); f.close()
+print('hex:', raw.hex())
+for o in [4,8,12,16]:
+    sz=struct.unpack_from('<I',raw,o-4)[0]
+    print(f'offset {o}: uint32={sz}')
+"
 
-with open('/tmp/CocosDashboard.app/Contents/Resources/app.asar', 'rb') as f:
-    raw = f.read()
+          echo "=== All unique URLs in ASAR ==="
+          strings "$ASAR" | grep -o 'https://[^"'"'"' >]*' | sort -u | head -60 || true
 
-print('First 32 bytes:', raw[:32].hex())
-# Try parse header at various offsets
-for hdr_offset in [8, 12, 16]:
-    try:
-        sz = struct.unpack_from('<I', raw, hdr_offset - 4)[0]
-        chunk = raw[hdr_offset:hdr_offset + sz]
-        obj = json.loads(chunk.decode('utf-8'))
-        if 'files' in obj:
-            print(f'Header found at offset {hdr_offset}, size {sz}')
-            base = hdr_offset + sz
-            def search(d, path=''):
-                for k,v in d.items():
-                    p = path + k
-                    if 'files' in v:
-                        search(v['files'], p + '/')
-                    else:
-                        off = int(v.get('offset', 0))
-                        sz2 = v.get('size', 0)
-                        content = raw[base + off:base + off + min(sz2, 8000)]
-                        text = content.decode('utf-8', errors='ignore')
-                        if re.search(r'download|cocos\.com|darwin|creator|version', text, re.I):
-                            lines = [l.strip() for l in text.split('\n')
-                                     if re.search(r'download\.cocos|darwin.*http|creator.*zip|\.asar', l, re.I)]
-                            if lines:
-                                print(f'=== {p} ===')
-                                for l in lines[:15]: print(l)
-            search(obj['files'])
-            break
-    except Exception as e:
-        pass
-PYEOF
+          echo "=== darwin/creator related strings ==="
+          strings "$ASAR" | grep -i '"darwin"\|darwin.*http\|Cocos.*down\|download.*creator' | sort -u | head -30 || true
 
-          echo "=== Probe test URL + Cocos2D variants ==="
+          echo "=== Probe URLs ==="
           for URL in \
             "https://download.cocos.com/Cocos3D/test/cocos_test.asar" \
             "https://download.cocos.com/Cocos2D/v2.4.6/darwin.asar" \
             "https://download.cocos.com/Cocos2D/v2.4.6/mac.zip" \
             "https://download.cocos.com/Creator2/v2.4.6/darwin.asar" \
-            "https://download.cocos.com/CocosEditor/v2.4.6/darwin.asar"
+            "https://download.cocos.com/CocosEditor/v2.4.6/darwin.asar" \
+            "https://download.cocos.com/CocosCreator/v2.4.6/darwin.zip" \
+            "https://download.cocos.com/Cocos3D/v3.8.5/darwin.asar"
           do
             S=$(curl -sIo /dev/null -w "%{http_code}" --max-time 5 "$URL")
             echo "HTTP $S : $URL"
