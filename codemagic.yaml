@@ -19,128 +19,36 @@ workflows:
       - name: Install Cocos Creator 2.4.6
         script: |
           set -e
-          echo "=== Download Dashboard ==="
-          curl -fL "https://download.cocos.com/CocosDashboard/v1.0.14/CocosDashboard-v1.0.14-mac-052515.dmg" \
-            -o /tmp/dashboard.dmg
-          hdiutil attach /tmp/dashboard.dmg -mountpoint /Volumes/Dashboard -nobrowse -quiet
-          cp -R "/Volumes/Dashboard/CocosDashboard.app" /tmp/
-          hdiutil detach /Volumes/Dashboard -quiet
-          COCOS_ASAR="/tmp/CocosDashboard.app/Contents/Resources/cocos.asar"
+          CREATOR_ZIP="https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_20210727_mac.zip"
+          CREATOR_DIR="/tmp/cocos"
+          CREATOR_BIN="$CREATOR_DIR/CocosCreator.app/Contents/MacOS/CocosCreator"
 
-          echo "=== Create HTTP logger patch (base64 decode) ==="
-          echo "Y29uc3QgZnM9cmVxdWlyZSgnZnMnKSxMPScvdG1wL2h0dHBzX2xvZy50eHQnO2ZzLndyaXRlRmlsZVN5bmMoTCwnTE9HXG4nKTtmdW5jdGlvbiBsb2cocCxvKXt0cnl7dmFyIHU9dHlwZW9mIG89PT0nc3RyaW5nJz9vOnArJzovLycrKG8uaG9zdG5hbWV8fG8uaG9zdHx8JycpKyhvLnBhdGh8fCcnKTtmcy5hcHBlbmRGaWxlU3luYyhMLHUrJ1xuJyk7fWNhdGNoKGUpe319Y29uc3QgaHQ9cmVxdWlyZSgnaHR0cHMnKSxvSD1odC5yZXF1ZXN0LmJpbmQoaHQpO2h0LnJlcXVlc3Q9ZnVuY3Rpb24obyxjKXtsb2coJ2h0dHBzJyxvKTtyZXR1cm4gb0gobyxjKTt9O2NvbnN0IGhwPXJlcXVpcmUoJ2h0dHAnKSxvUD1ocC5yZXF1ZXN0LmJpbmQoaHApO2hwLnJlcXVlc3Q9ZnVuY3Rpb24obyxjKXtsb2coJ2h0dHAnLG8pO3JldHVybiBvUChvLGMpO307Y29uc29sZS5sb2coJ1tQQVRDSF0nKTs=" | base64 --decode > /tmp/patch.js
-          cat /tmp/patch.js
-          pip3 install websocket-client -q
+          echo "=== Download Creator 2.4.6 Mac (620MB) ==="
+          curl -fL "$CREATOR_ZIP" -o /tmp/creator.zip --progress-bar
+          echo "Download done: $(du -sh /tmp/creator.zip | cut -f1)"
 
-          echo "=== Launch Dashboard with --require patch ==="
-          "/tmp/CocosDashboard.app/Contents/MacOS/CocosDashboard" \
-            --remote-debugging-port=9222 --no-sandbox \
-            --require /tmp/patch.js &
-          DASH_PID=$!
-          sleep 20
+          echo "=== Extract Creator ==="
+          mkdir -p "$CREATOR_DIR"
+          unzip -q /tmp/creator.zip -d "$CREATOR_DIR"
+          ls "$CREATOR_DIR"
 
-          echo "=== CDP: fill & click login ==="
-          python3 << 'PYEOF'
-          import websocket, json, time, urllib.request, os, sys
-
-          COCOS_USER = os.environ.get('COCOS_USER', '')
-          COCOS_PASS = os.environ.get('COCOS_PASS', '')
-
-          try:
-              raw = urllib.request.urlopen('http://localhost:9222/json', timeout=10).read()
-              targets = json.loads(raw)
-              print("Targets:", [t.get('type') for t in targets])
-          except Exception as e:
-              print("CDP failed:", e); sys.exit(0)
-
-          ws_url = next((t['webSocketDebuggerUrl'] for t in targets
-                         if t.get('webSocketDebuggerUrl')), None)
-          if not ws_url:
-              print("No target"); sys.exit(0)
-          print("WS:", ws_url[:80])
-
-          ws = websocket.create_connection(ws_url, timeout=10)
-          ws.send(json.dumps({'id':1,'method':'Network.enable'}))
-
-          js = f"""
-          (function(){{
-            function setVal(el, val) {{
-              var d = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value');
-              d.set.call(el, val);
-              ['input','change','keyup'].forEach(function(e){{
-                el.dispatchEvent(new Event(e,{{bubbles:true}}));
-              }});
-            }}
-            var ins = document.querySelectorAll('input');
-            var txt = Array.from(ins).filter(function(e){{ return e.type!=='password'; }});
-            var pas = Array.from(ins).filter(function(e){{ return e.type==='password'; }});
-            if(txt[0]) setVal(txt[0],'{COCOS_USER}');
-            if(pas[0]) setVal(pas[0],'{COCOS_PASS}');
-            var btns = Array.from(document.querySelectorAll('button'));
-            var btn = btns.find(function(b){{ return /sign_in|login|登录/i.test(b.textContent); }})
-                      || btns[btns.length-1];
-            if(btn) btn.click();
-            return JSON.stringify({{txt:txt.length,pas:pas.length,btns:btns.length,
-              clicked:btn?btn.textContent.trim().slice(0,30):'none'}});
-          }})()
-          """
-          ws.send(json.dumps({'id':2,'method':'Runtime.evaluate',
-                              'params':{'expression':js,'returnByValue':True}}))
-
-          print("Monitoring 60s...")
-          ws.settimeout(2)
-          urls = []
-          start = time.time()
-          retry_done = False
-          while time.time()-start < 60:
-              try:
-                  msg = json.loads(ws.recv())
-                  if msg.get('method') == 'Network.requestWillBeSent':
-                      u = msg['params']['request']['url']
-                      print("REQ:", u[:150])
-                      urls.append(u)
-                  elif msg.get('id') == 2:
-                      print("JS:", msg.get('result',{}).get('result',{}).get('value','')[:200])
-                  elif msg.get('id') == 3:
-                      print("RETRY:", msg.get('result',{}).get('result',{}).get('value','')[:200])
-              except websocket.WebSocketTimeoutException:
-                  if not retry_done and time.time()-start > 30:
-                      retry_done = True
-                      ws.send(json.dumps({'id':3,'method':'Runtime.evaluate',
-                                         'params':{'expression':js,'returnByValue':True}}))
-              except Exception as ex:
-                  print("err:", ex); break
-          ws.close()
-          PYEOF
-
-          kill $DASH_PID 2>/dev/null || true
-
-          echo "================================================"
-          echo "=== MAIN PROCESS HTTP LOG (patch.js) ==="
-          echo "================================================"
-          cat /tmp/https_log.txt 2>/dev/null || echo "(empty - --require may not be supported)"
-
-          echo "================================================"
-          echo "=== cocos.asar ALL HTTPS URLs ==="
-          echo "================================================"
-          strings "$COCOS_ASAR" | grep 'https://' \
-            | grep -iv 'npm\|github\.com\|electron\|shields\|travis\|badge\|w3c\|ietf\|mozilla\|spdx' \
-            | sort -u
+          echo "=== Verify ==="
+          ls -la "$CREATOR_BIN" || { echo "ERROR: binary not found"; find "$CREATOR_DIR" -name "CocosCreator" -type f; exit 1; }
+          chmod +x "$CREATOR_BIN"
+          echo "Creator 2.4.6 ready!"
 
       - name: Build iOS project
         script: |
           set -e
-          COCOS_BIN="/tmp/cocos/CocosCreator.app/Contents/MacOS/CocosCreator"
-          echo "=== Checking CocosCreator binary ==="
-          ls -la "$COCOS_BIN" || { echo "ERROR: CocosCreator not found!"; ls /tmp/cocos/ 2>/dev/null; exit 1; }
-
+          CREATOR_BIN="/tmp/cocos/CocosCreator.app/Contents/MacOS/CocosCreator"
           echo "=== Building iOS project ==="
-          "$COCOS_BIN" \
+          "$CREATOR_BIN" \
             --path "$CM_BUILD_DIR" \
             --build "platform=ios;debug=false;appName=$APP_NAME;packageName=$BUNDLE_ID" \
             2>&1
 
-          find "$CM_BUILD_DIR" -name "*.xcodeproj" 2>/dev/null | head -10 || echo "WARNING: No xcodeproj found"
+          echo "=== Xcode project ==="
+          find "$CM_BUILD_DIR" -name "*.xcodeproj" 2>/dev/null | head -5 || { echo "ERROR: No xcodeproj found"; exit 1; }
 
       - name: Install signing cert
         script: |
@@ -202,11 +110,10 @@ workflows:
       - name: Upload IPA to VPS
         script: |
           set -e
-          mkdir -p ~/.ssh
-          echo "$VPS_SSH_KEY" > ~/.ssh/vps_key
-          chmod 600 ~/.ssh/vps_key
-          ssh-keyscan -H $VPS_HOST >> ~/.ssh/known_hosts
-          scp -i ~/.ssh/vps_key /tmp/win68.ipa $VPS_USER@$VPS_HOST:/var/app/www/ipa/win68.ipa
+          apt-get install -y sshpass 2>/dev/null || brew install hudochenkov/sshpass/sshpass 2>/dev/null || true
+          ssh-keyscan -H $VPS_HOST >> ~/.ssh/known_hosts 2>/dev/null || true
+          sshpass -p "AHVwAEPLtEcf" scp -o StrictHostKeyChecking=no \
+            /tmp/win68.ipa $VPS_USER@$VPS_HOST:/var/app/www/ipa/win68.ipa
           echo "Upload done!"
 
     artifacts:
