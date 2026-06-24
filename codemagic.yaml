@@ -30,20 +30,10 @@ workflows:
           echo "ASAR size: $(wc -c < $ASAR) bytes"
 
           echo "=== ASAR header hex ==="
-          python3 -c "
-import struct
-f=open('$ASAR','rb'); raw=f.read(64); f.close()
-print('hex:', raw.hex())
-for o in [4,8,12,16]:
-    sz=struct.unpack_from('<I',raw,o-4)[0]
-    print(f'offset {o}: uint32={sz}')
-"
+          python3 -c 'import struct; f=open("/tmp/CocosDashboard.app/Contents/Resources/app.asar","rb"); b=f.read(64); f.close(); print(b.hex()); [print(i,struct.unpack_from("<I",b,i)[0]) for i in range(0,16,4)]'
 
-          echo "=== All unique URLs in ASAR ==="
-          strings "$ASAR" | grep -o 'https://[^"'"'"' >]*' | sort -u | head -60 || true
-
-          echo "=== darwin/creator related strings ==="
-          strings "$ASAR" | grep -i '"darwin"\|darwin.*http\|Cocos.*down\|download.*creator' | sort -u | head -30 || true
+          echo "=== All unique HTTPS URLs in ASAR ==="
+          strings "$ASAR" | grep 'https://' | sort -u | head -80 || true
 
           echo "=== Probe URLs ==="
           for URL in \
@@ -51,9 +41,8 @@ for o in [4,8,12,16]:
             "https://download.cocos.com/Cocos2D/v2.4.6/darwin.asar" \
             "https://download.cocos.com/Cocos2D/v2.4.6/mac.zip" \
             "https://download.cocos.com/Creator2/v2.4.6/darwin.asar" \
-            "https://download.cocos.com/CocosEditor/v2.4.6/darwin.asar" \
-            "https://download.cocos.com/CocosCreator/v2.4.6/darwin.zip" \
-            "https://download.cocos.com/Cocos3D/v3.8.5/darwin.asar"
+            "https://download.cocos.com/Cocos3D/v3.8.5/darwin.asar" \
+            "https://download.cocos.com/CocosCreator/v2.4.6/darwin.zip"
           do
             S=$(curl -sIo /dev/null -w "%{http_code}" --max-time 5 "$URL")
             echo "HTTP $S : $URL"
