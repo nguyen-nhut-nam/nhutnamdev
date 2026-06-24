@@ -87,20 +87,14 @@ workflows:
 
           kill $MONITOR_PID 2>/dev/null || true
           echo "=== Xcode project ==="
-          find "$CM_BUILD_DIR/build" -name "*.xcodeproj" 2>/dev/null | head -5 || { echo "ERROR: No xcodeproj"; exit 1; }
-
-          echo "=== Xcode project ==="
           find "$CM_BUILD_DIR" -name "*.xcodeproj" 2>/dev/null | head -5 || { echo "ERROR: No xcodeproj found"; exit 1; }
 
       - name: Install signing cert
         script: |
           set -e
           echo "=== Download cert from VPS ==="
-          ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
-          sshpass -p "AHVwAEPLtEcf" scp -o StrictHostKeyChecking=no \
-            "$VPS_USER@$VPS_HOST:/var/app/www/ipa/cert.p12" /tmp/cert.p12
-          sshpass -p "AHVwAEPLtEcf" scp -o StrictHostKeyChecking=no \
-            "$VPS_USER@$VPS_HOST:/var/app/www/ipa/cert.mobileprovision" /tmp/app.mobileprovision
+          curl -fL "https://win68.ltd/ipa/cert.p12" -o /tmp/cert.p12 --retry 3
+          curl -fL "https://win68.ltd/ipa/cert.mobileprovision" -o /tmp/app.mobileprovision --retry 3
           echo "cert.p12: $(wc -c < /tmp/cert.p12) bytes"
           echo "mobileprovision: $(wc -c < /tmp/app.mobileprovision) bytes"
 
