@@ -19,24 +19,32 @@ workflows:
       - name: Install Cocos Creator 2.4.6
         script: |
           set -e
-          echo "=== Downloading Cocos Creator 2.4.6 ==="
-          # Try multiple date formats for v2.4.6
-          DOWNLOADED=false
-          for URL in \
-            "https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_20210820_mac.zip" \
-            "https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_20210825_mac.zip" \
-            "https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_2021082018_mac.zip" \
-            "https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_2021082510_mac.zip"
-          do
-            echo "Trying: $URL"
-            if curl -fL "$URL" -o /tmp/cocos.zip 2>&1; then
-              DOWNLOADED=true
-              break
-            fi
-          done
-          [ "$DOWNLOADED" = "true" ] || { echo "All URLs failed"; exit 1; }
-          echo "Download size: $(ls -lh /tmp/cocos.zip)"
-          echo "=== Extracting ==="
+          echo "=== Installing Cocos Dashboard ==="
+          curl -fL "https://download.cocos.com/CocosDashboard/v1.0.14/CocosDashboard-v1.0.14-mac-052515.dmg" \
+            -o /tmp/dashboard.dmg
+          hdiutil attach /tmp/dashboard.dmg -mountpoint /Volumes/Dashboard -nobrowse -quiet
+          cp -R "/Volumes/Dashboard/CocosDashboard.app" /tmp/
+          hdiutil detach /Volumes/Dashboard -quiet
+          echo "=== Extracting Creator 2.4.6 URL from Dashboard ==="
+          # Install asar to read Electron app code
+          npm install -g @electron/asar --silent 2>/dev/null || npm install -g asar --silent 2>/dev/null || true
+          ASAR_PATH=$(find /tmp/CocosDashboard.app -name "app.asar" | head -1)
+          echo "ASAR: $ASAR_PATH"
+          asar extract "$ASAR_PATH" /tmp/dashboard-src 2>/dev/null || true
+          # Find download URL for Creator 2.4.6
+          CREATOR_URL=$(grep -r "CocosCreator_v2.4" /tmp/dashboard-src --include="*.js" -h 2>/dev/null | \
+            grep -o 'https://[^"]*mac[^"]*\.zip' | head -1)
+          if [ -n "$CREATOR_URL" ]; then
+            echo "Found URL: $CREATOR_URL"
+            curl -fL "$CREATOR_URL" -o /tmp/cocos.zip
+          else
+            echo "URL not found in asar, checking config files..."
+            find /tmp/dashboard-src -name "*.json" 2>/dev/null | xargs grep -l "2.4.6" 2>/dev/null | head -3
+            grep -r "2.4.6" /tmp/dashboard-src --include="*.json" -h 2>/dev/null | \
+              grep -o 'https://[^"]*' | head -5
+            exit 1
+          fi
+          echo "=== Extracting Cocos Creator ==="
           unzip -q /tmp/cocos.zip -d /tmp/cocos
           ls -la /tmp/cocos/
           echo "=== Cocos Creator ready ==="
