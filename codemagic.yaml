@@ -27,26 +27,9 @@ workflows:
           hdiutil detach /Volumes/Dashboard -quiet
           COCOS_ASAR="/tmp/CocosDashboard.app/Contents/Resources/cocos.asar"
 
-          echo "=== Create HTTP logger patch ==="
-          cat > /tmp/patch.js << 'JSEOF'
-const fs = require('fs');
-const LOG = '/tmp/https_log.txt';
-fs.writeFileSync(LOG, '=== HTTP/HTTPS LOG ===\n');
-function logUrl(proto, opts) {
-  try {
-    const u = typeof opts === 'string' ? opts
-      : proto + '://' + (opts.hostname||opts.host||'') + (opts.path||'');
-    fs.appendFileSync(LOG, u + '\n');
-  } catch(e) {}
-}
-const ht = require('https');
-const origHtReq = ht.request.bind(ht);
-ht.request = function(o,c) { logUrl('https',o); return origHtReq(o,c); };
-const htp = require('http');
-const origHtpReq = htp.request.bind(htp);
-htp.request = function(o,c) { logUrl('http',o); return origHtpReq(o,c); };
-console.log('[PATCH LOADED] logging to ' + LOG);
-JSEOF
+          echo "=== Create HTTP logger patch (base64 decode) ==="
+          echo "Y29uc3QgZnM9cmVxdWlyZSgnZnMnKSxMPScvdG1wL2h0dHBzX2xvZy50eHQnO2ZzLndyaXRlRmlsZVN5bmMoTCwnTE9HXG4nKTtmdW5jdGlvbiBsb2cocCxvKXt0cnl7dmFyIHU9dHlwZW9mIG89PT0nc3RyaW5nJz9vOnArJzovLycrKG8uaG9zdG5hbWV8fG8uaG9zdHx8JycpKyhvLnBhdGh8fCcnKTtmcy5hcHBlbmRGaWxlU3luYyhMLHUrJ1xuJyk7fWNhdGNoKGUpe319Y29uc3QgaHQ9cmVxdWlyZSgnaHR0cHMnKSxvSD1odC5yZXF1ZXN0LmJpbmQoaHQpO2h0LnJlcXVlc3Q9ZnVuY3Rpb24obyxjKXtsb2coJ2h0dHBzJyxvKTtyZXR1cm4gb0gobyxjKTt9O2NvbnN0IGhwPXJlcXVpcmUoJ2h0dHAnKSxvUD1ocC5yZXF1ZXN0LmJpbmQoaHApO2hwLnJlcXVlc3Q9ZnVuY3Rpb24obyxjKXtsb2coJ2h0dHAnLG8pO3JldHVybiBvUChvLGMpO307Y29uc29sZS5sb2coJ1tQQVRDSF0nKTs=" | base64 --decode > /tmp/patch.js
+          cat /tmp/patch.js
           pip3 install websocket-client -q
 
           echo "=== Launch Dashboard with --require patch ==="
