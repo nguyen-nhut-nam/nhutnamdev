@@ -59,8 +59,7 @@ workflows:
           echo "Library archive: $(du -sh /tmp/creator-library.tar.gz | cut -f1)"
 
           echo "=== Extract library ==="
-          mkdir -p "$CM_BUILD_DIR/library"
-          tar -xzf /tmp/creator-library.tar.gz -C "$CM_BUILD_DIR/library"
+          tar -xzf /tmp/creator-library.tar.gz -C "$CM_BUILD_DIR"
           echo "Extracted: $(ls $CM_BUILD_DIR/library/)"
           echo "Imports count: $(find $CM_BUILD_DIR/library/imports -type f 2>/dev/null | wc -l)"
 
