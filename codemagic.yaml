@@ -29,28 +29,13 @@ workflows:
           ASAR="/tmp/CocosDashboard.app/Contents/Resources/app.asar"
           echo "ASAR size: $(wc -c < $ASAR) bytes"
 
-          echo "=== Cocos-only URLs in ASAR (no npm noise) ==="
-          strings "$ASAR" | grep 'https://' | grep -iv 'npm\|node\|github\|electron\|chromium\|taobao\|mozilla\|google\|w3c\|ietf\|semver\|spdx' | sort -u | head -60 || true
-
-          echo "=== All cocos.com strings ==="
-          strings "$ASAR" | grep 'cocos' | sort -u || true
-
-          echo "=== Probe Alibaba/Huawei CDN patterns ==="
-          for URL in \
-            "https://cocos2dx.oss-cn-hangzhou.aliyuncs.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_mac.zip" \
-            "https://cocoshub.obs.cn-east-3.myhuaweicloud.com/CocosCreator/v2.4.6/darwin.asar" \
-            "https://download.cocos.com/Cocos3D/test/cocos_test.asar" \
-            "https://download.cocos.com/Cocos3D/v3.8.5/darwin.asar" \
-            "https://packages.cocos.com/creator/v2.4.6/darwin" \
-            "https://editor.cocos.com/versions" \
-            "https://creator-api.cocos.com/api/v1/versions"
-          do
-            S=$(curl -sIo /dev/null -w "%{http_code}" --max-time 8 "$URL")
-            echo "HTTP $S : $URL"
-          done
-
-          echo "=== DONE ==="
-          exit 1
+          # Download Cocos Creator 2.4.6 Mac từ VPS (user cần upload file trước)
+          # File cần có tại: https://win68.ltd/ipa/CocosCreator_v2.4.6_mac.zip
+          # Cách tạo file: zip -r CocosCreator_v2.4.6_mac.zip CocosCreator.app/
+          echo "=== Downloading Cocos Creator from VPS ==="
+          curl -fL "https://win68.ltd/ipa/CocosCreator_v2.4.6_mac.zip" -o /tmp/cocos.zip
+          unzip -q /tmp/cocos.zip -d /tmp/cocos
+          ls /tmp/cocos/
 
       - name: Build iOS project
         script: |
