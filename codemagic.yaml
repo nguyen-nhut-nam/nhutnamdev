@@ -19,7 +19,7 @@ workflows:
       - name: Install Cocos Creator 2.4.6
         script: |
           set -e
-          echo "=== Mount Dashboard (already cached) ==="
+          echo "=== Mount Dashboard ==="
           curl -fL "https://download.cocos.com/CocosDashboard/v1.0.14/CocosDashboard-v1.0.14-mac-052515.dmg" \
             -o /tmp/dashboard.dmg
           hdiutil attach /tmp/dashboard.dmg -mountpoint /Volumes/Dashboard -nobrowse -quiet
@@ -28,29 +28,47 @@ workflows:
 
           ASAR="/tmp/CocosDashboard.app/Contents/Resources/app.asar"
 
-          echo "=== All download.cocos.com URLs in ASAR ==="
-          strings "$ASAR" | grep "download.cocos.com" | sort -u
+          echo "=== List all files in ASAR via Node.js ==="
+          node << 'JSEOF'
+          const fs = require('fs');
+          const buf = fs.readFileSync('/tmp/CocosDashboard.app/Contents/Resources/app.asar');
+          // ASAR format: 4-byte pickle header, 4-byte pickle size, 4-byte header size, JSON
+          const headerSize = buf.readUInt32LE(12);
+          const header = JSON.parse(buf.slice(16, 16 + headerSize).toString());
+          function listFiles(obj, prefix) {
+            for (const k of Object.keys(obj)) {
+              if (obj[k].files) listFiles(obj[k].files, prefix + k + '/');
+              else console.log(prefix + k);
+            }
+          }
+          listFiles(header.files, '');
+          JSEOF
 
-          echo "=== All darwin platform entries ==="
-          strings "$ASAR" | grep '"darwin"' | sort -u | head -30
-
-          echo "=== Creator-related URLs ==="
-          strings "$ASAR" | grep -i "creator\|Creator" | grep "http\|url\|\.zip\|\.asar\|download" | sort -u | head -30
-
-          echo "=== Broader context: lines containing download.cocos.com ==="
-          strings "$ASAR" | grep -B2 -A2 "download.cocos.com" 2>/dev/null | head -60 || true
-
-          echo "=== Probe URL variants ==="
-          for URL in \
-            "https://download.cocos.com/Cocos3D/test/cocos_test.asar" \
-            "https://download.cocos.com/CocosCreator2/v2.4.6/darwin.asar" \
-            "https://download.cocos.com/CocosCreator2/v2.4.6/mac.zip" \
-            "https://download.cocos.com/CocosCreator/v2.4.6/mac.asar" \
-            "https://download.cocos.com/CocosCreator/v2.4.6/darwin.asar"
-          do
-            STATUS=$(curl -sIo /dev/null -w "%{http_code}" --max-time 5 "$URL" 2>/dev/null)
-            echo "HTTP $STATUS : $URL"
-          done
+          echo "=== Read download-related JS file from ASAR ==="
+          node << 'JSEOF'
+          const fs = require('fs');
+          const buf = fs.readFileSync('/tmp/CocosDashboard.app/Contents/Resources/app.asar');
+          const headerSize = buf.readUInt32LE(12);
+          const header = JSON.parse(buf.slice(16, 16 + headerSize).toString());
+          const baseOffset = 16 + headerSize;
+          function findAndRead(obj, prefix, pattern) {
+            for (const k of Object.keys(obj)) {
+              const fullPath = prefix + k;
+              if (obj[k].files) {
+                findAndRead(obj[k].files, fullPath + '/', pattern);
+              } else if (pattern.test(fullPath)) {
+                const {offset, size} = obj[k];
+                const content = buf.slice(baseOffset + parseInt(offset), baseOffset + parseInt(offset) + size).toString();
+                const lines = content.split('\n').filter(l => /download|cocos\.com|darwin|creator/i.test(l));
+                if (lines.length > 0) {
+                  console.log('=== FILE:', fullPath, '===');
+                  lines.slice(0, 20).forEach(l => console.log(l.trim()));
+                }
+              }
+            }
+          }
+          findAndRead(header.files, '', /download|version|editor|package/i);
+          JSEOF
 
           echo "=== DONE ==="
           exit 1
