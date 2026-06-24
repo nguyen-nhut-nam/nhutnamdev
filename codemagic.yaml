@@ -19,6 +19,9 @@ workflows:
       - name: Install Cocos Creator 2.4.6
         script: |
           set -e
+          echo "=== Check pre-installed Cocos ==="
+          find /Applications /Users -name "CocosCreator" -maxdepth 8 2>/dev/null | head -5 || true
+
           echo "=== Download & mount Dashboard ==="
           curl -fL "https://download.cocos.com/CocosDashboard/v1.0.14/CocosDashboard-v1.0.14-mac-052515.dmg" \
             -o /tmp/dashboard.dmg
@@ -26,30 +29,27 @@ workflows:
           cp -R "/Volumes/Dashboard/CocosDashboard.app" /tmp/
           hdiutil detach /Volumes/Dashboard -quiet
 
-          echo "=== Run Dashboard to warm up version cache ==="
-          nohup /tmp/CocosDashboard.app/Contents/MacOS/CocosDashboard 2>/tmp/dashboard.log &
+          echo "=== Run Dashboard + monitor network ==="
+          nohup /tmp/CocosDashboard.app/Contents/MacOS/CocosDashboard 2>/tmp/dash.log &
           DPID=$!
-          echo "Dashboard PID: $DPID"
-          sleep 30
+          echo "PID: $DPID"
+
+          for I in 5 10 15 20 25; do
+            sleep 5
+            echo "--- t=${I}s connections ---"
+            lsof -p $DPID -i -n -P 2>/dev/null | grep -v "localhost\|127.0.0.1" || true
+          done
+
           kill $DPID 2>/dev/null || true
-          sleep 3
+          sleep 2
 
-          echo "=== Dashboard stderr log ==="
-          cat /tmp/dashboard.log 2>/dev/null | head -40 || true
+          echo "=== Dashboard log ==="
+          cat /tmp/dash.log | head -30 || true
 
-          echo "=== JSON files created by Dashboard ==="
-          find "$HOME/Library" -newer /tmp/dashboard.dmg -name "*.json" 2>/dev/null | head -20 || true
+          echo "=== Files created ==="
+          find "$HOME/Library" -newer /tmp/dashboard.dmg 2>/dev/null | grep -v "\.DS_Store\|Caches/com\." | head -20 || true
 
-          echo "=== Search creator/download in new JSON files ==="
-          find "$HOME/Library" -newer /tmp/dashboard.dmg -name "*.json" 2>/dev/null | while read F; do
-            HITS=$(grep -oi "https://[^\"]*" "$F" 2>/dev/null | grep -i "creator\|cocos\|download" | head -3)
-            [ -n "$HITS" ] && echo "FILE: $F" && echo "$HITS"
-          done || true
-
-          echo "=== Check ~/.config too ==="
-          find "$HOME/.config" -newer /tmp/dashboard.dmg -name "*.json" 2>/dev/null | head -10 || true
-
-          echo "=== DIAGNOSTIC DONE ==="
+          echo "=== DONE ==="
           exit 1
 
       - name: Build iOS project
