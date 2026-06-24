@@ -41,6 +41,14 @@ workflows:
         script: |
           set -e
           CREATOR_BIN="/tmp/cocos/CocosCreator.app/Contents/MacOS/CocosCreator"
+
+          echo "=== Pre-setup Creator settings (avoid network hang) ==="
+          mkdir -p ~/.CocosCreator
+          cat > ~/.CocosCreator/settings.json << 'SETTINGS'
+{"language":"en","simulator-customsize-resolution":{"width":960,"height":640}}
+SETTINGS
+          echo "Settings created."
+
           echo "=== Building iOS project ==="
           "$CREATOR_BIN" \
             --path "$CM_BUILD_DIR" \
