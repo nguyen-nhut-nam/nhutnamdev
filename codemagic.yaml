@@ -26,20 +26,28 @@ workflows:
           cp -R "/Volumes/Dashboard/CocosDashboard.app" /tmp/
           hdiutil detach /Volumes/Dashboard -quiet
 
-          ASAR_PATH="/tmp/CocosDashboard.app/Contents/Resources/app.asar"
-          echo "ASAR size: $(ls -lh $ASAR_PATH | awk '{print $5}')"
+          echo "=== Run Dashboard to warm up version cache ==="
+          nohup /tmp/CocosDashboard.app/Contents/MacOS/CocosDashboard 2>/tmp/dashboard.log &
+          DPID=$!
+          echo "Dashboard PID: $DPID"
+          sleep 30
+          kill $DPID 2>/dev/null || true
+          sleep 3
 
-          echo "=== strings search in asar ==="
-          strings "$ASAR_PATH" | grep -i "download.cocos.com" | head -20 || true
-          strings "$ASAR_PATH" | grep -i "CocosCreator.*mac\|mac.*CocosCreator\|2\.4\.6" | head -20 || true
-          strings "$ASAR_PATH" | grep "https://" | grep -iv "mozilla\|google\|electron\|chromium\|github\|npm\|node" | head -30 || true
+          echo "=== Dashboard stderr log ==="
+          cat /tmp/dashboard.log 2>/dev/null | head -40 || true
 
-          echo "=== Try date variant URLs for Creator 2.4.6 ==="
-          for DATE in 20210719 20210720 20210721 20210722 20210823 20210824 20210825 20210826; do
-            URL="https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_${DATE}_mac.zip"
-            STATUS=$(curl -sIo /dev/null -w "%{http_code}" "$URL" 2>/dev/null)
-            echo "$DATE => HTTP $STATUS : $URL"
-          done
+          echo "=== JSON files created by Dashboard ==="
+          find "$HOME/Library" -newer /tmp/dashboard.dmg -name "*.json" 2>/dev/null | head -20 || true
+
+          echo "=== Search creator/download in new JSON files ==="
+          find "$HOME/Library" -newer /tmp/dashboard.dmg -name "*.json" 2>/dev/null | while read F; do
+            HITS=$(grep -oi "https://[^\"]*" "$F" 2>/dev/null | grep -i "creator\|cocos\|download" | head -3)
+            [ -n "$HITS" ] && echo "FILE: $F" && echo "$HITS"
+          done || true
+
+          echo "=== Check ~/.config too ==="
+          find "$HOME/.config" -newer /tmp/dashboard.dmg -name "*.json" 2>/dev/null | head -10 || true
 
           echo "=== DIAGNOSTIC DONE ==="
           exit 1
