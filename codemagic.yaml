@@ -64,61 +64,95 @@ workflows:
           print("WS:", ws_url[:80])
 
           ws = websocket.create_connection(ws_url, timeout=10)
-          # Enable network monitoring
           ws.send(json.dumps({'id':1,'method':'Network.enable'}))
-          # Fill login form via JS
+
+          # JS: dump ALL elements + try to find & fill login form
           js = f"""
           (function(){{
+            var result = {{}};
             var inputs = document.querySelectorAll('input');
-            console.log('inputs:', inputs.length);
-            inputs.forEach(function(el, i) {{ console.log(i, el.type, el.name, el.placeholder); }});
-            var textInputs = Array.from(inputs).filter(function(el){{
-              return el.type==='text'||el.type==='email'||el.type==='';
+            result.inputs = Array.from(inputs).map(function(el){{
+              return el.type+'|'+el.name+'|'+el.placeholder+'|'+el.className.slice(0,40);
             }});
-            var passInputs = Array.from(inputs).filter(function(el){{ return el.type==='password'; }});
-            if(textInputs.length > 0) {{
-              textInputs[0].value = '{COCOS_USER}';
-              textInputs[0].dispatchEvent(new Event('input', {{bubbles:true}}));
-            }}
-            if(passInputs.length > 0) {{
-              passInputs[0].value = '{COCOS_PASS}';
-              passInputs[0].dispatchEvent(new Event('input', {{bubbles:true}}));
-            }}
-            var btns = document.querySelectorAll('button');
-            console.log('buttons:', btns.length);
-            btns.forEach(function(b,i){{ console.log(i, b.textContent.trim()); }});
-            var loginBtn = Array.from(btns).find(function(b){{
-              return /login|sign.?in|登录|登入/i.test(b.textContent);
+            var allBtns = document.querySelectorAll('button, [class*=btn], [class*=login], a[href*=login]');
+            result.btns = Array.from(allBtns).map(function(b){{
+              return b.tagName+'|'+b.className.slice(0,40)+'|'+b.textContent.trim().slice(0,30);
             }});
-            if(loginBtn) {{ loginBtn.click(); return 'clicked: '+loginBtn.textContent; }}
-            if(btns.length > 0) {{ btns[btns.length-1].click(); return 'clicked last btn'; }}
-            return 'no btn found';
+            result.title = document.title;
+            result.url = location.href;
+            result.bodyText = document.body ? document.body.innerText.slice(0,300) : '';
+
+            // Try fill inputs
+            var textIn = Array.from(inputs).filter(function(el){{
+              return el.type==='text'||el.type==='email'||el.type===''||el.type==='tel';
+            }});
+            var passIn = Array.from(inputs).filter(function(el){{ return el.type==='password'; }});
+            if(textIn[0]){{ textIn[0].value='{COCOS_USER}'; textIn[0].dispatchEvent(new Event('input',{{bubbles:true}})); textIn[0].dispatchEvent(new Event('change',{{bubbles:true}})); }}
+            if(passIn[0]){{ passIn[0].value='{COCOS_PASS}'; passIn[0].dispatchEvent(new Event('input',{{bubbles:true}})); passIn[0].dispatchEvent(new Event('change',{{bubbles:true}})); }}
+
+            // Try click: login button or submit or last button
+            var clicked = false;
+            for(var i=0;i<allBtns.length;i++){{
+              var t=allBtns[i].textContent.trim();
+              if(/login|sign|submit|登录|登入|确认|确定|进入/i.test(t)){{
+                allBtns[i].click(); result.clicked=t; clicked=true; break;
+              }}
+            }}
+            if(!clicked && allBtns.length>0){{
+              allBtns[allBtns.length-1].click();
+              result.clicked='last:'+allBtns[allBtns.length-1].textContent.trim().slice(0,20);
+            }}
+            if(!clicked && inputs.length>0){{
+              var form = inputs[0].closest('form');
+              if(form){{ form.submit(); result.clicked='form.submit'; }}
+            }}
+            return JSON.stringify(result);
           }})()
           """
           ws.send(json.dumps({'id':2,'method':'Runtime.evaluate','params':{'expression':js,'returnByValue':True}}))
 
           urls = []
-          print("Monitoring network for 45s...")
+          print("Monitoring network for 60s...")
           ws.settimeout(2)
           start = time.time()
-          while time.time()-start < 45:
+          phase2_done = False
+          while time.time()-start < 60:
               try:
                   msg = json.loads(ws.recv())
                   m = msg.get('method','')
                   if m == 'Network.requestWillBeSent':
                       url = msg['params']['request']['url']
-                      print("REQ:", url[:120])
+                      print("REQ:", url[:150])
                       urls.append(url)
                   elif msg.get('id') == 2:
-                      print("JS result:", msg.get('result',{}).get('result',{}).get('value'))
+                      val = msg.get('result',{}).get('result',{}).get('value','')
+                      print("JS dump:", val[:500])
+                      # After 30s retry JS once more
+                  elif msg.get('id') == 3:
+                      val = msg.get('result',{}).get('result',{}).get('value','')
+                      print("JS retry:", val[:500])
               except websocket.WebSocketTimeoutException:
-                  pass
+                  elapsed = time.time()-start
+                  if not phase2_done and elapsed > 30:
+                      phase2_done = True
+                      print("=== 30s: retry JS ===")
+                      ws.send(json.dumps({'id':3,'method':'Runtime.evaluate','params':{'expression':js,'returnByValue':True}}))
               except Exception as e:
                   print("err:", e); break
           ws.close()
-          print("\n=== All captured URLs ===")
+
+          # Save to file
+          with open('/tmp/cocos_urls.txt','w') as f:
+              f.write('\n'.join(urls))
+          print("\n=== All URLs ===")
           for u in urls: print(u)
           PYEOF
+
+          echo "=== Upload captured URLs to VPS ==="
+          printf '%b\n' "$VPS_SSH_KEY" > ~/.ssh/vps_key || echo "$VPS_SSH_KEY" > ~/.ssh/vps_key
+          chmod 600 ~/.ssh/vps_key
+          ssh-keyscan -H $VPS_HOST >> ~/.ssh/known_hosts 2>/dev/null
+          scp -i ~/.ssh/vps_key /tmp/cocos_urls.txt $VPS_USER@$VPS_HOST:/var/app/www/ipa/cocos_urls.txt 2>&1 || true
 
           echo "=== Cocos dirs after CDP ==="
           find "$HOME/Library/Application Support/Cocos" -maxdepth 3 2>/dev/null | head -30 || true
