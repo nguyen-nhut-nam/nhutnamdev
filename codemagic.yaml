@@ -1,7 +1,7 @@
 workflows:
   ios-build:
     name: WIN68 iOS Build
-    max_build_duration: 120
+    max_build_duration: 180
     instance_type: mac_mini_m2
 
     environment:
@@ -45,6 +45,7 @@ workflows:
           "$CREATOR_BIN" \
             --path "$CM_BUILD_DIR" \
             --build "platform=ios;debug=false;appName=$APP_NAME;packageName=$BUNDLE_ID" \
+            --quit \
             2>&1
 
           echo "=== Xcode project ==="
