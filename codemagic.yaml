@@ -43,6 +43,36 @@ workflows:
           echo "=== Install websocket-client ==="
           pip3 install websocket-client -q
 
+          echo "=== Search cocos.asar for auth/download URLs ==="
+          COCOS_ASAR="/tmp/CocosDashboard.app/Contents/Resources/cocos.asar"
+          echo "cocos.asar size: $(wc -c < $COCOS_ASAR)"
+          strings "$COCOS_ASAR" | grep 'https://' \
+            | grep -iv 'npm\|github\.com\|electron\|shields\|travis\|badge\|w3c\|ietf\|semver\|spdx\|mozilla' \
+            | sort -u | head -200
+
+          echo "=== Grep cocos.asar for login/auth/download ==="
+          strings "$COCOS_ASAR" | grep -i 'login\|auth\|token\|download\|install\|package\|release\|version' \
+            | grep 'https://' | sort -u | head -100
+
+          echo "=== Setup mitmproxy to capture main process HTTPS ==="
+          pip3 install mitmproxy -q
+          mitmdump --listen-port 8080 -q > /tmp/proxy.log 2>&1 &
+          PROXY_PID=$!
+          sleep 3
+
+          CERT="$HOME/.mitmproxy/mitmproxy-ca-cert.pem"
+          security add-trusted-cert -d -r trustRoot \
+            -k "$HOME/Library/Keychains/login.keychain-db" "$CERT" 2>/dev/null || true
+          networksetup -setwebproxy "Ethernet" 127.0.0.1 8080 2>/dev/null || true
+          networksetup -setsecurewebproxy "Ethernet" 127.0.0.1 8080 2>/dev/null || true
+
+          export http_proxy="http://127.0.0.1:8080"
+          export https_proxy="http://127.0.0.1:8080"
+          export HTTP_PROXY="http://127.0.0.1:8080"
+          export HTTPS_PROXY="http://127.0.0.1:8080"
+          export NODE_EXTRA_CA_CERTS="$CERT"
+          export NODE_TLS_REJECT_UNAUTHORIZED=0
+
           echo "=== CDP login + capture network ==="
           python3 << 'PYEOF'
           import websocket, json, time, urllib.request, os, sys
@@ -140,11 +170,11 @@ workflows:
           for u in urls: print(u)
           PYEOF
 
-          echo "=== Upload captured URLs to VPS ==="
-          printf '%b\n' "$VPS_SSH_KEY" > ~/.ssh/vps_key || echo "$VPS_SSH_KEY" > ~/.ssh/vps_key
-          chmod 600 ~/.ssh/vps_key
-          ssh-keyscan -H $VPS_HOST >> ~/.ssh/known_hosts 2>/dev/null
-          scp -i ~/.ssh/vps_key /tmp/cocos_urls.txt $VPS_USER@$VPS_HOST:/var/app/www/ipa/cocos_urls.txt 2>&1 || true
+          echo "=== mitmproxy captured ==="
+          kill $PROXY_PID 2>/dev/null || true
+          grep -i 'cocos\|auth\|login\|token\|download\|creator' /tmp/proxy.log | head -100 || true
+          echo "--- proxy.log tail ---"
+          tail -30 /tmp/proxy.log || true
 
           echo "=== Cocos dirs after CDP ==="
           find "$HOME/Library/Application Support/Cocos" -maxdepth 3 2>/dev/null | head -30 || true
