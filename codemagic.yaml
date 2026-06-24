@@ -27,48 +27,58 @@ workflows:
           hdiutil detach /Volumes/Dashboard -quiet
 
           ASAR="/tmp/CocosDashboard.app/Contents/Resources/app.asar"
+          echo "ASAR size: $(wc -c < $ASAR) bytes"
 
-          echo "=== List all files in ASAR via Node.js ==="
-          node << 'JSEOF'
-          const fs = require('fs');
-          const buf = fs.readFileSync('/tmp/CocosDashboard.app/Contents/Resources/app.asar');
-          // ASAR format: 4-byte pickle header, 4-byte pickle size, 4-byte header size, JSON
-          const headerSize = buf.readUInt32LE(12);
-          const header = JSON.parse(buf.slice(16, 16 + headerSize).toString());
-          function listFiles(obj, prefix) {
-            for (const k of Object.keys(obj)) {
-              if (obj[k].files) listFiles(obj[k].files, prefix + k + '/');
-              else console.log(prefix + k);
-            }
-          }
-          listFiles(header.files, '');
-          JSEOF
+          echo "=== Parse ASAR with Python ==="
+          python3 - << 'PYEOF'
+import struct, json, sys, re
 
-          echo "=== Read download-related JS file from ASAR ==="
-          node << 'JSEOF'
-          const fs = require('fs');
-          const buf = fs.readFileSync('/tmp/CocosDashboard.app/Contents/Resources/app.asar');
-          const headerSize = buf.readUInt32LE(12);
-          const header = JSON.parse(buf.slice(16, 16 + headerSize).toString());
-          const baseOffset = 16 + headerSize;
-          function findAndRead(obj, prefix, pattern) {
-            for (const k of Object.keys(obj)) {
-              const fullPath = prefix + k;
-              if (obj[k].files) {
-                findAndRead(obj[k].files, fullPath + '/', pattern);
-              } else if (pattern.test(fullPath)) {
-                const {offset, size} = obj[k];
-                const content = buf.slice(baseOffset + parseInt(offset), baseOffset + parseInt(offset) + size).toString();
-                const lines = content.split('\n').filter(l => /download|cocos\.com|darwin|creator/i.test(l));
-                if (lines.length > 0) {
-                  console.log('=== FILE:', fullPath, '===');
-                  lines.slice(0, 20).forEach(l => console.log(l.trim()));
-                }
-              }
-            }
-          }
-          findAndRead(header.files, '', /download|version|editor|package/i);
-          JSEOF
+with open('/tmp/CocosDashboard.app/Contents/Resources/app.asar', 'rb') as f:
+    raw = f.read()
+
+print('First 32 bytes:', raw[:32].hex())
+# Try parse header at various offsets
+for hdr_offset in [8, 12, 16]:
+    try:
+        sz = struct.unpack_from('<I', raw, hdr_offset - 4)[0]
+        chunk = raw[hdr_offset:hdr_offset + sz]
+        obj = json.loads(chunk.decode('utf-8'))
+        if 'files' in obj:
+            print(f'Header found at offset {hdr_offset}, size {sz}')
+            base = hdr_offset + sz
+            def search(d, path=''):
+                for k,v in d.items():
+                    p = path + k
+                    if 'files' in v:
+                        search(v['files'], p + '/')
+                    else:
+                        off = int(v.get('offset', 0))
+                        sz2 = v.get('size', 0)
+                        content = raw[base + off:base + off + min(sz2, 8000)]
+                        text = content.decode('utf-8', errors='ignore')
+                        if re.search(r'download|cocos\.com|darwin|creator|version', text, re.I):
+                            lines = [l.strip() for l in text.split('\n')
+                                     if re.search(r'download\.cocos|darwin.*http|creator.*zip|\.asar', l, re.I)]
+                            if lines:
+                                print(f'=== {p} ===')
+                                for l in lines[:15]: print(l)
+            search(obj['files'])
+            break
+    except Exception as e:
+        pass
+PYEOF
+
+          echo "=== Probe test URL + Cocos2D variants ==="
+          for URL in \
+            "https://download.cocos.com/Cocos3D/test/cocos_test.asar" \
+            "https://download.cocos.com/Cocos2D/v2.4.6/darwin.asar" \
+            "https://download.cocos.com/Cocos2D/v2.4.6/mac.zip" \
+            "https://download.cocos.com/Creator2/v2.4.6/darwin.asar" \
+            "https://download.cocos.com/CocosEditor/v2.4.6/darwin.asar"
+          do
+            S=$(curl -sIo /dev/null -w "%{http_code}" --max-time 5 "$URL")
+            echo "HTTP $S : $URL"
+          done
 
           echo "=== DONE ==="
           exit 1
