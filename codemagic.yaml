@@ -29,22 +29,23 @@ workflows:
           ASAR="/tmp/CocosDashboard.app/Contents/Resources/app.asar"
           echo "ASAR size: $(wc -c < $ASAR) bytes"
 
-          echo "=== ASAR header hex ==="
-          python3 -c 'import struct; f=open("/tmp/CocosDashboard.app/Contents/Resources/app.asar","rb"); b=f.read(64); f.close(); print(b.hex()); [print(i,struct.unpack_from("<I",b,i)[0]) for i in range(0,16,4)]'
+          echo "=== Cocos-only URLs in ASAR (no npm noise) ==="
+          strings "$ASAR" | grep 'https://' | grep -iv 'npm\|node\|github\|electron\|chromium\|taobao\|mozilla\|google\|w3c\|ietf\|semver\|spdx' | sort -u | head -60 || true
 
-          echo "=== All unique HTTPS URLs in ASAR ==="
-          strings "$ASAR" | grep 'https://' | sort -u | head -80 || true
+          echo "=== All cocos.com strings ==="
+          strings "$ASAR" | grep 'cocos' | sort -u || true
 
-          echo "=== Probe URLs ==="
+          echo "=== Probe Alibaba/Huawei CDN patterns ==="
           for URL in \
+            "https://cocos2dx.oss-cn-hangzhou.aliyuncs.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_mac.zip" \
+            "https://cocoshub.obs.cn-east-3.myhuaweicloud.com/CocosCreator/v2.4.6/darwin.asar" \
             "https://download.cocos.com/Cocos3D/test/cocos_test.asar" \
-            "https://download.cocos.com/Cocos2D/v2.4.6/darwin.asar" \
-            "https://download.cocos.com/Cocos2D/v2.4.6/mac.zip" \
-            "https://download.cocos.com/Creator2/v2.4.6/darwin.asar" \
             "https://download.cocos.com/Cocos3D/v3.8.5/darwin.asar" \
-            "https://download.cocos.com/CocosCreator/v2.4.6/darwin.zip"
+            "https://packages.cocos.com/creator/v2.4.6/darwin" \
+            "https://editor.cocos.com/versions" \
+            "https://creator-api.cocos.com/api/v1/versions"
           do
-            S=$(curl -sIo /dev/null -w "%{http_code}" --max-time 5 "$URL")
+            S=$(curl -sIo /dev/null -w "%{http_code}" --max-time 8 "$URL")
             echo "HTTP $S : $URL"
           done
 
