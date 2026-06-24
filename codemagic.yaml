@@ -19,7 +19,7 @@ workflows:
       - name: Install Cocos Creator 2.4.6
         script: |
           set -e
-          CREATOR_ZIP="https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_20210727_mac.zip"
+          CREATOR_ZIP="https://download.cocos.com/CocosCreator/v2.4.9/CocosCreator_v2.4.9_20220412_mac.zip"
           CREATOR_DIR="/tmp/cocos"
           CREATOR_BIN="$CREATOR_DIR/CocosCreator.app/Contents/MacOS/CocosCreator"
 
@@ -48,11 +48,21 @@ workflows:
           echo "Settings created."
 
           echo "=== Building iOS project ==="
+          # Background monitor: log library size every 60s to confirm progress
+          (while true; do
+            lib=$(du -sh "$CM_BUILD_DIR/library" 2>/dev/null | cut -f1 || echo "none")
+            echo "[MONITOR $(date +%H:%M:%S)] library=$lib"
+            sleep 60
+          done) &
+          MONITOR_PID=$!
+
           "$CREATOR_BIN" \
             --path "$CM_BUILD_DIR" \
             --build "platform=ios;debug=false;appName=$APP_NAME;packageName=$BUNDLE_ID" \
             --quit \
             2>&1
+
+          kill $MONITOR_PID 2>/dev/null || true
 
           echo "=== Xcode project ==="
           find "$CM_BUILD_DIR" -name "*.xcodeproj" 2>/dev/null | head -5 || { echo "ERROR: No xcodeproj found"; exit 1; }
