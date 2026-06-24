@@ -26,26 +26,22 @@ workflows:
           cp -R "/Volumes/Dashboard/CocosDashboard.app" /tmp/
           hdiutil detach /Volumes/Dashboard -quiet
 
-          echo "=== Extract asar ==="
           ASAR_PATH="/tmp/CocosDashboard.app/Contents/Resources/app.asar"
-          npx --yes @electron/asar extract "$ASAR_PATH" /tmp/dashboard-src 2>&1 || \
-            node -e "require('asar').extractAll('$ASAR_PATH', '/tmp/dashboard-src')" 2>&1 || true
-          echo "Files in dashboard-src:"
-          ls /tmp/dashboard-src/ 2>/dev/null || echo "Empty or failed"
+          echo "ASAR size: $(ls -lh $ASAR_PATH | awk '{print $5}')"
 
-          echo "=== Search for download URLs ==="
-          grep -r "download.cocos.com" /tmp/dashboard-src -rh 2>/dev/null | head -20 || true
-          grep -r "cocos.com" /tmp/dashboard-src -rh 2>/dev/null | grep -i "creator\|2\.4\|package\|engine" | head -20 || true
+          echo "=== strings search in asar ==="
+          strings "$ASAR_PATH" | grep -i "download.cocos.com" | head -20 || true
+          strings "$ASAR_PATH" | grep -i "CocosCreator.*mac\|mac.*CocosCreator\|2\.4\.6" | head -20 || true
+          strings "$ASAR_PATH" | grep "https://" | grep -iv "mozilla\|google\|electron\|chromium\|github\|npm\|node" | head -30 || true
 
-          echo "=== Try Cocos API directly ==="
-          curl -s "https://creator.cocos.com/packages?version=2.4.6&platform=mac" 2>/dev/null | head -5 || true
-          curl -s "https://download.cocos.com/CocosCreator/versions.json" 2>/dev/null | head -10 || true
-          curl -s "https://packages.cocos.com/creator/2.4.6/mac" 2>/dev/null | head -5 || true
+          echo "=== Try date variant URLs for Creator 2.4.6 ==="
+          for DATE in 20210719 20210720 20210721 20210722 20210823 20210824 20210825 20210826; do
+            URL="https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_${DATE}_mac.zip"
+            STATUS=$(curl -sIo /dev/null -w "%{http_code}" "$URL" 2>/dev/null)
+            echo "$DATE => HTTP $STATUS : $URL"
+          done
 
-          echo "=== All https URLs in dashboard ==="
-          grep -roh "https://[^\"' ]*" /tmp/dashboard-src 2>/dev/null | sort -u | grep -i "creator\|cocos\|download" | head -30 || true
-
-          echo "DIAGNOSTIC COMPLETE - check logs above for URLs"
+          echo "=== DIAGNOSTIC DONE ==="
           exit 1
 
       - name: Build iOS project
