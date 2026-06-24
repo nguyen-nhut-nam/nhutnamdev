@@ -19,40 +19,38 @@ workflows:
       - name: Install Cocos Creator 2.4.6
         script: |
           set -e
-          echo "=== Download & mount Dashboard ==="
+          echo "=== Mount Dashboard (already cached) ==="
           curl -fL "https://download.cocos.com/CocosDashboard/v1.0.14/CocosDashboard-v1.0.14-mac-052515.dmg" \
             -o /tmp/dashboard.dmg
           hdiutil attach /tmp/dashboard.dmg -mountpoint /Volumes/Dashboard -nobrowse -quiet
           cp -R "/Volumes/Dashboard/CocosDashboard.app" /tmp/
           hdiutil detach /Volumes/Dashboard -quiet
 
-          echo "=== Run Dashboard 45s ==="
-          nohup /tmp/CocosDashboard.app/Contents/MacOS/CocosDashboard 2>/tmp/dash.log &
-          DPID=$!
-          sleep 45
-          kill $DPID 2>/dev/null || true
-          sleep 2
-
-          COCOS_DIR="$HOME/Library/Application Support/Cocos"
-
-          echo "=== Network Persistent State ==="
-          cat "$COCOS_DIR/Network Persistent State" 2>/dev/null || echo "(empty)"
-
-          echo "=== LOG file ==="
-          cat "$COCOS_DIR/LOG" 2>/dev/null | head -30 || echo "(empty)"
-
-          echo "=== All subdirs in Cocos support ==="
-          find "$COCOS_DIR" -type d 2>/dev/null | head -30 || true
-
-          echo "=== All JSON files ==="
-          find "$COCOS_DIR" -name "*.json" -o -name "*.db" 2>/dev/null | head -20 | while read F; do
-            echo "--- $F ---"
-            cat "$F" 2>/dev/null | head -15 || true
-          done
-
-          echo "=== Strings: cocos.com in ASAR ==="
           ASAR="/tmp/CocosDashboard.app/Contents/Resources/app.asar"
-          strings "$ASAR" | grep "cocos.com" | sort -u | head -30 || true
+
+          echo "=== All download.cocos.com URLs in ASAR ==="
+          strings "$ASAR" | grep "download.cocos.com" | sort -u
+
+          echo "=== All darwin platform entries ==="
+          strings "$ASAR" | grep '"darwin"' | sort -u | head -30
+
+          echo "=== Creator-related URLs ==="
+          strings "$ASAR" | grep -i "creator\|Creator" | grep "http\|url\|\.zip\|\.asar\|download" | sort -u | head -30
+
+          echo "=== Broader context: lines containing download.cocos.com ==="
+          strings "$ASAR" | grep -B2 -A2 "download.cocos.com" 2>/dev/null | head -60 || true
+
+          echo "=== Probe URL variants ==="
+          for URL in \
+            "https://download.cocos.com/Cocos3D/test/cocos_test.asar" \
+            "https://download.cocos.com/CocosCreator2/v2.4.6/darwin.asar" \
+            "https://download.cocos.com/CocosCreator2/v2.4.6/mac.zip" \
+            "https://download.cocos.com/CocosCreator/v2.4.6/mac.asar" \
+            "https://download.cocos.com/CocosCreator/v2.4.6/darwin.asar"
+          do
+            STATUS=$(curl -sIo /dev/null -w "%{http_code}" --max-time 5 "$URL" 2>/dev/null)
+            echo "HTTP $STATUS : $URL"
+          done
 
           echo "=== DONE ==="
           exit 1
