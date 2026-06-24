@@ -66,47 +66,39 @@ workflows:
           ws = websocket.create_connection(ws_url, timeout=10)
           ws.send(json.dumps({'id':1,'method':'Network.enable'}))
 
-          # JS: dump ALL elements + try to find & fill login form
+          # JS: fill login form using Vue-compatible method + click correct BUTTON
           js = f"""
           (function(){{
-            var result = {{}};
+            function setVal(el, val) {{
+              var setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
+              setter.call(el, val);
+              ['input','change','keyup'].forEach(function(ev){{
+                el.dispatchEvent(new Event(ev, {{bubbles:true}}));
+              }});
+            }}
             var inputs = document.querySelectorAll('input');
-            result.inputs = Array.from(inputs).map(function(el){{
-              return el.type+'|'+el.name+'|'+el.placeholder+'|'+el.className.slice(0,40);
-            }});
-            var allBtns = document.querySelectorAll('button, [class*=btn], [class*=login], a[href*=login]');
-            result.btns = Array.from(allBtns).map(function(b){{
-              return b.tagName+'|'+b.className.slice(0,40)+'|'+b.textContent.trim().slice(0,30);
-            }});
-            result.title = document.title;
-            result.url = location.href;
-            result.bodyText = document.body ? document.body.innerText.slice(0,300) : '';
-
-            // Try fill inputs
-            var textIn = Array.from(inputs).filter(function(el){{
-              return el.type==='text'||el.type==='email'||el.type===''||el.type==='tel';
-            }});
+            var textIn = Array.from(inputs).filter(function(el){{ return el.type!=='password'; }});
             var passIn = Array.from(inputs).filter(function(el){{ return el.type==='password'; }});
-            if(textIn[0]){{ textIn[0].value='{COCOS_USER}'; textIn[0].dispatchEvent(new Event('input',{{bubbles:true}})); textIn[0].dispatchEvent(new Event('change',{{bubbles:true}})); }}
-            if(passIn[0]){{ passIn[0].value='{COCOS_PASS}'; passIn[0].dispatchEvent(new Event('input',{{bubbles:true}})); passIn[0].dispatchEvent(new Event('change',{{bubbles:true}})); }}
+            if(textIn[0]) setVal(textIn[0], '{COCOS_USER}');
+            if(passIn[0]) setVal(passIn[0], '{COCOS_PASS}');
 
-            // Try click: login button or submit or last button
-            var clicked = false;
-            for(var i=0;i<allBtns.length;i++){{
-              var t=allBtns[i].textContent.trim();
-              if(/login|sign|submit|登录|登入|确认|确定|进入/i.test(t)){{
-                allBtns[i].click(); result.clicked=t; clicked=true; break;
-              }}
-            }}
-            if(!clicked && allBtns.length>0){{
-              allBtns[allBtns.length-1].click();
-              result.clicked='last:'+allBtns[allBtns.length-1].textContent.trim().slice(0,20);
-            }}
-            if(!clicked && inputs.length>0){{
-              var form = inputs[0].closest('form');
-              if(form){{ form.submit(); result.clicked='form.submit'; }}
-            }}
-            return JSON.stringify(result);
+            // Only click actual <button> elements (avoid section/div)
+            var btns = Array.from(document.querySelectorAll('button'));
+            var loginBtn = btns.find(function(b){{
+              return /sign.?in|sign_in|login|登录/i.test(b.textContent);
+            }}) || btns[btns.length-1];
+
+            var clickResult = 'none';
+            if(loginBtn) {{ loginBtn.click(); clickResult = loginBtn.textContent.trim().slice(0,40); }}
+
+            return JSON.stringify({{
+              inputs: inputs.length,
+              textIn: textIn.length,
+              passIn: passIn.length,
+              filled: (textIn[0]?'user:ok':'user:miss')+'/'+(passIn[0]?'pass:ok':'pass:miss'),
+              btnCount: btns.length,
+              clicked: clickResult
+            }});
           }})()
           """
           ws.send(json.dumps({'id':2,'method':'Runtime.evaluate','params':{'expression':js,'returnByValue':True}}))
