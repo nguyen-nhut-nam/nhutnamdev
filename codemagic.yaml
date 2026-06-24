@@ -65,39 +65,7 @@ workflows:
           echo "Imports count: $(find $CM_BUILD_DIR/library/imports -type f 2>/dev/null | wc -l)"
 
           echo "=== Generate uuid-to-mtime.json matching CI file mtimes ==="
-          python3 - <<'PYEOF'
-import json, os, re
-
-project = os.environ.get('CM_BUILD_DIR', '.')
-assets_dir = os.path.join(project, 'assets')
-output = os.path.join(project, 'library', 'uuid-to-mtime.json')
-
-uuid_map = {}
-UUID_RE = re.compile(r'"uuid"\s*:\s*"([0-9a-f\-]{36})"')
-
-for root, dirs, files in os.walk(assets_dir):
-    for fname in files:
-        if not fname.endswith('.meta'):
-            continue
-        meta_path = os.path.join(root, fname)
-        asset_path = meta_path[:-5]
-        try:
-            content = open(meta_path, encoding='utf-8', errors='ignore').read()
-            m = UUID_RE.search(content)
-            if not m:
-                continue
-            uuid = m.group(1)
-            meta_mtime = int(os.path.getmtime(meta_path) * 1000)
-            asset_mtime = int(os.path.getmtime(asset_path) * 1000) if os.path.exists(asset_path) else meta_mtime
-            rel = os.path.relpath(asset_path, assets_dir)
-            uuid_map[uuid] = {'asset': asset_mtime, 'meta': meta_mtime, 'relativePath': rel}
-        except Exception as e:
-            pass
-
-with open(output, 'w', encoding='utf-8') as f:
-    json.dump(uuid_map, f)
-print(f'Generated uuid-to-mtime.json: {len(uuid_map)} entries')
-PYEOF
+          echo "aW1wb3J0IGpzb24sIG9zLCByZQpwcm9qZWN0ID0gb3MuZW52aXJvbi5nZXQoIkNNX0JVSUxEX0RJUiIsICIuIikKYXNzZXRzX2RpciA9IG9zLnBhdGguam9pbihwcm9qZWN0LCAiYXNzZXRzIikKb3V0cHV0ID0gb3MucGF0aC5qb2luKHByb2plY3QsICJsaWJyYXJ5IiwgInV1aWQtdG8tbXRpbWUuanNvbiIpCnV1aWRfbWFwID0ge30KVVVJRF9SRSA9IHJlLmNvbXBpbGUocicidXVpZCJccyo6XHMqIihbMC05YS1mXC1dezM2fSkiJykKZm9yIHJvb3QsIGRpcnMsIGZpbGVzIGluIG9zLndhbGsoYXNzZXRzX2Rpcik6CiAgICBmb3IgZm5hbWUgaW4gZmlsZXM6CiAgICAgICAgaWYgbm90IGZuYW1lLmVuZHN3aXRoKCIubWV0YSIpOgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIG1ldGFfcGF0aCA9IG9zLnBhdGguam9pbihyb290LCBmbmFtZSkKICAgICAgICBhc3NldF9wYXRoID0gbWV0YV9wYXRoWzotNV0KICAgICAgICB0cnk6CiAgICAgICAgICAgIGNvbnRlbnQgPSBvcGVuKG1ldGFfcGF0aCwgZW5jb2Rpbmc9InV0Zi04IiwgZXJyb3JzPSJpZ25vcmUiKS5yZWFkKCkKICAgICAgICAgICAgbSA9IFVVSURfUkUuc2VhcmNoKGNvbnRlbnQpCiAgICAgICAgICAgIGlmIG5vdCBtOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgdXVpZCA9IG0uZ3JvdXAoMSkKICAgICAgICAgICAgbWV0YV9tdGltZSA9IGludChvcy5wYXRoLmdldG10aW1lKG1ldGFfcGF0aCkgKiAxMDAwKQogICAgICAgICAgICBhc3NldF9tdGltZSA9IGludChvcy5wYXRoLmdldG10aW1lKGFzc2V0X3BhdGgpICogMTAwMCkgaWYgb3MucGF0aC5leGlzdHMoYXNzZXRfcGF0aCkgZWxzZSBtZXRhX210aW1lCiAgICAgICAgICAgIHJlbCA9IG9zLnBhdGgucmVscGF0aChhc3NldF9wYXRoLCBhc3NldHNfZGlyKQogICAgICAgICAgICB1dWlkX21hcFt1dWlkXSA9IHsiYXNzZXQiOiBhc3NldF9tdGltZSwgIm1ldGEiOiBtZXRhX210aW1lLCAicmVsYXRpdmVQYXRoIjogcmVsfQogICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgIHBhc3MKd2l0aCBvcGVuKG91dHB1dCwgInciLCBlbmNvZGluZz0idXRmLTgiKSBhcyBmOgogICAganNvbi5kdW1wKHV1aWRfbWFwLCBmKQpwcmludChmIkdlbmVyYXRlZCB1dWlkLXRvLW10aW1lLmpzb246IHtsZW4odXVpZF9tYXApfSBlbnRyaWVzIik=" | base64 --decode | python3
 
           echo "=== Pre-create project local/ files ==="
           mkdir -p "$CM_BUILD_DIR/local"
