@@ -46,27 +46,47 @@ workflows:
           mkdir -p ~/.CocosCreator
           printf '%s' '{"language":"en","simulator-customsize-resolution":{"width":960,"height":640}}' > ~/.CocosCreator/settings.json
 
-          echo "=== Pre-create project local/settings.json (gitignored but required) ==="
+          echo "=== Pre-create project local/ files (gitignored) ==="
           mkdir -p "$CM_BUILD_DIR/local"
           printf '%s' '{}' > "$CM_BUILD_DIR/local/settings.json"
-          echo "local/settings.json created."
+          printf '%s' '{"platform":"ios","debug":false}' > "$CM_BUILD_DIR/local/builder.json"
+          echo "local files created."
 
-          echo "=== Building iOS project ==="
-          # Background monitor: log library size every 60s to confirm progress
-          (while true; do
-            lib=$(du -sh "$CM_BUILD_DIR/library" 2>/dev/null | cut -f1 || echo "none")
-            echo "[MONITOR $(date +%H:%M:%S)] library=$lib"
-            sleep 60
-          done) &
-          MONITOR_PID=$!
-
+          echo "=== Building iOS project (3-min diagnostic timeout) ==="
           "$CREATOR_BIN" \
             --path "$CM_BUILD_DIR" \
             --build "platform=ios;debug=false;appName=$APP_NAME;packageName=$BUNDLE_ID" \
             --quit \
-            2>&1
+            2>&1 &
+          CREATOR_PID=$!
 
-          kill $MONITOR_PID 2>/dev/null || true
+          ELAPSED=0
+          while kill -0 $CREATOR_PID 2>/dev/null; do
+            sleep 30
+            ELAPSED=$((ELAPSED + 30))
+            lib=$(du -sh "$CM_BUILD_DIR/library" 2>/dev/null | cut -f1 || echo "none")
+            echo "[${ELAPSED}s] library=$lib"
+            if [ $ELAPSED -ge 180 ]; then
+              echo "=== DIAGNOSTIC: killing Creator at 3min ==="
+              kill -9 $CREATOR_PID 2>/dev/null || true
+              break
+            fi
+          done
+          wait $CREATOR_PID 2>/dev/null || true
+
+          echo "=== Creator internal log ==="
+          cat ~/.CocosCreator/logs/CocosCreator.log 2>/dev/null | tail -100 || echo "No log found"
+
+          echo "=== Project local dir ==="
+          ls -la "$CM_BUILD_DIR/local/" || true
+
+          echo "=== Library dir ==="
+          ls -la "$CM_BUILD_DIR/library/" 2>/dev/null || echo "library not created"
+
+          echo "=== build dir ==="
+          ls "$CM_BUILD_DIR/build/" 2>/dev/null || echo "no build output"
+
+          exit 0
 
           echo "=== Xcode project ==="
           find "$CM_BUILD_DIR" -name "*.xcodeproj" 2>/dev/null | head -5 || { echo "ERROR: No xcodeproj found"; exit 1; }
