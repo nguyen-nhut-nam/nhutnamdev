@@ -20,12 +20,21 @@ workflows:
         script: |
           set -e
           echo "=== Downloading Cocos Creator 2.4.6 ==="
-          curl -fL "https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_2021082018_mac.zip" \
-            -o /tmp/cocos.zip 2>&1 || {
-            echo "Primary URL failed, trying alternate..."
-            curl -fL "https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_20210820_mac.zip" \
-              -o /tmp/cocos.zip 2>&1
-          }
+          # Try multiple date formats for v2.4.6
+          DOWNLOADED=false
+          for URL in \
+            "https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_20210820_mac.zip" \
+            "https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_20210825_mac.zip" \
+            "https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_2021082018_mac.zip" \
+            "https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_2021082510_mac.zip"
+          do
+            echo "Trying: $URL"
+            if curl -fL "$URL" -o /tmp/cocos.zip 2>&1; then
+              DOWNLOADED=true
+              break
+            fi
+          done
+          [ "$DOWNLOADED" = "true" ] || { echo "All URLs failed"; exit 1; }
           echo "Download size: $(ls -lh /tmp/cocos.zip)"
           echo "=== Extracting ==="
           unzip -q /tmp/cocos.zip -d /tmp/cocos
