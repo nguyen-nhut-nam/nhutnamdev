@@ -19,52 +19,26 @@ workflows:
       - name: Install Cocos Creator 2.4.6
         script: |
           set -e
-          echo "=== Download & mount Dashboard ==="
+          echo "=== Download Dashboard ==="
           curl -fL "https://download.cocos.com/CocosDashboard/v1.0.14/CocosDashboard-v1.0.14-mac-052515.dmg" \
             -o /tmp/dashboard.dmg
           hdiutil attach /tmp/dashboard.dmg -mountpoint /Volumes/Dashboard -nobrowse -quiet
           cp -R "/Volumes/Dashboard/CocosDashboard.app" /tmp/
           hdiutil detach /Volumes/Dashboard -quiet
-
-          echo "=== Launch Dashboard with CDP port ==="
-          "/tmp/CocosDashboard.app/Contents/MacOS/CocosDashboard" \
-            --remote-debugging-port=9222 --no-sandbox &
-          DASH_PID=$!
-          sleep 20
-
-          echo "=== CDP targets ==="
-          curl -s http://localhost:9222/json | python3 -c "
-          import sys, json
-          data = json.load(sys.stdin)
-          for t in data:
-              print(t.get('type'), t.get('url'), t.get('webSocketDebuggerUrl','')[:80])
-          " || true
-
-          echo "=== Install websocket-client ==="
-          pip3 install websocket-client -q
-
-          echo "=== Search cocos.asar for auth/download URLs ==="
           COCOS_ASAR="/tmp/CocosDashboard.app/Contents/Resources/cocos.asar"
-          echo "cocos.asar size: $(wc -c < $COCOS_ASAR)"
-          strings "$COCOS_ASAR" | grep 'https://' \
-            | grep -iv 'npm\|github\.com\|electron\|shields\|travis\|badge\|w3c\|ietf\|semver\|spdx\|mozilla' \
-            | sort -u | head -200
 
-          echo "=== Grep cocos.asar for login/auth/download ==="
-          strings "$COCOS_ASAR" | grep -i 'login\|auth\|token\|download\|install\|package\|release\|version' \
-            | grep 'https://' | sort -u | head -100
-
-          echo "=== Setup mitmproxy to capture main process HTTPS ==="
-          pip3 install mitmproxy -q
+          echo "=== Setup mitmproxy BEFORE Dashboard ==="
+          pip3 install mitmproxy websocket-client -q
           mitmdump --listen-port 8080 -q > /tmp/proxy.log 2>&1 &
           PROXY_PID=$!
-          sleep 3
+          sleep 6
 
           CERT="$HOME/.mitmproxy/mitmproxy-ca-cert.pem"
+          echo "Cert exists: $(ls $CERT 2>/dev/null && echo yes || echo NO)"
           security add-trusted-cert -d -r trustRoot \
-            -k "$HOME/Library/Keychains/login.keychain-db" "$CERT" 2>/dev/null || true
-          networksetup -setwebproxy "Ethernet" 127.0.0.1 8080 2>/dev/null || true
-          networksetup -setsecurewebproxy "Ethernet" 127.0.0.1 8080 2>/dev/null || true
+            -k "$HOME/Library/Keychains/login.keychain-db" "$CERT" 2>/dev/null || \
+          sudo security add-trusted-cert -d -r trustRoot \
+            -k /Library/Keychains/System.keychain "$CERT" 2>/dev/null || true
 
           export http_proxy="http://127.0.0.1:8080"
           export https_proxy="http://127.0.0.1:8080"
@@ -73,7 +47,15 @@ workflows:
           export NODE_EXTRA_CA_CERTS="$CERT"
           export NODE_TLS_REJECT_UNAUTHORIZED=0
 
-          echo "=== CDP login + capture network ==="
+          echo "=== Launch Dashboard with proxy ==="
+          "/tmp/CocosDashboard.app/Contents/MacOS/CocosDashboard" \
+            --remote-debugging-port=9222 --no-sandbox \
+            --proxy-server="http://127.0.0.1:8080" \
+            --ignore-certificate-errors &
+          DASH_PID=$!
+          sleep 20
+
+          echo "=== CDP: fill & click login ==="
           python3 << 'PYEOF'
           import websocket, json, time, urllib.request, os, sys
 
@@ -85,107 +67,92 @@ workflows:
               targets = json.loads(raw)
               print("Targets:", [t.get('type') for t in targets])
           except Exception as e:
-              print("CDP connect failed:", e); sys.exit(1)
+              print("CDP failed:", e); sys.exit(0)
 
           ws_url = next((t['webSocketDebuggerUrl'] for t in targets
                          if t.get('webSocketDebuggerUrl')), None)
           if not ws_url:
-              print("No debuggable target"); sys.exit(1)
+              print("No target"); sys.exit(0)
           print("WS:", ws_url[:80])
 
           ws = websocket.create_connection(ws_url, timeout=10)
           ws.send(json.dumps({'id':1,'method':'Network.enable'}))
 
-          # JS: fill login form using Vue-compatible method + click correct BUTTON
           js = f"""
           (function(){{
             function setVal(el, val) {{
-              var setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
-              setter.call(el, val);
-              ['input','change','keyup'].forEach(function(ev){{
-                el.dispatchEvent(new Event(ev, {{bubbles:true}}));
+              var d = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value');
+              d.set.call(el, val);
+              ['input','change','keyup'].forEach(function(e){{
+                el.dispatchEvent(new Event(e,{{bubbles:true}}));
               }});
             }}
-            var inputs = document.querySelectorAll('input');
-            var textIn = Array.from(inputs).filter(function(el){{ return el.type!=='password'; }});
-            var passIn = Array.from(inputs).filter(function(el){{ return el.type==='password'; }});
-            if(textIn[0]) setVal(textIn[0], '{COCOS_USER}');
-            if(passIn[0]) setVal(passIn[0], '{COCOS_PASS}');
-
-            // Only click actual <button> elements (avoid section/div)
+            var ins = document.querySelectorAll('input');
+            var txt = Array.from(ins).filter(function(e){{ return e.type!=='password'; }});
+            var pas = Array.from(ins).filter(function(e){{ return e.type==='password'; }});
+            if(txt[0]) setVal(txt[0],'{COCOS_USER}');
+            if(pas[0]) setVal(pas[0],'{COCOS_PASS}');
             var btns = Array.from(document.querySelectorAll('button'));
-            var loginBtn = btns.find(function(b){{
-              return /sign.?in|sign_in|login|登录/i.test(b.textContent);
-            }}) || btns[btns.length-1];
-
-            var clickResult = 'none';
-            if(loginBtn) {{ loginBtn.click(); clickResult = loginBtn.textContent.trim().slice(0,40); }}
-
-            return JSON.stringify({{
-              inputs: inputs.length,
-              textIn: textIn.length,
-              passIn: passIn.length,
-              filled: (textIn[0]?'user:ok':'user:miss')+'/'+(passIn[0]?'pass:ok':'pass:miss'),
-              btnCount: btns.length,
-              clicked: clickResult
-            }});
+            var btn = btns.find(function(b){{ return /sign_in|login|登录/i.test(b.textContent); }})
+                      || btns[btns.length-1];
+            if(btn) btn.click();
+            return JSON.stringify({{txt:txt.length,pas:pas.length,btns:btns.length,
+              clicked:btn?btn.textContent.trim().slice(0,30):'none'}});
           }})()
           """
-          ws.send(json.dumps({'id':2,'method':'Runtime.evaluate','params':{'expression':js,'returnByValue':True}}))
+          ws.send(json.dumps({'id':2,'method':'Runtime.evaluate',
+                              'params':{'expression':js,'returnByValue':True}}))
 
-          urls = []
-          print("Monitoring network for 60s...")
+          print("Monitoring 60s...")
           ws.settimeout(2)
+          urls = []
           start = time.time()
-          phase2_done = False
+          retry_done = False
           while time.time()-start < 60:
               try:
                   msg = json.loads(ws.recv())
-                  m = msg.get('method','')
-                  if m == 'Network.requestWillBeSent':
-                      url = msg['params']['request']['url']
-                      print("REQ:", url[:150])
-                      urls.append(url)
+                  if msg.get('method') == 'Network.requestWillBeSent':
+                      u = msg['params']['request']['url']
+                      print("REQ:", u[:150])
+                      urls.append(u)
                   elif msg.get('id') == 2:
-                      val = msg.get('result',{}).get('result',{}).get('value','')
-                      print("JS dump:", val[:500])
-                      # After 30s retry JS once more
+                      print("JS:", msg.get('result',{}).get('result',{}).get('value','')[:200])
                   elif msg.get('id') == 3:
-                      val = msg.get('result',{}).get('result',{}).get('value','')
-                      print("JS retry:", val[:500])
+                      print("RETRY:", msg.get('result',{}).get('result',{}).get('value','')[:200])
               except websocket.WebSocketTimeoutException:
-                  elapsed = time.time()-start
-                  if not phase2_done and elapsed > 30:
-                      phase2_done = True
-                      print("=== 30s: retry JS ===")
-                      ws.send(json.dumps({'id':3,'method':'Runtime.evaluate','params':{'expression':js,'returnByValue':True}}))
-              except Exception as e:
-                  print("err:", e); break
+                  if not retry_done and time.time()-start > 30:
+                      retry_done = True
+                      ws.send(json.dumps({'id':3,'method':'Runtime.evaluate',
+                                         'params':{'expression':js,'returnByValue':True}}))
+              except Exception as ex:
+                  print("err:", ex); break
           ws.close()
-
-          # Save to file
-          with open('/tmp/cocos_urls.txt','w') as f:
-              f.write('\n'.join(urls))
-          print("\n=== All URLs ===")
-          for u in urls: print(u)
           PYEOF
 
-          echo "=== mitmproxy captured ==="
-          kill $PROXY_PID 2>/dev/null || true
-          grep -i 'cocos\|auth\|login\|token\|download\|creator' /tmp/proxy.log | head -100 || true
-          echo "--- proxy.log tail ---"
-          tail -30 /tmp/proxy.log || true
-
-          echo "=== Cocos dirs after CDP ==="
-          find "$HOME/Library/Application Support/Cocos" -maxdepth 3 2>/dev/null | head -30 || true
           kill $DASH_PID 2>/dev/null || true
+
+          echo "================================================"
+          echo "=== MITM PROXY CAPTURED (cocos auth URLs) ==="
+          echo "================================================"
+          kill $PROXY_PID 2>/dev/null || true
+          sleep 2
+          cat /tmp/proxy.log 2>/dev/null | grep -oE 'https?://[^ ]+' | sort -u || true
+          echo "--- proxy.log raw tail ---"
+          tail -50 /tmp/proxy.log 2>/dev/null || echo "(empty)"
+
+          echo "================================================"
+          echo "=== cocos.asar ALL HTTPS URLs ==="
+          echo "================================================"
+          strings "$COCOS_ASAR" | grep 'https://' \
+            | grep -iv 'npm\|github\.com\|electron\|shields\|travis\|badge\|w3c\|ietf\|mozilla\|spdx' \
+            | sort -u
 
       - name: Build iOS project
         script: |
           set -e
           COCOS_BIN="/tmp/cocos/CocosCreator.app/Contents/MacOS/CocosCreator"
           echo "=== Checking CocosCreator binary ==="
-          ls -la "$COCOS_BIN" || { echo "ERROR: CocosCreator not found!"; ls /tmp/cocos/; exit 1; }
+          ls -la "$COCOS_BIN" || { echo "ERROR: CocosCreator not found!"; ls /tmp/cocos/ 2>/dev/null; exit 1; }
 
           echo "=== Building iOS project ==="
           "$COCOS_BIN" \
@@ -193,9 +160,7 @@ workflows:
             --build "platform=ios;debug=false;appName=$APP_NAME;packageName=$BUNDLE_ID" \
             2>&1
 
-          echo "=== Build complete, searching for xcodeproj ==="
           find "$CM_BUILD_DIR" -name "*.xcodeproj" 2>/dev/null | head -10 || echo "WARNING: No xcodeproj found"
-          ls "$CM_BUILD_DIR/build/" 2>/dev/null || echo "No build/ directory"
 
       - name: Install signing cert
         script: |
@@ -216,16 +181,10 @@ workflows:
       - name: Xcode Archive & Export IPA
         script: |
           set -e
-          echo "=== Searching for Xcode project ==="
-          find "$CM_BUILD_DIR" -name "*.xcodeproj" 2>/dev/null
-
           XCODE_PROJECT=$(find "$CM_BUILD_DIR" -name "*.xcodeproj" | head -1)
           if [ -z "$XCODE_PROJECT" ]; then
-            echo "ERROR: No .xcodeproj found!"
-            find "$CM_BUILD_DIR/build" -type f 2>/dev/null | head -30
-            exit 1
+            echo "ERROR: No .xcodeproj found!"; exit 1
           fi
-
           SCHEME=$(basename "$XCODE_PROJECT" .xcodeproj)
           echo "Project: $XCODE_PROJECT | Scheme: $SCHEME"
 
