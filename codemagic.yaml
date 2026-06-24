@@ -1,0 +1,114 @@
+workflows:
+  ios-build:
+    name: WIN68 iOS Build
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+
+    environment:
+      xcode: 15.4
+      vars:
+        BUNDLE_ID: "com.you88.game"
+        APP_NAME: "WIN68"
+        APP_VERSION: "1.0.0"
+        VPS_HOST: "5.223.87.35"
+        VPS_USER: "root"
+      # Secrets (thêm vào Codemagic dashboard):
+      # CERT_P12_BASE64     - file .p12 encode base64
+      # CERT_P12_PASSWORD   - mật khẩu file .p12
+      # MOBILEPROVISION_BASE64 - file .mobileprovision encode base64
+      # VPS_SSH_KEY         - SSH private key để upload lên VPS
+
+    scripts:
+      - name: Install Cocos Creator 2.4.6
+        script: |
+          echo "Downloading Cocos Creator 2.4.6..."
+          curl -L "https://download.cocos.com/CocosCreator/v2.4.6/CocosCreator_v2.4.6_2021082018_mac.zip" \
+            -o /tmp/cocos.zip --progress-bar
+          unzip -q /tmp/cocos.zip -d /tmp/cocos
+          echo "Cocos Creator extracted"
+
+      - name: Build iOS project
+        script: |
+          /tmp/cocos/CocosCreator.app/Contents/MacOS/CocosCreator \
+            --path "$CM_BUILD_DIR" \
+            --build "platform=ios;debug=false;md5Cache=true;encryptJs=true;appName=$APP_NAME;packageName=$BUNDLE_ID" \
+            --project "$CM_BUILD_DIR"
+          echo "Build output:"
+          ls build/ || true
+
+      - name: Install signing cert
+        script: |
+          # Decode p12
+          echo "$CERT_P12_BASE64" | base64 --decode > /tmp/cert.p12
+          # Decode mobileprovision
+          echo "$MOBILEPROVISION_BASE64" | base64 --decode > /tmp/app.mobileprovision
+          # Import to keychain
+          security create-keychain -p "temp123" build.keychain
+          security default-keychain -s build.keychain
+          security unlock-keychain -p "temp123" build.keychain
+          security import /tmp/cert.p12 -k build.keychain -P "$CERT_P12_PASSWORD" \
+            -T /usr/bin/codesign -T /usr/bin/xcodebuild
+          security set-key-partition-list -S apple-tool:,apple: -s -k "temp123" build.keychain
+          # Install provision profile
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          UDID=$(grep -a -A 1 'UUID' /tmp/app.mobileprovision | grep string | sed 's/.*<string>\(.*\)<\/string>.*/\1/')
+          cp /tmp/app.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/$UDID.mobileprovision
+          echo "Profile UUID: $UDID"
+
+      - name: Xcode Archive & Export IPA
+        script: |
+          XCODE_PROJECT=$(find build -name "*.xcodeproj" | head -1)
+          XCODE_DIR=$(dirname "$XCODE_PROJECT")
+          SCHEME=$(basename "$XCODE_PROJECT" .xcodeproj)
+          echo "Project: $XCODE_PROJECT | Scheme: $SCHEME"
+
+          xcodebuild archive \
+            -project "$XCODE_PROJECT" \
+            -scheme "$SCHEME" \
+            -configuration Release \
+            -archivePath /tmp/win68.xcarchive \
+            -allowProvisioningUpdates \
+            CODE_SIGN_STYLE=Manual \
+            DEVELOPMENT_TEAM="" \
+            2>&1 | tail -30
+
+          cat > /tmp/ExportOptions.plist << 'EOF'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0"><dict>
+            <key>method</key><string>enterprise</string>
+            <key>signingStyle</key><string>manual</string>
+            <key>stripSwiftSymbols</key><true/>
+            <key>compileBitcode</key><false/>
+          </dict></plist>
+          EOF
+
+          xcodebuild -exportArchive \
+            -archivePath /tmp/win68.xcarchive \
+            -exportPath /tmp/ipa-out/ \
+            -exportOptionsPlist /tmp/ExportOptions.plist \
+            2>&1 | tail -20
+
+          IPA_PATH=$(find /tmp/ipa-out -name "*.ipa" | head -1)
+          echo "IPA: $IPA_PATH"
+          cp "$IPA_PATH" /tmp/win68.ipa
+
+      - name: Upload IPA to VPS
+        script: |
+          # Setup SSH key
+          mkdir -p ~/.ssh
+          echo "$VPS_SSH_KEY" > ~/.ssh/vps_key
+          chmod 600 ~/.ssh/vps_key
+          ssh-keyscan -H $VPS_HOST >> ~/.ssh/known_hosts
+
+          # Upload IPA
+          scp -i ~/.ssh/vps_key /tmp/win68.ipa $VPS_USER@$VPS_HOST:/var/app/www/ipa/win68.ipa
+          echo "Upload done!"
+
+          # Update manifest version
+          ssh -i ~/.ssh/vps_key $VPS_USER@$VPS_HOST \
+            "sed -i 's/<string>.*<\/string>.*bundle-version/<string>$APP_VERSION<\/string>/' /var/app/www/ipa/manifest.plist || true"
+
+    artifacts:
+      - /tmp/win68.ipa
+      - /tmp/win68.xcarchive.zip
