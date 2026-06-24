@@ -19,9 +19,6 @@ workflows:
       - name: Install Cocos Creator 2.4.6
         script: |
           set -e
-          echo "=== Check pre-installed Cocos ==="
-          find /Applications /Users -name "CocosCreator" -maxdepth 8 2>/dev/null | head -5 || true
-
           echo "=== Download & mount Dashboard ==="
           curl -fL "https://download.cocos.com/CocosDashboard/v1.0.14/CocosDashboard-v1.0.14-mac-052515.dmg" \
             -o /tmp/dashboard.dmg
@@ -29,25 +26,33 @@ workflows:
           cp -R "/Volumes/Dashboard/CocosDashboard.app" /tmp/
           hdiutil detach /Volumes/Dashboard -quiet
 
-          echo "=== Run Dashboard + monitor network ==="
+          echo "=== Run Dashboard 45s ==="
           nohup /tmp/CocosDashboard.app/Contents/MacOS/CocosDashboard 2>/tmp/dash.log &
           DPID=$!
-          echo "PID: $DPID"
-
-          for I in 5 10 15 20 25; do
-            sleep 5
-            echo "--- t=${I}s connections ---"
-            lsof -p $DPID -i -n -P 2>/dev/null | grep -v "localhost\|127.0.0.1" || true
-          done
-
+          sleep 45
           kill $DPID 2>/dev/null || true
           sleep 2
 
-          echo "=== Dashboard log ==="
-          cat /tmp/dash.log | head -30 || true
+          COCOS_DIR="$HOME/Library/Application Support/Cocos"
 
-          echo "=== Files created ==="
-          find "$HOME/Library" -newer /tmp/dashboard.dmg 2>/dev/null | grep -v "\.DS_Store\|Caches/com\." | head -20 || true
+          echo "=== Network Persistent State ==="
+          cat "$COCOS_DIR/Network Persistent State" 2>/dev/null || echo "(empty)"
+
+          echo "=== LOG file ==="
+          cat "$COCOS_DIR/LOG" 2>/dev/null | head -30 || echo "(empty)"
+
+          echo "=== All subdirs in Cocos support ==="
+          find "$COCOS_DIR" -type d 2>/dev/null | head -30 || true
+
+          echo "=== All JSON files ==="
+          find "$COCOS_DIR" -name "*.json" -o -name "*.db" 2>/dev/null | head -20 | while read F; do
+            echo "--- $F ---"
+            cat "$F" 2>/dev/null | head -15 || true
+          done
+
+          echo "=== Strings: cocos.com in ASAR ==="
+          ASAR="/tmp/CocosDashboard.app/Contents/Resources/app.asar"
+          strings "$ASAR" | grep "cocos.com" | sort -u | head -30 || true
 
           echo "=== DONE ==="
           exit 1
