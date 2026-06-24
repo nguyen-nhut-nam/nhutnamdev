@@ -42,10 +42,14 @@ workflows:
           set -e
           CREATOR_BIN="/tmp/cocos/CocosCreator.app/Contents/MacOS/CocosCreator"
 
-          echo "=== Pre-setup Creator settings (avoid network hang) ==="
+          echo "=== Pre-setup Creator settings ==="
           mkdir -p ~/.CocosCreator
           printf '%s' '{"language":"en","simulator-customsize-resolution":{"width":960,"height":640}}' > ~/.CocosCreator/settings.json
-          echo "Settings created."
+
+          echo "=== Pre-create project local/settings.json (gitignored but required) ==="
+          mkdir -p "$CM_BUILD_DIR/local"
+          printf '%s' '{}' > "$CM_BUILD_DIR/local/settings.json"
+          echo "local/settings.json created."
 
           echo "=== Building iOS project ==="
           # Background monitor: log library size every 60s to confirm progress
