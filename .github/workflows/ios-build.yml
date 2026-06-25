@@ -132,18 +132,7 @@ jobs:
             PRODUCT_BUNDLE_IDENTIFIER="$SIGN_BUNDLE_ID" \
             2>&1 | tail -60
 
-          python3 -c "
-import plistlib
-d = {
-  'method': 'ad-hoc',
-  'signingStyle': 'manual',
-  'stripSwiftSymbols': True,
-  'compileBitcode': False
-}
-with open('/tmp/ExportOptions.plist', 'wb') as f:
-    plistlib.dump(d, f)
-print('ExportOptions.plist written')
-"
+          python3 -c "import plistlib; d={'method':'ad-hoc','signingStyle':'manual','stripSwiftSymbols':True,'compileBitcode':False}; f=open('/tmp/ExportOptions.plist','wb'); plistlib.dump(d,f); f.close(); print('ExportOptions.plist OK')"
 
           xcodebuild -exportArchive \
             -archivePath /tmp/win68.xcarchive \
