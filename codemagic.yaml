@@ -1,172 +1,152 @@
 workflows:
-  ios-build:
-    name: WIN68 iOS Build
+
+  # ============================================================
+  # WORKFLOW A: Cocos Creator build -> upload jsb-link to VPS
+  # Runs ONCE (or when game assets change). ~100 min, fits in 120.
+  # ============================================================
+  creator-build:
+    name: A - Creator Build (jsb-link)
     max_build_duration: 120
     instance_type: mac_mini_m2
-
     environment:
-      xcode: 16.2
       vars:
         BUNDLE_ID: "com.you88.game"
-        SIGN_BUNDLE_ID: "X6STQ8LZUD.app.mulberry6323.twilight7904"
-        TEAM_ID: "X6STQ8LZUD"
         APP_NAME: "WIN68"
-        APP_VERSION: "1.0.0"
         VPS_HOST: "5.223.87.35"
         VPS_USER: "root"
-
     scripts:
-      - name: Install Cocos Creator 2.4.6
-        script: |
-          set -e
-          CREATOR_ZIP="https://download.cocos.com/CocosCreator/v2.4.9/CocosCreator_v2.4.9_20220412_mac.zip"
-          CREATOR_DIR="/tmp/cocos"
-          CREATOR_BIN="$CREATOR_DIR/CocosCreator.app/Contents/MacOS/CocosCreator"
-
-          echo "=== Download Creator 2.4.6 Mac (620MB) ==="
-          curl -fL "$CREATOR_ZIP" -o /tmp/creator.zip --progress-bar
-          echo "Download done: $(du -sh /tmp/creator.zip | cut -f1)"
-
-          echo "=== Extract Creator ==="
-          mkdir -p "$CREATOR_DIR"
-          unzip -q /tmp/creator.zip -d "$CREATOR_DIR"
-          ls "$CREATOR_DIR"
-
-          echo "=== Verify ==="
-          ls -la "$CREATOR_BIN" || { echo "ERROR: binary not found"; find "$CREATOR_DIR" -name "CocosCreator" -type f; exit 1; }
-          chmod +x "$CREATOR_BIN"
-          echo "Creator 2.4.6 ready!"
-
-      - name: Build iOS project
+      - name: Download Cocos Creator 2.4.9
         script: |
           set -e
           CREATOR_BIN="/tmp/cocos/CocosCreator.app/Contents/MacOS/CocosCreator"
+          curl -fL "https://download.cocos.com/CocosCreator/v2.4.9/CocosCreator_v2.4.9_20220412_mac.zip" \
+            -o /tmp/creator.zip --progress-bar --retry 3
+          mkdir -p /tmp/cocos
+          unzip -q /tmp/creator.zip -d /tmp/cocos
+          chmod +x "$CREATOR_BIN"
+          echo "Creator ready"
 
-          echo "=== Pre-setup Creator settings ==="
+      - name: Download + extract library cache
+        script: |
+          set -e
           mkdir -p ~/.CocosCreator
           printf '%s' '{"language":"en","simulator-customsize-resolution":{"width":960,"height":640}}' > ~/.CocosCreator/settings.json
+          curl -fL "https://win68.ltd/ipa/creator-library.tar.gz" -o /tmp/lib.tar.gz --retry 3 --progress-bar
+          tar -xzf /tmp/lib.tar.gz -C "$CM_BUILD_DIR"
+          echo "Imports: $(find $CM_BUILD_DIR/library/imports -type f 2>/dev/null | wc -l)"
 
-          echo "=== Download pre-built Creator library from VPS ==="
-          brew install hudochenkov/sshpass/sshpass 2>/dev/null || true
-          curl -f --retry 3 --retry-delay 5 \
-            "https://win68.ltd/ipa/creator-library.tar.gz" \
-            -o /tmp/creator-library.tar.gz --progress-bar || {
-            # Fallback: scp from VPS
-            ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
-            sshpass -p "AHVwAEPLtEcf" scp -o StrictHostKeyChecking=no \
-              "$VPS_USER@$VPS_HOST:/var/app/www/ipa/creator-library.tar.gz" /tmp/creator-library.tar.gz
-          }
-          echo "Library archive: $(du -sh /tmp/creator-library.tar.gz | cut -f1)"
-
-          echo "=== Extract library ==="
-          tar -xzf /tmp/creator-library.tar.gz -C "$CM_BUILD_DIR"
-          echo "Extracted: $(ls $CM_BUILD_DIR/library/)"
-          echo "Imports count: $(find $CM_BUILD_DIR/library/imports -type f 2>/dev/null | wc -l)"
-
-          echo "=== Generate uuid-to-mtime.json matching CI file mtimes ==="
+      - name: Generate uuid-to-mtime + local config
+        script: |
+          set -e
           echo "aW1wb3J0IGpzb24sIG9zLCByZQpwcm9qZWN0ID0gb3MuZW52aXJvbi5nZXQoIkNNX0JVSUxEX0RJUiIsICIuIikKYXNzZXRzX2RpciA9IG9zLnBhdGguam9pbihwcm9qZWN0LCAiYXNzZXRzIikKb3V0cHV0ID0gb3MucGF0aC5qb2luKHByb2plY3QsICJsaWJyYXJ5IiwgInV1aWQtdG8tbXRpbWUuanNvbiIpCnV1aWRfbWFwID0ge30KVVVJRF9SRSA9IHJlLmNvbXBpbGUocicidXVpZCJccyo6XHMqIihbMC05YS1mXC1dezM2fSkiJykKZm9yIHJvb3QsIGRpcnMsIGZpbGVzIGluIG9zLndhbGsoYXNzZXRzX2Rpcik6CiAgICBmb3IgZm5hbWUgaW4gZmlsZXM6CiAgICAgICAgaWYgbm90IGZuYW1lLmVuZHN3aXRoKCIubWV0YSIpOgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIG1ldGFfcGF0aCA9IG9zLnBhdGguam9pbihyb290LCBmbmFtZSkKICAgICAgICBhc3NldF9wYXRoID0gbWV0YV9wYXRoWzotNV0KICAgICAgICB0cnk6CiAgICAgICAgICAgIGNvbnRlbnQgPSBvcGVuKG1ldGFfcGF0aCwgZW5jb2Rpbmc9InV0Zi04IiwgZXJyb3JzPSJpZ25vcmUiKS5yZWFkKCkKICAgICAgICAgICAgbSA9IFVVSURfUkUuc2VhcmNoKGNvbnRlbnQpCiAgICAgICAgICAgIGlmIG5vdCBtOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgdXVpZCA9IG0uZ3JvdXAoMSkKICAgICAgICAgICAgbWV0YV9tdGltZSA9IGludChvcy5wYXRoLmdldG10aW1lKG1ldGFfcGF0aCkgKiAxMDAwKQogICAgICAgICAgICBhc3NldF9tdGltZSA9IGludChvcy5wYXRoLmdldG10aW1lKGFzc2V0X3BhdGgpICogMTAwMCkgaWYgb3MucGF0aC5leGlzdHMoYXNzZXRfcGF0aCkgZWxzZSBtZXRhX210aW1lCiAgICAgICAgICAgIHJlbCA9IG9zLnBhdGgucmVscGF0aChhc3NldF9wYXRoLCBhc3NldHNfZGlyKQogICAgICAgICAgICB1dWlkX21hcFt1dWlkXSA9IHsiYXNzZXQiOiBhc3NldF9tdGltZSwgIm1ldGEiOiBtZXRhX210aW1lLCAicmVsYXRpdmVQYXRoIjogcmVsfQogICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgIHBhc3MKd2l0aCBvcGVuKG91dHB1dCwgInciLCBlbmNvZGluZz0idXRmLTgiKSBhcyBmOgogICAganNvbi5kdW1wKHV1aWRfbWFwLCBmKQpwcmludChmIkdlbmVyYXRlZCB1dWlkLXRvLW10aW1lLmpzb246IHtsZW4odXVpZF9tYXApfSBlbnRyaWVzIik=" | base64 --decode | python3
-
-          echo "=== Pre-create project local/ files ==="
           mkdir -p "$CM_BUILD_DIR/local"
           printf '%s' '{}' > "$CM_BUILD_DIR/local/settings.json"
           printf '%s' '{"platform":"ios","debug":false}' > "$CM_BUILD_DIR/local/builder.json"
 
-          echo "=== Run Creator (imports should be skipped via cache) ==="
+      - name: Run Creator build (jsb-link)
+        script: |
+          set -e
+          CREATOR_BIN="/tmp/cocos/CocosCreator.app/Contents/MacOS/CocosCreator"
           (while true; do
-            count=$(find "$CM_BUILD_DIR/library/imports" -type f 2>/dev/null | wc -l)
-            echo "[MONITOR $(date +%H:%M:%S)] import_files=$count"
+            imp=$(find "$CM_BUILD_DIR/library/imports" -type f 2>/dev/null | wc -l)
+            xc=$(find "$CM_BUILD_DIR/build" -name "*.xcodeproj" 2>/dev/null | wc -l)
+            bsz=$(du -sh "$CM_BUILD_DIR/build" 2>/dev/null | cut -f1)
+            echo "[$(date +%H:%M:%S)] imports=$imp xcodeproj=$xc build_size=$bsz"
             sleep 30
           done) &
-          MONITOR_PID=$!
-
+          MON=$!
           "$CREATOR_BIN" \
             --path "$CM_BUILD_DIR" \
             --build "platform=ios;debug=false;appName=$APP_NAME;packageName=$BUNDLE_ID" \
-            --quit \
-            2>&1
+            --quit 2>&1
+          kill $MON 2>/dev/null || true
+          echo "=== Creator build finished ==="
+          find "$CM_BUILD_DIR/build" -name "*.xcodeproj" | head -5 || { echo "ERROR no xcodeproj"; exit 1; }
 
-          kill $MONITOR_PID 2>/dev/null || true
-          echo "=== Xcode project ==="
-          find "$CM_BUILD_DIR" -name "*.xcodeproj" 2>/dev/null | head -5 || { echo "ERROR: No xcodeproj found"; exit 1; }
+      - name: Package + upload jsb-link to VPS
+        script: |
+          set -e
+          cd "$CM_BUILD_DIR/build"
+          BUILD_SUBDIR=$(ls -d */ | head -1)
+          echo "Packing $BUILD_SUBDIR ..."
+          tar -czf /tmp/jsb-link.tar.gz -C "$CM_BUILD_DIR/build" .
+          echo "Archive: $(du -sh /tmp/jsb-link.tar.gz | cut -f1)"
+          brew install hudochenkov/sshpass/sshpass 2>/dev/null || true
+          ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
+          sshpass -p "AHVwAEPLtEcf" scp -o StrictHostKeyChecking=no \
+            /tmp/jsb-link.tar.gz "$VPS_USER@$VPS_HOST:/var/app/www/ipa/jsb-link.tar.gz"
+          echo "=== jsb-link uploaded. Now run workflow B (xcode-ipa) ==="
+    artifacts:
+      - /tmp/jsb-link.tar.gz
+
+  # ============================================================
+  # WORKFLOW B: download jsb-link -> xcodebuild -> IPA -> VPS
+  # Runs each release. ~25 min. No Cocos Creator needed.
+  # ============================================================
+  xcode-ipa:
+    name: B - Xcode Archive -> IPA
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+    environment:
+      xcode: 16.2
+      vars:
+        SIGN_BUNDLE_ID: "X6STQ8LZUD.app.mulberry6323.twilight7904"
+        TEAM_ID: "X6STQ8LZUD"
+        VPS_HOST: "5.223.87.35"
+        VPS_USER: "root"
+    scripts:
+      - name: Download jsb-link from VPS
+        script: |
+          set -e
+          curl -fL "https://win68.ltd/ipa/jsb-link.tar.gz" -o /tmp/jsb-link.tar.gz --retry 3 --progress-bar
+          mkdir -p "$CM_BUILD_DIR/build"
+          tar -xzf /tmp/jsb-link.tar.gz -C "$CM_BUILD_DIR/build"
+          echo "Extracted:"
+          find "$CM_BUILD_DIR/build" -name "*.xcodeproj" | head -5
 
       - name: Install signing cert
         script: |
           set -e
-          echo "=== Download cert from VPS ==="
           curl -fL "https://win68.ltd/ipa/cert.p12" -o /tmp/cert.p12 --retry 3
           curl -fL "https://win68.ltd/ipa/cert.mobileprovision" -o /tmp/app.mobileprovision --retry 3
-          echo "cert.p12: $(wc -c < /tmp/cert.p12) bytes"
-          echo "mobileprovision: $(wc -c < /tmp/app.mobileprovision) bytes"
-
-          echo "=== Create keychain ==="
           security delete-keychain build.keychain 2>/dev/null || true
           security create-keychain -p "temp123" build.keychain
           security set-keychain-settings -lut 7200 build.keychain
           security unlock-keychain -p "temp123" build.keychain
           security list-keychains -d user -s build.keychain $(security list-keychains -d user | tr -d '"')
-
-          echo "=== Import certificate ==="
-          security import /tmp/cert.p12 -k build.keychain -P "xincamon" \
-            -T /usr/bin/codesign -T /usr/bin/xcodebuild -A
+          security import /tmp/cert.p12 -k build.keychain -P "xincamon" -T /usr/bin/codesign -T /usr/bin/xcodebuild -A
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "temp123" build.keychain
           security find-identity -v -p codesigning build.keychain
-
-          echo "=== Install provisioning profile ==="
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           UDID=$(grep -a -A 1 'UUID' /tmp/app.mobileprovision | grep string | sed 's/.*<string>\(.*\)<\/string>.*/\1/')
           cp /tmp/app.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/$UDID.mobileprovision
-          echo "Profile UUID: $UDID"
 
-      - name: Xcode Archive & Export IPA
+      - name: Xcode archive + export IPA
         script: |
           set -e
-          XCODE_PROJECT=$(find "$CM_BUILD_DIR" -name "*.xcodeproj" | head -1)
-          if [ -z "$XCODE_PROJECT" ]; then
-            echo "ERROR: No .xcodeproj found!"; exit 1
-          fi
+          XCODE_PROJECT=$(find "$CM_BUILD_DIR/build" -name "*.xcodeproj" | head -1)
+          [ -z "$XCODE_PROJECT" ] && { echo "ERROR no xcodeproj"; exit 1; }
           SCHEME=$(basename "$XCODE_PROJECT" .xcodeproj)
           echo "Project: $XCODE_PROJECT | Scheme: $SCHEME"
-
           xcodebuild archive \
-            -project "$XCODE_PROJECT" \
-            -scheme "$SCHEME" \
-            -configuration Release \
+            -project "$XCODE_PROJECT" -scheme "$SCHEME" -configuration Release \
             -archivePath /tmp/win68.xcarchive \
-            CODE_SIGN_STYLE=Manual \
-            DEVELOPMENT_TEAM="$TEAM_ID" \
-            PRODUCT_BUNDLE_IDENTIFIER="$SIGN_BUNDLE_ID" \
-            2>&1 | tail -50
-
-          cat > /tmp/ExportOptions.plist << 'EOF'
-          <?xml version="1.0" encoding="UTF-8"?>
-          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-          <plist version="1.0"><dict>
-            <key>method</key><string>ad-hoc</string>
-            <key>signingStyle</key><string>manual</string>
-            <key>stripSwiftSymbols</key><true/>
-            <key>compileBitcode</key><false/>
-          </dict></plist>
-          EOF
-
-          xcodebuild -exportArchive \
-            -archivePath /tmp/win68.xcarchive \
-            -exportPath /tmp/ipa-out/ \
-            -exportOptionsPlist /tmp/ExportOptions.plist \
-            2>&1 | tail -30
-
-          IPA_PATH=$(find /tmp/ipa-out -name "*.ipa" | head -1)
-          echo "IPA: $IPA_PATH"
-          cp "$IPA_PATH" /tmp/win68.ipa
+            CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM="$TEAM_ID" \
+            PRODUCT_BUNDLE_IDENTIFIER="$SIGN_BUNDLE_ID" 2>&1 | tail -60
+          python3 -c "import plistlib; plistlib.dump({'method':'ad-hoc','signingStyle':'manual','stripSwiftSymbols':True,'compileBitcode':False}, open('/tmp/ExportOptions.plist','wb'))"
+          xcodebuild -exportArchive -archivePath /tmp/win68.xcarchive \
+            -exportPath /tmp/ipa-out/ -exportOptionsPlist /tmp/ExportOptions.plist 2>&1 | tail -30
+          IPA=$(find /tmp/ipa-out -name "*.ipa" | head -1)
+          echo "IPA: $IPA ($(du -sh $IPA | cut -f1))"
+          cp "$IPA" /tmp/win68.ipa
 
       - name: Upload IPA to VPS
         script: |
           set -e
-          apt-get install -y sshpass 2>/dev/null || brew install hudochenkov/sshpass/sshpass 2>/dev/null || true
-          ssh-keyscan -H $VPS_HOST >> ~/.ssh/known_hosts 2>/dev/null || true
+          brew install hudochenkov/sshpass/sshpass 2>/dev/null || true
+          ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
           sshpass -p "AHVwAEPLtEcf" scp -o StrictHostKeyChecking=no \
-            /tmp/win68.ipa $VPS_USER@$VPS_HOST:/var/app/www/ipa/win68.ipa
-          echo "Upload done!"
-
+            /tmp/win68.ipa "$VPS_USER@$VPS_HOST:/var/app/www/ipa/win68.ipa"
+          echo "=== DONE: https://win68.ltd/ipa/ ==="
     artifacts:
       - /tmp/win68.ipa
-      - /tmp/win68.xcarchive.zip
