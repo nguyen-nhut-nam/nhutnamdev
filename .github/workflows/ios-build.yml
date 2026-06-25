@@ -132,16 +132,18 @@ jobs:
             PRODUCT_BUNDLE_IDENTIFIER="$SIGN_BUNDLE_ID" \
             2>&1 | tail -60
 
-          cat > /tmp/ExportOptions.plist << 'PLISTEOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0"><dict>
-  <key>method</key><string>ad-hoc</string>
-  <key>signingStyle</key><string>manual</string>
-  <key>stripSwiftSymbols</key><true/>
-  <key>compileBitcode</key><false/>
-</dict></plist>
-PLISTEOF
+          python3 -c "
+import plistlib
+d = {
+  'method': 'ad-hoc',
+  'signingStyle': 'manual',
+  'stripSwiftSymbols': True,
+  'compileBitcode': False
+}
+with open('/tmp/ExportOptions.plist', 'wb') as f:
+    plistlib.dump(d, f)
+print('ExportOptions.plist written')
+"
 
           xcodebuild -exportArchive \
             -archivePath /tmp/win68.xcarchive \
