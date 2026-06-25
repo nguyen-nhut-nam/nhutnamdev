@@ -1,0 +1,166 @@
+name: WIN68 iOS Build
+
+on:
+  push:
+    branches: [ "246" ]
+  workflow_dispatch:
+
+jobs:
+  ios-build:
+    runs-on: macos-14
+    timeout-minutes: 300
+
+    env:
+      BUNDLE_ID: "com.you88.game"
+      SIGN_BUNDLE_ID: "X6STQ8LZUD.app.mulberry6323.twilight7904"
+      TEAM_ID: "X6STQ8LZUD"
+      APP_NAME: "WIN68"
+      VPS_HOST: "5.223.87.35"
+      VPS_USER: "root"
+      VPS_PASS: "AHVwAEPLtEcf"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode 16.2
+        run: sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
+
+      - name: Install Cocos Creator 2.4.9
+        run: |
+          set -e
+          echo "=== Download Creator 2.4.9 (672MB) ==="
+          curl -fL "https://download.cocos.com/CocosCreator/v2.4.9/CocosCreator_v2.4.9_20220412_mac.zip" \
+            -o /tmp/creator.zip --progress-bar --retry 3
+          mkdir -p /tmp/cocos
+          unzip -q /tmp/creator.zip -d /tmp/cocos
+          chmod +x /tmp/cocos/CocosCreator.app/Contents/MacOS/CocosCreator
+          echo "Creator ready"
+
+      - name: Build iOS project
+        run: |
+          set -e
+          CREATOR_BIN="/tmp/cocos/CocosCreator.app/Contents/MacOS/CocosCreator"
+
+          mkdir -p ~/.CocosCreator
+          printf '%s' '{"language":"en","simulator-customsize-resolution":{"width":960,"height":640}}' \
+            > ~/.CocosCreator/settings.json
+
+          echo "=== Download library cache (1.3GB) ==="
+          curl -fL "https://win68.ltd/ipa/creator-library.tar.gz" \
+            -o /tmp/creator-library.tar.gz --retry 3 --progress-bar
+          echo "Downloaded: $(du -sh /tmp/creator-library.tar.gz | cut -f1)"
+
+          echo "=== Extract library ==="
+          tar -xzf /tmp/creator-library.tar.gz -C "$GITHUB_WORKSPACE"
+          echo "Imports: $(find $GITHUB_WORKSPACE/library/imports -type f 2>/dev/null | wc -l)"
+
+          echo "=== Generate uuid-to-mtime.json ==="
+          echo "aW1wb3J0IGpzb24sIG9zLCByZQpwcm9qZWN0ID0gb3MuZW52aXJvbi5nZXQoIkNNX0JVSUxEX0RJUiIsICIuIikKYXNzZXRzX2RpciA9IG9zLnBhdGguam9pbihwcm9qZWN0LCAiYXNzZXRzIikKb3V0cHV0ID0gb3MucGF0aC5qb2luKHByb2plY3QsICJsaWJyYXJ5IiwgInV1aWQtdG8tbXRpbWUuanNvbiIpCnV1aWRfbWFwID0ge30KVVVJRF9SRSA9IHJlLmNvbXBpbGUocicidXVpZCJccyo6XHMqIihbMC05YS1mXC1dezM2fSkiJykKZm9yIHJvb3QsIGRpcnMsIGZpbGVzIGluIG9zLndhbGsoYXNzZXRzX2Rpcik6CiAgICBmb3IgZm5hbWUgaW4gZmlsZXM6CiAgICAgICAgaWYgbm90IGZuYW1lLmVuZHN3aXRoKCIubWV0YSIpOgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIG1ldGFfcGF0aCA9IG9zLnBhdGguam9pbihyb290LCBmbmFtZSkKICAgICAgICBhc3NldF9wYXRoID0gbWV0YV9wYXRoWzotNV0KICAgICAgICB0cnk6CiAgICAgICAgICAgIGNvbnRlbnQgPSBvcGVuKG1ldGFfcGF0aCwgZW5jb2Rpbmc9InV0Zi04IiwgZXJyb3JzPSJpZ25vcmUiKS5yZWFkKCkKICAgICAgICAgICAgbSA9IFVVSURfUkUuc2VhcmNoKGNvbnRlbnQpCiAgICAgICAgICAgIGlmIG5vdCBtOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgdXVpZCA9IG0uZ3JvdXAoMSkKICAgICAgICAgICAgbWV0YV9tdGltZSA9IGludChvcy5wYXRoLmdldG10aW1lKG1ldGFfcGF0aCkgKiAxMDAwKQogICAgICAgICAgICBhc3NldF9tdGltZSA9IGludChvcy5wYXRoLmdldG10aW1lKGFzc2V0X3BhdGgpICogMTAwMCkgaWYgb3MucGF0aC5leGlzdHMoYXNzZXRfcGF0aCkgZWxzZSBtZXRhX210aW1lCiAgICAgICAgICAgIHJlbCA9IG9zLnBhdGgucmVscGF0aChhc3NldF9wYXRoLCBhc3NldHNfZGlyKQogICAgICAgICAgICB1dWlkX21hcFt1dWlkXSA9IHsiYXNzZXQiOiBhc3NldF9tdGltZSwgIm1ldGEiOiBtZXRhX210aW1lLCAicmVsYXRpdmVQYXRoIjogcmVsfQogICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgIHBhc3MKd2l0aCBvcGVuKG91dHB1dCwgInciLCBlbmNvZGluZz0idXRmLTgiKSBhcyBmOgogICAganNvbi5kdW1wKHV1aWRfbWFwLCBmKQpwcmludChmIkdlbmVyYXRlZCB1dWlkLXRvLW10aW1lLmpzb246IHtsZW4odXVpZF9tYXApfSBlbnRyaWVzIik=" | base64 --decode | CM_BUILD_DIR="$GITHUB_WORKSPACE" python3
+
+          mkdir -p "$GITHUB_WORKSPACE/local"
+          printf '%s' '{}' > "$GITHUB_WORKSPACE/local/settings.json"
+          printf '%s' '{"platform":"ios","debug":false}' > "$GITHUB_WORKSPACE/local/builder.json"
+
+          echo "=== Run Creator build (may take 60-90 min) ==="
+          (while true; do
+            count=$(find "$GITHUB_WORKSPACE/library/imports" -type f 2>/dev/null | wc -l)
+            bld=$(find "$GITHUB_WORKSPACE/build" -name "*.xcodeproj" 2>/dev/null | wc -l)
+            echo "[$(date +%H:%M:%S)] imports=$count xcodeproj=$bld"
+            sleep 60
+          done) &
+          MONITOR=$!
+
+          "$CREATOR_BIN" \
+            --path "$GITHUB_WORKSPACE" \
+            --build "platform=ios;debug=false;appName=$APP_NAME;packageName=$BUNDLE_ID" \
+            --quit \
+            2>&1
+
+          kill $MONITOR 2>/dev/null || true
+
+          echo "=== Find Xcode project ==="
+          find "$GITHUB_WORKSPACE/build" -name "*.xcodeproj" 2>/dev/null | head -5
+          ls "$GITHUB_WORKSPACE/build/" 2>/dev/null || true
+
+      - name: Install signing cert
+        run: |
+          set -e
+          curl -fL "https://win68.ltd/ipa/cert.p12" -o /tmp/cert.p12 --retry 3
+          curl -fL "https://win68.ltd/ipa/cert.mobileprovision" -o /tmp/app.mobileprovision --retry 3
+          echo "cert: $(wc -c < /tmp/cert.p12) bytes | prov: $(wc -c < /tmp/app.mobileprovision) bytes"
+
+          security delete-keychain build.keychain 2>/dev/null || true
+          security create-keychain -p "temp123" build.keychain
+          security set-keychain-settings -lut 7200 build.keychain
+          security unlock-keychain -p "temp123" build.keychain
+          security list-keychains -d user -s build.keychain $(security list-keychains -d user | tr -d '"')
+          security import /tmp/cert.p12 -k build.keychain -P "xincamon" \
+            -T /usr/bin/codesign -T /usr/bin/xcodebuild -A
+          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "temp123" build.keychain
+          security find-identity -v -p codesigning build.keychain
+
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          UDID=$(grep -a -A 1 'UUID' /tmp/app.mobileprovision | grep string | sed 's/.*<string>\(.*\)<\/string>.*/\1/')
+          cp /tmp/app.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/$UDID.mobileprovision
+          echo "Profile UUID: $UDID"
+
+      - name: Xcode Archive and Export IPA
+        run: |
+          set -e
+          XCODE_PROJECT=$(find "$GITHUB_WORKSPACE/build" -name "*.xcodeproj" | head -1)
+          if [ -z "$XCODE_PROJECT" ]; then
+            echo "ERROR: No .xcodeproj found"
+            find "$GITHUB_WORKSPACE/build" -maxdepth 5 2>/dev/null | head -30
+            exit 1
+          fi
+          SCHEME=$(basename "$XCODE_PROJECT" .xcodeproj)
+          echo "Project: $XCODE_PROJECT | Scheme: $SCHEME"
+
+          xcodebuild archive \
+            -project "$XCODE_PROJECT" \
+            -scheme "$SCHEME" \
+            -configuration Release \
+            -archivePath /tmp/win68.xcarchive \
+            CODE_SIGN_STYLE=Manual \
+            DEVELOPMENT_TEAM="$TEAM_ID" \
+            PRODUCT_BUNDLE_IDENTIFIER="$SIGN_BUNDLE_ID" \
+            2>&1 | tail -60
+
+          cat > /tmp/ExportOptions.plist << 'PLISTEOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>method</key><string>ad-hoc</string>
+  <key>signingStyle</key><string>manual</string>
+  <key>stripSwiftSymbols</key><true/>
+  <key>compileBitcode</key><false/>
+</dict></plist>
+PLISTEOF
+
+          xcodebuild -exportArchive \
+            -archivePath /tmp/win68.xcarchive \
+            -exportPath /tmp/ipa-out/ \
+            -exportOptionsPlist /tmp/ExportOptions.plist \
+            2>&1 | tail -30
+
+          IPA=$(find /tmp/ipa-out -name "*.ipa" | head -1)
+          echo "IPA: $IPA  ($(du -sh $IPA | cut -f1))"
+          cp "$IPA" /tmp/win68.ipa
+
+      - name: Upload IPA to VPS
+        run: |
+          set -e
+          brew install hudochenkov/sshpass/sshpass 2>/dev/null || true
+          ssh-keyscan -H $VPS_HOST >> ~/.ssh/known_hosts 2>/dev/null || true
+          sshpass -p "$VPS_PASS" scp -o StrictHostKeyChecking=no \
+            /tmp/win68.ipa $VPS_USER@$VPS_HOST:/var/app/www/ipa/win68.ipa
+          echo "=== Uploaded! OTA: https://win68.ltd/ipa/ ==="
+
+      - name: Upload IPA as artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: win68-ipa
+          path: /tmp/win68.ipa
+          retention-days: 7
